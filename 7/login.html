@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body {
+				background: url(assets/i/bg0.png) no-repeat;
+				height: 100%;
+				width: 100%;
+			}
+			
+			.bg-box {
+				background: url(assets/i/loginbg.png) no-repeat;
+				height: 540px;
+				width: 390px;
+				position: relative;
+				margin: auto;
+				top:90px;
+				padding: 0 60px;
+			}
+			
+			.bg-box h2 {
+				position: absolute;
+				top: 290px;
+				top: 115px;
+				text-align: center;
+				width: 80%;
+			}
+			.field label{
+				background: url(assets/i/btnlogin.png) no-repeat;
+				height:30px;
+				width: 45px;
+				overflow: hidden;
+				float: left;
+				border-right: 1px solid #ddd;
+				display: inline-block;
+			}
+				.field input{
+				    width: 240px;
+				    margin-bottom: 12px;
+				    font-size: 14px;
+				    line-height: 18px;
+				    height: 18px;
+				    padding: 8px 8px 7px 18px;
+				    border: 1px solid #ddd;
+				    float: left;
+				    border: none;
+				}
+			.field {
+				height: 40px;
+				position: absolute;
+				    top: 204px;
+   					 width: 384px;
+				border-bottom: 1px solid #cccccc;
+
+			}
+			
+			.pwd-field {
+				top:275px;
+				
+			}
+			input:focus{
+				border: none !important;
+			}
+			
+			.username-field{
+				background:#fff;
+			}
+			.username-field label{
+				background-position: 8px 4px;
+			    box-sizing: border-box;
+			    display: inline-block;
+			}
+				.pwd-field label{
+				background-position: 8px -71px;
+			    box-sizing: border-box;
+			    display: inline-block;
+			}
+			.login{
+			    width: 358px;
+			    height: 60px;
+			    line-height: 60px;
+			    font: 24px/60px "microsoft yahei";
+			    position: absolute;
+			    background: #b50b07;
+			    border-radius: 5px;
+			    top: 383px;
+			    color: #fff;
+			    text-align:center;
+			}
+			a{
+				text-decoration: none;
+				color: #fff;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="bg-box">
+			<h2>中国青少年足球数据库</h2>
+			<div class="field username-field">
+				<label for=""></label>
+				<input type="text" name="TPL_username" id="TPL_username_1" class="login-text J_UserName" value="" maxlength="32" tabindex="1" placeholder="请输入用户名">
+			</div>
+			<div class="field pwd-field">
+				<label for=""></label>
+				<input type="password" name="TPL_password" id="TPL_password_1" class="login-text" maxlength="40" tabindex="2" autocomplete="off" placeholder="请输入密码">
+			</div>
+			<label for="" style="position: absolute;top: 332px;}"><input type="checkbox" name="" id="" value="" />记住账号<span id="tipLogin" style="color: #fc4343;margin-left: 40px;font-size: 15px;opacity: 0;">您输入的帐号或密码有误</span></label>
+			<div class="login"><a href="###" style="display: inline-block;width: 100%;">登录</a></div>
+		</div>
+		
+		<script src="assets/js/jquery.min.js"></script>
+		<script>
+			$("#TPL_username_1").focus(function () {
+				$("#tipLogin").css("opacity",0);
+			})
+			$("#TPL_password_1").focus(function () {
+				$("#tipLogin").css("opacity",0);
+			})
+		
+			$(".login a").click(function () {
+				var userName = $("#TPL_username_1").val();
+				var passWord = $("#TPL_password_1").val();
+				if (userName == "admin" && passWord == "admin") {
+					window.location.href = "yulan.html";
+				} else{
+					console.log("111");
+					
+					$("#tipLogin").css("opacity",1);
+					//渐隐效果
+//					var opac = 1;
+//					setTimeout(function () {
+//						settime();
+//					},1000)
+//					function settime() {
+//						setTimeout(function () {
+//							opac -= 0.1;
+//							$("#tipLogin").css("opacity",opac);
+//							if (opac<=0) {
+//								$("#tipLogin").css("opacity",0);
+//							} else{
+//								settime();
+//							}
+//						},100)
+//					}	
+				}
+			})
+		</script>
+	</body>
+	
+</html>

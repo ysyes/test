@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/zepto.js">
+			
+		</script>
+	</head>
+	<script type="text/javascript">
+		var li = document.getElementsByTagName("li");
+		for (var i = 0;i < li.length ;i++) {
+			li[i].index = i;
+			li[i].onclick = function () {
+				alert(this.index);
+			}
+		}
+	</script>
+	<body>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+		var li = document.getElementsByTagName("li");
+		for (var i = 0;i < li.length ;i++) {
+			li[i].index = i;
+			li[i].onclick = function () {
+				alert(this.index);
+			}
+		}
+	</script>
+</html>

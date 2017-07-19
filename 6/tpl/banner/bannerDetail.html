@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>轮播详情</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <style>
+        div.content{
+            padding:20px;
+        }
+        div.title,div.text{
+            line-height:40px;
+        }
+        div.text{
+            width:100%;
+            min-height:200px;
+            border:1px solid #ccc;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            padding:5px;
+            box-sizing:border-box ;
+            margin-top:10px;
+        }
+        div.button{
+        	margin-top:30px;
+        	text-align:center;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div class="header">
+        <p>活动管理</p>
+        <div></div>
+    </div>
+    <div class="show">
+        <ul class="title">
+            <li class="active">轮播详情</li>
+            <li></li>
+        </ul>
+        <div class="content">
+            <div class="title"><span></span></div>
+            <img src="" alt="" width='280px' height='168px'/>
+            <div class="text"><span></span></div>
+            <div class="button">
+            	<a href='banner.html'><button class='button back'>返回</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../js/jquery-2.2.3.min.js"></script>
+<script>
+    var id=window.location.href.split('=')[1];
+    console.log(id);
+    function load(){
+        $.ajax({
+            url:'../../v1/rotateplay/update/init/'+id,
+            type:'GET',
+            contentType:'application/json',
+            success:function(data){
+                if(data.resultcode==1000){
+                    $('div.title span').html(data.title);
+                    $('img').attr('src',data.img);
+                    $('div.text span').html(data.text);
+                }else if(data.resultcode==998){
+                    window.parent.returnLogin();
+                }
+            }
+        })
+    }
+    load();
+</script>
+</body>
+</html>

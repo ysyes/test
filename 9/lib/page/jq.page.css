@@ -1,0 +1,101 @@
+#tcdPageCode a {
+	color: rgba(255, 255, 255, 0.6);
+	outline: none;
+	text-decoration: none;
+	/*-webkit-transition: 0.2s;*/
+	/*transition: 0.2s;*/
+}
+#tcdPageCode a:hover,
+#tcdPageCode a:focus {
+	color: #74777b;
+	text-decoration: none;
+}
+/*样式参考*/
+#tcdPageCode a {
+	text-decoration: none;
+}
+#tcdPageCode {
+	height: 50px;
+	display: table;
+	margin: 0 auto;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#tcdPageCode .page {
+	text-align: center;
+}
+#tcdPageCode .fl {
+	float: left;
+}
+#tcdPageCode .fr {
+	float: right;
+}
+#tcdPageCode .pagingUl {
+	float: right;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	height: 24px;
+}
+#tcdPageCode .pagingUl li {
+	float: left;
+	width: 24px;
+	height: 24px;
+	background: #fff;
+	text-align: center;
+	margin-right: 5px;
+	border-radius: 5px
+}
+#tcdPageCode .pagingUl li a {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	color: #999;
+	font-size: 13px;
+	/* border-radius: 5px; */
+	border:1px solid #ccc;
+}
+#tcdPageCode .prv,
+#tcdPageCode .next {
+	width: 35px;
+	height: 24px;
+	text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+	background: #fff;
+	border:1px solid #ccc;
+	color:#999;
+	font-size:20px;
+}
+#tcdPageCode .prv {
+	margin-right: 5px;
+}
+#tcdPageCode .first,
+#tcdPageCode .last {
+	width: 40px;
+	height: 24px;
+	font-size: 13px;
+	text-align: center;
+	line-height: 24px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	background: #fff;
+	padding: 0 5px;
+	margin-right: 5px;
+	box-sizing: border-box;
+	color: #999;
+}
+#tcdPageCode .prv:hover,
+#tcdPageCode .next:hover,
+#tcdPageCode .first:hover,
+#tcdPageCode .last:hover,
+#tcdPageCode .pagingUl li a:hover,
+#tcdPageCode .activP {
+	background-color: #3b8cff!important;
+	color: #fff!important;
+	border:1px solid #3b8cff!important;
+}

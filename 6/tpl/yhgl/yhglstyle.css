@@ -1,0 +1,131 @@
+#main {
+    padding-top: 52px;
+}
+div.header p{
+    color:#0055a1;
+}
+div.search{
+    float:right;
+    width:142px;
+    margin:12px 0;
+    margin-right:15px;
+}
+div.search input{
+    width:105px;
+    height:24px;
+    border:1px solid #ccc;
+    border-top-left-radius:3px;
+    border-bottom-left-radius: 3px;
+    border-right:0;
+    outline: none;
+    padding:0;
+    padding-left:10px;
+    font-family: '微软雅黑';
+    color: #CCCCCC;
+}
+div.search i{
+    display: inline-block;
+    float:right;
+    width:26px;
+    height:26px;
+    background-image:url('../../img/search.png');
+    background-color:#0055a1;
+    background-repeat:no-repeat;
+    border-top-right-radius: 3px;
+    background-position: center;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+}
+.table{
+    width:100%;
+    border:1px solid #ccc;
+    table-layout: fixed;
+    word-wrap:break-word;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.table thead{
+    background:#ebebeb;
+}
+.table th{
+    font-size:16px;
+    color:#333;
+    height:50px;
+    vertical-align: middle;
+    font-family: '微软雅黑';
+    font-weight: normal;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    box-sizing: border-box;
+}
+.table th:last-child{
+    border-right:0;
+}
+.table tbody tr{
+    height:57px;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+}
+.table tbody td{
+    font-size: 15px;
+    color:#999;
+    font-family: '微软雅黑';
+    text-align: center;
+    vertical-align: middle;
+}
+.table tbody tr:nth-child(even){
+    background:#deefff;
+}
+.table tbody td a{
+    display: inline-block;
+    box-sizing: border-box;
+    width:40px;
+    height:24px;
+    font-size: 14px;
+    text-align: center;
+    border-radius:3px;
+    font-family: '微软雅黑';
+    padding:5px 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+.table tbody td a.able{
+    border:1px solid #0055a1;
+    color:#0055a1;
+}
+.table tbody td a.disable{
+	border: 1px solid rgba(255, 0, 0, 0.52);
+    color:rgba(255, 0, 0, 0.52);
+}
+.page{
+    float:right;
+    overflow: hidden;
+    margin:20px 15px 12px 0;
+}
+.page li{
+    float:left;
+    width:22px;
+    height:16px;
+    border: 1px solid #0055a1;
+    border-radius:3px;
+    color:#0055a1;
+    font-size: 14px;
+    line-height:16px;
+    text-align: center;
+    margin-left:5px;
+    font-family: '微软雅黑';
+    cursor: pointer;
+}
+.page li:first-child,.page li:last-child{
+    width:51px;
+}
+.page li:first-child.disable,.page li:last-child.disable{
+     border:1px solid #999;
+    color:#999;
+}
+.page li.active{
+    border-color:transparent;
+    color:#333;
+}

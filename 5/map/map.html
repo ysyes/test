@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<select id="continent">
+			<option></option>
+		</select>
+		<select id="country">
+			<option value=""></option>
+		</select>
+		<select id="city">
+			<option value=""></option>
+		</select>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+	<script type="text/javascript">
+		//加载洲
+		$.getJSON("map.json","",function (data) {
+			var continent = "";
+			console.log(data);
+			for (i in data) {
+				continent+='<option>'+i+'</option>';
+			}
+			console.log(continent);
+			$("#continent").html(continent);
+			continentFn();
+		})
+		//点击洲触发
+		$("#continent").change(function (){
+			continentFn();
+		})
+		function continentFn(){
+			var checked = $("#continent option:checked").html();
+			console.log(checked);
+			country(checked);
+		}
+		//加载国家
+		//country("亚洲")
+		function country(continent) {
+			$.getJSON("map.json","",function (data) {
+				var country = "";
+				console.log(data);
+				for (i in data[continent]) {
+					country+='<option>'+i+'</option>';
+				}
+				console.log(country);
+				$("#country").html(country);
+				countryFn();
+			})
+		}
+		//点击国家触发
+		$("#country").change(function (){
+			countryFn()
+		})
+		function countryFn(){
+			var continentChecked = $("#continent option:checked").html();
+			var countryChecked = $("#country option:checked").html();
+			console.log(countryChecked);
+			cityFn(continentChecked,countryChecked);
+		}
+		//加载省市
+		//city("中国")
+		function cityFn(continentChecked,countryChecked) {
+			$.getJSON("map.json","",function (data) {
+				var city = "";
+				console.log(data);
+				for (i in data[continentChecked][countryChecked]) {
+					
+					city+='<option>'+data[continentChecked][countryChecked][i]+'</option>';
+					
+				}
+				console.log(city);
+				$("#city").html(city);
+			})
+		}
+	</script>
+</html>

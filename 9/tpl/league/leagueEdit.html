@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>赛事新增</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/commonAdd.css"/>
+    <style>
+        .show div.logoUpload{
+            clear: both;
+            margin-top: 35px;
+            height: 120px;
+            width: 100%;
+        }
+        .show div.logoUpload p{
+            float: left;
+            width: 64px;
+            display: block;
+            text-align: right;
+            line-height: 120px;
+        }
+        .show div.logoUpload div{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 120px;
+            height: 120px;
+            float: left;
+            border: 1px solid #3b8bff;
+        }
+        .show .logoUpload div img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 120px;
+            width: 120px;
+            outline: none;
+        }
+        .show .logoUpload a{
+            float: left;
+            margin-left: 30px;
+            margin-top: 80px;
+            display:block;
+            background: #3b8bff;
+            height: 40px;
+            width: 80px;
+            color: white;
+            line-height: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            cursor: pointer;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+        .show .logoUpload input{
+            position: absolute;
+            right: 0;
+            top: 0;
+            opacity: 0;
+        }
+        .show div.stadium div{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 250px;
+            height: 120px;
+            float: left;
+            border: 1px solid #3b8bff;
+        }
+        .show .stadium div img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 120px;
+            width: 250px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div class="header">
+        <div class="admin"><img src="../../img/blue_saishi.png" alt=""/><span>赛事编辑</span></div>
+    </div>
+    <div class="show">
+    	 <form>
+    	 	<div>
+                <p>父级赛事</p>
+                <select class="parentid">
+                    <option value="0">父级赛事</option>
+                </select>
+                <span></span>
+            </div>
+	        <div>
+	            <p>赛事名称</p>
+	            <input type="text" maxlength="20" class="name" placeholder="请输入赛事名称"/>
+	            <span>*</span>
+	        </div>
+            <div>
+                <p>编码</p>
+                <input type="text" maxlength="20" class="code" placeholder="请输入编码"/><span>*</span>
+            </div>
+            <div>
+                <p>类别</p>
+                <select class="type">
+                    <option value="1">联赛</option>
+                    <option value="2">淘汰赛</option>
+                    <option value="3">小组赛</option>
+                </select><span>*</span>
+            </div>
+            <div>
+                <p>晋级名额</p>
+                <input type="text" maxlength="2" class="top numberLimit" placeholder="请输入晋级名额"/><span></span>
+            </div>
+            <div>
+                <p>杯赛名额</p>
+                <input type="text" maxlength="15" class="middle" placeholder="请输入杯赛名额{2,3}"/><span></span>
+            </div>
+            <div>
+                <p>降级名额</p>
+                <input type="text" maxlength="2" class="lower numberLimit" placeholder="请输入降级名额"/><span></span>
+            </div>
+            <div class="logoUpload">
+                <p>LOGO</p>
+                <div class="showLogo">
+                    <img id="image" src="../../img/logotishi.png"/>
+                </div>
+                <a href="javascript:;">上传<input type="file" accept="image/png,image/jpeg" id="logo" value="" onchange="selectImage(this)"/></a>
+            </div>
+        </form>
+        <div class="button">
+            <button class="submit">提交</button>
+            <a href="league.html"><button class="back">返回</button></a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../../lib/jquery-2.2.3.min.js" ></script>
+<script type="text/javascript" src="leagueEdit.js" ></script>
+</body>
+</html>

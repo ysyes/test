@@ -1,0 +1,182 @@
+{
+	"lineups": {
+		"benchinfo": {
+			"clientbenchinfo": [
+				{
+					"players": [[
+							"孙乐",
+							"SUN　Le",
+							"22"
+						],[
+							"张卫",
+							"ZHANG　Wei",
+							"2"
+						],[
+							"吕文君",
+							"LV　Wenjun",
+							"11"
+						],[
+							"林创益",
+							"LIN　Chuangyi",
+							"15"
+						],[
+							"张一",
+							"ZHANG　Yi",
+							"18"
+						],[
+							"于海",
+							"YU　Hai",
+							"21"
+						],[
+							"韦世豪",
+							"WEI　Shihao",
+							"33"
+						]
+					]
+				}
+			]
+			,
+			"hostbenchinfo": [
+				{
+					"players": [[
+							"刘殿座",
+							"LIU　Dianzuo",
+							"32"
+						],[
+							"王上源",
+							"WANG　Shangyuan",
+							"12"
+						],[
+							"张成林",
+							"ZHANG　Chenglin",
+							"21"
+						],[
+							"陈泽鹏",
+							"CHEN　Zepeng",
+							"37"
+						],[
+							"廖力生",
+							"LIAO　Lisheng",
+							"2"
+						],[
+							"黄博文",
+							"HUANG　Bowen",
+							"16"
+						],[
+							"郜林",
+							"GAO　Lin",
+							"29"
+						]
+					]
+				}
+			]
+		},
+		"startinginfo": {
+			"clientstartinginfo": [
+				{
+					"lineup": "4-2-3-1",
+					"players": [[
+							"颜骏凌",
+							"YAN　Junling",
+							"1"
+						],[
+							"傅欢",
+							"FU　Huan",
+							"23"
+						],[
+							"贺惯",
+							"HE　Guan",
+							"28"
+						],[
+							"石柯",
+							"SHI　Ke",
+							"27"
+						],[
+							"王燊超",
+							"WANG　Shenchao",
+							"4"
+						],[
+							"蔡慧康",
+							"CAI　Huikang",
+							"6"
+						],[
+							"张华晨",
+							"ZHANG　Huachen",
+							"17"
+						],[
+							"奥斯卡",
+							"OSCAR",
+							"8"
+						],[
+							"胡尔克",
+							"HULK",
+							"10"
+						],[
+							"武磊",
+							"WU　Lei",
+							"7"
+						],[
+							"埃尔克森",
+							"ELKESON",
+							"9"
+						]
+					]
+				}
+			]
+			,
+			"hoststartinginfo": [
+				{
+					"lineup": "4-2-3-1",
+					"players": [[
+							"曾诚",
+							"ZENG　Cheng",
+							"19"
+						],[
+							"张琳芃",
+							"ZHANG　Linpeng",
+							"5"
+						],[
+							"冯潇霆",
+							"FENG　Xiaoting",
+							"6"
+						],[
+							"梅方",
+							"MEI　Fang",
+							"3"
+						],[
+							"李学鹏",
+							"LI　Xuepeng",
+							"35"
+						],[
+							"徐新",
+							"XU　Xin",
+							"4"
+						],[
+							"保利尼奥",
+							"PAULINHO",
+							"8"
+						],[
+							"于汉超",
+							"YU　Hanchao",
+							"20"
+						],[
+							"高拉特",
+							"RICARDO GOULART",
+							"11"
+						],[
+							"郑龙",
+							"ZHENG　Long",
+							"27"
+						],[
+							"阿兰",
+							"ALAN",
+							"7"
+						]
+					]
+				}
+			]
+		}
+	},
+	"msg": "成功",
+	"resultcode": 1000
+}

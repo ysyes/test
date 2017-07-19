@@ -1,0 +1,142 @@
+html{
+    overflow-x:auto;
+    height:100%;
+    min-height:540px;
+}
+select::-ms-expand { 
+	display: none; 
+}
+body{
+    height:calc(100% - 20px);
+    background:#ededed;
+}
+#box{
+    box-sizing: border-box;
+    min-width:calc(100% - 40px);
+   /*  width:100%; */
+    min-height:calc(100% - 20px);
+    height:auto;
+   /*  min-width: 1000px; */
+    margin:20px;
+    background: #ffffff;
+    padding:0 20px;
+    box-shadow: 0 0 10px 5px #ccc;
+}
+#box div.header{
+    height:60px;
+    padding:10px 0;
+    border-bottom: 1px solid #e4442a;
+}
+#box div.header div.admin{
+    float:left;
+    line-height: 40px;
+}
+#box div.header div.admin img{
+    vertical-align: middle;
+}
+#box div.header div.admin span{
+    color:#e3442a;
+    font-size: 18px;
+}
+#box div.header div.admin span a{
+	color:#e3442a;
+    font-size: 18px;
+    text-decoration:none;
+}
+div.show{
+    padding:0 34px;
+    overflow: hidden;
+}
+div.show div{
+    width:50%;
+    float:left;
+}
+div.show div.button{
+    width:100%;
+    text-align: center;
+}
+div.show input,div.show select{
+    border:1px solid #e3442a;
+    outline:none;
+    width:200px;
+    height:40px;
+    box-sizing: border-box;
+    font-size:14px;
+    color:#333;
+    padding-left:10px;
+}
+div.show form div span,div.show div span{
+    color: #e3442a;
+    font-size: 20px;
+    float: right;
+    margin-top: 14px;
+    margin-left: 10px;
+    width:10px;
+    height:10px;
+}
+div.show textarea{
+    width:514px;
+    height:110px;
+    border:1px solid #e3442a;
+    resize: none;
+    outline:none;
+    padding:10px;
+    box-sizing: border-box;
+    color:#333;
+}
+div.show select{
+    font-family: "Microsoft Yahei";
+    padding-right: 40px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url(../img/xiala.png) no-repeat right;
+}
+div.show div{
+    margin-top:30px;
+    width:auto;
+    margin-right:40px;
+}
+div.show div p{
+    color:#333;
+    font-size:16px;
+    float:left;
+    margin-right:10px;
+    width:64px;
+    text-align: right;
+    line-height: 40px;
+}
+div.show div.button{
+    margin-bottom:30px;
+    margin-top:100px;
+}
+div.show div.button button{
+    width:120px;
+    height:50px;
+    padding:0;
+    line-height: 50px;
+    border:0;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+div.show div.button button.submit{
+    background:#e3442a;
+    color:#fff;
+    border:1px solid #e3442a;
+}
+div.show div.button button.submit:hover{
+    background:#cb3921;
+}
+div.show div.button button.back{
+    background: #fff;
+    border:1px solid #e3442a;
+    color:#e3442a;
+    margin-left:65px;
+}
+div.show div.button button.back:hover{
+    background:#e3442a;
+    color:#fff;
+    border:1px solid #e3442a;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>动彩</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html"><img src="img/index.png"/></a></li>
+					<li><a href="recommend.html">推荐</a></li>
+					<li><a href="guess.html">竞猜</a></li>
+					<li><a href="data.html">数据</a></li>
+					<li><a href="injured.html">伤停</a></li>
+					<li><a href="mycenter.html">个人中心</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="register">
+			<h2>手机注册</h2>
+			<form action="" method="post">
+				<div>
+					<p>昵称</p>
+					<input type="text" id="name"/>
+					<span class="truefalse"></span>
+					<span>汉字，英文，数字</span>
+				</div>
+				<div>
+					<p>设置密码</p>
+					<input type="password" id="password" />
+					<span class="truefalse"></span>
+					<span>6-20位，包含大写、小写及数字</span>
+				</div>
+				<div>
+					<p>确认密码</p>
+					<input id="passwordRepeat" type="password" value="" />
+					<span class="truefalse"></span>
+					<span>重复输入新密码</span>
+				</div>
+				<div>
+					<p>手机号码</p>
+					<input type="text" id="tel" value="" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" />
+					<span class="truefalse"></span>
+					<span>注册成功后即可用手机号码登录</span>
+				</div>
+				<div class="tel">
+					<p>验证码</p>
+					<input type="text" id="verifycode" value="" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" />
+					<input class="button" type="button" value="点击获取"/>
+					<span class="truefalse"></span>
+					<span>免费获取手机验证码</span>
+				</div>
+				<p>
+					<input checked="checked" class="checkBox" type="checkbox"/>同意<a href="###">《同道足彩服务协议》</a><span class="check">请先同意同道足彩协议</span>
+				</p>
+				<div>
+					<input class="sub" type="button" value="立即注册"/>
+				</div>
+			</form>
+			<div id="xieyi">
+				<iframe src="agreement.html" width="1000" height="470"></iframe>
+				<div>
+					<button>确定</button>
+				</div>			
+			</div>
+		</div>
+		<footer>
+			Copyright &copy; 2015-2016 TongDao. All Right Reserved&nbsp;&nbsp;同道伟业&nbsp;&nbsp;版权所有
+			<span>客服QQ：3456560098</span>
+		</footer>
+		<script type="text/javascript" src="lib/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="js/register.js"></script>
+	</body>
+</html>

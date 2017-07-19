@@ -1,0 +1,53 @@
+ * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a,a:hover{
+    text-decoration: none;
+    font-family: 'Microsoft Yahei';
+    font-size:14px;
+}
+.tcdPageCode {
+    padding: 15px 20px;
+    color: #ddd;
+    text-align: center;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.tcdPageCode a {
+    display: inline-block;
+    color: #999;
+    width:24px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+}
+.tcdPageCode a:hover,.tcdPageCode span.current {
+    display: inline-block;
+    width:24px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 5px;
+    color: #fff;
+    background-color: #3b8cff;
+    font-family: 'Microsoft Yahei';
+    font-size: 14px;
+    border: 1px solid transparent;
+}
+a.prevPage,a.nextPage,a.prevPage:hover,a.nextPage:hover,.tcdPageCode span.disabled {
+    display: inline-block;
+    width: 30px;
+    height: 24px;
+    line-height: 22px;
+    color: #999;
+    font-family: 'Microsoft Yahei';
+    font-size: 20px;
+    background: transparent;
+    border: 1px solid #ccc;
+	margin:0 5px;
+}

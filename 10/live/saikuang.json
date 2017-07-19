@@ -1,0 +1,117 @@
+{
+	"fightings": {
+		"players": [
+			{
+				"goaltime": 85,
+				"goaltype": 5,
+				"playernamecn": "黄博文",
+				"playernameen": "HUANG　Bowen",
+				"teamtype": 1
+			}, {
+				"goaltime": 80,
+				"goaltype": 1,
+				"playernamecn": "高拉特",
+				"playernameen": "RICARDO GOULART",
+				"teamtype": 1
+			}, {
+				"goaltime": 78,
+				"goaltype": 5,
+				"playernamecn": "石柯",
+				"playernameen": "SHI　Ke",
+				"teamtype": 2
+			}, {
+				"goaltime": 77,
+				"goaltype": 4,
+				"outplayernamecn": "郑龙",
+				"outplayernameen": "ZHENG　Long",
+				"playernamecn": "廖力生",
+				"playernameen": "LIAO　Lisheng",
+				"teamtype": 1
+			}, {
+				"goaltime": 73,
+				"goaltype": 4,
+				"outplayernamecn": "阿兰",
+				"outplayernameen": "ALAN",
+				"playernamecn": "郜林",
+				"playernameen": "GAO　Lin",
+				"teamtype": 1
+			}, {
+				"goaltime": 70,
+				"goaltype": 1,
+				"playernamecn": "胡尔克",
+				"playernameen": "HULK",
+				"teamtype": 2
+			}, {
+				"goaltime": 63,
+				"goaltype": 5,
+				"playernamecn": "王燊超",
+				"playernameen": "WANG　Shenchao",
+				"teamtype": 2
+			}, {
+				"goaltime": 61,
+				"goaltype": 4,
+				"outplayernamecn": "傅欢",
+				"outplayernameen": "FU　Huan",
+				"playernamecn": "张卫",
+				"playernameen": "ZHANG　Wei",
+				"teamtype": 2
+			}, {
+				"goaltime": 56,
+				"goaltype": 4,
+				"outplayernamecn": "徐新",
+				"outplayernameen": "XU　Xin",
+				"playernamecn": "黄博文",
+				"playernameen": "HUANG　Bowen",
+				"teamtype": 1
+			}, {
+				"goaltime": 54,
+				"goaltype": 5,
+				"playernamecn": "徐新",
+				"playernameen": "XU　Xin",
+				"teamtype": 1
+			}, {
+				"goaltime": 53,
+				"goaltype": 1,
+				"playernamecn": "埃尔克森",
+				"playernameen": "ELKESON",
+				"teamtype": 2
+			}, {
+				"goaltime": 46,
+				"goaltype": 4,
+				"outplayernamecn": "蔡慧康",
+				"outplayernameen": "CAI　Huikang",
+				"playernamecn": "张一",
+				"playernameen": "ZHANG　Yi",
+				"teamtype": 2
+			}, {
+				"goaltime": 24,
+				"goaltype": 1,
+				"playernamecn": "阿兰",
+				"playernameen": "ALAN",
+				"teamtype": 1
+			}, {
+				"goaltime": 18,
+				"goaltype": 5,
+				"playernamecn": "梅方",
+				"playernameen": "MEI　Fang",
+				"teamtype": 1
+			}, {
+				"goaltime": 15,
+				"goaltype": 4,
+				"outplayernamecn": "张华晨",
+				"outplayernameen": "ZHANG　Huachen",
+				"playernamecn": "于海",
+				"playernameen": "YU　Hai",
+				"teamtype": 2
+			}, {
+				"goaltime": 12,
+				"goaltype": 1,
+				"playernamecn": "于汉超",
+				"playernameen": "YU　Hanchao",
+				"teamtype": 1
+			}
+		]
+	},
+	"msg": "成功",
+	"resultcode": 1000
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				float: left;
+				margin: 50px;
+				width: 202px;
+				height: 152px;
+				background: url(img/pinture_zh_qiuchang.png) no-repeat;
+				background-size: 100% 100%;
+				padding-top: 5px;
+			}
+			div ul{
+				margin-left: 1px;
+				height: 150px;
+				width: 200px;
+			}
+			div ul li{
+				float: left;
+				list-style: none;
+				width: 50px;
+				height: 50px;
+				background: rgba(34,175,54,0.8);
+				font-size: 16px;
+				text-align: center;
+				line-height: 50px;
+			}
+			p{
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				
+			</ul>
+		</div>
+		<div>
+			<ul>
+				
+			</ul>
+		</div>
+		<div>
+			<ul>
+				
+			</ul>
+		</div>
+		<p></p>
+		<div>
+			<ul>
+				
+			</ul>
+		</div>
+		<div>
+			<ul>
+				
+			</ul>
+		</div>
+		<div>
+			<ul>
+				
+			</ul>
+		</div>
+		<script type="text/javascript" src="jquery-2.2.3.min.js" ></script>
+		<script>
+			var arr1 = [0,30,13,18,13,9,13,4,0,0,0,0];
+			var lis1 = ""
+			for (var i = 0; i < arr1.length; i++) {
+				lis1 += '<li  style="background: rgba(34,175,54,'+arr1[i] / 22+');">'+ Math.round(100*arr1[i] / 100) +'%</li>';
+			}
+			$("ul").eq(0).html(lis1);
+			
+			var arr2 = [0,0,2,2,5,2,0,5,7,5,7,11];
+			var lis2 = ""
+			for (var i = 0; i < arr2.length; i++) {
+				lis2 += '<li  style="background: rgba(34,175,54,'+arr2[i] / 10+');">'+Math.round(100 * arr2[i] / 49)+'%</li>';
+			}
+			$("ul").eq(1).html(lis2);
+			
+			var arr3 = [2,0,1,0,10,4,2,6,4,3,4,4];
+			var lis3 = ""
+			for (var i = 0; i < arr3.length; i++) {
+				lis3 += '<li  style="background: rgba(34,175,54,'+arr3[i] / 10+');">'+Math.round(100 * arr3[i] / 40)+'%</li>';
+			}
+			$("ul").eq(2).html(lis3);
+			
+			var arr4 = [1,1,1,0,3,1,3,8,6,0,6,5];
+			var lis4 = ""
+			for (var i = 0; i < arr4.length; i++) {
+				lis4 += '<li  style="background: rgba(34,175,54,'+arr4[i] / 10+');">'+Math.round(100 * arr4[i] / 35)+'%</li>';
+			}
+			$("ul").eq(3).html(lis4);
+			
+			var arr5 = [1,0,2,4,8,1,4,10,9,3,6,10];
+			var lis5 = ""
+			for (var i = 0; i < arr5.length; i++) {
+				lis5 += '<li  style="background: rgba(34,175,54,'+arr5[i] / 10+');">'+Math.round(100 * arr5[i] / 58)+'%</li>';
+			}
+			$("ul").eq(4).html(lis5);
+			
+			var arr6 = [1,1,1,0,3,1,3,8,6,0,6,5];
+			var lis6 = ""
+			for (var i = 0; i < arr6.length; i++) {
+				lis6 += '<li  style="background: rgba(34,175,54,'+arr6[i] / 10+');">'+Math.round(100 * arr6[i] / 35)+'%</li>';
+			}
+			$("ul").eq(5).html(lis6);
+		</script>
+	</body>
+</html>

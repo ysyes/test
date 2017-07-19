@@ -1,0 +1,34 @@
+div.show{
+    position:relative;
+}
+.page{
+    overflow: hidden;
+    position: absolute;
+    right:15px;
+    bottom:12px;
+}
+.page li{
+    float:left;
+    width:22px;
+    height:16px;
+    border: 1px solid #0055a1;
+    border-radius:3px;
+    color:#0055a1;
+    font-size: 14px;
+    line-height:16px;
+    text-align: center;
+    margin-left:5px;
+    font-family: '微软雅黑';
+    cursor: pointer;
+}
+.page li:first-child,.page li:last-child{
+    width:51px;
+}
+.page li:first-child.disable,.page li:last-child.disable{
+    border-color:#ccc;
+    color:#ccc;
+}
+.page li.active{
+    border-color:transparent;
+    color:#333;
+}

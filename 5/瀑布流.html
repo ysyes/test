@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#box{
+				width: 100%;
+				position: relative;
+				font-size: 0;
+			}
+			img{
+				display: block;
+				width: 400px;
+				/*min-height: 200px;*/
+				position: absolute;
+				top: 0;
+				left: 0;
+				transition: all 1s;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<!--<img imd='img/0.jpg' src=""/>
+			<img imd='img/1.png' src=""/>
+			<img imd='img/1.jpg' src=""/>
+			<img imd='img/3.jpg' src=""/>
+			<img imd="img/border.png"src=""/>
+			<img imd='img/5.jpg' src=""/>
+			<img imd='img/6.jpg' src=""/>
+			<img imd='img/7.jpg' src=""/>
+			<img imd='img/2.jpg' src=""/>
+			<img imd='img/8.jpg' src=""/>
+			<img imd='img/4.jpg' src=""/>
+			<img imd='img/9.jpg' src=""/>
+			<img imd='img/10.jpg' src=""/>
+			<img imd='img/11.jpg' src=""/>
+			<img imd='img/12.jpg' src=""/>
+			<img imd='img/13.jpg' src=""/>
+			<img imd='img/14.jpg' src=""/>
+			<img imd='img/15.jpg' src=""/>
+			<img imd='img/16.jpg' src=""/>-->
+			
+			<img src='img/0.jpg'/>
+			<img src="img/1.png"/>
+			<img src='img/1.jpg'/>
+			<img src='img/2.jpg'/>
+			<img src='img/3.jpg'/>
+			<img src="img/border.png"/>
+			<img src='img/4.jpg'/>
+			<img src='img/5.jpg'/>
+			<img src='img/6.jpg'/>
+			<img src='img/7.jpg'/>
+			<img src='img/8.jpg'/>
+			<img src='img/9.jpg'/>
+			<img src='img/10.jpg'/>
+			<img src='img/11.jpg'/>
+			<img src='img/12.jpg'/>
+			<img src='img/13.jpg'/>
+			<img src='img/14.jpg'/>
+			<img src='img/15.jpg'/>
+
+			
+		</div> 
+	</body>
+	<script type="text/javascript">
+		var margin = 10;
+		var img = document.querySelectorAll("img");
+		var img_wid = img[0].offsetWidth + margin;	
+		
+		function pubu() {
+			var num = Math.floor(document.documentElement.offsetWidth/img_wid);
+			var arr = [];
+			for (var i = 0 ;i < img.length ;i++) {
+				if (i < num) {
+					img[i].style.left = (img_wid * i) + "px";
+					img[i].style.top = "0";
+					arr[i] = img[i].offsetHeight + margin;
+				} else{
+					var imgMinHeiht = Math.min.apply(null,arr);
+					var n = arr.indexOf(imgMinHeiht);
+					img[i].style.left = n * img_wid + "px";
+					img[i].style.top = imgMinHeiht + "px";
+					arr[n] += img[i].offsetHeight + margin;
+				}			
+			}			
+		}
+		window.onload = function () {
+			pubu();
+		}
+		window.onresize = function () {
+			pubu();
+		}
+		
+		
+//		document.onscroll = function () {
+//			var seeheight = document.documentElement.clientHeight;
+//			var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+//			for (var i = 0 ;i < img.length ; i++) {
+//				var imgheight = img[i].offsetTop;
+//				if (imgheight < scrolltop + seeheight - 300) {
+//					img[i].src = img[i].getAttribute("imd");
+//				}
+//			}
+//			
+//		}
+	</script>
+</html>

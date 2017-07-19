@@ -1,0 +1,101 @@
+[{
+  "team_id":"1",
+  "name":"阿尔巴尼亚",
+  "logo":"AL"
+},{
+  "team_id":"2",
+  "name":"爱尔兰",
+  "logo":"IE"
+},{
+  "team_id":"3",
+  "name":"奥地利",
+  "logo":"AT"
+},{
+  "team_id":"4",
+  "name":"北爱尔兰",
+  "logo":"NIE"
+},{
+  "team_id":"5",
+  "name":"比利时",
+  "logo":"BE"
+},{
+  "team_id":"6",
+  "name":"冰岛",
+  "logo":"IS"
+},{
+  "team_id":"7",
+  "name":"波兰",
+  "logo":"PL"
+},{
+  "team_id":"8",
+  "name":"德国",
+  "logo":"DE"
+},{
+  "team_id":"9",
+  "name":"俄罗斯",
+  "logo":"RU"
+},{
+  "team_id":"10",
+  "name":"法国",
+  "logo":"FR"
+},{
+  "team_id":"25",
+  "name":"芬兰",
+  "logo":"FI"
+},{
+  "team_id":"11",
+  "name":"捷克",
+  "logo":"CZ"
+},{
+  "team_id":"12",
+  "name":"克罗地亚",
+  "logo":"HR"
+},{
+  "team_id":"13",
+  "name":"罗马尼亚",
+  "logo":"RO"
+},{
+  "team_id":"14",
+  "name":"葡萄牙",
+  "logo":"PT"
+},{
+  "team_id":"15",
+  "name":"瑞典",
+  "logo":"SE"
+},{
+  "team_id":"16",
+  "name":"瑞士",
+  "logo":"CH"
+},{
+  "team_id":"17",
+  "name":"斯洛伐克",
+  "logo":"SK"
+},{
+  "team_id":"18",
+  "name":"土耳其",
+  "logo":"TS"
+},{
+  "team_id":"19",
+  "name":"威尔士",
+  "logo":"WAL"
+},{
+  "team_id":"20",
+  "name":"乌克兰",
+  "logo":"UA"
+},{
+  "team_id":"21",
+  "name":"西班牙",
+  "logo":"ES"
+},{
+  "team_id":"22",
+  "name":"匈牙利",
+  "logo":"HU"
+},{
+  "team_id":"23",
+  "name":"意大利",
+  "logo":"IT"
+},{
+  "team_id":"24",
+  "name":"英格兰",
+  "logo":"GBR"
+}]

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" name="viewport">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="description" content="">
+    <title>欧洲杯数据统计--活动热区</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/hot_zone.js"></script>
+    <style>
+        /*html,body{*/
+        /*overflow-x: hidden;*/
+        /*font-size: 12px;*/
+        /*}*/
+        /*.btn_submit{*/
+        /*width: 6.0rem;*/
+        /*height: 2.5rem;border-radius: 0.1rem;line-height: 2.5rem;text-align: center;font-size:0.8rem;*/
+        /*margin-left: 1rem;}*/
+        /*.btn_submit.bt1{background: rgb(0, 255, 0);}*/
+        /*.btn_submit.bt2{background: rgb(139, 58, 58);}*/
+        /*.btn_submit.bt3{background: rgb(209, 95, 238);}*/
+
+        html, body {
+            font-family: 'Microsoft Yahei';
+            font-size: 12px;
+            overflow-x: hidden;
+            margin: 0px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        li {
+            list-style-type: none;
+            float: left;
+            width: 5rem;
+            margin-left: 2rem;
+            height: 1.8rem;
+        }
+
+        div {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .borderb {
+            border-bottom: 2px solid #428bca;
+            /*color: #428bca;*/
+        }
+    </style>
+</head>
+<body>
+<!--<div>-->
+<!--<ul id="myTab">-->
+<!--<li align="center" style="width: 100%;">-->
+<!--<button name="total" class="btn_submit bt1" onclick="clickTab(this)">概况</button>-->
+<!--<button name="offense" class="btn_submit bt2" onclick="clickTab(this)">进攻</button>-->
+<!--<button name="defend" class="btn_submit bt3" onclick="clickTab(this)">防守</button>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<div id="select" style="margin-top:-1rem;width: 100%;height:2rem;background-color: #2B5E97;color:
+    whitesmoke;text-align: center;font-size: 1rem; line-height:2rem">
+    <ul>
+        <li name="total" id="total" onclick="clickTab(this)">概述</li>
+        <li name="offense" id="offense" onclick="clickTab(this)">进攻</li>
+        <li name="defend" id="defend" onclick="clickTab(this)">防守</li>
+    </ul>
+</div>
+<div id="hot_main" style="width: 100%;height:30rem;background-color: #FFFFFF;overflow-x: hidden;overflow-y: scroll;">
+    <div style="margin-top:1.2rem;" align="center">
+        <div><label id="home_team" style="font-size: 1.2rem;color: #2B5E97;"></label></div>
+        <svg version="1.1" id="home_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="324px" height="229px" viewBox="0 0 841.89 595.275" enable-background="new 0 0 841.89 595.275"
+     xml:space="preserve">
+        <rect name="草地" x="44.858" y="13.177" fill="#FFFFFF" width="757.461" height="568.099"/>
+        <rect name="草地" x="76.332" y="13.177" fill="#FFFFFF" width="53.424" height="568.099"/>
+        <rect name="草地" x="183.179" y="13.177" fill="#FFFFFF" width="53.424" height="568.099"/>
+        <rect name="草地" x="290.028" y="13.177" fill="#FFFFFF" width="53.424" height="568.099"/>
+        <rect name="草地" x="396.879" y="13.177" fill="#FFFFFF" width="53.419" height="568.099"/>
+        <rect name="草地" x="503.722" y="13.177" fill="#FFFFFF" width="53.421" height="568.099"/>
+        <rect name="草地" x="610.564" y="13.177" fill="#FFFFFF" width="53.427" height="568.099"/>
+        <rect name="草地" x="717.416" y="13.177" fill="#FFFFFF" width="53.424" height="568.099"/>
+
+        <rect name="球场区1" x="97.096" y="49.827" fill="none" stroke="#000000" stroke-width="3.0821" width="328.274" height="493.141"/>
+        <rect name="球场区2" x="425.588" y="49.827" fill="none" stroke="#000000" stroke-width="3.0821" width="328.274" height="493.141"/>
+
+        <circle name="中圈" fill="none" stroke="#000000" stroke-width="3.0821" cx="425.127" cy="296.913" r="50.683"/>
+        <circle name="开球点" fill="#000000" cx="425.126" cy="296.913" r="4.109"/>
+
+        <path name="禁区弧线1" fill="none" stroke="#000000" stroke-width="3.0821" d="M188.312,257.923c11.29,9.231,18.496,23.27,18.496,38.99
+            c0,15.718-7.203,29.753-18.488,38.982"/>
+        <rect name="禁区1" fill="none" x="96.879" y="186.983"  stroke="#000000" stroke-width="3.0821" width="91.438" height="220.885"/>
+        <rect name="球门区1" fill="none" x="96.879" y="246.569"  stroke="#000000" stroke-width="3.0821" width="30.822" height="99.657"/>
+        <rect name="球门1" fill="none" x="80.442" y="276.365"  stroke="#000000" stroke-width="3.0821" width="16.437" height="40.066"/>
+        <circle name="点球点1" fill="#000000" cx="156.467" cy="296.913" r="4.11"/>
+
+        <path name="禁区弧线2" fill="none" stroke="#000000" stroke-width="3.0821" d="M661.941,336.93c-11.291-9.232-18.496-23.27-18.496-38.99
+            c0-15.718,7.203-29.753,18.487-38.983"/>
+        <rect name="禁区2" fill="none" x="661.938" y="186.983"  stroke="#000000" stroke-width="3.0821" width="91.435" height="220.885"/>
+        <rect name="球门区2" fill="none" x="722.551" y="248.625"  stroke="#000000" stroke-width="3.0821" width="30.822" height="99.658"/>
+        <rect name="球门2" fill="none" x="753.373" y="278.421"  stroke="#000000" stroke-width="3.0821" width="16.439" height="40.066"/>
+        <circle name="点球点2" fill="#000000" cx="693.786" cy="297.939" r="4.108"/>
+
+        <path name="角球1" fill="none" stroke="#000000" stroke-width="3.0821" d="M114.858,50.58c0,9.93-8.051,17.981-17.981,17.981"/>
+        <path name="角球2" fill="none" stroke="#000000" stroke-width="3.0821" d="M96.879,525.502c9.93,0,17.979,8.052,17.979,17.981"/>
+        <path name="角球3" fill="none" stroke="#000000" stroke-width="3.0821" d="M735.59,543.483c0-9.93,8.049-17.981,17.981-17.981"/>
+        <path name="角球4" fill="none" stroke="#000000" stroke-width="3.0821" d="M753.568,68.561c-9.93,0-17.979-8.051-17.979-17.981"/>
+
+        <defs>
+            <linearGradient id="white_black1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+                <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1"/>
+            </linearGradient>
+        </defs>
+        <g>
+            <rect x="130" y="460" width="400" height="50" style="fill:url(#white_black1);stroke-width:1;fill-opacity:0.8; stroke:rgb(255,255,255)"/>
+            <polygon points="528,440 528,530 700,485" style="fill:rgb(0,0,0);fill-opacity:0.8;stroke-width:0"/>
+        </g>
+    </svg>
+    </div>
+
+    <div align="center">
+        <div><label id="away_team" style="font-size: 1.2rem;color: #2B5E97"></label></div>
+        <svg version="1.1" id="away_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="324px" height="229px" viewBox="0 0 841.89 595.275" enable-background="new 0 0 841.89 595.275"
+     xml:space="preserve">
+        <rect name="草地" x="44.858" y="13.177" fill="#FFFFFF" width="757.461" height="568.099"/>
+        <rect name="草地" x="76.332" y="13.177" fill="#FFFFFF" width="53.424" height="568.099"/>
+        <rect name="草地" x="183.179" y="13.177" fill="#FFFFFF" width="53.424" height="568.099"/>
+        <rect name="草地" x="290.028" y="13.177" fill="#FFFFFF" width="53.424" height="568.099"/>
+        <rect name="草地" x="396.879" y="13.177" fill="#FFFFFF" width="53.419" height="568.099"/>
+        <rect name="草地" x="503.722" y="13.177" fill="#FFFFFF" width="53.421" height="568.099"/>
+        <rect name="草地" x="610.564" y="13.177" fill="#FFFFFF" width="53.427" height="568.099"/>
+        <rect name="草地" x="717.416" y="13.177" fill="#FFFFFF" width="53.424" height="568.099"/>
+
+        <rect name="球场区1" x="97.096" y="49.827" fill="none" stroke="#000000" stroke-width="3.0821" width="328.274" height="493.141"/>
+        <rect name="球场区2" x="425.588" y="49.827" fill="none" stroke="#000000" stroke-width="3.0821" width="328.274" height="493.141"/>
+
+        <circle name="中圈" fill="none" stroke="#000000" stroke-width="3.0821" cx="425.127" cy="296.913" r="50.683"/>
+        <circle name="开球点" fill="#000000" cx="425.126" cy="296.913" r="4.109"/>
+
+        <path name="禁区弧线1" fill="none" stroke="#000000" stroke-width="3.0821" d="M188.312,257.923c11.29,9.231,18.496,23.27,18.496,38.99
+            c0,15.718-7.203,29.753-18.488,38.982"/>
+        <rect name="禁区1" fill="none" x="96.879" y="186.983"  stroke="#000000" stroke-width="3.0821" width="91.438" height="220.885"/>
+        <rect name="球门区1" fill="none" x="96.879" y="246.569"  stroke="#000000" stroke-width="3.0821" width="30.822" height="99.657"/>
+        <rect name="球门1" fill="none" x="80.442" y="276.365"  stroke="#000000" stroke-width="3.0821" width="16.437" height="40.066"/>
+        <circle name="点球点1" fill="#000000" cx="156.467" cy="296.913" r="4.11"/>
+
+        <path name="禁区弧线2" fill="none" stroke="#000000" stroke-width="3.0821" d="M661.941,336.93c-11.291-9.232-18.496-23.27-18.496-38.99
+            c0-15.718,7.203-29.753,18.487-38.983"/>
+        <rect name="禁区2" fill="none" x="661.938" y="186.983"  stroke="#000000" stroke-width="3.0821" width="91.435" height="220.885"/>
+        <rect name="球门区2" fill="none" x="722.551" y="248.625"  stroke="#000000" stroke-width="3.0821" width="30.822" height="99.658"/>
+        <rect name="球门2" fill="none" x="753.373" y="278.421"  stroke="#000000" stroke-width="3.0821" width="16.439" height="40.066"/>
+        <circle name="点球点2" fill="#000000" cx="693.786" cy="297.939" r="4.108"/>
+
+        <path name="角球1" fill="none" stroke="#000000" stroke-width="3.0821" d="M114.858,50.58c0,9.93-8.051,17.981-17.981,17.981"/>
+        <path name="角球2" fill="none" stroke="#000000" stroke-width="3.0821" d="M96.879,525.502c9.93,0,17.979,8.052,17.979,17.981"/>
+        <path name="角球3" fill="none" stroke="#000000" stroke-width="3.0821" d="M735.59,543.483c0-9.93,8.049-17.981,17.981-17.981"/>
+        <path name="角球4" fill="none" stroke="#000000" stroke-width="3.0821" d="M753.568,68.561c-9.93,0-17.979-8.051-17.979-17.981"/>
+        <defs>
+            <linearGradient id="white_black" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1"/>
+                <stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+            </linearGradient>
+        </defs>
+        <g>
+            <rect x="330" y="460" width="400" height="50" style="fill:url(#white_black);stroke-width:1;fill-opacity:0.8; stroke:rgb(255,255,255)"/>
+            <polygon points="332,440 332,530 132,485 " style="fill:rgb(0,0,0);fill-opacity:0.8;stroke-width:0"/>
+        </g>
+    </svg>
+    </div>
+</div>
+</body>
+</html>

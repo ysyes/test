@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>赛事分组</title>
+		<link rel="stylesheet" type="text/css" href="league.css"/>
+		<link rel="stylesheet" href="../../lib/page/page.css" />
+		<style type="text/css">
+			#box header h3 span{
+				margin-left: 10px;
+			}
+			#box header div{
+				float: right;
+				margin-right: 10px;
+			}
+			#box header select{
+				font-family: "Microsoft Yahei";
+				padding-right: 26px;
+				width:145px;
+				height:26px;
+				padding-left:10px;
+				appearance: none;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				background: url(../../img/xiala_s.png) no-repeat right;
+				margin-right: 10px;
+				border:1px solid #ccc;
+				outline:none;
+				border-right: 0;
+				color: #bbb;
+			}
+			#box table tbody tr td img{
+				display: inline-block;
+				width: 35px;
+				height: 35px;
+				border-radius: 18px;
+				border: 1px solid #EDEDED;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<header>
+				<h3>赛事<span>&gt;&gt;</span></h3>
+				<a href="leagueGroupAdd.html?leaguesid=4" class="headerAdd">
+					<span>+</span>新增分组
+				</a>
+				<div>
+					<select>
+						<option value="2016">2016赛季</option>
+						<option value="2017">2017赛季</option>
+						<option value="2018">2018赛季</option>
+						<option value="2019">2019赛季</option>
+						<option value="2020">2020赛季</option>
+						<option value="2021">2021赛季</option>
+						<option value="2022">2022赛季</option>
+						<option value="2023">2023赛季</option>
+						<option value="2024">2024赛季</option>
+						<option value="2025">2025赛季</option>
+						<option value="2026">2026赛季</option>
+					</select>
+				</div>
+			</header>
+			<table>
+				<thead>
+					<tr>
+						<th>赛季</th>
+						<th>分组ID</th>
+						<th>组名称</th>
+						<th>组代码</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!--<tr>
+						<td>2016</td>
+						<td>6</td>
+						<td>组名称</td>
+						<td>1987654</td>
+						<td><a href="leagueGroupAdd.html?leaguesid=1&groupid=2&leagueyear=2016&groupname=A组&groupcode=1234567">编辑</a><a href="groupTeam.html?groupid=2">球队</a></td>
+					</tr>
+					<tr>
+						<td>2016</td>
+						<td>组名称</td>
+						<td>1987654</td>
+						<td><a href="leagueGroupAdd.html?leaguesid=1&groupid=2&leagueyear=2016&groupname=A组&groupcode=1234567">编辑</a><a href="groupTeam.html?groupid=2">球队</a></td>
+					</tr>
+					<tr>
+						<td>2016</td>
+						<td>组名称</td>
+						<td>1987654</td>
+						<td><a href="leagueGroupAdd.html?leaguesid=1&groupid=2">编辑</a><a href="groupTeam.html?groupid=2">球队</a></td>
+					</tr>
+					<tr>
+						<td>2016</td>
+						<td>组名称</td>
+						<td>1987654</td>
+						<td><a href="leagueGroupAdd.html?leaguesid=1&groupid=2">编辑</a><a href="groupTeam.html?groupid=2">球队</a></td>
+					</tr>
+					<tr>
+						<td>2016</td>
+						<td>组名称</td>
+						<td>1987654</td>
+						<td><a href="leagueGroupAdd.html?leaguesid=1&groupid=2">编辑</a><a href="groupTeam.html?groupid=2">球队</a></td>
+					</tr>-->
+				</tbody>
+			</table>
+			<!--<div class="tcdPageCode"></div>-->
+		</div>
+		<script type="text/javascript" src="../../lib/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="../../lib/page/jquery.page.js" ></script>
+		<script type="text/javascript" src="leagueGroup.js" ></script>
+	</body>
+</html>

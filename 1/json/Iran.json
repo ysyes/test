@@ -1,0 +1,757 @@
+{
+	"teamName": "伊朗",
+	"teamImg": "img/banner_Iran.jpg",
+	"menjiang": {
+		"haji":{
+			"intro":{
+				"weizhi":"门将",
+				"headImg": "img/Iran/m1.jpg",
+				"name": "哈吉吉",
+				"height": "193",
+				"year": "28",
+				"weight": "62",
+				"nationality": "伊朗",
+				"club": "喀山红钻",
+				"time": "275"
+			},
+			"data": {
+				"pujiu": "9",
+				"chuanqiu": "8",
+				"shiqiu": "2",
+				"huangpai": "1",
+				"hongpai": "0",
+				"lingfeng": "270"
+			}
+		},
+		"beilan":{
+			"intro":{
+				"weizhi":"门将",
+				"headImg": "img/none.png",
+				"name": "贝兰万德",
+				"height": "-",
+				"year": "25",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "德黑兰石油",
+				"time": "275"
+			},
+			"data": {
+				"pujiu": "99",
+				"chuanqiu": "8",
+				"shiqiu": "2",
+				"huangpai": "1",
+				"hongpai": "0",
+				"lingfeng": "270"
+			}
+		},
+		"akebali":{
+			"intro":{
+				"weizhi":"门将",
+				"headImg": "img/Iran/m3.jpg",
+				"name": "曾诚",
+				"height": "190",
+				"year": "24",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "德黑兰赛珀",
+				"time": "275"
+			},
+			"data": {
+				"pujiu": "99",
+				"chuanqiu": "8",
+				"shiqiu": "2",
+				"huangpai": "1",
+				"hongpai": "0",
+				"lingfeng": "270"
+			}
+		}
+	},
+	"qianfeng": {
+		"ansali":{
+			"intro":{
+				"weizhi":"前锋",
+				"headImg": "img/none.png",
+				"name": "安萨里法德",
+				"height": "175",
+				"year": "27",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "奥萨苏纳",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		}, 
+		"guqiannei":{
+			"intro":{
+				"weizhi":"前锋",
+				"headImg": "img/Iran/q2.jpg",
+				"name": "古钱内贾德",
+				"height": "181",
+				"year": "30",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "查尔顿运动",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"telami":{
+			"intro":{
+				"weizhi":"前锋",
+				"headImg": "img/none.png",
+				"name": "特拉米",
+				"height": "-",
+				"year": "25",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "佩塞波利斯",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"azimeng":{
+			"intro":{
+				"weizhi":"前锋",
+				"headImg": "img/Iran/q4.jpg",
+				"name": "啊兹蒙",
+				"height": "178",
+				"year": "31",
+				"weight": "22",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "罗斯托夫",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		}
+	},
+	"qianwei": {
+		"aisatuo":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/none.png",
+				"name": "埃萨托拉希",
+				"height": "-",
+				"year": "21",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "-",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"taimulian":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/Iran/z2.jpg",
+				"name": "泰穆里安",
+				"height": "180",
+				"year": "34",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "大不里土拖拉机",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"dejiajia":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/Iran/z3.jpg",
+				"name": "德贾加",
+				"height": "181",
+				"year": "31",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "多哈阿拉伯",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"yibola":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/none.png",
+				"name": "易卜拉希米",
+				"height": "-",
+				"year": "30",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "德黑兰独立",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"masude":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/Iran/z5.jpg",
+				"name": "马苏德.邵杰",
+				"height": "184",
+				"year": "33",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "拉斯帕尔马",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"xiaojiean":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/none.png",
+				"name": "肖杰安",
+				"height": "-",
+				"year": "25",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "-",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"jiahanba":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/Iran/z7.jpg",
+				"name": "贾汉巴赫什",
+				"height": "180",
+				"year": "24",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "阿尔克马尔",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"tuolabi":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/Iran/z8.jpg",
+				"name": "托拉比",
+				"height": "-",
+				"year": "-",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "德黑兰赛珀",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"amili":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/none.png",
+				"name": "阿米里",
+				"height": "-",
+				"year": "29",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "德黑兰石油",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		}
+	},
+	"houwei": {
+		"mengtazeli":{
+			"intro":{
+				"weizhi":"后卫",
+				"headImg": "img/Iran/h1.jpg",
+				"name": "蒙塔泽里",
+				"height": "182",
+				"year": "34",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "乌姆萨拉勒",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"housaini":{
+			"intro":{
+				"weizhi":"后卫",
+				"headImg": "img/Iran/h2.jpg",
+				"name": "猴赛尼",
+				"height": "184",
+				"year": "35",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "-",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"hayisafei":{
+			"intro":{
+				"weizhi":"后卫",
+				"headImg": "img/Iran/h3.jpg",
+				"name": "哈伊萨菲",
+				"height": "176",
+				"year": "27",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "法兰克福FS",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"muhanmaidi":{
+			"intro":{
+				"weizhi":"后卫",
+				"headImg": "img/none.png",
+				"name": "穆罕迈迪",
+				"height": "-",
+				"year": "24",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "雷城拉哈汉",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"lisayang":{
+			"intro":{
+				"weizhi":"后卫",
+				"headImg": "img/none.png",
+				"name": "里萨扬",
+				"height": "-",
+				"year": "27",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "雷城拉哈汉",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"jiafuli":{
+			"intro":{
+				"weizhi":"后卫",
+				"headImg": "img/Iran/h6.jpg",
+				"name": "加富里",
+				"height": "-",
+				"year": "30",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "伊斯法罕",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"pulaji":{
+			"intro":{
+				"weizhi":"后卫",
+				"headImg": "img/Iran/h7.jpg",
+				"name": "普拉利甘吉",
+				"height": "185",
+				"year": "25",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "伊朗",
+				"club": "萨德",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		}
+	}
+}

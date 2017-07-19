@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.footballtype{
+				width: 750px;
+				height: 400px;
+				border: 1px solid green;
+				color: #000000;
+			}
+			.footballtype li{
+				width: 83px;
+				height: 400px;
+				float: left;
+				list-style: none;
+			}
+			.footballtype li div{
+				height: 366px;
+				width: 83px;
+				border-bottom: 4px solid #1c385f;
+				position: relative;
+			}
+			.footballtype li div p{
+				width: 6px;
+				height: 0;
+				background: #fdc101;
+				position: absolute;
+				bottom: 0;
+				left: 37px;
+				transition: height 2s;
+				-moz-transition: height 2s;
+				-webkit-transition: height 2s;
+				-o-transition: height 2s;
+			}
+			.footballtype li:nth-child(even) div p{
+				background: #ea0052;
+			}
+			.footballtype li div p:before{
+				content: '';
+				display: block;
+				width: 16px;
+				height: 16px;
+				border-radius: 8px;
+				background: #fdc101;
+				position: relative;
+				left: -5px;
+				bottom: 10px;
+			}
+			.footballtype li:nth-child(even) div p:before{
+				background: #ea0052;
+			}
+			.footballtype li div p span{
+				text-align: center;
+				width: 82px;
+				font-size: 24px;
+				position: absolute;
+				left: -38px;
+				top: -40px;
+			}
+			.footballtype li h3{
+				height: 30px;
+				width: 100%;
+				text-align: center;
+				line-height: 30px;
+				font-size: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="footballtype">
+			<li>
+				<div>
+					<p>
+						<span></span>
+					</p>
+				</div>
+				<h3>点球</h3>
+			</li>
+			<li>
+				<div>
+					<p>
+						<span></span>
+					</p>
+				</div>
+				<h3>定位球</h3>
+			</li>
+			<li>
+				<div>
+					<p>
+						<span></span>
+					</p>
+				</div>
+				<h3>突破</h3>
+			</li>
+			<li>
+				<div>
+					<p>
+						<span></span>
+					</p>
+				</div>
+				<h3>传中</h3>
+			</li>
+			<li>
+				<div>
+					<p>
+						<span></span>
+					</p>
+				</div>
+				<h3>直塞</h3>
+			</li>
+			<li>
+				<div>
+					<p>
+						<span></span>
+					</p>
+				</div>
+				<h3>短传</h3>
+			</li>
+			<li>
+				<div>
+					<p>
+						<span></span>
+					</p>
+				</div>
+				<h3>长传</h3>
+			</li>
+			<li>
+				<div>
+					<p>
+						<span></span>
+					</p>
+				</div>
+				<h3>补射</h3>
+			</li>
+			<li>
+				<div>
+					<p>
+						<span></span>
+					</p>
+				</div>
+				<h3>其他</h3>
+			</li>
+		</ul>
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript">
+			var arr = [66,178,55,84,50,86,21,49,51];
+			footballtypeFn(arr);
+			function footballtypeFn(arr) {
+				//找出数组最大值
+				var maxnum = arr[0];
+				for (var i in arr) {
+					if (maxnum < arr[i]) {
+						maxnum = arr[i];
+					}
+				}
+				//写入数据
+				for (var j = 0;j < $(".footballtype li div p").length; j++) {
+					$(".footballtype li div p").eq(j).css("height",arr[j] * 330 / maxnum);
+					$(".footballtype li div p").eq(j).children().html(arr[j]);	
+				}
+			}			
+		</script>
+	</body>
+</html>

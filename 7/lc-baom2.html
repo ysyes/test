@@ -1,0 +1,383 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>球队报名</title>
+		<meta name="description" content="这是一个 index 页面">
+		<meta name="keywords" content="index">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<!--<link rel="icon" type="image/png" href="assets/i/favicon.png">-->
+		<link rel="stylesheet" type="text/css" href="css/layer.css"/>
+		<link rel="stylesheet" href="assets/css/amazeui.min.css" />
+		<link rel="stylesheet" href="assets/css/admin.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my.css" />
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/amazeui.min.js"></script>
+		<script src="js/layer.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			.table-title{
+				width: 10%;
+			}
+			.table-type{
+				width: 8%;
+			}
+			.table-zhineng{
+				width: 9.5%;
+			}
+			.table-date{
+				width: 10%;
+			}
+			.table-club{
+				width: 9.5%;
+			}
+			.table-clubover{
+				width: 12.5%;
+			}
+			.table-ci{
+				width: auto;
+			}
+			
+			.player-sort-bar{
+				margin-bottom: 30px;
+			}
+			.player-sort-bar>span{
+				width: 120px;
+				float: left;
+			}
+			.player-sort-bar .wqt-form-control{
+				float: left;
+				margin: 0;
+				padding: 0;
+				display: block;
+				border: 1px solid #d5d5d5;
+				outline: 0;
+				height: 30px;
+				line-height: 30px;
+				/*font-weight: bold;*/
+				width: 100px;
+				font-size: 15px;
+			}
+		</style>
+		<link rel="stylesheet" href="assets/css/wqt.css" />
+	</head>
+
+	<body>
+		<div class="am-topbar am-topbar-inverse admin-header">
+			<div class="am-topbar-brand">
+				<strong><img src="i/logo3.png" alt="" /></strong> <small>中国青少年足球数据库</small>
+			</div>
+			<div class="am-collapse am-collapse1  am-topbar-collapse" id="topbar-collapse">
+				<a href="#" class="l-sy"></a>
+				<a href="#" class="l-link2"></a>
+				<a href="#" class="l-link3" target="_blank" style=" position: relative;
+    top: -9px;">您好，Admin</a>
+				<a href="#" class="l-link4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="am-cf admin-main">
+			<!-- sidebar start -->
+			<div class="admin-sidebar" id="admin-offcanvas">
+				<div class="am-offcanvas-bar admin-offcanvas-bar">
+					<ul class="am-list admin-sidebar-list">
+						<li class="admin-parent">
+							<a class="am-cf" href="yulan.html"><span class="am-icon-file"></span><img
+									src="images/icon_ce_shuju.png"
+									alt=""/>数据管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+							<ul class="am-list l-nav-2 admin-sidebar-sub paddingleft0 am-collapse" id="collapse-nav1">
+								<li class="nav-sub-item" id="collapse-nav1">
+									<a href="#collapse-sub-nav1" data-am-collapse="{parent: '#collapse-nav1'}" class="am-cf">
+										<span class="am-icon-check"></span> 档案管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+									</a>
+									<ul class="l-nav-3 navbar-thr paddingleft0 am-collapse" id="collapse-sub-nav1">
+										<li>
+											<a href="d-qiuyuan.html"><span>球员管理</span></a>
+										</li>
+										<li>
+											<a href="d-caipan.html"><span>裁判管理</span></a>
+										</li>
+										<li>
+											<a href="d-jiaolian.html"><span>教练管理</span></a>
+										</li>
+										<li>
+											<a href="d-julebu.html"><span>球队/俱乐部管理</span></a>
+										</li>
+										
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a href="leaguematches.html" class="am-cf"><span class="am-icon-puzzle-piece"></span> 联赛管理</a>
+								</li>
+								<li class="nav-sub-item">
+									<a href="videos.html" class="am-cf"><span class="am-icon-th"></span> 视频管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="#collapse-nav2"><span class="am-icon-table"></span><img
+									src="images/icon_ce_gongzuo.png"
+									alt=""/>工作管理</a>
+							<ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-in" id="collapse-nav2">
+								<li class="nav-sub-item" id="collapse-nav2">
+									<a href="#collapse-sub-nav2" data-am-collapse="{parent: '#collapse-nav2'}" class="am-cf">
+										<span class="am-icon-check"></span> 流程管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+									</a>
+									<ul class="l-nav-3 navbar-thr paddingleft0 am-in" id="collapse-sub-nav2">
+										<li>
+											<a class="action-function-wap active" href="#"><span>球队报名</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a href="#" class="am-cf"><span class="am-icon-puzzle-piece"></span> 信息管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="###"><span class="am-icon-table"></span><img
+									src="images/icon_ce_xitong.png"
+									alt=""/>系统管理</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_guo.png"
+									alt=""/>国少</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_guo.png"
+									alt=""/>国青</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_guo.png"
+									alt=""/>国奥</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="inform.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_tongzhi.png"
+									alt=""/>通知</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- sidebar end -->
+
+			<!-- content start -->
+			<div class="admin-content">
+				<div class="admin-content-body">
+					
+					<div class="player-data-con">
+						<div class="row">
+							<div class="data-chose-left-con w100">
+								<div class="player-sort-bar">
+									<span>球队报名</span>
+									
+									<select class="wqt-form-control">
+										<option selected>杭州绿城</option>
+										<option>广州恒大</option>
+										<option>江苏苏宁</option>
+										<option>北京国安</option>
+										<option>上海上港</option>
+									</select>
+										
+								</div>
+								<table class="am-table wqt-table-stript wqt-table-default-chose">
+									<thead>
+										<tr>
+											<th><span>杭州绿城</span></th>
+											<th><span>姓名</span></th>
+											<th><span>注册号</span></th>
+											<th><span>年龄</span></th>
+											<th><span>身高</span></th>
+											<th><span>体重</span></th>
+											<th><span>位置</span></th>
+											<th><span>籍贯</span></th>
+										</tr>
+									</thead>
+									<style type="text/css">
+										label{
+											width: 70%;
+											text-align: left;
+										}
+									</style>
+									<tbody>
+										<tr>
+											<td><span>入选</span></td>
+											<td><label><input id="1" type="checkbox"/>马晓冲</label></td>
+											<td><span>MA155855</span></td>
+											<td><span>15</span></td>
+											<td><span>150cm</span></td>
+											<td><span>40kg</span></td>
+											<td><span>前锋</span></td>
+											<td><span>辽宁省</span></td>
+										</tr>
+										<tr>
+											<td><span>入选</span></td>
+											<td><label><input id="2" type="checkbox"/>王强</label></td>
+											<td><span>MA155856</span></td>
+											<td><span>16</span></td>
+											<td><span>165cm</span></td>
+											<td><span>50kg</span></td>
+											<td><span>前卫</span></td>
+											<td><span>山东省</span></td>
+										</tr>
+										<tr>
+											<td><span>入选</span></td>
+											<td><label><input id="3" type="checkbox"/>刘勇</label></td>
+											<td><span>MA155857</span></td>
+											<td><span>13</span></td>
+											<td><span>155cm</span></td>
+											<td><span>45kg</span></td>
+											<td><span>前卫</span></td>
+											<td><span>山西省</span></td>
+										</tr>
+										<tr>
+											<td><span>入选</span></td>
+											<td><label><input id="4" type="checkbox"/>杨嘉豪</label></td>
+											<td><span>MA155858</span></td>
+											<td><span>14</span></td>
+											<td><span>145cm</span></td>
+											<td><span>49kg</span></td>
+											<td><span>后卫</span></td>
+											<td><span>北京市</span></td>
+										</tr>
+										<tr>
+											<td><span>入选</span></td>
+											<td><label><input id="5" type="checkbox"/>张婉</label></td>
+											<td><span>MA155859</span></td>
+											<td><span>16</span></td>
+											<td><span>150cm</span></td>
+											<td><span>45kg</span></td>
+											<td><span>后卫</span></td>
+											<td><span>上海市</span></td>
+										</tr>
+										<tr>
+											<td><span>入选</span></td>
+											<td><label><input id="6" type="checkbox"/>薛越</label></td>
+											<td><span>MA155860</span></td>
+											<td><span>15</span></td>
+											<td><span>165cm</span></td>
+											<td><span>40kg</span></td>
+											<td><span>守门员</span></td>
+											<td><span>辽宁省</span></td>
+										</tr>
+										<tr>
+											<td><span class="lose">落选</span></td>
+											<td><label><input id="7" type="checkbox"/>蒋婷</label></td>
+											<td><span>MA155861</span></td>
+											<td><span>16</span></td>
+											<td><span>155cm</span></td>
+											<td><span>50kg</span></td>
+											<td><span>前锋</span></td>
+											<td><span>浙江省</span></td>
+										</tr>
+										<tr>
+											<td><span>入选</span></td>
+											<td><label><input id="8" type="checkbox"/>赵强</label></td>
+											<td><span>MA155862</span></td>
+											<td><span>13</span></td>
+											<td><span>145cm</span></td>
+											<td><span>45kg</span></td>
+											<td><span>前卫</span></td>
+											<td><span>辽宁省</span></td>
+										</tr>
+										<tr>
+											<td><span>入选</span></td>
+											<td><label><input id="9" type="checkbox"/>王思</label></td>
+											<td><span>MA155863</span></td>
+											<td><span>14</span></td>
+											<td><span>150cm</span></td>
+											<td><span>49kg</span></td>
+											<td><span>前卫</span></td>
+											<td><span>浙江省</span></td>
+										</tr>
+										<tr>
+											<td><span>入选</span></td>
+											<td><label><input id="10" type="checkbox"/>陈冲</label></td>
+											<td><span>MA155864</span></td>
+											<td><span>16</span></td>
+											<td><span>165cm</span></td>
+											<td><span>45kg</span></td>
+											<td><span>后卫</span></td>
+											<td><span>辽宁省</span></td>
+										</tr>
+										<tr>
+											<td><span class="lose">落选</span></td>
+											<td><label><input id="10" type="checkbox"/>杨晨</label></td>
+											<td><span>MA155865</span></td>
+											<td><span>16</span></td>
+											<td><span>155cm</span></td>
+											<td><span>40kg</span></td>
+											<td><span>前锋</span></td>
+											<td><span>广东省</span></td>
+										</tr>
+										<tr>
+											<td><span class="lose">落选</span></td>
+											<td><label><input id="10" type="checkbox"/>史国强</label></td>
+											<td><span>MA155866</span></td>
+											<td><span>13</span></td>
+											<td><span>145cm</span></td>
+											<td><span>50kg</span></td>
+											<td><span>前卫</span></td>
+											<td><span>广东省</span></td>
+										</tr>
+										<tr>
+											<td><span class="lose">落选</span></td>
+											<td><label><input id="13" type="checkbox"/>马爱国</label></td>
+											<td><span>MA155867</span></td>
+											<td><span>14</span></td>
+											<td><span>150cm</span></td>
+											<td><span>45kg</span></td>
+											<td><span>前卫</span></td>
+											<td><span>广东省</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="btn-submit-player-box">
+							<button type="button" class="btn-submit-player">确定</button>
+						</div>
+					</div>
+
+				</div>
+				<!-- content end -->
+
+			</div>
+
+			<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+			<!--[if (gte IE 9)|!(IE)]><!-->
+			<script src="assets/js/jquery.min.js"></script>
+			<!--<![endif]-->
+			<script src="assets/js/amazeui.min.js"></script>
+			<!--<script src="js/my.js" type="text/javascript" charset="utf-8"></script>-->
+
+			<script type="text/javascript">
+			$(function(){
+				//弹出一个页面层
+				$('.btn-submit-player').on('click', function(){
+					
+					layer.open({
+					  	title: '通知提示',
+						type: 1,
+						area: ['600px', '360px'],
+						shadeClose: true, //点击遮罩关闭
+						content: '\<\div style="padding:20px;text-align: center;line-height: 238px;">集训通知已发送成功,请注意反馈信息<\/div>'
+					});
+				});
+			})
+			
+			</script>
+	</body>
+
+</html>

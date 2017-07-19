@@ -1,0 +1,1124 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>教练管理</title>
+		<meta name="description" content="这是一个 index 页面">
+		<meta name="keywords" content="index">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<!--	<link rel="icon" type="image/png" href="assets/i/favicon.png">-->
+
+		<link rel="stylesheet" href="assets/css/amazeui.min.css" />
+		<link rel="stylesheet" href="assets/css/admin.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my.css" />
+		<link rel="stylesheet" type="text/css" href="css/layer.css" />
+
+	<!--	<script src="" type="text/javascript" charset="utf-8"></script>
+		<script src="ueditor/ueditor.config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="ueditor/ueditor.all.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="ueditor/zh-cn.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/china.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="assets/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/china.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/layer.js" type="text/javascript" charset="utf-8"></script>
+
+		<style>
+			.table-title {
+				width: 10%;
+			}
+			
+			.table-type {
+				width: 8%;
+			}
+			
+			.table-zhineng {
+				width: 9.5%;
+			}
+			
+			.table-date {
+				width: 10%;
+			}
+			
+			.table-club {
+				width: 9.5%;
+			}
+			
+			.table-clubover {
+				width: 12.5%;
+			}
+			
+			.table-ci {
+				width: auto;
+			}
+			
+			.conent {
+				background: #6a6a6a;
+				padding: 80px 20px;
+				width: 1200px;
+			}
+			
+			.page-content {
+				background: #fff;
+				padding: 0 20px;
+				display: none;
+			}
+			
+			.page-header {
+				border-bottom: 1px solid #e7e7e7;
+				margin-bottom: 32px;
+				position: relative;
+			}
+			
+			.page-header h2 {
+				font: 16px/20px "microsoft yahei";
+				border-left: 3px solid #1eb135;
+				padding-left: 10px;
+				margin-bottom: 20px;
+				color: #595959;
+			}
+			
+			.page-content th,
+			td {
+				font-weight: normal;
+			}
+			
+			.page-content table thead {
+				background: #e9e9eb;
+				font: 16px/40px "microsoft yahei";
+				color: #747474;
+			}
+			
+			.page-content table td,
+			table th {
+				border: none;
+			}
+			
+			.page-content table tbody {
+				font: 16px/40px "microsoft yahei";
+				color: #4f4f4f;
+			}
+			
+			.page-content table tr td {
+				border-top: #e2e2e2 solid 1px;
+				border-bottom: #e2e2e2 solid 1px;
+				width: 50%;
+			}
+			
+			.page-content table tbody {
+				text-align: center;
+			}
+			
+			.page-content .color {
+				color: red;
+			}
+			
+			.page-content .confim {
+				text-align: center;
+				width: 70%;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				margin-bottom: 75px;
+				padding-bottom: 20px;
+			}
+			
+			.page-content .confim span {
+				display: block;
+				background: blueviolet;
+				height: 50px;
+				font: 24px/50px "microsoft yahei";
+				width: 100px;
+				margin: 0 auto;
+			}
+			
+			.page-content .form-group {
+				margin-bottom: 15px;
+				height: 30px;
+				font-family: "microsoft yahei";
+			}
+			
+			.page-content .form-grou:after,
+			.cf:after {
+				content: "";
+				height: 0;
+				clear: both;
+				display: block;
+			}
+			
+			label {
+				font-weight: normal;
+			}
+			
+			.page-content .form-horizontal .col-sm-3 {
+				float: left;
+				width: 25%;
+				line-height: 35px;
+				text-align: right;
+				font-size: 16px;
+				color: #595959;
+				font-weight: normal;
+			}
+			
+			.page-content .form-horizontal .col-sm-9 {
+				float: left;
+			}
+			
+			.form-horizontal .col-sm-9 .select-icon li {
+				float: left;
+				margin-right: 50px;
+				margin-top: 8px;
+			}
+			
+			.page-content .table-responsive table {
+				float: left;
+				margin: 10px;
+			}
+			
+			.page-content .site-1 {
+				padding: 0 10px;
+				margin: 0 auto;
+				height: 25px;
+				text-align: center;
+				font: 14px/25px "microsoft yahei";
+			}
+			
+			.site-1 i {
+				background: url(i/up.png) no-repeat;
+				width: 14px;
+				height: 7px;
+				display: inline-block;
+			}
+			
+			.site-1 a {
+				color: #cb6845;
+			}
+			
+			.hasbg {
+				background: #c65933;
+				width: 240px;
+				height: 40px;
+				font: bold 18px/40px "microsoft yahei";
+				color: #fff;
+				cursor: pointer;
+			}
+			
+			.d5d5d5 {
+				height: 35px;
+				line-height: 35px;
+			}
+			
+			.d5d5d5 input {
+				height: 35px;
+				width: 100%;
+			}
+			
+			.pop {
+				display: none;
+				position: absolute;
+				top: 50%;
+				width: 60%;
+				z-index: 9999;
+				left: 50%;
+				margin-left: -25%;
+				background: #999;
+				padding: 10px 30px;
+			}
+			
+			.pop-top {
+				text-align: center;
+			}
+			
+			.pop-item-2 table {
+				float: left;
+			}
+			
+			.text-right {
+				text-align: right;
+			}
+			
+			.col-sm-9 select {
+				height: 35px;
+				line-height: 35px;
+				font-family: "microsoft yahei";
+			}
+			
+			.yulan1 {
+				width: 106px;
+				height: 30px;
+				background: #a78479;
+				text-align: center;
+				color: #fff;
+				position: absolute;
+				right: 85px;
+				top: -10px;
+				cursor: pointer;
+			}
+			
+			.xx {
+				width: 30px;
+				height: 30px;
+				color: #333;
+				position: absolute;
+				right: 0;
+				top: -23px;
+				font-size: 30px;
+				cursor: pointer;
+			}
+			
+			.tongzhi {
+				cursor: pointer;
+			}
+		</style>
+		<link rel="stylesheet" href="assets/css/wqt.css" />
+	</head>
+
+	<body>
+
+		<div class="am-topbar am-topbar-inverse admin-header">
+			<div class="am-topbar-brand">
+				<strong><img src="i/logo3.png" alt="" /></strong> <small>中国青少年足球数据库</small>
+			</div>
+			<div class="am-collapse am-collapse1  am-topbar-collapse" id="topbar-collapse">
+				<a href="#" class="l-sy"></a>
+				<a href="#" class="l-link2"></a>
+				<a href="#" class="l-link3" target="_blank" style=" position: relative;
+    top: -9px;">您好，Admin</a>
+				<a href="#" class="l-link4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="am-cf admin-main">
+			<!-- sidebar start -->
+			<div class="admin-sidebar" id="admin-offcanvas">
+				<div class="am-offcanvas-bar admin-offcanvas-bar">
+					<ul class="am-list admin-sidebar-list" >
+						<li class="admin-parent">
+							<a class="am-cf"   href="yulan.html" ><span class="am-icon-file"></span><img
+									src="images/icon_ce_shuju.png"
+									alt=""/>数据管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+							<ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-in" id="collapse-nav1">
+								<li class="nav-sub-item" id="collapse-nav1">
+									<a href="#collapse-sub-nav1" data-am-collapse="{parent: '#collapse-nav1'}" class="am-cf">
+										<span class="am-icon-check"></span> 档案管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+									</a>
+									<ul class="l-nav-3 navbar-thr paddingleft0 am-in" id="collapse-sub-nav1">
+										<li>
+											<a href="d-qiuyuan_2.html"><span>球员管理</span></a>
+										</li>
+										<li>
+											<a href="d-caipan.html"><span>裁判管理</span></a>
+										</li>
+										<li>
+											<a class="active" href="#"><span>教练管理</span></a>
+										</li>
+										<li>
+											<a href="d-julebu.html"><span>球队/俱乐部管理</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a href="leaguematches.html" class="am-cf"><span class="am-icon-puzzle-piece"></span> 联赛管理</a>
+								</li>
+								<li class="nav-sub-item">
+									<a href="videos.html" class="am-cf"><span class="am-icon-th"></span> 视频管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="#collapse-nav2"><span class="am-icon-table"></span><img
+									src="images/icon_ce_gongzuo.png"
+									alt=""/>工作管理</a>
+							<ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-collapse" id="collapse-nav2">
+								<li class="nav-sub-item" id="collapse-nav2">
+									<a href="#collapse-sub-nav2" data-am-collapse="{parent: '#collapse-nav2'}" class="am-cf">
+										<span class="am-icon-check"></span> 流程管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+									</a>
+									<ul class="l-nav-3 navbar-thr paddingleft0 am-collapse" id="collapse-sub-nav2">
+										<li>
+											<a href="lc-baom2.html"><span>球队报名</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a href="#" class="am-cf"><span class="am-icon-puzzle-piece"></span> 信息管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="###"><span class="am-icon-table"></span><img
+									src="images/icon_ce_xitong.png"
+									alt=""/>系统管理</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_guo.png"
+									alt=""/>国少</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_guo.png"
+									alt=""/>国青</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_guo.png"
+									alt=""/>国奥</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="inform.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_tongzhi.png"
+									alt=""/>通知</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- sidebar end -->
+
+			<!-- content start -->
+			<div class="admin-content">
+				<div class="admin-content-body">
+					<div class="condition-con">
+						<div class="chosened-condition">
+							<div class="chosened-title">
+								<span>您已选择</span>
+							</div>
+							<div class="chosenedbar">
+								<div class="chosened-item">
+									<span>职能 主教练</span><i class="close">&times;</i>
+								</div>
+								<div class="chosened-item">
+									<span>球员经历 有</span><i class="close">&times;</i>
+								</div>
+								<div class="chosened-item">
+									<span>国家队经历 有</span><i class="close">&times;</i>
+								</div>
+							</div>
+							<div class="search-box">
+								<button class="wqt-btn" type="button">查询</button>
+								<div class="wqt-form-gourp">
+									<input type="text" class="wqt-form-control" />
+									<i class="close">&times;</i>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="chosen-box">
+								<div class="chosen-item">
+									<label class="chosen-item-lable">球员经历：</label>
+									<div class="wqt-form-group">
+										<select class="wqt-form-control">
+											<option>不限</option>
+											<option selected>有</option>
+											<option>无</option>
+										</select>
+									</div>
+								</div>
+								<div class="chosen-item">
+									<label class="chosen-item-lable">国家队经历：</label>
+									<div class="wqt-form-group">
+										<select class="wqt-form-control">
+											<option>不限</option>
+											<option selected>有</option>
+											<option>无</option>
+										</select>
+									</div>
+								</div>
+								<div class="chosen-item">
+									<label class="chosen-item-lable">等级：</label>
+									<div class="wqt-form-group">
+										<select class="wqt-form-control">
+											<option selected>不限</option>
+											<option>职业级</option>
+											<option>A级</option>
+											<option>B级</option>
+											<option>C级</option>
+											<option>D级</option>
+										</select>
+									</div>
+								</div>
+								<div class="chosen-item">
+									<label class="chosen-item-lable">年龄：</label>
+									<div class="wqt-form-group">
+										<select class="wqt-form-control">
+											<option selected>不限</option>
+											<option>45岁以下</option>
+											<option>35岁以下</option>
+											<option>30岁以下</option>
+										</select>
+									</div>
+								</div>
+								<div class="chosen-item">
+									<label class="chosen-item-lable">输入年龄区间：</label>
+									<div class="wqt-form-horizontal">
+										<div class="wqt-form-group">
+											<input class="wqt-form-control" type="text" />
+										</div>
+										<span class="split-line">~</span>
+										<div class="wqt-form-group">
+											<input class="wqt-form-control" type="text" />
+										</div>
+									</div>
+								</div>
+								<div class="chosen-item">
+									<label class="chosen-item-lable">职能：</label>
+									<div class="wqt-form-group">
+										<select class="wqt-form-control">
+											<option>不限</option>
+											<option selected>主教练</option>
+											<option>助理教练</option>
+											<option>体能教练</option>
+											<option>门将教练</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="player-data-con">
+						<div class="row">
+							<div class="data-chose-left-con w100">
+								<ul class="data-chose-box">
+									<div class="data-chose-item">
+										<label class="data-chose-label"><input type="checkbox"/><span>全选</span></label>
+									</div>
+									<div class="data-chose-item">
+										<button type="button" class="data-chose-btn btn-comparsion">教练对比</button>
+									</div>
+									<div class="data-chose-item">
+										<button type="button" class="data-chose-btn btn-send-message">发送通知</button>
+									</div>
+									<div class="data-chose-item">
+										<button type="button" class="data-chose-btn btn-delet">删除</button>
+									</div>
+								</ul>
+								<table class="am-table wqt-table-stript wqt-table-default-chose">
+									<thead>
+										<tr>
+											<th><span><input type="checkbox"/></span></th>
+											<th><span>编号</span></th>
+											<th><span>姓名</span></th>
+											<th><span>年龄</span></th>
+											<th><span>等级</span></th>
+											<th><span>职能</span></th>
+											<th><span>俱乐部</span></th>
+											<th><span>效力过得俱乐部</span></th>
+											<th width="155"><span>操作</span></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><span><input id="1" type="checkbox"/></span></td>
+											<td><label for="1">00000001</label></td>
+											<td><label for="1">成耀东</label></td>
+											<td><label for="1">49</label></td>
+											<td><label for="1">A级</label></td>
+											<td><label for="1">主教练</label></td>
+											<td><label for="1">上海上港</label></td>
+											<td><label for="1">山西中新</label></td>
+											<td>
+												<div class="data-toolbar">
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-watch"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-write"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-delet"></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td><span><input id="2" type="checkbox"/></span></td>
+											<td><label for="2">00000002</label></td>
+											<td><label for="2">安郁杰</label></td>
+											<td><label for="2">33</label></td>
+											<td><label for="2">A级</label></td>
+											<td><label for="2">主教练</label></td>
+											<td><label for="2">青海足协</label></td>
+											<td><label for="2">延边富德</label></td>
+											<td>
+												<div class="data-toolbar">
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-watch"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-write"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-delet"></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td><span><input id="3" type="checkbox"/></span></td>
+											<td><label for="3">00000003</label></td>
+											<td><label for="3">陈伟</label></td>
+											<td><label for="3">42</label></td>
+											<td><label for="3">A级</label></td>
+											<td><label for="3">教练员</label></td>
+											<td><label for="3">青海足协</label></td>
+											<td><label for="3">广州恒大</label></td>
+											<td>
+												<div class="data-toolbar">
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-watch"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-write"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-delet"></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td><span><input id="4" type="checkbox"/></span></td>
+											<td><label for="4">00000004</label></td>
+											<td><label for="4">王国轩</label></td>
+											<td><label for="4">37</label></td>
+											<td><label for="4">A级</label></td>
+											<td><label for="4">主教练</label></td>
+											<td><label for="4">河南建业</label></td>
+											<td><label for="4">内蒙古中优秀</label></td>
+											<td>
+												<div class="data-toolbar">
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-watch"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-write"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-delet"></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td><span><input id="5" type="checkbox"/></span></td>
+											<td><label for="5">00000005</label></td>
+											<td><label for="5">李欣</label></td>
+											<td><label for="5">40</label></td>
+											<td><label for="5">职业级</label></td>
+											<td><label for="5">主教练</label></td>
+											<td><label for="5">江苏苏宁</label></td>
+											<td><label for="5">辽宁宏远</label></td>
+											<td>
+												<div class="data-toolbar">
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-watch"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-write"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-delet"></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td><span><input id="6" type="checkbox"/></span></td>
+											<td><label for="6">00000006</label></td>
+											<td><label for="6">孙飞</label></td>
+											<td><label for="6">36</label></td>
+											<td><label for="6">B级</label></td>
+											<td><label for="6">主教练</label></td>
+											<td><label for="6">长春亚泰</label></td>
+											<td><label for="6">武汉卓尔</label></td>
+											<td>
+												<div class="data-toolbar">
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-watch"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-write"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-delet"></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td><span><input id="7" type="checkbox"/></span></td>
+											<td><label for="7">00000007</label></td>
+											<td><label for="7">赵海滨</label></td>
+											<td><label for="7">31</label></td>
+											<td><label for="7">A级</label></td>
+											<td><label for="7">主教练</label></td>
+											<td><label for="7">大连一方</label></td>
+											<td><label for="7">杭州绿城</label></td>
+											<td>
+												<div class="data-toolbar">
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-watch"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-write"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-delet"></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td><span><input id="8" type="checkbox"/></span></td>
+											<td><label for="8">00000008</label></td>
+											<td><label for="8">吴金龙</label></td>
+											<td><label for="8">37</label></td>
+											<td><label for="8">职业级</label></td>
+											<td><label for="8">主教练</label></td>
+											<td><label for="8">河南建业</label></td>
+											<td><label for="8">贵州恒丰智诚</label></td>
+											<td>
+												<div class="data-toolbar">
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-watch"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-write"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-delet"></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td><span><input id="9" type="checkbox"/></span></td>
+											<td><label for="9">00000009</label></td>
+											<td><label for="9">郑明</label></td>
+											<td><label for="9">40</label></td>
+											<td><label for="9">B级</label></td>
+											<td><label for="9">主教练</label></td>
+											<td><label for="9">江苏苏宁</label></td>
+											<td><label for="9">日本冈山绿雉</label></td>
+											<td>
+												<div class="data-toolbar">
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-watch"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-write"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-delet"></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td><span><input id="10" type="checkbox"/></span></td>
+											<td><label for="10">000000010</label></td>
+											<td><label for="10">冯勋</label></td>
+											<td><label for="10">39</label></td>
+											<td><label for="10">B级</label></td>
+											<td><label for="10">主教练</label></td>
+											<td><label for="10">长春亚泰</label></td>
+											<td><label for="10">天津权健</label></td>
+											<td>
+												<div class="data-toolbar">
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-watch"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-write"></a>
+													<a href="d-jiaolianmain.html" class="data-toolbar-btn btn-delet"></a>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="pagination-doc">
+						<div class="pagination-container">
+							<ul class="pagination-main">
+								<li class="disabled">
+									<a href="#"><span>&lt;</span>上一页</a>
+								</li>
+								<li>
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+								<li>
+									<a href="#">5</a>
+								</li>
+								<li>
+									<a href="#">6</a>
+								</li>
+								<li>
+									<a href="#">7</a>
+								</li>
+								<li class="slh">
+									<span>...</span>
+								</li>
+								<li>
+									<a href="#">下一页<span>&gt;</span></a>
+								</li>
+							</ul>
+							<ul class="pagination-right">
+								<li>
+									共<span>100</span>页 到第<input class="pagination-form-control" type="text" value="1" />页
+								</li>
+								<li>
+									<button class="pagination-btn" type="button">确定</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- content end -->
+		</div>
+
+		<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+		<div class="page-content" style="padding: 20px ;">
+			<div class="page-header">
+				<h2 class="">发公告通知</h2>
+				<div class="yulan1">通知预览</div>
+				<!--<div class="xx  layui-layer-close">
+							x
+						</div>-->
+			</div>
+
+			<form class="form-horizontal" role="form">
+				<div class=" form-group">
+					<label for="" class="col-sm-3 control-label ">类型：</label>
+					<div class="col-sm-9">
+						<select name="">
+							<option value="">集训通知</option>
+							<option value="">集训通知</option>
+							<option value="">集训通知</option>
+							<option value="">集训通知</option>
+						</select>
+
+					</div>
+					<label for="" class="col-sm-3 control-label ">选择已有通知：</label>
+					<div class="col-sm-9">
+						<select name="">
+							<option value="">集训通知</option>
+							<option value="">集训通知</option>
+							<option value="">集训通知</option>
+							<option value="">集训通知</option>
+						</select>
+
+					</div>
+				</div>
+				<div class=" form-group">
+					<label for="" class="col-sm-3 control-label ">发布时间：</label>
+					<div class="col-sm-9">
+						<ul class="select-icon">
+							<li>
+								<input type="checkbox" name="" id="1" value="" />
+								<label for="1">球队</label>
+							</li>
+							<li>
+								<input type="checkbox" name="" id="2" value="" />
+								<label for="2">裁判</label>
+							</li>
+							<li>
+								<input type="checkbox" name="" id="3" value="" />
+								<label for="3">教练</label>
+							</li>
+							<li>
+								<input type="checkbox" name="" id="4" value="" />
+								<label for="4">俱乐部</label>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+
+				<div class=" form-group">
+					<label for="" class="col-sm-3 control-label ">标题：</label>
+					<div class="col-sm-9" style="width: 65%;">
+						<p class="d5d5d5"><input type="text" name="" id="" value="" /></p>
+
+					</div>
+				</div>
+
+				<div class=" form-group">
+					<label for="" class="col-sm-3 control-label ">发布时间：</label>
+					<div class="col-sm-9" style="width: 65%;">
+						<p class="d5d5d5"><input type="text" name="" id="" value="" /></p>
+					</div>
+				</div>
+
+				<div class=" form-group">
+					<label for="" class="col-sm-3 control-label ">内容：</label>
+					<div class="col-sm-9">
+						<div style="width: 500px;">
+
+							<script id="editor" type="text/plain" style="width:700px;height:500px;"></script>
+						</div>
+
+					</div>
+				</div>
+
+			</form>
+			<div class="cf"></div>
+			<!--dasdasdasd-->
+
+			<div class="page-header">
+				<h2 class="">发公告通知</h2>
+			</div>
+			<div class="table-responsive cf">
+				<table cellspacing="0" cellpadding="0" width="48%">
+					<thead>
+						<th>工作组</th>
+						<th>姓名</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">医生</span>
+										</label>
+							</td>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">李四</span>
+										</label>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">李四</span>
+										</label>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">李四</span>
+										</label><label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">李四</span>
+										</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">医生</span>
+										</label>
+							</td>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">李四</span>
+										</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">医生</span>
+										</label>
+							</td>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">李四</span>
+										</label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table cellspacing="0" cellpadding="0" width="48%">
+					<thead>
+						<th>工作组</th>
+						<th>姓名</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">领队</span>
+										</label>
+							</td>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">张三</span>
+										</label> <label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">张三</span>
+										</label> <label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">张三</span>
+										</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">领队</span>
+										</label>
+							</td>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">张三</span>
+										</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">领队</span>
+										</label>
+							</td>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">张三</span>
+										</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">领队</span>
+										</label>
+							</td>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">张三</span>
+										</label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="site-1">
+				<p>
+					<a href="javascript:void(0)" class="togg-a">添加上期人员名单 <i></i></a>
+				</p>
+			</div>
+			<div class="table-responsive cf  table-responsive-bottom">
+				<table cellspacing="0" cellpadding="0" width="48%">
+					<thead>
+						<th>工作组</th>
+						<th>姓名></th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">技术分析</span>
+										</label>
+							</td>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">小明</span>
+										</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">装备管理</span>
+										</label>
+							</td>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">小明</span>
+										</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">装备管理</span>
+										</label>
+							</td>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">小红</span>
+										</label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table cellspacing="0" cellpadding="0" width="48%">
+					<thead>
+						<th>工作组</th>
+						<th>姓名</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">科研</span>
+										</label>
+							</td>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">小花</span>
+										</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">科研</span>
+										</label>
+							</td>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">小花</span>
+										</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">科研</span>
+										</label>
+							</td>
+							<td>
+								<label>
+											<input type="checkbox" class="ace">
+											<span class="lbl">小花</span>
+										</label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="site-1 hasbg" id="test2">
+				保存并发送通知
+			</div>
+		</div>
+		<!--[if (gte IE 9)|!(IE)]><!-->
+		<script src="assets/js/jquery.min.js"></script>
+		<!--<![endif]-->
+		<script src="assets/js/amazeui.min.js"></script>
+<!--		<script src="js/my.js" type="text/javascript" charset="utf-8"></script>-->
+
+<!--		<script type="text/javascript">
+			$(function() {
+				//弹出一个页面层
+				$('.tongzhi').on('click', function() {
+
+					layer.open({
+						title: false,
+						type: 1,
+						area: ['80%', '95%'],
+						shadeClose: true, //点击遮罩关闭
+						content: $('.page-content')
+					});
+				});
+			})
+			$(".table-responsive-bottom").hide();
+			$('.togg-a').on('click', function() {
+				$(".table-responsive-bottom").slideToggle()
+
+			})
+
+			//弹出一个页面层
+			$('#test2').on('click', function() {
+				layer.closeAll()
+				layer.open({
+					title: '通知提示',
+					type: 1,
+					area: ['600px', '360px'],
+					shadeClose: true, //点击遮罩关闭
+					content: '\<\div style="padding:20px;text-align: center;line-height: 238px;">集训通知已发送成功,请注意反馈信息<\/div>'
+				});
+			});
+			$(".xx").on('click', function() {
+
+				layer.closeAll()
+
+			})
+		</script>-->
+	</body>
+
+</html>

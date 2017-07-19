@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>同道 概况</title>
+		<meta name="description" content="这是一个 index 页面">
+		<meta name="keywords" content="index">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" href="assets/css/amazeui.min.css" />
+		<link rel="stylesheet" href="assets/css/admin.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my.css" />
+		<link rel="stylesheet" href="css/leaguemanage.css" />
+		<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/china.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="assets/css/wqt.css" />
+	</head>
+
+	<body>
+		<div class="am-topbar am-topbar-inverse admin-header">
+			<div class="am-topbar-brand">
+				<strong><img src="i/logo3.png" alt="" /></strong> <small>中国青少年足球数据库</small>
+			</div>
+			<div class="am-collapse am-collapse1  am-topbar-collapse" id="topbar-collapse">
+				<a href="#" class="l-sy"></a>
+				<a href="#" class="l-link2"></a>
+				<a href="#" class="l-link3" target="_blank" style=" position: relative;
+    top: -9px;">您好，Admin</a>
+				<a href="#" class="l-link4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="am-cf admin-main">
+			<!-- sidebar start -->
+			<div class="admin-sidebar" id="admin-offcanvas">
+				<div class="am-offcanvas-bar admin-offcanvas-bar">
+					<ul class="am-list admin-sidebar-list" id="accordion">
+						<li class="admin-parent">
+							<a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="yulan.html"><span class="am-icon-file"></span> 数据管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+							<ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-in" id="collapse-nav1">
+								<li class="nav-sub-item" id="collapse-nav1">
+									<a href="#collapse-sub-nav1" data-am-collapse="{parent: '#collapse-nav1'}" class="am-cf">
+										<span class="am-icon-check"></span> 档案管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+									</a>
+									<ul class="l-nav-3 navbar-thr paddingleft0 am-in" id="collapse-sub-nav1">
+										<li>
+											<a class="active" href="d-qiuyuan.html"><span>球员管理</span></a>
+										</li>
+										<li>
+											<a href="d-caipan.html"><span>裁判管理</span></a>
+										</li>
+										<li>
+											<a href="d-jiaolian.html"><span>教练管理</span></a>
+										</li>
+										<li>
+											<a href="d-julebu.html"><span>球队/俱乐部管理</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a href="leaguematches.html" class="am-cf"><span class="am-icon-puzzle-piece"></span> 联赛管理</a>
+								</li>
+								<li class="nav-sub-item">
+									<a href="videos.html" class="am-cf"><span class="am-icon-th"></span> 视频管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="#collapse-nav2"><span class="am-icon-table"></span>工作管理</a>
+							<ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-collapse" id="collapse-nav2">
+								<li class="nav-sub-item" id="collapse-nav2">
+									<a href="lc-baom2.html" data-am-collapse="{parent: '#collapse-nav2'}" class="am-cf">
+										<span class="am-icon-check"></span> 流程管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+									</a>
+									<ul class="l-nav-3 navbar-thr paddingleft0 am-collapse" id="collapse-sub-nav2">
+										<li>
+											<a href="lc-baom2.html"><span>球队报名</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a href="#" class="am-cf"><span class="am-icon-puzzle-piece"></span> 信息管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="###"><span class="am-icon-table"></span>系统管理</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span>国少</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span>国青</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span>国奥</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="inform.html"><span class="am-icon-table"></span>通知</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- sidebar end -->
+
+			<!-- content start -->
+			<div class="admin-content">
+				<div class="admin-content-body">
+					<div class="info-content">
+						<div class="tab-container">
+							<ul class="tab-nav tab-before-line">
+								<li class="active">
+									<a href="situation.html">概况</a>
+								</li>
+								<li>
+									<a href="match.html">比赛</a>
+								</li>
+								<li>
+									<a href="grow.html">成长</a>
+								</li>
+								<li>
+									<a href="reports.html">定性评价</a>
+								</li>
+								<li>
+									<a href="train.html">培训</a>
+								</li>
+								<li>
+									<a href="transfer.html">转会</a>
+								</li>
+								<li>
+									<a href="contract.html">合同</a>
+								</li>
+								<li>
+									<a href="guardian.html">监护人</a>
+								</li>
+							</ul>
+							<div class="tab-con">
+								<div class="player-situation clearfix">
+									<div class="left-side">
+										<div class="player-info">
+											<div class="player-info-main">
+												<div class="player-img-box">
+													<img class="player-img" src="images/dc-player-img.png" alt="浩林" />
+												</div>
+												<h3 class="name"><span class="zh-name">浩林</span><span class="en-name">Hao Lin</span></h3>
+												<span>杭州绿城</span>
+												<span>19</span>
+												<span>河南 郑州</span>
+											</div>
+											<div class="player-info-secondary">
+												<span>出生日期：1986/02/14  </span>
+												<span>身高：186cm</span>
+												<span>体重：75kg</span>
+												<span>惯用脚：右脚</span>
+												<span>位置：边前卫、边后卫</span>
+												<span>参赛证号：2153218936</span>
+												<span>登记证号：3712837123</span>
+											</div>
+											<div class="player-info-placedistribution">
+												<img class="placedistribution-image" src="images/place-fenbu.png" alt="位置分布" />
+											</div>
+										</div>
+									</div>
+									<div class="situation-body">
+										<div class="situation-content">
+											<div class="match-title clearfix">
+												<div class="col-md-6">
+													<span class="title">最新赛事</span>
+												</div>
+												<div class="col-md-6 text-right">
+													<span>赛季:2016年</span>
+												</div>
+											</div>
+											<div class="table-container">
+												<table class="table table-default table-striped text-center table-thead-center">
+													<thead>
+														<tr>
+															<th>赛事 </th>
+															<th>场次</th>
+															<th>评分</th>
+															<th>进球</th>
+															<th>助攻 </th>
+															<th>关键传球</th>
+															<th>射门</th>
+															<th>传球</th>
+															<th>盘带</th>
+															<th>抢断</th>
+															<th>拦截</th>
+															<th>犯规</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>友谊赛 </td>
+															<td>1</td>
+															<td>87</td>
+															<td>1</td>
+															<td>2</td>
+															<td>1</td>
+															<td>2</td>
+															<td>10</td>
+															<td>2</td>
+															<td>2</td>
+															<td>6</td>
+															<td>1</td>
+														</tr>
+														<tr>
+															<td>精英联赛 </td>
+															<td>4</td>
+															<td>86</td>
+															<td>2</td>
+															<td>5</td>
+															<td>2</td>
+															<td>0</td>
+															<td>15</td>
+															<td>3</td>
+															<td>2</td>
+															<td>8</td>
+															<td>2</td>
+														</tr>
+														<tr>
+															<td>全运会 </td>
+															<td>2</td>
+															<td>87</td>
+															<td>0</td>
+															<td>1</td>
+															<td>1</td>
+															<td>1</td>
+															<td>13</td>
+															<td>2</td>
+															<td>3</td>
+															<td>5</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>中国U16 </td>
+															<td>1</td>
+															<td>88</td>
+															<td>1</td>
+															<td>3</td>
+															<td>2</td>
+															<td>1</td>
+															<td>13</td>
+															<td>2</td>
+															<td>1</td>
+															<td>4</td>
+															<td>1</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="match-title">
+												<span class="title">最近比赛</span>
+											</div>
+											<div class="table-container">
+												<table class="table table-default table-striped text-center table-thead-center">
+													<thead>
+														<tr>
+															<th>对手 </th>
+															<th>比赛时间</th>
+															<th>赛事</th>
+															<th>轮数</th>
+															<th>评分 </th>
+															<th>出场时间</th>
+															<th>进球</th>
+															<th>助攻</th>
+															<th>关键传球</th>
+															<th>射门</th>
+															<th>传球</th>
+															<th>盘带</th>
+															<th>抢断</th>
+															<th>拦截</th>
+															<th>犯规</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>上海申花 </td>
+															<td>2016-08-15</td>
+															<td>精英联赛</td>
+															<td>第1轮</td>
+															<td>89</td>
+															<td>60分</td>
+															<td>1</td>
+															<td>2</td>
+															<td>2</td>
+															<td>1</td>
+															<td>25</td>
+															<td>7</td>
+															<td>3</td>
+															<td>1</td>
+															<td>1</td>
+														</tr>
+														<tr>
+															<td>北京国安 </td>
+															<td>2016-08-05</td>
+															<td>精英联赛</td>
+															<td>第2轮</td>
+															<td>87</td>
+															<td>75分</td>
+															<td>0</td>
+															<td>3</td>
+															<td>4</td>
+															<td>2</td>
+															<td>42</td>
+															<td>8</td>
+															<td>2</td>
+															<td>3</td>
+															<td>1</td>
+														</tr>
+														<tr>
+															<td>广东足协 </td>
+															<td>2016-08-01</td>
+															<td>全运会</td>
+															<td>第1轮</td>
+															<td>83</td>
+															<td>90分</td>
+															<td>0</td>
+															<td>3</td>
+															<td>2</td>
+															<td>3</td>
+															<td>34</td>
+															<td>7</td>
+															<td>2</td>
+															<td>2</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>四川足协 </td>
+															<td>2016-07-25</td>
+															<td>全运会</td>
+															<td>第1轮</td>
+															<td>88</td>
+															<td>90分</td>
+															<td>1</td>
+															<td>3</td>
+															<td>2</td>
+															<td>0</td>
+															<td>34</td>
+															<td>10</td>
+															<td>2</td>
+															<td>2</td>
+															<td>1</td>
+														</tr>
+															<tr>
+															<td>广州恒大 </td>
+															<td>2016-07-25</td>
+															<td>精英联赛</td>
+															<td>第1轮</td>
+															<td>85</td>
+															<td>90分</td>
+															<td>0</td>
+															<td>1</td>
+															<td>2</td>
+															<td>4</td>
+															<td>34</td>
+															<td>12</td>
+															<td>1</td>
+															<td>3</td>
+															<td>0</td>
+														</tr>
+															<tr>
+															<td>成都钱宝 </td>
+															<td>2016-07-25</td>
+															<td>精英联赛</td>
+															<td>第1轮</td>
+															<td>87</td>
+															<td>90分</td>
+															<td>0</td>
+															<td>2</td>
+															<td>3</td>
+															<td>1</td>
+															<td>34</td>
+															<td>15</td>
+															<td>3</td>
+															<td>1</td>
+															<td>0</td>
+														</tr>
+															<tr>
+															<td>上海申花 </td>
+															<td>2016-07-25</td>
+															<td>精英联赛</td>
+															<td>第1轮</td>
+															<td>90</td>
+															<td>90分</td>
+															<td>1</td>
+															<td>3</td>
+															<td>2</td>
+															<td>3</td>
+															<td>34</td>
+															<td>12</td>
+															<td>2</td>
+															<td>3</td>
+															<td>1</td>
+														</tr>
+															<tr>
+															<td>四川足协 </td>
+															<td>2016-07-25</td>
+															<td>全运会</td>
+															<td>第1轮</td>
+															<td>83</td>
+															<td>90分</td>
+															<td>0</td>
+															<td>4</td>
+															<td>1</td>
+															<td>3</td>
+															<td>34</td>
+															<td>16</td>
+															<td>2</td>
+															<td>7</td>
+															<td>2</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>积分榜</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <script type="text/javascript" src="../../lib/WdatePicker.js" ></script>
+    <link rel="stylesheet" href="scjfbstyle.css"/>
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <p>积分榜</p>
+            <div></div>
+        </div>
+        <div class="show">
+            <ul class="title">
+                <li class="active">上传积分榜</li>
+                <li></li>
+            </ul>
+            <div class="content">
+                <form enctype="multipart/form-data" method="post" action='../../v1/score'>
+                    <div class="name">
+                        <p>赛事年份<span> *</span></p>
+                        <input class="Wdate default date" type="text" name="leagueyear" placeholder="赛事年份" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy'})"/>
+                    </div>
+                    <div class="upload">
+                        <p>上传积分<span> *</span></p>
+                        <div>
+                            <input class="default" type="file" name="scoreexcel" accept='application/vnd.ms-excel'/>
+                        </div>
+                    </div>
+               <!--  <div class="view">
+                    <p>预览</p>
+                    <textarea name="view"></textarea>
+                </div> -->
+                </form>
+                <div class="button">
+                    <input type="button" class="submit" value='提交'>
+                    <a href="jfb.html"><button class="button back">返回</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="scjfb.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑","microsoft yahei";
+}
+a,button,input{-webkit-tap-highlight-color:rgba(255,255,255,0);}
+a{
+	text-decoration: none;
+}
+html{
+	position: relative;
+}
+html,body{
+	width: 100%;
+	min-height: 100%;
+	color: white;
+}
+body{
+	background: -moz-linear-gradient(top,  #e77338 0%,#c32c2c 50%, #000000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e77338), color-stop(50%,#c32c2c), color-stop(100%,#000000));
+    background: -webkit-linear-gradient(top,  #e77338 0%,#c32c2c 50%,#000000 100%);
+    background: -o-linear-gradient(top,  #e77338 0%,#c32c2c 50%,#000000 100%);
+    background: -ms-linear-gradient(top,  #e77338 0%,#c32c2c 50%,#000000 100%);
+    background: linear-gradient(to bottom,  #e77338 0%,#c32c2c 50%,#000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e77338', endColorstr='#000000',GradientType=0 );
+}
+ul{
+	padding-bottom: 60px;
+}
+ul,li{
+	width: 100%;
+}
+header{
+	height:14px;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 5px;
+	line-height: 14px;
+}
+header p{
+	text-align: center;
+	font-size: 14px;
+}
+.indexScore{
+	height: 110px;
+	width: 100%;
+}
+.indexScore div{
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+.indexScore div.left,.indexScore div.right{
+	width: 35%;
+}
+.indexScore div.left img,.indexScore div.right img{
+	width: 45px;
+	min-height: 45px;
+	margin-top: 25px;
+}
+.indexScore div.left p,.indexScore div.right p{
+	color: rgba(255,255,255,0.85);
+	font-size: 14px;
+}
+.indexScore div.center{
+	width: 30%;
+}
+.indexScore div.center time{
+	color: rgba(255,255,255,0.6);
+	min-height: 16px;
+	font-size: 12px;
+}
+.indexScore div.center p{
+	width: 80%;
+	max-width: 300px;
+	height: 45px;
+	line-height: 45px;
+	margin: 0 auto;
+	margin-top: 3px;
+	margin-bottom: 2px;
+	font-size: 25px;
+	background: url(../img/shape_01.png) no-repeat;
+	background-size:100% 100% ;
+}
+.indexScore div.center p span{
+	padding: 0 5px;
+}
+.indexScore div.center i{
+	color: rgba(255,255,255,0.6);
+	height: 12px;
+	line-height: 12px;
+	font-size: 12px;
+	font-style: normal;
+}
+.detail{
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 15px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;	
+	-webkit-justify-content: center;
+	border-bottom: 1px solid rgba(0,0,0,0.34);
+}
+.detail a{
+	display: block;
+	width: 30%;
+	height: 30px;
+	margin: 0 10px;
+	color: white;
+	border-radius: 5px;
+	border: 1px solid #FFFFFF;
+	text-align: center;
+	line-height: 30px;
+	font-size: 17px;
+}
+footer{
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+	text-align: center;
+}
+footer p{
+	font-size: 12px;
+	height: 15px;
+	line-height: 15px;
+}
+footer img{
+	width:20px;
+}
+#hint{
+	display: none;
+	width: 90px;
+	padding: 0 10px;
+	height: 40px;
+	border-radius: 5px;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	font-size: 15px;
+	position: fixed;
+	left: calc(50% - 45px);
+	top: calc(50% - 30px);
+	transition: all 0.6s;
+	opacity: 0;
+}

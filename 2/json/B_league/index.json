@@ -1,0 +1,565 @@
+[
+  {
+    "group": "第10轮",
+    "games": [
+      {
+        "id": 0,
+        "gameTime": "2016-06-08 03:00",
+        "homeTeam": "南通支云",
+        "awayTeam": "黑龙江火山鸣泉",
+        "turn": 0,
+        "status": 0
+      },
+      {
+        "id": 1,
+        "gameTime": "2016-06-25 15:30",
+        "homeTeam": "宁夏山屿海",
+        "awayTeam": "沈阳城市建设",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 2,
+        "gameTime": "2016-06-25 16:30",
+        "homeTeam": "海口博盈海汉",
+        "awayTeam": "成都钱宝",
+        "turn": 0,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "第11轮",
+    "games": [
+      {
+        "id": 3,
+        "gameTime": "2016-07-02 16:00",
+        "homeTeam": "火车头青建圆方",
+        "awayTeam": "江苏盐城鼎立",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 4,
+        "gameTime": "2016-07-02 19:00",
+        "homeTeam": "内蒙古包头鹿城",
+        "awayTeam": "宁夏山屿海",
+        "turn": 0,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "第12轮",
+    "games": [
+      {
+        "id": 5,
+        "gameTime": "2016-07-10 15:30",
+        "homeTeam": "黑龙江火山鸣泉",
+        "awayTeam": "河北精英传媒",
+        "turn": 0,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "第13轮",
+    "games": [
+      {
+        "id": 6,
+        "gameTime": "2016-07-16 15:30",
+        "homeTeam": "沈阳城市建设",
+        "awayTeam": "黑龙江火山鸣泉",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 7,
+        "gameTime": "2016-07-17 15:30",
+        "homeTeam": "宁夏山屿海",
+        "awayTeam": "江苏盐城鼎立",
+        "turn": 0,
+        "status": 1
+      },{
+        "id": 13,
+        "gameTime": "2016-07-16 16:00",
+        "homeTeam": "火车头青建圆方",
+        "awayTeam": "保定容大",
+        "turn": 0,
+        "status": 1
+      },{
+        "id": 8,
+        "gameTime": "2016-07-16 16:30",
+        "homeTeam": "海口博盈海汉",
+        "awayTeam": "梅县铁汉生态",
+        "turn": 0,
+        "status": 1
+      },{
+        "id": 14,
+        "gameTime": "2016-07-16 19:00",
+        "homeTeam": "苏州东吴",
+        "awayTeam": "成都钱宝",
+        "turn": 0,
+        "status": 1
+      },{
+        "id": 12,
+        "gameTime": "2016-07-16 19:00",
+        "homeTeam": "内蒙古包头鹿城",
+        "awayTeam": "沈阳东进",
+        "turn": 0,
+        "status": 1
+      },{
+        "id": 9,
+        "gameTime": "2016-07-16 19:40",
+        "homeTeam": "江西联盛",
+        "awayTeam": "上海聚运动",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 10,
+        "gameTime": "2016-07-17 19:00",
+        "homeTeam": "深圳人人",
+        "awayTeam": "南通支云",
+        "turn": 0,
+        "status": 1
+      },{
+        "id": 11,
+        "gameTime": "2016-07-17 16:00",
+        "homeTeam": "四川安纳普尔那",
+        "awayTeam": "丽江飞虎",
+        "turn": 0,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "第14轮",
+    "games": [
+      {
+        "id": 15,
+        "gameTime": "2016-07-23 15:30",
+        "homeTeam": "沈阳东进",
+        "awayTeam": "火车头青建圆方",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 16,
+        "gameTime": "2016-07-23 15:30",
+        "homeTeam": "盐城大丰",
+        "awayTeam": "河北精英传媒",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 17,
+        "gameTime": "2016-07-23 15:30",
+        "homeTeam": "保定容大",
+        "awayTeam": "宁夏山屿海",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 18,
+        "gameTime": "2016-07-23 16:00",
+        "homeTeam": "上海聚运动",
+        "awayTeam": "苏州东吴",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 19,
+        "gameTime": "2016-07-23 16:00",
+        "homeTeam": "梅县铁汉生态",
+        "awayTeam": "丽江飞虎",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 20,
+        "gameTime": "2016-07-23 16:00",
+        "homeTeam": "成都钱宝",
+        "awayTeam": "深圳人人",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 21,
+        "gameTime": "2016-07-23 16:30",
+        "homeTeam": "海口博盈海汉",
+        "awayTeam": "江西联盛",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 22,
+        "gameTime": "2016-07-23 19:35",
+        "homeTeam": "南通支云",
+        "awayTeam": "四川安纳普尔那",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 23,
+        "gameTime": "2016-07-24 15:30",
+        "homeTeam": "黑龙江火山鸣泉",
+        "awayTeam": "内蒙古包头鹿城",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 24,
+        "gameTime": "2016-07-24 16:00",
+        "homeTeam": "北京理工",
+        "awayTeam": "沈阳城市建设",
+        "turn": 0,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "第15轮",
+    "games": [
+      {
+        "id": 25,
+        "gameTime": "2016-07-30 15:30",
+        "homeTeam": "沈阳城市建设",
+        "awayTeam": "河北精英传媒",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 26,
+        "gameTime": "2016-07-30 16:00",
+        "homeTeam": "四川安纳普尔那",
+        "awayTeam": "成都钱宝",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 27,
+        "gameTime": "2016-07-30 16:00",
+        "homeTeam": "苏州东吴",
+        "awayTeam": "江西联盛",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 28,
+        "gameTime": "2016-07-30 16:00",
+        "homeTeam": "火车头青建圆方",
+        "awayTeam": "黑龙江火山鸣泉",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 29,
+        "gameTime": "2016-07-30 16:00",
+        "homeTeam": "保定容大",
+        "awayTeam": "盐城大丰",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 30,
+        "gameTime": "2016-07-30 16:00",
+        "homeTeam": "梅县铁汉生态",
+        "awayTeam": "南通支云",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 31,
+        "gameTime": "2016-07-30 16:00",
+        "homeTeam": "丽江飞虎",
+        "awayTeam": "海口博盈海汉",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 32,
+        "gameTime": "2016-07-30 19:00",
+        "homeTeam": "深圳人人",
+        "awayTeam": "上海聚运动",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 33,
+        "gameTime": "2016-07-30 19:00",
+        "homeTeam": "内蒙古包头鹿城",
+        "awayTeam": "北京理工",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 34,
+        "gameTime": "2016-07-31 15:30",
+        "homeTeam": "宁夏山屿海",
+        "awayTeam": "沈阳东进",
+        "turn": 0,
+        "status": 1
+      }
+      
+    ]
+  },
+  {
+    "group": "第16轮",
+    "games": [
+      {
+        "id": 35,
+        "gameTime": "2016-08-13 15:30",
+        "homeTeam": "黑龙江火山鸣泉",
+        "awayTeam": "宁夏山屿海",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 36,
+        "gameTime": "2016-08-13 15:30",
+        "homeTeam": "沈阳东进",
+        "awayTeam": "保定容大",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 37,
+        "gameTime": "2016-08-13 15:30",
+        "homeTeam": "盐城大丰",
+        "awayTeam": "沈阳城市建设",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 38,
+        "gameTime": "2016-08-13 16:00",
+        "homeTeam": "河北精英传媒",
+        "awayTeam": "内蒙古包头鹿城",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 39,
+        "gameTime": "2016-08-13 16:00",
+        "homeTeam": "北京理工",
+        "awayTeam": "火车头青建圆方",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 40,
+        "gameTime": "2016-08-13 16:00",
+        "homeTeam": "成都钱宝",
+        "awayTeam": "梅县铁汉生态",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 41,
+        "gameTime": "2016-08-13 16:00",
+        "homeTeam": "上海聚运动",
+        "awayTeam": "四川安纳普尔那",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 42,
+        "gameTime": "2016-08-13 16:30",
+        "homeTeam": "海口博盈海汉",
+        "awayTeam": "苏州东吴",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 43,
+        "gameTime": "2016-08-13 19:35",
+        "homeTeam": "南通支云",
+        "awayTeam": "丽江飞虎",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 44,
+        "gameTime": "2016-08-13 19:40",
+        "homeTeam": "江西联盛",
+        "awayTeam": "深圳人人",
+        "turn": 0,
+        "status": 1
+      }
+      
+    ]
+  },
+  {
+    "group": "第17轮",
+    "games": [
+      {
+        "id": 45,
+        "gameTime": "2016-08-20 16:00",
+        "homeTeam": "内蒙古包头鹿城",
+        "awayTeam": "沈阳城市建设",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 46,
+        "gameTime": "2016-08-20 16:00",
+        "homeTeam": "南通支云",
+        "awayTeam": "海口博盈海汉",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 47,
+        "gameTime": "2016-08-20 16:00",
+        "homeTeam": "丽江飞虎",
+        "awayTeam": "成都钱宝",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 48,
+        "gameTime": "2016-08-20 16:00",
+        "homeTeam": "梅县铁汉生态",
+        "awayTeam": "上海聚运动",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 49,
+        "gameTime": "2016-08-20 16:00",
+        "homeTeam": "深圳人人",
+        "awayTeam": "苏州东吴",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 50,
+        "gameTime": "2016-08-20 16:00",
+        "homeTeam": "四川安纳普尔那",
+        "awayTeam": "江西联盛",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 51,
+        "gameTime": "2016-08-20 16:00",
+        "homeTeam": "火车头青建圆方",
+        "awayTeam": "河北精英传媒",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 52,
+        "gameTime": "2016-08-20 16:00",
+        "homeTeam": "宁夏山屿海",
+        "awayTeam": "北京理工",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 53,
+        "gameTime": "2016-08-20 16:00",
+        "homeTeam": "保定容大",
+        "awayTeam": "黑龙江火山鸣泉",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 54,
+        "gameTime": "2016-08-20 16:00",
+        "homeTeam": "沈阳东进",
+        "awayTeam": "盐城大丰",
+        "turn": 0,
+        "status": 1
+      }
+      
+    ]
+  },
+  {
+    "group": "第18轮",
+    "games": [
+      {
+        "id": 55,
+        "gameTime": "2016-08-27 16:00",
+        "homeTeam": "黑龙江火山鸣泉",
+        "awayTeam": "沈阳东进",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 56,
+        "gameTime": "2016-08-27 16:00",
+        "homeTeam": "海口博盈海汉",
+        "awayTeam": "深圳人人",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 57,
+        "gameTime": "2016-08-27 16:00",
+        "homeTeam": "成都钱宝",
+        "awayTeam": "南通支云",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 58,
+        "gameTime": "2016-08-27 16:00",
+        "homeTeam": "江西联盛",
+        "awayTeam": "梅县铁汉生态",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 59,
+        "gameTime": "2016-08-27 16:00",
+        "homeTeam": "苏州东吴",
+        "awayTeam": "四川安纳普尔那",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 60,
+        "gameTime": "2016-08-27 16:00",
+        "homeTeam": "上海聚运动",
+        "awayTeam": "丽江飞虎",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 61,
+        "gameTime": "2016-08-27 16:00",
+        "homeTeam": "沈阳城市建设",
+        "awayTeam": "火车头青建圆方",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 62,
+        "gameTime": "2016-08-27 16:00",
+        "homeTeam": "河北精英传媒",
+        "awayTeam": "宁夏山屿海",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 63,
+        "gameTime": "2016-08-27 16:00",
+        "homeTeam": "北京理工",
+        "awayTeam": "保定容大",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 64,
+        "gameTime": "2016-08-27 16:00",
+        "homeTeam": "盐城大丰",
+        "awayTeam": "内蒙古包头鹿城",
+        "turn": 0,
+        "status": 1
+      }
+      
+    ]
+  }
+]

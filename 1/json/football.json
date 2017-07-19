@@ -1,0 +1,168 @@
+{
+	"teamName": "中国1",
+	"teamImg": "",
+	"menjiang": [
+		{
+			"name": "武磊",
+			"height": "172",
+			"year": "24",
+			"weight": "62",
+			"sex": "男",
+			"nationality": "中国",
+			"club": "上海上港",
+			"data": {
+				"pujiu": "24",
+				"chuanqiu": "8",
+				"shiqiu": "2",
+				"huangpai": "1",
+				"hongpai": "0",
+				"lingfeng": "270"
+			}
+		}, {
+			"name": "武磊2",
+			"height": "172",
+			"year": "24",
+			"weight": "62",
+			"sex": "男",
+			"nationality": "中国",
+			"club": "上海上港",
+			"data": {
+				"pujiu": "99",
+				"chuanqiu": "8",
+				"shiqiu": "2",
+				"huangpai": "1",
+				"hongpai": "0",
+				"lingfeng": "270"
+			}
+		}
+	],
+	"qianfeng": [
+		{
+			"name": "武磊",
+			"height": "172",
+			"year": "24",
+			"weight": "62",
+			"sex": "男",
+			"nationality": "中国",
+			"club": "上海上港",
+			"time": "275",
+			"data": [
+				{
+					"jinqiu": "8",
+					"weixie": "8",
+					"shemen": "22",
+					"chuanqiu": "22",
+					"shezheng": "12",
+					"tupo": "12",
+					"zhugong": "5",
+					"beiqinfan": "11"
+				}, {
+					"qiangduan": "8",
+					"fangui": "5",
+					"jiewei": "5",
+					"huangpai": "2",
+					"hongpai": "0",
+					"fengdu": "2",
+					"lanjie": "2",
+					"kongzhong": "1"
+				}
+			]
+		}, {
+			"name": "武磊",
+			"height": "172",
+			"year": "24",
+			"weight": "62",
+			"sex": "男",
+			"nationality": "中国",
+			"club": "上海上港",
+			"time": "275",
+			"data": [
+				{
+					"jinqiu": "8",
+					"weixie": "8",
+					"shemen": "22",
+					"chuanqiu": "22",
+					"shezheng": "12",
+					"tupo": "12",
+					"zhugong": "5",
+					"beiqinfan": "11"
+				}, {
+					"qiangduan": "8",
+					"fangui": "5",
+					"jiewei": "5",
+					"huangpai": "2",
+					"hongpai": "0",
+					"fengdu": "2",
+					"lanjie": "2",
+					"kongzhong": "1"
+				}
+			]
+		}
+	],
+	"zhongfeng": [
+		{
+			"name": "武磊",
+			"height": "172",
+			"year": "24",
+			"weight": "62",
+			"sex": "男",
+			"nationality": "中国",
+			"club": "上海上港",
+			"time": "275",
+			"data": [
+				{
+					"jinqiu": "8",
+					"weixie": "8",
+					"shemen": "22",
+					"chuanqiu": "22",
+					"shezheng": "12",
+					"tupo": "12",
+					"zhugong": "5",
+					"beiqinfan": "11"
+				}, {
+					"qiangduan": "8",
+					"fangui": "5",
+					"jiewei": "5",
+					"huangpai": "2",
+					"hongpai": "0",
+					"fengdu": "2",
+					"lanjie": "2",
+					"kongzhong": "1"
+				}
+			]
+		}
+	],
+	"houwei": [
+		{
+			"name": "武磊后卫",
+			"height": "172",
+			"year": "24",
+			"weight": "62",
+			"sex": "男",
+			"nationality": "中国",
+			"club": "上海上港",
+			"time": "275",
+			"data": [
+				{
+					"jinqiu": "8",
+					"weixie": "8",
+					"shemen": "22",
+					"chuanqiu": "22",
+					"shezheng": "12",
+					"tupo": "12",
+					"zhugong": "5",
+					"beiqinfan": "11"
+				}, {
+					"qiangduan": "8",
+					"fangui": "5",
+					"jiewei": "5",
+					"huangpai": "2",
+					"hongpai": "0",
+					"fengdu": "2",
+					"lanjie": "2",
+					"kongzhong": "1"
+				}
+			]
+		}
+	]
+}

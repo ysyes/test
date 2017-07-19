@@ -1,0 +1,61 @@
+
+ul.title li:last-child{
+    width:calc(100% - 110px);
+    padding:0;
+}
+div.content{
+    padding:30px 20px;
+    overflow: hidden;
+}
+div.content form>div p{
+    font-size: 18px;
+    color:#333;
+}
+div.content form>div p span{
+    font-size: 14px;
+    color:#999;
+    margin-left:15px;
+}
+div.content form>div input{
+    width:482px;
+    height:50px;
+    margin-top:15px;
+    font-size:16px;
+}
+div.content form>div textarea{
+    font-size: 16px;
+    font-family: 'Î¢ÈíÑÅºÚ';
+}
+div.content form>div.text p{
+    margin-top:30px;
+    margin-bottom:15px;
+}
+div.content form>div.text textarea{
+	height:400px;
+	width:100%;
+	resize:none;
+	border:1px solid #ccc;
+}
+div.content form>div.text .trumbowyg-box{
+    width:100%;
+}
+div.content form>div.date{
+    margin-top:30px;
+    margin-bottom:15px;
+    overflow:hidden;
+}
+div.content form>div.date>div{
+    float:left;
+}
+div.content form>div.date input{
+    width:384px;
+    border:1px solid #ccc;
+}
+div.content form>div.date>div:nth-child(2){
+    margin-left:106px;
+}
+div.content div.button{
+    margin-top:30px;
+    width:100%;
+    text-align: center;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>合作伙伴赛事新增</title>
+		<link rel="stylesheet" type="text/css" href="../league/leagueAdd.css"/>
+		<script src="../../lib/WdatePicker.js"></script>
+		<style type="text/css">
+			#box header{
+				background: url(../../img/icon_hezuo_red.png) no-repeat 0 3px;
+			}
+			#box header h3 span{
+				margin-left: 10px;
+			}
+			#box header h3 a {
+			    font-size: 18px;
+			    color: #e3442a;
+			}
+			#box table tbody tr td a{
+				margin: 0 5px;
+			}
+			.main ul li{
+				width:100%;
+			}
+			.main ul li div{
+			    overflow: hidden;
+			    float: left;
+			    width: 400px;
+			}
+			.main ul li div span{
+				color: #e3442a;
+			    font-size: 20px;
+			    display:inline-block;
+			    margin-top: 6px;
+			    margin-left: 10px;
+			    width:10px;
+			    height:10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<header>
+				<h3><a href="partner.html">合作伙伴</a><span>&gt;&gt;</span>赛事新增</h3>
+			</header>
+			<div class="main">
+				<form>
+					<ul>
+						<li>
+							<div>
+								<p>赛季</p>
+								<select name="leagueyear">
+									<option value='2016'>2016赛季</option>
+									<option value='2017'>2017赛季</option>
+									<option value='2018'>2018赛季</option>
+									<option value='2019'>2019赛季</option>
+									<option value='2020'>2020赛季</option>
+									<option value='2021'>2021赛季</option>
+									<option value='2022'>2022赛季</option>
+									<option value='2023'>2023赛季</option>
+									<option value='2024'>2024赛季</option>
+									<option value='2025'>2025赛季</option>
+									<option value='2026'>2026赛季</option>
+								</select>
+								<span>*</span>
+							</div>
+							<div>
+								<p>赛事名称</p>
+								<select name="leagueid">
+								</select><span>*</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<p>分组</p>
+								<select name="groupid">
+								</select><span>*</span>
+							</div>
+							<div>
+								<p>球队名称</p>
+								<select name="teamid">
+								</select><span>*</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<p>开始时间</p>
+								<input class="Wdate default date" type="text" name="starttime" placeholder="开始时间" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd'})"/><span>*</span>
+							</div>
+							<div>
+								<p>结束时间</p>
+								<input class="Wdate default date" type="text" name="endtime" placeholder="结束时间" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd'})"/><span>*</span>
+							</div>
+						</li>
+					</ul>
+				</form>
+
+				<div class="button">
+					<button class="submit">提交</button>
+					<a href="partnerMatch.html"><button class="cancel">返回</button></a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../lib/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="partnerMatchAdd.js" ></script>
+	</body>
+</html>

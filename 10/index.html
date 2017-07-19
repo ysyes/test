@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+		<meta http-equiv="Expires" content="0">
+	    <meta http-equiv="Pragma" content="no-cache">
+	    <meta http-equiv="Cache-control" content="no-cache">
+	    <meta http-equiv="Cache" content="no-cache">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta content="telephone=no" name="format-detection">
+		<title>黄博文个人数据</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<style type="text/css">
+			#loading{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				z-index: 10;
+				background: -moz-linear-gradient(top,  #282848 0%, #0b5f8f 100%);
+			    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#282848), color-stop(100%,#0b5f8f));
+			    background: -webkit-linear-gradient(top,  #282848 0%,#0b5f8f 100%);
+			    background: -o-linear-gradient(top,  #282848 0%,#0b5f8f 100%);
+			    background: -ms-linear-gradient(top,  #282848 0%,#0b5f8f 100%);
+			    background: linear-gradient(to bottom,  #282848 0%,#0b5f8f 100%);
+			    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282848', endColorstr='#0b5f8f',GradientType=0 );
+			}
+			#loading div{
+				width: 3rem;
+				height: 3rem;
+				position: relative;
+				top: calc(50% - 2rem);
+				left: calc(50% - 1.5rem);
+				line-height: 3rem;
+				font-size: 0.3rem;
+				color: #7dc8f8;
+			}
+			#loading div p{
+				margin-left: 0.88rem;
+			}
+			#loading div img{
+				width: 3rem;
+				height: 3rem;
+				position: absolute;
+				top: 0;
+				left: 0;
+				animation: loading 2s linear infinite;
+				-moz-animation: loading 2s linear infinite;
+				-webkit-animation: loading 2s linear infinite;
+				-o-animation: loading 2s linear infinite;
+			}
+			@keyframes loading{
+				0%   {-webkit-transform: rotateY(0deg) rotateZ(0deg)}
+				100% {-webkit-transform: rotateY(360deg) rotateZ(360deg)}
+			}
+			@-webkit-keyframes loading{
+				0%   {-webkit-transform: rotateY(0deg) rotateZ(0deg)}
+				100% {-webkit-transform: rotateY(360deg) rotateZ(360deg)}
+			}
+			@-moz-keyframes loading{
+				0%   {-webkit-transform: rotateY(0deg) rotateZ(0deg)}
+				100% {-webkit-transform: rotateY(360deg) rotateZ(360deg)}
+			}
+			@-o-keyframes loading{
+				0%   {-webkit-transform: rotateY(0deg) rotateZ(0deg)}
+				100% {-webkit-transform: rotateY(360deg) rotateZ(360deg)}
+			}
+			.swiper-container {
+				width: 10.8rem;
+				height: 100%;
+				overflow: hidden;
+				background:#282848 url(img/back.png) no-repeat 50% 1rem;
+				background-size:3.5rem;
+			}
+			.swiper-wrapper {
+				-webkit-perspective: 10.8rem;
+				-moz-perspective: 10.8rem;
+				-ms-perspective: 10.8rem;
+				perspective: 10.8rem;
+				background: -moz-linear-gradient(top, #282848 0%, #0b5f8f 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #282848), color-stop(100%, #0b5f8f));
+				background: -webkit-linear-gradient(top, #282848 0%, #0b5f8f 100%);
+				background: -o-linear-gradient(top, #282848 0%, #0b5f8f 100%);
+				background: -ms-linear-gradient(top, #282848 0%, #0b5f8f 100%);
+				background: linear-gradient(to bottom, #282848 0%, #0b5f8f 100%);
+				filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#282848', endColorstr='#0b5f8f', GradientType=0);
+			}
+			.swiper-slide {
+				height: 100%;
+				position: relative;
+				-webkit-transform-style: preserve-3d;
+				-moz-transform-style: preserve-3d;
+				-ms-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+				overflow: hidden;
+			}
+		</style>
+		<script type="text/javascript">
+			//rem布局
+			function rem() {
+				var html = document.getElementsByTagName("html")[0];
+				html.style.fontSize = window.innerWidth / 10.8 + "px";
+			}
+			rem();
+			window.onresize = function() {
+				rem();
+			}
+		</script>
+	</head>
+	<body>
+		<div id="loading">
+			<div>
+				<img src="img/loading.png"/>
+				<p id="loadingP">loading...</p>
+			</div>
+		</div>
+		<div class="swiper-container">
+			<div id="box" class="swiper-wrapper">
+				<div id="first" class="swiper-slide">
+					<div class="watermark">
+						<header>
+							<div class="imgLogo">
+								<img src="img/logoFrame.png" />
+							</div>
+							<div class="headerMain">
+								<h3>黄博文</h3>
+								<ul>
+									<li>
+										<p>生日:<span>1987-07-13</span></p>
+										<p>年龄:<span>24</span>岁</p>
+									</li>
+									<li>
+										<p>身高:<span>177</span>cm</p>
+										<p>体重:<span>65</span>KG</p>
+									</li>
+									<li>
+										<p>位置:<span>中场</span></p>
+										<p>号码:<span>16</span>号</p>
+									</li>
+									<li>
+										<p>俱乐部:<span>广州恒大</span></p>
+									</li>
+								</ul>
+							</div>
+						</header>
+						<div class="main1">
+							<div class="maintital">
+								<span></span>
+								<p>2016中超数据概要</p>
+							</div>
+							<ul>
+								<li>
+									<ul>
+										<li>
+											<p style="border-bottom: 1px solid #ff9800;">20</p>
+											<span>出场</span>
+										</li>
+										<li>
+											<p style="border-bottom: 1px solid #ff9800;">15</p>
+											<span>首发</span>
+										</li>
+										<li>
+											<p style="border-bottom: 1px solid #22ac38;">6</p>
+											<span>进球</span>
+										</li>
+										<li>
+											<p style="border-bottom: 1px solid #22ac38;">5</p>
+											<span>助攻</span>
+										</li>
+										<li>
+											<p style="border-bottom: 1px solid #00a0e9;">22</p>
+											<span>射门</span>
+										</li>
+										<li>
+											<p style="border-bottom: 1px solid #00a0e9;">14</p>
+											<span>射正</span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li>
+											<p style="border-bottom: 1px solid #30c8c1;">20</p>
+											<span>突破</span>
+										</li>
+										<li>
+											<p style="border-bottom: 1px solid #30c8c1;">15</p>
+											<span>突破成功</span>
+										</li>
+										<li>
+											<p style="border-bottom: 1px solid #ea68a2;">6</p>
+											<span>传球</span>
+										</li>
+										<li>
+											<p style="border-bottom: 1px solid #ea68a2;">5</p>
+											<span>传球成功</span>
+										</li>
+										<li>
+											<p style="border-bottom: 1px solid #b55de0;">22</p>
+											<span>传中</span>
+										</li>
+										<li>
+											<p style="border-bottom: 1px solid #b55de0;">14</p>
+											<span>传中成功</span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li>
+											<p style="border-bottom: 1px solid #b55de0;">20</p>
+											<span>直塞</span>
+										</li>
+										<li>
+											<p style="border-bottom: 1px solid #cfa972;">15</p>
+											<span>抢断</span>
+										</li>
+										<li>
+											<p style="border-bottom: 1px solid #cfa972;">6</p>
+											<span>拦截</span>
+										</li>
+										<li>
+											<p style="border-bottom: 1px solid #cfa972;">5</p>
+											<span>封堵</span>
+										</li>
+										<li>
+											<p style="border-bottom: 1px solid #cfa972;">22</p>
+											<span>解围</span>
+										</li>
+										<li>
+											<p style="border-bottom: 1px solid #f13c3d;">2/5</p>
+											<span>红/黄</span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="main2">
+							<div class="maintital">
+								<span style="background: #12cfbf;"></span>
+								<p>数据成功率</p>
+							</div>
+							<ul>
+								<li>
+									<div class="right" id="shezheng">
+									</div>
+									<div class="left">
+										<p>14/22</p>
+										<div>
+											<span></span>
+											<p>射正球门率</p>
+										</div>
+									</div>
+
+								</li>
+								<li>
+									<div class="right" id="chuanqiu">
+									</div>
+									<div class="left">
+										<p>7/10</p>
+										<div>
+											<span style="background: #ea68a2;"></span>
+											<p>传球成功率</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="right" id="qiangduan">
+									</div>
+									<div class="left">
+										<p>6/10</p>
+										<div>
+											<span style="background: #cfa972;"></span>
+											<p>抢断成功率</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="second" class="swiper-slide">
+					<div class="watermark">
+						<div class="maintital">
+							<span></span>
+							<p>比赛数据</p>
+						</div>
+						<table>
+							<thead>
+								<tr>
+									<th>轮次</th>
+									<th>进球</th>
+									<th>助攻</th>
+									<th>射门</th>
+									<th></th>
+									<th>直塞</th>
+									<th>突破</th>
+									<th>传球</th>
+									<th>传中</th>
+									<th></th>
+									<th>抢断</th>
+									<th>拦截</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>15</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+								</tr>
+								<tr>
+									<td>14</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+								</tr>
+								<tr>
+									<td>13</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+								</tr>
+								<tr>
+									<td>09</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+								</tr>
+								<tr>
+									<td>08</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+								</tr>
+								<tr>
+									<td>07</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+								</tr>
+								<tr>
+									<td>06</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+								</tr>
+								<tr>
+									<td>05</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+								</tr>
+								<tr>
+									<td>04</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+								</tr>
+								<tr>
+									<td>03</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+								</tr>
+								<tr>
+									<td>02</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td>30</td>
+									<td></td>
+									<td>30</td>
+									<td>30</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div id="third" class="swiper-slide">
+					<div class="watermark">
+						<div class="maintital">
+							<span></span>
+							<p>同道指数</p>
+						</div>
+						<ul>
+							<li>
+								<ul>
+									<li class="left">
+										<span></span>
+										<p>射门</p>
+									</li>
+									<li class="center">
+										<div id="thirdShemen">
+
+										</div>
+									</li>
+									<li class="right">
+										<div>
+											<p>头部:<span>32</span></p>
+											<p>禁区内:<span>56</span></p>
+										</div>
+										<div>
+											<p>足部:<span>31</span></p>
+											<p>禁区外:<span>48</span></p>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li class="left">
+										<span style="background: #ea68a2;"></span>
+										<p>传球</p>
+									</li>
+									<li class="center">
+										<div id="thirdChuanqiu">
+
+										</div>
+									</li>
+									<li class="right">
+										<div>
+											<p>短传:<span>32</span></p>
+											<p>向前:<span>56</span></p>
+										</div>
+										<div>
+											<p>长传:<span>31</span></p>
+											<p>进攻区传球:<span>48</span></p>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li class="left">
+										<span style="background: #b55de0;"></span>
+										<p>定位球</p>
+									</li>
+									<li class="center">
+										<div id="thirdDingwei">
+
+										</div>
+									</li>
+									<li class="right">
+										<div>
+											<p>角球:<span>32</span></p>
+											<p>任意球:<span>48</span></p>
+										</div>
+										<div>
+											<p>二点:<span>31</span></p>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li class="left">
+										<span style="background: #22ac38;"></span>
+										<p>技术</p>
+									</li>
+									<li class="center">
+										<div id="thirdJishu">
+
+										</div>
+									</li>
+									<li class="right">
+										<div>
+											<p>突破:<span>56</span></p>
+											<p>传中:<span>31</span></p>
+										</div>
+										<div>
+											<p>直塞:<span>48</span></p>
+											<p>一脚出球:<span>32</span></p>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li class="left">
+										<span style="background: #cfa972;"></span>
+										<p>防守</p>
+									</li>
+									<li class="center">
+										<div id="thirdFangshou">
+
+										</div>
+									</li>
+									<li class="right">
+										<div>
+											<p>抢断:<span>56</span></p>
+											<p>空中争顶:<span>32</span></p>
+										</div>
+										<div>
+											<p style="width: 4rem;">封堵拦截:<span>48</span></p>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li class="left">
+										<span style="background: #ffa800;"></span>
+										<p>门将</p>
+									</li>
+									<li class="center">
+										<div id="thirdMengjiang">
+
+										</div>
+									</li>
+									<li class="right">
+										<div>
+											<p>GK:<span>32</span></p>
+											<p>禁区外扑救:<span>99</span></p>
+										</div>
+										<div>
+											<p>Feed:<span>31</span></p>
+											<p>禁区内扑救:<span>99</span></p>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="forth" class="swiper-slide">
+					<div class="maintital">
+						<span></span>
+						<p>同道指数</p>
+						<span></span>
+					</div>
+					<div class="main">
+						<div id="forthAll">
+							<p>综合</p>
+						</div>
+					</div>
+					<ul>
+						<li>
+							<div class="left">
+								<span></span>
+								<p>位置排名 ：</p>
+							</div>
+							<div class="right">
+								前锋 第3名
+							</div>
+						</li>
+						<li>
+							<div class="left">
+								<span style="background: #f25165;"></span>
+								<p>目前身价 ：</p>
+							</div>
+							<div class="right">
+								2500万欧元
+							</div>
+						</li>
+					</ul>
+					<div class="turnUrl">
+						<span>查看更多球员数据请前往</span>
+						<a href="http://www.cfatransfermarket.com">同道足球转会网<img src="img/arrow_right.png"/></a>
+					</div>
+					<footer>
+						<img src="img/logo.png"/>
+						<p>北京同道伟业体育科技有限公司</p>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<img id="upglide" src="img/upglide.gif" />
+		<script type="text/javascript" src="lib/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="lib/swiper.min.js"></script>
+		<script type="text/javascript" src="lib/radialIndicator.js"></script>
+		<script type="text/javascript" src="js/chart.js"></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<script type="text/javascript">
+			var mySwiper = new Swiper('.swiper-container', {
+				direction: 'vertical',
+				lazyLoading: true,
+				mousewheelControl: true,
+				watchSlidesProgress: true,
+				onInit: function(swiper) {
+					swiper.myactive = 0;
+				},
+				onProgress: function(swiper) {
+					for(var i = 0; i < swiper.slides.length; i++) {
+						var slide = swiper.slides[i];
+						var progress = slide.progress;
+						var translate, boxShadow;
+						translate = progress * swiper.height * 0.8;
+						scale = 1 - Math.min(Math.abs(progress * 0.2), 1);
+						boxShadowOpacity = 0;
+						slide.style.boxShadow = '0px 0px 10px rgba(0,0,0,' + boxShadowOpacity + ')';
+						if(i == swiper.myactive) {
+							es = slide.style;
+							es.webkitTransform = es.MsTransform = es.msTransform = es.MozTransform = es.OTransform = es.transform = 'translate3d(0,' + (translate) + 'px,0) scale(' + scale + ')';
+							es.zIndex = 0;
+						} else {
+							es = slide.style;
+							es.webkitTransform = es.MsTransform = es.msTransform = es.MozTransform = es.OTransform = es.transform = '';
+							es.zIndex = 1;
+						}
+					}
+				},
+				onTransitionEnd: function(swiper, speed) {
+					//显示触发后的页面
+					if(swiper.activeIndex == 0) {
+						//触发第一页动画
+						firstPage(true);
+					} else if (swiper.activeIndex == 1) {
+						//触发第二页动画
+						firstPage(false);
+						thirdPage(false);
+					} else if(swiper.activeIndex == 2) {
+						//触发第三页动画
+						thirdPage(true);
+						forthPage(false);
+						//显示上拉箭头
+						$("#upglide").show();
+					}else if(swiper.activeIndex == 3){
+						//触发第三页动画
+						forthPage(true);
+						thirdPage(false);
+						//隐藏上拉箭头
+						$("#upglide").hide();
+					}
+					swiper.myactive = swiper.activeIndex;
+				},
+				onSetTransition: function(swiper, speed) {
+					for(var i = 0; i < swiper.slides.length; i++) {
+						if (i == swiper.myactive) {
+							es = swiper.slides[i].style;
+							es.webkitTransitionDuration = es.MsTransitionDuration = es.msTransitionDuration = es.MozTransitionDuration = es.OTransitionDuration = es.transitionDuration = speed + 'ms';
+						}
+					}
+				}
+			});
+		</script>
+	</body>
+</html>

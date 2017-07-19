@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>同道 概况</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/my.css" />
+    <link rel="stylesheet" href="../css/leaguemanage.css" />
+    <script src="../js/echarts.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/china.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="../assets/css/wqt.css" />
+    <style>
+        body,a{
+            color: #262626;
+        }
+        ul,li,p,h1,h2,h3,h4,h5{
+            margin:0;
+            padding:0;
+        }
+        .admin-content-body div.title{
+            height:54px;
+            padding:12px 0;
+            background: #fff;
+        }
+        .admin-content-body ul.title{
+            padding:0;
+            width: 720px;
+            margin:0 auto;
+            overflow: hidden;
+        }
+        .admin-content-body ul.title li{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            float: left;
+            width:120px;
+            height:30px;
+            border:1px solid #cc3123;
+            border-right-width:0;
+        }
+        .admin-content-body ul.title li.active{
+            background: #cc3123;
+        }
+        .admin-content-body ul.title li.active a{
+            color: #fff;
+        }
+        .admin-content-body ul.title li a{
+            display: block;
+            height:30px;
+            line-height: 30px;
+            color:#cc3123;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .admin-content-body ul.title li:last-child{
+            border-right-width: 1px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+        .admin-content-body ul.title li:first-child{
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+        .admin-content-body div.left{
+            width: 430px;
+            margin-top:10px;
+            float: left;
+        }
+        .admin-content-body div.left div.info{
+            height:316px;
+            padding:16px;
+            background: #fff;
+            position: relative;
+        }
+        .admin-content-body div.left div.info div.top{
+            overflow: hidden;
+        }
+        .admin-content-body div.left div.info div.top img{
+            margin-right:14px;
+            border:1px solid #ddd;
+            width: 145px;
+            height:191px;
+            float: left;
+        }
+        .admin-content-body div.left div.info div.top div.right{
+            float: left;
+        }
+        .admin-content-body div.left div.info div.top div.right h1{
+            font-size:24px ;
+            font-weight: normal;
+            margin-bottom:15px;
+        }
+        .admin-content-body div.left div.info div.top div.right p{
+            font-size: 16px;
+            line-height:37px;
+            color: #262626;
+        }
+        .admin-content-body div.left div.info div.bottom{
+            width: 100%;
+        }
+        .admin-content-body div.left div.info div.bottom p{
+            float: left;
+            font-size: 16px;
+            margin-right:30px;
+            line-height: 32px;
+        }
+        .admin-content-body div.left div.info div.bottom p:nth-child(3){
+            margin-right:0;
+        }
+        .admin-content-body div.left div.info div.bottom ul li{
+            width: 50%;
+            float: left;font-size: 16px;
+            line-height: 32px;
+        }
+        .admin-content-body div.left div.percent{
+            margin:10px 0;
+            padding: 16px;
+            background: #fff;
+        }
+        .admin-content-body div.left div.percent>div{
+            height:245px;
+            background: url(../images/picture_qing_qiuchang.png) no-repeat;
+            position: relative;
+        }
+        .admin-content-body div.left div.percent>div span{
+            position: absolute;
+            background: url(../images/picture_qing_yuan.png) no-repeat;
+            background-size: cover;
+            width: 40px;
+            height:40px;
+            color: #fff;
+            font-size: 13px;
+            text-align: center;
+            line-height: 40px;
+            right:110px;
+            top:50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        .admin-content-body div.left div.percent>div span:nth-child(2){
+            width: 50px;
+            height:50px;
+            right:40px;
+            font-size: 16px;
+            line-height: 50px;
+        }
+        .admin-content-body div.left div.percent>div span:last-child{
+            top:75%;
+            right:80px;
+        }
+        .admin-content-body div.left div.percent p{
+            text-align: center;
+            font-size: 16px;
+            margin-top: 16px;
+        }
+        .admin-content-body div.left div.star{
+            background: #fff;
+            padding:16px 26px;
+        }
+        .admin-content-body div.left div.star p{
+            margin-bottom:10px;
+        }
+        .admin-content-body div.left div.star span{
+            float: left;
+            line-height: 24px;
+            font-size: 16px;
+            margin-right: 20px;
+        }
+        .admin-content-body div.left div.star img{
+            margin-right:8px;
+            width:25px;
+            height:24px;
+        }
+        .admin-content-body>div.right{
+            padding:10px 0;
+            float: right;
+            width:calc(100% - 440px);
+            margin-left: 10px;
+        }
+        .admin-content-body>div.right div.box{
+            background: #fff;
+            margin-bottom:10px;
+            padding: 12px 20px;
+        }
+        .admin-content-body>div.right div.box p{
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        .admin-content-body>div.right div.box table{
+            width: 100%;
+        }
+        .admin-content-body>div.right div.box table th{
+            border-top:1px solid #cc3123!important;
+            background: #eee;
+            height:40px;
+            line-height: 40px;
+            font-weight: normal;
+            font-size: 16px;
+            text-align: center;
+        }
+        .admin-content-body>div.right div.box table td{
+            height:40px;
+            vertical-align: middle;
+            border-top:1px solid #e6e6e6;
+            font-size: 14px;
+            text-align: center;
+        }
+        .admin-content-body>div.right div.box ul{
+            overflow:hidden;
+            height:84px;
+            width: 100%;
+        }
+        .admin-content-body>div.right div.box ul li{
+            width: 130px;
+            height:84px;
+            background: #eee;
+            margin-right: 10px;
+            float: left;
+            position: relative;
+            background: url("../images/picture_qing_shipin.png") no-repeat;
+            background-size: cover;
+        }
+        .admin-content-body>div.right div.box ul li a{
+            display: block;
+            width: 100%;
+            height:100%;
+        }
+        .admin-content-body>div.right div.box ul li img{
+            position: absolute;
+            width: 36px;
+            height:36px;
+            right:20px;
+            top:24px;
+        }
+        .admin-content-body>div.right div.box ul li p{
+            position: absolute;
+            color: #fff;
+            left:20px;
+            top:20px;
+        }
+        #qianlizhi{
+            width: 116px;
+            height:116px;
+            position: absolute;
+            right:10px;
+            top:10px;
+        }
+        #qianlizhi p{
+            position: absolute;
+            top:58%;
+            color:#f3a760;
+            font-size: 15px;
+            left:50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body>
+<div class="am-topbar am-topbar-inverse admin-header">
+    <div class="am-topbar-brand">
+        <strong><img src="../i/logo3.png" alt="" /></strong> <small>中国青少年足球数据库</small>
+    </div>
+    <div class="am-collapse am-collapse1  am-topbar-collapse" id="topbar-collapse">
+        <a href="#" class="l-sy"></a>
+        <a href="#" class="l-link2"></a>
+        <a href="#" class="l-link3" target="_blank" style=" position: relative;
+    top: -9px;">您好，Admin</a>
+        <a href="#" class="l-link4" target="_blank"></a>
+    </div>
+</div>
+<div class="am-cf admin-main">
+    <!-- sidebar start -->
+    <div class="admin-sidebar" id="admin-offcanvas">
+        <div class="am-offcanvas-bar admin-offcanvas-bar">
+            <ul class="am-list admin-sidebar-list" >
+                <li class="admin-parent">
+                    <a class="am-cf"  href="../yulan.html"><span class="am-icon-file"></span><img
+                            src="../images/icon_ce_shuju.png" alt=""/>数据管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                    <ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-in" id="collapse-nav1">
+                        <li class="nav-sub-item" id="collapse-nav1">
+                            <a href="#collapse-sub-nav1" data-am-collapse="{parent: '#collapse-nav1'}" class="am-cf">
+                                <span class="am-icon-check"></span> 档案管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+                            </a>
+                            <ul class="l-nav-3 navbar-thr paddingleft0 am-in" id="collapse-sub-nav1">
+                                <li>
+                                    <a class="active" href="../d-qiuyuan_2.html"><span>球员管理</span></a>
+                                </li>
+                                <li>
+                                    <a href="../d-caipan.html"><span>裁判管理</span></a>
+                                </li>
+                                <li>
+                                    <a href="../d-jiaolian.html"><span>教练管理</span></a>
+                                </li>
+                                <li>
+                                    <a href="../d-julebu.html"><span>球队/俱乐部管理</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="../leaguematches.html" class="am-cf"><span class="am-icon-puzzle-piece"></span> 联赛管理</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="../videos.html" class="am-cf"><span class="am-icon-th"></span> 视频管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="#collapse-nav2"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_gongzuo.png" alt=""/>工作管理</a>
+                    <ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-collapse" id="collapse-nav2">
+                        <li class="nav-sub-item" id="collapse-nav2">
+                            <a href="#collapse-sub-nav2" data-am-collapse="{parent: '#collapse-nav2'}" class="am-cf">
+                                <span class="am-icon-check"></span> 流程管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+                            </a>
+                            <ul class="l-nav-3 navbar-thr paddingleft0 am-collapse" id="collapse-sub-nav2">
+                                <li>
+                                    <a href="../lc-baom2.html"><span>球队报名</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#" class="am-cf"><span class="am-icon-puzzle-piece"></span> 信息管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="###"><span class="am-icon-table"></span><img src="../images/icon_ce_xitong.png" alt=""/>系统管理</a>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="../g-ruwei.html"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_guo.png" alt=""/>国少</a>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="../g-ruwei.html"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_guo.png" alt=""/>国青</a>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="../g-ruwei.html"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_guo.png" alt=""/>国奥</a>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="../inform.html"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_tongzhi.png" alt=""/>通知</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- content start -->
+    <div class="admin-content">
+        <div class="admin-content-body">
+            <div class="title">
+                <ul class="title">
+                    <li class="active"><a href="gaikuang.html">球员概况</a></li>
+                    <li><a href="gamelist.html">比赛列表</a></li>
+                    <li><a href="video.html">技术视频</a></li>
+                    <li><a href="tongji.html">成长统计</a></li>
+                    <li><a href="peixun.html">球员培训</a></li>
+                    <li><a href="qiutan.html">球探报告</a></li>
+                </ul>
+            </div>
+            <div class="left">
+                <div class="info">
+                    <div class="top">
+                        <img src="../images/touxiang.png" alt=""/>
+                        <div class="right">
+                            <h1>陈申吉</h1>
+                            <p>16岁</p>
+                            <p>MA66187</p>
+                            <p>上海绿地申花U16</p>
+                            <p>球衣号码：9</p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>身高：172cm</p>
+                        <p>体重：60kg</p>
+                        <p>惯用脚：双脚</p>
+                        <ul>
+                            <li>入队时间：2012-07-17</li>
+                            <li>合同到期：2020-12-25</li>
+                            <li>出生地址：中国-上海</li>
+                            <li>骨龄审核：合格</li>
+                        </ul>
+                    </div>
+                    <div id="qianlizhi"><p>潜力值</p></div>
+                </div>
+                <div class="percent">
+                    <div>
+                        <span>20%</span>
+                        <span>55%</span>
+                        <span>25%</span>
+                    </div>
+                    <p>位置属性：前锋55% / 左边前卫25% / 前腰20%</p>
+                </div>
+                <div class="star">
+                    <p>
+                        <span>速度：</span>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_01.png" alt=""/>
+                    </p>
+                    <p>
+                        <span>反应：</span>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                    </p>
+                    <p>
+                        <span>力量：</span>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_01.png" alt=""/>
+                        <img src="../images/icon_qing_star_01.png" alt=""/>
+                    </p>
+                    <p>
+                        <span>体能：</span>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_01.png" alt=""/>
+                        <img src="../images/icon_qing_star_01.png" alt=""/>
+                    </p>
+                    <p>
+                        <span>心理：</span>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_02.png" alt=""/>
+                        <img src="../images/icon_qing_star_01.png" alt=""/>
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="box">
+                    <p><a href="gamelist.html">比赛列表</a></p>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>轮次</th>
+                            <th>赛事</th>
+                            <th>对阵双方</th>
+                            <th>胜负</th>
+                            <th>出场时间</th>
+                            <th>进球</th>
+                            <th>助攻</th>
+                            <th>评分</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>第五轮</td>
+                            <td>U16</td>
+                            <td>上海绿地申花(01段)VS深圳足协(01段)</td>
+                            <td>胜</td>
+                            <td>90min</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>9.2</td>
+                        </tr>
+                        <tr>
+                            <td>第四轮</td>
+                            <td>U16</td>
+                            <td>新疆宋庆龄足校(01段)VS上海绿地申花(01段)</td>
+                            <td>负</td>
+                            <td>92min</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>8.0</td>
+                        </tr>
+                        <tr>
+                            <td>第三轮</td>
+                            <td>U16</td>
+                            <td>山东鲁能(01段)VS上海绿地申花(01段)</td>
+                            <td>负</td>
+                            <td>89min</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>7.8</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="box">
+                    <p><a href="video.html">技术视频</a></p>
+                    <ul>
+                        <li><a href="video.html">
+                            <p>进球<br>Goal</p>
+                            <img src="../images/icon_qing_play.png" alt=""/></a></li>
+                        <li><a href="video.html">
+                            <p>射门<br>Shot</p>
+                            <img src="../images/icon_qing_play.png" alt=""/></a></li>
+                        <li><a href="video.html">
+                            <p>突破<br>Dribble</p>
+                            <img src="../images/icon_qing_play.png" alt=""/></a></li>
+                        <li><a href="video.html">
+                            <p>助攻<br>Assist</p>
+                            <img src="../images/icon_qing_play.png" alt=""/></a></li>
+                        <li><a href="video.html">
+                            <p>控球<br>Trap</p>
+                            <img src="../images/icon_qing_play.png" alt=""/></a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <p><a href="tongji.html">成长统计</a></p>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>赛季</th>
+                            <th>球队</th>
+                            <th>赛事</th>
+                            <th>出场</th>
+                            <th>出场时间</th>
+                            <th>首发</th>
+                            <th>替补</th>
+                            <th>进球</th>
+                            <th>助攻</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>2017</td>
+                            <td>上海绿地申花</td>
+                            <td>U16</td>
+                            <td>8</td>
+                            <td>269min</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2016</td>
+                            <td>上海绿地申花</td>
+                            <td>U16</td>
+                            <td>7</td>
+                            <td>332min</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>2015</td>
+                            <td>上海绿地申花</td>
+                            <td>U16</td>
+                            <td>8</td>
+                            <td>430min</td>
+                            <td>8</td>
+                            <td>2</td>
+                            <td>5</td>
+                            <td>1</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="box">
+                    <p><a href="peixun.html">球员培训</a></p>
+                    <table>
+                        <!--<thead>
+                        <tr>
+                            <th>年份</th>
+                            <th>类型</th>
+                            <th>周期</th>
+                            <th>地点</th>
+                            <th>提交时间</th>
+                            <th>球探姓名</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>2016</td>
+                            <td>海外</td>
+                            <td>6个月</td>
+                            <td>葡萄牙</td>
+                            <td>2016-08-22</td>
+                            <td>寻宇昆</td>
+                        </tr>
+                        <tr>
+                            <td>2015</td>
+                            <td>国内</td>
+                            <td>3个月</td>
+                            <td>广东</td>
+                            <td>2016-01-15</td>
+                            <td>寻宇昆</td>
+                        </tr>
+                        <tr>
+                            <td>2015</td>
+                            <td>国内</td>
+                            <td>7个月</td>
+                            <td>广东</td>
+                            <td>2015-09-16</td>
+                            <td>寻宇昆</td>
+                        </tr>-->
+                        <thead>
+                        <tr>
+                            <th>培训类型 </th>
+                            <th>开始日期</th>
+                            <th>结束日期</th>
+                            <th>周期</th>
+                            <th>地点</th>
+                            <th>内容</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>海外</td>
+                            <td>2016-02-22</td>
+                            <td>2016-08-22</td>
+                            <td>6个月</td>
+                            <td>葡萄牙</td>
+                            <td>跟队培训</td>
+                        </tr>
+                        <tr>
+                            <td>国内</td>
+                            <td>2015-10-22</td>
+                            <td>2016-01-15</td>
+                            <td>3个月</td>
+                            <td>广东</td>
+                            <td>跟队培训</td>
+                        </tr>
+                        <tr>
+                            <td>国内</td>
+                            <td>2015-02-22</td>
+                            <td>2015-09-16</td>
+                            <td>7个月</td>
+                            <td>广东</td>
+                            <td>跟队培训</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/radialIndicator.js"></script>
+<script>
+    $("#qianlizhi").radialIndicator({
+        radius:50,
+        barColor: {
+            0: '#f3a760',
+            100: '#f02b45'
+        },
+        barWidth: 8,
+        initValue: 0,
+        maxValue:100,
+        frameTime:15,
+        roundCorner : true,
+        percentage: true,
+        barBgColor:'#e6e6e6',
+        fontSize:18,
+        fontColor:'#262626',
+        fontWeight:'normal',
+        unit:'分'
+    });
+    firstPage(true);
+    function firstPage(start){
+        if (start) {
+            $('#qianlizhi').data('radialIndicator').animate(87);
+        } else{
+            $('#qianlizhi').data('radialIndicator').animate(0);
+        }
+    }
+
+    $('.am-topbar-brand').click(function(){
+        window.location.href='../yulan.html';
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,467 @@
+[
+  {
+    "group": "A组",
+    "games": [
+      {
+        "id": 0,
+        "gameTime": "2016-06-08 03:00",
+        "homeTeam": "意大利",
+        "awayTeam": "芬兰",
+        "turn": 0,
+        "status": 0
+      },
+      {
+        "id": 1,
+        "gameTime": "2016-06-11 03:00",
+        "homeTeam": "法国",
+        "awayTeam": "罗马尼亚",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 2,
+        "gameTime": "2016-06-11 21:00",
+        "homeTeam": "阿尔巴尼亚",
+        "awayTeam": "瑞士",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 14,
+        "gameTime": "2016-06-16 00:00",
+        "homeTeam": "罗马尼亚",
+        "awayTeam": "瑞士",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 15,
+        "gameTime": "2016-06-16 03:00",
+        "homeTeam": "法国",
+        "awayTeam": "阿尔巴尼亚",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 25,
+        "gameTime": "2016-06-20 03:00",
+        "homeTeam": "瑞士",
+        "awayTeam": "法国",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 26,
+        "gameTime": "2016-06-20 03:00",
+        "homeTeam": "罗马尼亚",
+        "awayTeam": "阿尔巴尼亚",
+        "turn": 1,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "B组",
+    "games": [
+      {
+        "id": 3,
+        "gameTime": "2016-06-12 00:00",
+        "homeTeam": "威尔士",
+        "awayTeam": "斯洛伐克",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 4,
+        "gameTime": "2016-06-12 03:00",
+        "homeTeam": "英格兰",
+        "awayTeam": "俄罗斯",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 13,
+        "gameTime": "2016-06-15 21:00",
+        "homeTeam": "俄罗斯",
+        "awayTeam": "斯洛伐克",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 16,
+        "gameTime": "2016-06-16 21:00",
+        "homeTeam": "英格兰",
+        "awayTeam": "威尔士",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 28,
+        "gameTime": "2016-06-21 03:00",
+        "homeTeam": "斯洛伐克",
+        "awayTeam": "英格兰",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 27,
+        "gameTime": "2016-06-21 03:00",
+        "homeTeam": "俄罗斯",
+        "awayTeam": "威尔士",
+        "turn": 1,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "C组",
+    "games": [
+      {
+        "id": 6,
+        "gameTime": "2016-06-13 00:00",
+        "homeTeam": "波兰",
+        "awayTeam": "北爱尔兰",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 7,
+        "gameTime": "2016-06-13 03:00",
+        "homeTeam": "德国",
+        "awayTeam": "乌克兰",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 17,
+        "gameTime": "2016-06-17 00:00",
+        "homeTeam": "乌克兰",
+        "awayTeam": "北爱尔兰",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 18,
+        "gameTime": "2016-06-17 03:00",
+        "homeTeam": "德国",
+        "awayTeam": "波兰",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 30,
+        "gameTime": "2016-06-22 00:00",
+        "homeTeam": "北爱尔兰",
+        "awayTeam": "德国",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 29,
+        "gameTime": "2016-06-22 00:00",
+        "homeTeam": "乌克兰",
+        "awayTeam": "波兰",
+        "turn": 1,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "D组",
+    "games": [
+      {
+        "id": 5,
+        "gameTime": "2016-06-12 21:00",
+        "homeTeam": "土耳其",
+        "awayTeam": "克罗地亚",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 8,
+        "gameTime": "2016-06-13 21:00",
+        "homeTeam": "西班牙",
+        "awayTeam": "捷克",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 20,
+        "homeTeam": "捷克",
+        "awayTeam": "克罗地亚",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 21,
+        "gameTime": "2016-06-18 03:00",
+        "homeTeam": "西班牙",
+        "awayTeam": "土耳其",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 32,
+        "gameTime": "2016-06-22 03:00",
+        "homeTeam": "克罗地亚",
+        "awayTeam": "西班牙",
+        "turn": 1,
+        "status": 0
+      },
+      {
+        "id": 31,
+        "gameTime": "2016-06-22 03:00",
+        "homeTeam": "捷克",
+        "awayTeam": "土耳其",
+        "turn": 1,
+        "status": 0
+      }
+    ]
+  },
+  {
+    "group": "E组",
+    "games": [
+      {
+        "id": 9,
+        "gameTime": "2016-06-14 00:00",
+        "homeTeam": "爱尔兰",
+        "awayTeam": "瑞典",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 10,
+        "gameTime": "2016-06-14 03:00",
+        "homeTeam": "比利时",
+        "awayTeam": "意大利",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 19,
+        "gameTime": "2016-06-17 21:00",
+        "homeTeam": "意大利",
+        "awayTeam": "瑞典",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 22,
+        "gameTime": "2016-06-18 21:00",
+        "homeTeam": "比利时",
+        "awayTeam": "爱尔兰",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 35,
+        "gameTime": "2016-06-23 03:00",
+        "homeTeam": "瑞典",
+        "awayTeam": "比利时",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 36,
+        "gameTime": "2016-06-23 03:00",
+        "homeTeam": "意大利",
+        "awayTeam": "爱尔兰",
+        "turn": 1,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "F组",
+    "games": [
+      {
+        "id": 11,
+        "gameTime": "2016-06-15 00:00",
+        "homeTeam": "奥地利",
+        "awayTeam": "匈牙利",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 12,
+        "gameTime": "2016-06-15 03:00",
+        "homeTeam": "葡萄牙",
+        "awayTeam": "冰岛",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 23,
+        "gameTime": "2016-06-19 00:00",
+        "homeTeam": "冰岛",
+        "awayTeam": "匈牙利",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 24,
+        "gameTime": "2016-06-19 03:00",
+        "homeTeam": "葡萄牙",
+        "awayTeam": "奥地利",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 34,
+        "gameTime": "2016-06-23 00:00",
+        "homeTeam": "冰岛",
+        "awayTeam": "奥地利",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 33,
+        "gameTime": "2016-06-23 00:00",
+        "homeTeam": "匈牙利",
+        "awayTeam": "葡萄牙",
+        "turn": 1,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "1/8决赛",
+    "games": [
+      {
+        "id": 37,
+        "gameTime": "2016-06-25 21:00",
+        "homeTeam": "瑞士",
+        "awayTeam": "波兰",
+        "turn": 1,
+        "status": 0
+      },
+      {
+        "id": 38,
+        "gameTime": "2016-06-26 00:00",
+        "homeTeam": "威尔士",
+        "awayTeam": "北爱尔兰",
+        "turn": 1,
+        "status": 0
+      },
+      {
+        "id": 39,
+        "gameTime": "2016-06-26 03:00",
+        "homeTeam": "克罗地亚",
+        "awayTeam": "葡萄牙",
+        "turn": 1,
+        "status": 0
+      },
+      {
+        "id": 40,
+        "gameTime": "2016-06-26 21:00",
+        "homeTeam": "法国",
+        "awayTeam": "爱尔兰",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 41,
+        "gameTime": "2016-06-27 00:00",
+        "homeTeam": "德国",
+        "awayTeam": "斯洛伐克",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 42,
+        "gameTime": "2016-06-27 03:00",
+        "homeTeam": "匈牙利",
+        "awayTeam": "比利时",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 43,
+        "gameTime": "2016-06-28 00:00",
+        "homeTeam": "意大利",
+        "awayTeam": "西班牙",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 44,
+        "gameTime": "2016-06-28 03:00",
+        "homeTeam": "英格兰",
+        "awayTeam": "冰岛",
+        "turn": 1,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "1/4决赛",
+    "games": [
+      {
+        "id": 45,
+        "gameTime": "2016-07-01 03:00",
+        "homeTeam": "波兰",
+        "awayTeam": "葡萄牙",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 46,
+        "gameTime": "2016-07-02 03:00",
+        "homeTeam": "威尔士",
+        "awayTeam": "比利时",
+        "turn": 1,
+        "status": 0
+      },
+      {
+        "id": 47,
+        "gameTime": "2016-07-03 03:00",
+        "homeTeam": "德国",
+        "awayTeam": "意大利",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 48,
+        "gameTime": "2016-07-04 03:00",
+        "homeTeam": "法国",
+        "awayTeam": "冰岛",
+        "turn": 1,
+        "status": 0
+      }
+    ]
+  },
+  {
+    "group": "半决赛",
+    "games": [
+      {
+        "id": 49,
+        "gameTime": "2016-07-07 03:00",
+        "homeTeam": "葡萄牙",
+        "awayTeam": "威尔士",
+        "turn": 1,
+        "status": 1
+      },
+      {
+        "id": 50,
+        "gameTime": "2016-07-08 03:00",
+        "homeTeam": "德国",
+        "awayTeam": "法国",
+        "turn": 1,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "决赛",
+    "games": [
+      {
+        "id": 51,
+        "gameTime": "2016-07-11 03:00",
+        "homeTeam": "法国",
+        "awayTeam": "葡萄牙",
+        "turn": 1,
+        "status": 1
+      }
+    ]
+  }
+]

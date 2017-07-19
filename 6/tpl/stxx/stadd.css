@@ -1,0 +1,59 @@
+div.content{
+    margin-left:20px;
+    overflow: hidden;
+    padding-bottom:20px;
+}
+div.content form>div{
+    float:left;
+    margin-top:20px;
+}
+div.content form>div.playerName,div.content form>div.session,div.content form>div.hurt{
+    width:280px;
+    margin-left:250px;
+}
+div.content form>div p{
+    font-size: 18px;
+    color:#333;
+    margin-bottom:15px;
+}
+div.content form>div.name{
+    width:100%;
+}
+div.content form>div.name{
+    margin-top:38px;
+}
+div.content form>div select{
+    width:280px;
+    height:50px;
+    border:1px solid #ccc;
+    outline:none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    appearance:none;
+    -moz-appearance:none;    /*for firefox*/
+    -webkit-appearance:none;    /*for chrome*/
+    padding-right: 50px;
+    overflow: hidden;
+    background: url(../../img/updown.png) no-repeat right;  
+    font-size:16px;
+    font-family:'微软雅黑';
+}
+div.content div.name select{
+    width:431px;
+}
+div.content form>div input{
+    width:280px;
+    height:50px;
+    font-size:16px;
+    font-family:'微软雅黑';
+}
+div.content form>div.note input.note{
+    width:654px;
+}
+div.content>div.button{
+    width:100%;
+    text-align: center;
+    margin-top:80px;
+    float:left;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>动彩后台录入系统</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<header>
+			<ul>
+				<li>动彩</li>
+				<li class="login">
+					<img id="amend" src="img/login.png" title="修改密码"/>
+					<span>管理员登录</span>
+					<img id="exit" src="img/tui.png" title="退出"/>
+				</li>
+			</ul>
+		</header>
+		<div id="box" style="display: none;">
+			<div id="title">
+				<ul>
+					<li><p>用户管理</p></li>
+					<li><p>交易管理</p></li>
+					<!--<li><p>竞猜管理</p></li>-->
+					<li><p>文章管理</p></li>
+					<li><p>伤停信息</p></li>
+					<!--<li><p>数据统计</p></li>-->
+					<li><p>积分榜</p></li>
+					<li><p>推荐</p></li>
+					<li><p>轮播管理</p></li>
+					<li><p>活动管理</p></li>
+					<li><p>商品管理</p></li>
+					<li><p>管理员管理</p></li>
+					<li><p>比赛管理</p></li>
+				</ul>
+			</div>
+			<div id="main">
+				<iframe width="1000" height="605" frameborder="0" scrolling="auto"></iframe>
+			</div>
+		</div>
+		<div id="login" class="loginAddAmend">
+			<h4>登录</h4>
+			<hr/>
+			<ul>
+				<li>用户名
+				<input type="text" id="name" value=""/>
+				</li>
+				<li>密码
+				<input type="password" id="pass" value=""/>
+				</li>
+				<li class="test">验证码
+				<input type="text" name="" id="code" value=""/>
+				<span><img src=""/></span>
+				</li>
+			</ul>
+			<button>登录</button>
+		</div>
+		<div id="amendBox" class="loginAddAmend">
+			<h4>修改密码</h4>
+			<hr/>
+			<ul>
+				<li>原密码
+				<input type="text" id="oldPass" value=""/>
+				</li>
+				<li>新密码
+				<input type="password" id="newPass" value=""/>
+				</li>
+				<li>重新输入
+				<input type="password" id="newPassRep" value=""/>
+				</li>
+			</ul>
+			<button>提交</button>
+			<div>返回</div>
+		</div>
+		<footer>
+			<ul>
+				<li><a href="###">关于动彩</a></li>
+				<li><a href="###">关于动彩</a></li>
+				<li><a href="###">关于动彩</a></li>
+				<li><a href="###">关于动彩</a></li>
+				<li><a href="###">关于动彩</a></li>
+				<li><a href="###">关于动彩</a></li>
+			</ul>
+		</footer>
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</body>
+</html>

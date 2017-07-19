@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>文章管理-评论管理</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/page.css"/>
+    <link rel="stylesheet" href="plgl.css"/>
+    <script type="text/javascript" src="../../lib/WdatePicker.js" ></script>
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <p>评论管理</p>
+            <div></div>
+        </div>
+        <div class="show">
+            <ul class="title">
+                <li class="active">评论</li>
+                <li>
+                    <form>
+                        <div>
+                            <input class="Wdate date" type="text" name="starttime" placeholder="起始日期" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd'})"/>
+                            <span><u></u></span><input class="Wdate date" type="text" name="endtime" placeholder="结束日期" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd'})"/> <i></i>
+                        </div>
+                        <div>
+                            <select name="status" class="state">
+                                <option value="1">启用</option>
+                                <option value="0">禁用</option>
+                            </select>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+            <div class="content">
+                <div></div>
+                <div class=button><a href='wzgl.html'><button class='button back'>返回</button></a></div>
+                <table class="table1">
+                    <thead>
+                    <tr>
+                        <th width="86px">评论账号</th>
+                        <th width="300px">评论内容</th>
+                        <th width="200px">评论时间</th>
+                        <th width="150px">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!--<tr>-->
+                        <!--<td>小蜜蜂</td>-->
+                        <!--<td><input type="text" class="default"/></td>-->
+                        <!--<td>2016-10-09 08:36:25</td>-->
+                        <!--<td>-->
+                            <!--<a class="able">恢复</a> <a class="disable">禁用</a>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>小蜜蜂</td>-->
+                        <!--<td><input type="text" class="default"/></td>-->
+                        <!--<td>2016-10-09 08:36:25</td>-->
+                        <!--<td>-->
+                            <!--<a class="able">恢复</a> <a class="disable">禁用</a>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>小蜜蜂</td>-->
+                        <!--<td><input type="text" class="default"/></td>-->
+                        <!--<td>2016-10-09 08:36:25</td>-->
+                        <!--<td>-->
+                            <!--<a class="able">恢复</a> <a class="disable">禁用</a>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    </tbody>
+                </table>
+                <div class="page">
+                    <ul>
+                        <li class="disable">上一页</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>下一页</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/page.js"></script>
+    <script src="plgl.js"></script>
+</body>
+</html>

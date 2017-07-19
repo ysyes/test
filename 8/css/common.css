@@ -1,0 +1,138 @@
+html{
+    overflow-x:auto;
+    height:100%;
+    min-height:550px;
+}
+select::-ms-expand { 
+	display: none; 
+}
+body{
+    height:calc(100% - 20px);
+    background:#ededed;
+}
+#box{
+    box-sizing: border-box;
+    width:calc(100% - 40px);
+    min-height:calc(100% - 20px);
+    height:auto;
+    min-width: 1000px;
+    margin:20px;
+    background: #ffffff;
+    padding:0 20px;
+    padding-bottom:80px;
+    box-shadow: 0 0 10px 5px #ccc;
+    position: relative;
+}
+#box div.header{
+    height:60px;
+    padding:10px 0;
+}
+#box div.header div.admin{
+    float:left;
+    line-height: 40px;
+}
+#box div.header div.admin img{
+    vertical-align: middle;
+}
+#box div.header div.admin span{
+    color:#e3442a;
+    font-size: 18px;
+}
+#box div.header div.addBtn{
+    box-sizing: border-box;
+    border:1px solid #e3442a;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    float:right;
+    width:100px;
+    height:40px;
+    color: #e3442a;
+    cursor: pointer;
+}
+#box div.header div.addBtn img{
+    float:left;
+    margin:12px 6px;
+}
+#box div.header div.addBtn b{
+	float: left;
+	height: 38px;
+	font-weight: bold;
+	/* padding: 0 5px; */
+	font-size: 30px;
+	line-height: 36px;
+	width:30px;
+}
+#box div.header div.addBtn span{
+    line-height: 40px;
+    font-size: 16px;
+}
+div.show{
+    overflow: hidden;
+}
+div.content table{
+    width:100%;
+}
+div.content table th{
+    background:#e3442a;
+    color:#fff;
+    font-weight: normal;
+    height:50px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+div.content table tbody td{
+    text-align: center;
+    font-size: 16px;
+    color:#292929;
+    height:50px;
+    vertical-align: middle;
+    border-bottom:1px solid #ccc;
+}
+div.content table tbody td.gray{
+    color:#ccc;
+}
+/* div.content table tbody td.gray span a{
+    color:#ccc;
+} */
+div.content tbody td.gray span:first-child{
+    color:#292929;
+}
+div.content tbody td:last-child span{
+    margin:0 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+div.content tbody td:last-child span a{
+    color:#292929;
+    text-decoration: none;
+    font-size: 16px;
+}
+div.content tbody td:last-child span:hover,div.content tbody td:last-child span.red,div.content tbody td:last-child span:link,div.content tbody td:last-child span a:hover,div.content tbody td:last-child span a.red{
+    color:#f76d22;
+}
+div.tcdPageCode{
+    position: absolute;
+    bottom:16px;
+    width:100%;
+}
+button.gray{
+    box-sizing: border-box;
+    padding: 0;
+    border:0;
+    background:transparent;
+    outline:none;
+    cursor: pointer;
+    color:#292929;
+    border-right:1px solid #e6e6e6;
+}
+button.red{
+    box-sizing: border-box;
+    padding: 0;
+    border:0;
+    background:transparent;
+    color:#c62f17;
+    outline: none;
+    cursor: pointer;
+}

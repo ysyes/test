@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>录入</title>
+		<link rel="stylesheet" type="text/css" href="import.css"/>
+	</head>
+	<body>
+		<div id="box">
+			<header>
+				<h3>录入</h3>
+			</header>
+			<ul class="chooseName">
+				<li class="checked">球队</li>
+				<li>球员</li>
+			</ul>
+			<div class="main">
+				<div class="sel">
+					<span>赛季</span>
+					<select class="leagueteams">
+						<option value="2016">2016赛季</option>
+						<option value="2017">2017赛季</option>
+						<option value="2018">2018赛季</option>
+						<option value="2019">2019赛季</option>
+						<option value="2020">2020赛季</option>
+						<option value="2021">2021赛季</option>
+						<option value="2022">2022赛季</option>
+						<option value="2023">2023赛季</option>
+						<option value="2024">2024赛季</option>
+						<option value="2025">2025赛季</option>
+						<option value="2026">2026赛季</option>
+					</select>
+					<p>*</p>
+				</div>
+				<div class="sel">
+					<span>赛事</span>
+					<select class="leagues">
+					</select>
+					<p>*</p>
+				</div>
+				<div class="sel">
+					<span>分组</span>
+					<select class="groups">
+					</select>
+					<p>*</p>
+				</div>
+				<div class="sel">
+					<span>场次</span>
+					<select class='session'>
+					</select>
+					<p>*</p>
+				</div>
+				<div class="fileExcel">
+					<span>表格</span>
+					<div class="excel">
+						<span>上传EXCEL文件</span>
+						<a href="javascript:;">上传</a>
+						<input type="file" name="" value="" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel"/>
+					</div>
+					<p>*</p>
+				</div>
+				<div class="button">
+					<button class="submit">提交</button>
+					<button class="cancel">返回</button>
+				</div>
+			</div>
+			<div id="back">
+				<div id="tips">
+					<h3>请再次确认上传信息</h3>
+					<ul>
+						<li>赛季: <span></span></li>
+						<li>赛事: <span></span></li>
+						<li>分组: <span></span></li>
+						<li>场次: <span></span></li>
+					</ul>
+					<h2>上传至球队？</h2>
+					<div><span class="close">取消</span><span id="affirm">确认</span></div>
+				</div>
+				<div id="loading">
+					<img src="../../img/loading.gif"/>
+				</div>
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="../../lib/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="import.js" ></script>
+	</body>
+</html>

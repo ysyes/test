@@ -1,0 +1,45 @@
+
+div.content table.table1 tbody td{
+    padding:20px 0 18px 0;
+    text-align: center;
+    height:0;
+}
+div.content table.table1 tbody td input{
+	font-size:16px;
+	font-family:'微软雅黑';
+	border:0;
+	background:transparent;
+	text-align:center;
+}
+div.content table.table1 tr th{
+    box-sizing: border-box;
+    height:35px;
+    line-height:35px;
+}
+div.content table.table1 tbody td:last-child a.back{
+    color:#999;
+    margin-left:10px;
+}
+div.content table.table1 tbody tr td:first-child{
+    color:#333;
+    text-align: left;
+    padding-left:22px;
+}
+div.content table.table1 td a{
+    font-size: 16px;
+    color:#0055a1;
+    text-decoration: none;
+    cursor:pointer;
+}
+textarea.text{
+	width:calc(100% - 36px);
+    box-sizing: border-box;
+    height:147px;
+    border:1px solid #ccc;
+    margin:0 18px;
+    padding:10px;
+    resize: none;
+    font-size:15px;
+    font-family:'微软雅黑';
+    background:#fff;
+}

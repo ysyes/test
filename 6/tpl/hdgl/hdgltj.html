@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>活动管理-添加活动公告</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <script src='../../js/jquery-2.2.3.min.js'></script>
+    <script type="text/javascript" src="../../lib/WdatePicker.js" ></script>
+    <link rel="stylesheet" href="hdgltj.css"/>
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <p>活动管理</p>
+            <div></div>
+        </div>
+        <div class="show">
+            <ul class="title">
+                <li class="active">添加活动公告</li>
+                <li></li>
+            </ul>
+            <div class="content">
+                <form>
+                    <div class="title">
+                        <p>文章标题<span>（必填，最多28个字）</span></p>
+                        <input type="text" class="default" name="title"/>
+                    </div>
+                    <div class="date">
+                        <div>
+                            <p>生效时间</p>
+                            <input class="Wdate default" type="text" name="abletime" placeholder="起始日期" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd'})"/>
+                        </div>
+                        <div>
+                            <p>失效时间</p>
+                            <input class="Wdate default" type="text" name="disabletime" placeholder="起始日期" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd'})"/>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>正文内容</p>
+                        <textarea type="text/plain" name='text'></textarea>
+                    </div>
+                </form>
+                <div class="lf button">
+                    <button class="button submit">发表</button><a href="hdgl.html"><button class="button back">返回</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="hdgltj.js"></script>
+</body>
+</html>

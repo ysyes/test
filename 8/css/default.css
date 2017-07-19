@@ -1,0 +1,223 @@
+html,body{
+    height:100%;
+    min-width: 1000px;
+}
+#header{
+    width:100%;
+    height:72px;
+    background-color: #e3442a;
+}
+#header div{
+    float:left;
+}
+#header .logo{
+    width:200px;
+    height:100%;
+}
+#header .title{
+    width:calc(100% - 200px);
+}
+#header .title p{
+    color:#fff;
+    font-size: 20px;
+    line-height: 72px;
+    padding-left:20px;
+    float: left;
+}
+#header div.userInfo{
+    box-sizing: border-box;
+    float: right;
+    background: #c62f17;
+    margin:11px 0;
+    margin-right: 40px;
+    width:154px;
+    height:50px;
+    padding:9px 7px 9px 12px;
+    position: relative;
+    cursor: pointer;
+}
+#header div.userInfo img{
+    margin-right:6px;
+    width:27px;
+    margin-bottom:2px;
+}
+#header div.userInfo span{
+    font-size: 16px;
+    color:#fff;
+    line-height:32px;
+}
+#header div.userInfo i{
+    float:right;
+    margin-top:13px;
+    width:11px;
+    height:6px;
+    background: url('../img/icon_xiala_02.png') no-repeat;
+}
+#header div.userInfo ul{
+    width:154px;
+    height:auto;
+    position: absolute;
+    left:0;
+    top:61px;
+}
+#header div.userInfo ul li{
+    height:50px;
+    line-height: 50px;
+}
+#header div.userInfo ul li{
+    background:#fff;
+    box-shadow: 0 0px 10px 0px #ddd
+}
+#header div.userInfo ul li:hover{
+    background:#c62f17;
+    color:#fff;
+}
+#header div.userInfo ul li:first-child:hover i{
+    background:url(../img/icon_mima_02.png);
+}
+#header div.userInfo ul li:nth-child(2):hover i{
+    background:url(../img/icon_exit_02.png);
+}
+#header div.userInfo ul li i{
+    float: left;
+    width:24px;
+    height:24px;
+    background:url(../img/icon_mima_01.png) no-repeat;
+    margin-right:10px;
+    margin-left:20px;
+}
+#header div.userInfo ul li:nth-child(2) i{
+    background:url(../img/icon_exit_01.png);
+}
+#main{
+    height:calc(100% - 72px);
+}
+#main ul.list{
+    float: left;
+    height:100%;
+    width:200px;
+    background:#0e202d;
+    min-height:550px;
+}
+#main ul.list li{
+    height:55px;
+    /*background:#0e202e;*/
+    color:#fff;
+    line-height:55px;
+    cursor: pointer;
+    padding-left:25px;
+    opacity: 0.5;
+    font-size: 16px;
+}
+#main ul.list li img{
+    vertical-align: middle;
+    margin-bottom:6px;
+    margin-right:10px;
+}
+#main ul.list li.active{
+    background:#0b1822;
+    opacity: 1;
+}
+#main iframe{
+    float:left;
+    width:calc(100% - 200px);
+    height:100%;
+    min-height:550px;
+}
+div.module1,div.module2,div.module3{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 999;
+}
+div.updatePassWord,div.logout,div.alertFn{
+    width:360px;
+    height:330px;
+    border:1px solid #ddd;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.2);
+    background: #fff;
+}
+div.updatePassWord{
+    padding:30px 45px;
+}
+div.logout,div.alertFn{
+    width:270px;
+    height:160px;
+}
+div.logout p,div.alertFn p{
+    height:110px;
+    line-height: 110px;
+    text-align: center;
+    color:#292929;
+}
+div.alertFn p{
+    display: table-cell;
+    width: 100%;
+    line-height: 20px;
+    padding:20px;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+div.alertFn button{
+    border-top:1px solid #e6e6e6;
+    height:50px;
+    width:100%;
+    font-size: 16px;
+    /*text-align: right;*/
+}
+div.logout button{
+    width:50%;
+    border-top:1px solid #e6e6e6;
+    line-height: 50px;
+    font-size: 16px;
+}
+div.logout button.gray{
+    border-right:1px solid #e6e6e6;
+}
+div.updatePassWord p{
+    font-size: 16px;
+    color:#292929;
+}
+div.updatePassWord input{
+    border:0;
+    border-bottom:1px solid #b3b3b3;
+    width:100%;
+    margin:10px 0 18px 0;
+    outline:none;
+    height:30px;
+    font-family: "Microsoft Yahei";
+    padding:1px;
+    color:#292929;
+}
+div.updatePassWord button{
+    font-size: 16px;
+    margin:10px 42px;
+}
+button.gray{
+    box-sizing: border-box;
+    padding: 0;
+    border:0;
+    background:transparent;
+    outline:none;
+    cursor: pointer;
+    color:#292929;
+}
+button.red{
+    box-sizing: border-box;
+    padding: 0;
+    border:0;
+    background:transparent;
+    color:#c62f17;
+    outline: none;
+    cursor: pointer;
+}

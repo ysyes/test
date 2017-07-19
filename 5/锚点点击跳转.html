@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				margin-top: 50px;
+				height: 300px;
+				width: 500px;
+				border: 2px solid;
+			}
+			
+			ul{
+				position: fixed;
+				right: 100px;
+				top: 200px;
+				border: 1px solid;
+			}
+			li{
+				width: 100px;
+				height: 50px;
+				list-style: none;
+				text-align: center;
+				border-bottom: 1px solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			第一
+		</div>
+		<div>
+			第二
+		</div>
+		<div>
+			第三
+		</div>
+		<div>
+			第四
+		</div>
+		<div>
+			第五
+		</div>
+		<div>
+			第六
+		</div>
+		<div>
+			第七
+		</div>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+		var divs = document.querySelectorAll("div");
+		for (var i = 0 ; i < divs.length ; i++) {
+			console.log(divs[i].offsetTop);
+		}
+		window.onclick = function () {
+			
+			window.scroll(0,500);
+		}
+		
+	</script>
+</html>

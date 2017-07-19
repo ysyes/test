@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>商品管理-商品上传</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="spscstyle.css"/>
+</head>
+<body>
+<div id="main">
+    <div class="header">
+        <p>商品管理 <span>> 上传商品</span></p>
+        <div></div>
+    </div>
+    <div class="content">
+	    <form>
+	     <div class="name">
+            <p>商品名称 <span>（*最多24个字）</span></p>
+            <input type="text" class="default" name="name" onkeyup="if(this.value.length>24){this.value=this.value.slice(0,24)}" onafterpaste="if(this.value.length>24){this.value=this.value.slice(0,24)}"/>
+        </div>
+        <div class="money">
+            <p>兑换金币<span>*</span></p>
+             <input onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" type="text" class='default' name="gold"/>
+        </div>
+        <div class="stock">
+            <p>库存<span>*</span></p>
+            <input onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" type="text" class='default' name='num'/>
+        </div>
+        <div class="image">
+            <p>图片 <span>(*上传商品图片)</span></p>
+            <div>
+                <div id="preview"></div>
+                <input type="file" class="upload" onchange="previewImage(this)" name="img"/>
+            </div>
+        </div>
+	    </form>
+        <div class="button">
+            <button class="button submit">提交</button>
+            <a href='spgl.html'><button class="button back">返回</button></a>
+        </div>
+    </div>
+</div>
+<script src="../../js/jquery-2.2.3.min.js"></script>
+<script src="spsc.js"></script>
+</body>
+</html>

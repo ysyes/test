@@ -1,0 +1,24 @@
+@color : red,green,blue;
+@width : 50px;
+h1{
+    //作用域
+    @width : 10px;
+    color: extract(@color,1);
+    p{
+        color: extract(@color,3);
+        font-size:@width + 40;
+        //触发当前事件
+        &:hover{
+         color: extract(@color,2);
+        }
+    }
+}
+p{
+   font-size: @width;
+   color: extract(@color,2);  
+}
+//extend复制p的样式
+section:extend(p){
+    //length()数组的长度
+    font-size: 1px*length(@color);
+}

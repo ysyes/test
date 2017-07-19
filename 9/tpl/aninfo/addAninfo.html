@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>一条资讯新增</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/commonAdd.css"/>
+    <script type="text/javascript" src="../../lib/WdatePicker.js" ></script>
+    <script src="../../lib/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../ueeditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../ueeditor/ueditor.all.min.js"> </script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="../../ueeditor/lang/zh-cn/zh-cn.js"></script>
+    <style>
+        .show div.logoUpload{
+            margin-top: 35px;
+            height: 120px;
+            /* width: 100%; */
+            margin-right:10px; 
+        }
+        .show div.logoUpload p{
+            float: left;
+            width: 64px;
+            display: block;
+            text-align: right;
+            line-height: 120px;
+        }
+        .show div.logoUpload div{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 120px;
+            height: 120px;
+            float: left;
+            border: 1px solid #3b8bff;
+        }
+        .show .logoUpload div img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 118px;
+            width: 118px;
+            outline: none;
+        }
+        .show div.imgUpload div{
+            width:240px;
+        }
+        .show div.imgUpload div img{
+        	width:238px;
+        }
+        .show .logoUpload a{
+            float: left;
+            margin-left: 10px;
+            margin-top: 80px;
+            display:block;
+            background: #3b8bff;
+            height: 40px;
+            width: 80px;
+            color: white;
+            line-height: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            cursor: pointer;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+        .show .logoUpload input{
+            position: absolute;
+            right: 0;
+            top: 0;
+            opacity: 0;
+        }
+        .show .imgUpload{
+            width:calc(100% - 374px)
+        }
+        .show .logoUpload span{
+         	float:none;
+         	display:inline-block;
+         	margin-top:95px;
+         }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div class="header">
+        <div class="admin"><img src="../../img/blue_news.png" alt=""/><span>一条资讯新增</span></div>
+    </div>
+    <div class="show">
+        <form>
+            <div>
+                <p>资讯标题</p>
+                <input type="text" name="title" placeholder="请输入标题" maxlength="64"/>
+                <span>*</span>
+            </div>
+            <div>
+                <p>标签</p>
+                <input type="text" name="label" placeholder="例:米兰,国际" maxlength="64"/><span>*</span>
+            </div>
+            <div>
+                <p>发布时间</p>
+                <input class="Wdate default date" type="text" placeholder="请输入发布时间" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd HH:mm:ss'})" name="publishdate"/><span>*</span>
+            </div>
+            <div class="logoUpload">
+                <p>LOGO</p>
+                <div class="showLogo">
+                    <img id="image" src="../../img/logotishi.png"/>
+                </div>
+                <a href="javascript:;">上传<input accept="image/png,image/jpeg" type="file" name="logourl" onchange="selectImage(this)"/></a> <span>*</span>
+            </div>
+            <div class="logoUpload imgUpload">
+                <p>图片</p>
+                <div class="showLogo">
+                    <img id="image2" src="../../img/titleimg.png"/>
+                </div>
+                <a href="javascript:;">上传<input accept="image/png,image/jpeg" type="file" name="titleimg" onchange="selectImage2(this)"/></a> <span>*</span>
+            </div>
+            <div class="content">
+                <p>资讯内容</p>
+            </div><script id="editor" type="text/plain" style="width:500px;height:300px;"></script>
+        </form>
+        <div class="button">
+            <button class="submit">提交</button>
+            <a href="aninfo.html"><button class="back">返回</button></a>
+        </div>
+    </div>
+</div>
+<script src='../../js/ueeditor.js'></script>
+<script src="addAninfo.js"></script>
+</body>
+</html>

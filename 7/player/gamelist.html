@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>同道 概况</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/my.css" />
+    <link rel="stylesheet" href="../css/leaguemanage.css" />
+    <script src="../js/echarts.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/china.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="../assets/css/wqt.css" />
+    <style>
+        body,a{
+            color: #262626;
+        }
+        ul,li,p,h1,h2,h3,h4,h5{
+            margin:0;
+            padding:0;
+        }
+        .admin-content-body>div.title{
+            height:54px;
+            padding:12px 0;
+            background: #fff;
+        }
+        .admin-content-body ul.title{
+            padding:0;
+            width: 720px;
+            margin:0 auto;
+            overflow: hidden;
+        }
+        .admin-content-body ul.title li{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            float: left;
+            width:120px;
+            height:30px;
+            border:1px solid #cc3123;
+            border-right-width:0;
+        }
+        .admin-content-body ul.title li.active{
+            background: #cc3123;
+        }
+        .admin-content-body ul.title li.active a{
+            color: #fff;
+        }
+        .admin-content-body ul.title li a{
+            display: block;
+            height:30px;
+            line-height: 30px;
+            color:#cc3123;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .admin-content-body ul.title li:last-child{
+            border-right-width: 1px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+        .admin-content-body ul.title li:first-child{
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+        .admin-content-body div.gameinfo{
+            padding:10px 40px;
+            background: #fff;
+            margin:10px 0;
+            overflow: hidden;
+        }
+        .admin-content-body div.gameinfo div.title{
+            width:300px;
+            text-align: center;
+            margin: 0 auto 10px;
+        }
+        .admin-content-body div.gameinfo span{
+            font-size: 16px;
+        }
+        .admin-content-body div.gameinfo span.selfcheck{
+            display: inline-block;
+            width:16px;
+            height: 16px;
+            background: #c7c6c3;
+            margin-right: 8px;
+        }
+        .admin-content-body div.gameinfo span.per90mincheck{
+            display: inline-block;
+            width:16px;
+            height: 16px;
+            background: url(../images/nochoose.png) no-repeat;
+            background-size: 100%;
+            margin-left:30px;
+        }
+        .admin-content-body div.gameinfo span.per90min{
+            color: #1dc7c9;
+        }
+        .admin-content-body div.gameinfo div.left{
+            width: 48%;
+            float: left;
+            /*padding:3px 0;*/
+        }
+        .admin-content-body div.gameinfo div.left.right{
+            border-left:1px solid #e6e6e6;
+            padding-left:4%;
+            width: 52%;
+        }
+        .admin-content-body div.gameinfo div.left span:first-child{
+            float: left;
+            width:100px;
+            text-align: center;
+            height:20px;
+        }
+        .admin-content-body div.gameinfo div.left div p{
+            float: left;
+            width: calc(100% - 150px);
+            margin-right: 50px;
+            padding:1.5px 0;
+            height:20px;
+        }
+        .admin-content-body div.gameinfo div.left div{
+            overflow: hidden;
+            margin-bottom: 5px;
+            height:37px;
+        }
+        .admin-content-body div.gameinfo div.left div p.per90min{
+            margin-left:100px;
+            padding: 0;
+            opacity: 0;
+        }
+        .admin-content-body div.gameinfo div.left div p span:first-child{
+            width:0;
+            height: 12px;
+            background: #c7c6c3;
+            margin-top: 3px;
+            margin-right: 10px;
+            -webkit-transition: width ease-out 1s;
+            -moz-transition: width ease-out 1s;
+            -ms-transition: width ease-out 1s;
+            -o-transition: width ease-out 1s;
+            transition: width ease-out 1s;
+        }
+        .admin-content-body div.gameinfo div.left div p span:nth-child(2){
+            /*margin-left:10px;*/
+            font-size:15px;
+        }
+        .admin-content-body div.gameinfo div.left div p.per90min span:first-child{
+            background: #1dc7c9;
+            width:0;
+        }
+        .admin-content-body div.gamelist {
+            padding: 12px;
+            background: #fff;
+        }
+        .admin-content-body div.gamelist>p{
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .admin-content-body div.gamelist ul{
+            /*overflow: hidden;*/
+            width: 1500px;
+            height:152px
+            overflow-x: auto;
+        }
+        .admin-content-body div.gamelist li{
+            float: left;
+            width:254px;
+            height:152px;
+            border:1px solid #ccc;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .admin-content-body div.gamelist li.active{
+            border-color: #cc3123;
+        }
+        /*.admin-content-body div.gamelist li.active h3{
+            border-bottom-color: #cc3123;
+        }*/
+        .admin-content-body div.gamelist li:last-child{
+            margin: 0;
+        }
+        .admin-content-body div.gamelist li h3{
+            border-bottom:1px solid #ccc;
+            overflow: hidden;
+            font-weight: normal;
+            font-size: 16px;
+            padding:0 10px;
+        }
+        .admin-content-body div.gamelist li h3 p{
+            float: left;
+            height:32px;
+            line-height: 32px;
+        }
+        .admin-content-body div.gamelist li h3 p.time{
+            float: right;
+            color: #cc3123;
+        }
+        .admin-content-body div.gamelist li div.content{
+            padding:15px 15px;
+        }
+        .admin-content-body div.gamelist li div.content>div{
+            float: left;
+            width: calc(100% - 40px);
+        }
+        .admin-content-body div.gamelist li div.content p{
+            font-size: 14px;
+        }
+        .admin-content-body div.gamelist li div.content img{
+            width: 40px;
+            height:40px;
+            /*border: 1px solid #ccc;*/
+        }
+        .admin-content-body div.gamelist li div.content p.host{
+            margin-bottom: 10px;
+        }
+        .admin-content-body div.gamelist li div.content p.score{
+            float: right;
+            width: 30px;
+        }
+        .admin-content-body div.gamelist li div.content p.score span{
+            display: block;
+            line-height: 40px;
+            font-size: 18px;
+            text-align: right;
+        }
+        .admin-content-body div.gamelist li div.content p.score span:first-child{
+            margin-bottom: 10px;
+        }
+        .admin-content-body div.gamelist li div.content p.score span.score{
+            line-height: 90px;
+            margin-bottom: 0;
+        }
+        /*.admin-content-body div.gameinfo div.left div:nth-child(1) p.per90min span.active{
+            margin-top:0;
+        }
+        .admin-content-body div.gameinfo div.left div:nth-child(1) p.per90min span:nth-child(2){
+            display: inline-block;
+            margin-top: -2px;
+        }*/
+        .admin-content-body div.gameinfo div.left div p.self span:first-child.active{
+            margin-top:5px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="am-topbar am-topbar-inverse admin-header">
+    <div class="am-topbar-brand">
+        <strong><img src="../i/logo3.png" alt="" /></strong> <small>中国青少年足球数据库</small>
+    </div>
+    <div class="am-collapse am-collapse1  am-topbar-collapse" id="topbar-collapse">
+        <a href="#" class="l-sy"></a>
+        <a href="#" class="l-link2"></a>
+        <a href="#" class="l-link3" target="_blank" style=" position: relative;
+    top: -9px;">您好，Admin</a>
+        <a href="#" class="l-link4" target="_blank"></a>
+    </div>
+</div>
+<div class="am-cf admin-main">
+    <!-- sidebar start -->
+    <div class="admin-sidebar" id="admin-offcanvas">
+        <div class="am-offcanvas-bar admin-offcanvas-bar">
+            <ul class="am-list admin-sidebar-list" >
+                <li class="admin-parent">
+                    <a class="am-cf"  href="../yulan.html"><span class="am-icon-file"></span><img
+                            src="../images/icon_ce_shuju.png" alt=""/>数据管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                    <ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-in" id="collapse-nav1">
+                        <li class="nav-sub-item" id="collapse-nav1">
+                            <a href="#collapse-sub-nav1" data-am-collapse="{parent: '#collapse-nav1'}" class="am-cf">
+                                <span class="am-icon-check"></span> 档案管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+                            </a>
+                            <ul class="l-nav-3 navbar-thr paddingleft0 am-in" id="collapse-sub-nav1">
+                                <li>
+                                    <a class="active" href="../d-qiuyuan_2.html"><span>球员管理</span></a>
+                                </li>
+                                <li>
+                                    <a href="../d-caipan.html"><span>裁判管理</span></a>
+                                </li>
+                                <li>
+                                    <a href="../d-jiaolian.html"><span>教练管理</span></a>
+                                </li>
+                                <li>
+                                    <a href="../d-julebu.html"><span>球队/俱乐部管理</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="../leaguematches.html" class="am-cf"><span class="am-icon-puzzle-piece"></span> 联赛管理</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="../videos.html" class="am-cf"><span class="am-icon-th"></span> 视频管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="#collapse-nav2"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_gongzuo.png" alt=""/>工作管理</a>
+                    <ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-collapse" id="collapse-nav2">
+                        <li class="nav-sub-item" id="collapse-nav2">
+                            <a href="#collapse-sub-nav2" data-am-collapse="{parent: '#collapse-nav2'}" class="am-cf">
+                                <span class="am-icon-check"></span> 流程管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+                            </a>
+                            <ul class="l-nav-3 navbar-thr paddingleft0 am-collapse" id="collapse-sub-nav2">
+                                <li>
+                                    <a href="../lc-baom2.html"><span>球队报名</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#" class="am-cf"><span class="am-icon-puzzle-piece"></span> 信息管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="###"><span class="am-icon-table"></span><img src="../images/icon_ce_xitong.png" alt=""/>系统管理</a>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="../g-ruwei.html"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_guo.png" alt=""/>国少</a>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="../g-ruwei.html"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_guo.png" alt=""/>国青</a>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="../g-ruwei.html"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_guo.png" alt=""/>国奥</a>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="../inform.html"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_tongzhi.png" alt=""/>通知</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- content start -->
+    <div class="admin-content">
+        <div class="admin-content-body">
+            <div class="title">
+                <ul class="title">
+                    <li><a href="gaikuang.html">球员概况</a></li>
+                    <li class="active"><a href="gamelist.html">比赛列表</a></li>
+                    <li><a href="video.html">技术视频</a></li>
+                    <li><a href="tongji.html">成长统计</a></li>
+                    <li><a href="peixun.html">球员培训</a></li>
+                    <li><a href="qiutan.html">球探报告</a></li>
+                </ul>
+            </div>
+            <div class="gameinfo">
+                <div class="title">
+                    <span class="selfcheck"></span>
+                    <span>本场比赛</span>
+                    <span class="per90mincheck"></span>
+                    <span class="per90min">per90min</span>
+                </div>
+                <div class="left">
+                    <div>
+                        <span>进球</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>0</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>0.6</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>助攻</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>0</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>0.2</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>射门</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>4</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>2.8</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>突破</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>7</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>3</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>直塞球</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>3</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>1.4</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>威胁球</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>0</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>1.4</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>传球</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>23</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>18.6</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>向前传球</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>7</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>5.6</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>传中</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>1</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>1.8</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>被侵犯</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>1</span>
+                        </p>
+                        <p class="per90min">
+                            <span class="active"></span>
+                            <span>1.2</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="left right">
+                    <div>
+                        <span>抢断</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>1</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>1.4</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>空中争顶</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>0</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>0.6</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>解围</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>1</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>0.4</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>封堵</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>1</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>2.2</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>拦截</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>0</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>0</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>犯规</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>1</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>2.6</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>黄牌</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>0</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>0.2</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>红牌</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>0</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>0</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>扑救</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>0</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>0</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span>扑救成功率</span>
+                        <p class="self">
+                            <span class="active"></span>
+                            <span>0%</span>
+                        </p>
+                        <p class="per90min">
+                            <span></span>
+                            <span>0%</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="gamelist">
+                <p>比赛列表(23)</p>
+                <div style="width: 100%;height: 170px;overflow: auto;">
+                <ul>
+                    <li class="active">
+                        <h3>
+                            <p class="session">第5轮</p>
+                            <p class="time">2017-03-24 &nbsp;9:30</p>
+                        </h3>
+                        <div class="content">
+                            <div>
+                                <p class="host">
+                                    <img src="http://tongdaobigdata.oss-cn-beijing.aliyuncs.com/dataimage/logo/team/14920751628902521.png" alt=""/>
+                                    <span>上海绿地申花(01段)</span>
+                                </p>
+                                <p class="client">
+                                    <img src="http://tongdaobigdata.oss-cn-beijing.aliyuncs.com/dataimage/logo/team/14907571021143120.png" alt=""/>
+                                    <span>深圳足协(01段)</span>
+                                </p>
+                            </div>
+                            <p class="score">
+                                <span>6</span>
+                                <span>1</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            <p class="session">第4轮</p>
+                            <p class="time">2017-03-22 &nbsp;9:30</p>
+                        </h3>
+                        <div class="content">
+                            <div>
+                                <p class="host">
+                                    <img src="http://tongdaobigdata.oss-cn-beijing.aliyuncs.com/dataimage/logo/team/14907570908022525.png" alt=""/>
+                                    <span>新疆宋庆龄足校(01段)</span>
+                                </p>
+                                <p class="client">
+                                    <img src="http://tongdaobigdata.oss-cn-beijing.aliyuncs.com/dataimage/logo/team/14920751628902521.png" alt=""/>
+                                    <span>上海绿地申花(01段)</span>
+                                </p>
+                            </div>
+                            <p class="score">
+                                <span>1</span>
+                                <span>0</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            <p class="session">第3轮</p>
+                            <p class="time">2017/3/20 &nbsp;9:30</p>
+                        </h3>
+                        <div class="content">
+                            <div>
+                                <p class="host">
+                                    <img src="http://tongdaobigdata.oss-cn-beijing.aliyuncs.com/dataimage/logo/team/14907569600194591.png" alt=""/>
+                                    <span>山东鲁能(01段)</span>
+                                </p>
+                                <p class="client">
+                                    <img src="http://tongdaobigdata.oss-cn-beijing.aliyuncs.com/dataimage/logo/team/14920751628902521.png" alt=""/>
+                                    <span>上海绿地申花(01段)</span>
+                                </p>
+                            </div>
+                            <p class="score">
+                                <span>2</span>
+                                <span>0</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            <p class="session">第2轮</p>
+                            <p class="time">2017-03-18 &nbsp;9:30</p>
+                        </h3>
+                        <div class="content">
+                            <div>
+                                <p class="host">
+                                    <img src="http://tongdaobigdata.oss-cn-beijing.aliyuncs.com/dataimage/logo/team/14907568749314914.png" alt=""/>
+                                    <span>上海上港(01段)</span>
+                                </p>
+                                <p class="client">
+                                    <img src="http://tongdaobigdata.oss-cn-beijing.aliyuncs.com/dataimage/logo/team/14920751628902521.png" alt=""/>
+                                    <span>上海绿地申花(01段)</span>
+                                </p>
+                            </div>
+                            <p class="score">
+                                <span>1</span>
+                                <span>2</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            <p class="session">第1轮</p>
+                            <p class="time">2017-03-16 &nbsp;9:30</p>
+                        </h3>
+                        <div class="content">
+                            <div>
+                                <p class="host">
+                                    <img src="http://tongdaobigdata.oss-cn-beijing.aliyuncs.com/dataimage/logo/team/14920751628902521.png" alt=""/>
+                                    <span>上海绿地申花(01段)</span>
+                                </p>
+                                <p class="client">
+                                    <img src="http://tongdaobigdata.oss-cn-beijing.aliyuncs.com/dataimage/logo/team/14907568886779613.png" alt=""/>
+                                    <span>广东梅州客家(01段)</span>
+                                </p>
+                            </div>
+                            <p class="score">
+                                <span>1</span>
+                                <span>0</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="../assets/js/jquery.min.js"></script>
+<script>
+    $('.admin-content-body div.gameinfo span.per90mincheck').click(function(){
+        if($(this).css('background-image').indexOf('no')!=-1){
+            $(this).css('background-image','url(../images/choose_03.png)');
+            $('.admin-content-body div.gameinfo div.left div p.per90min').css('opacity','1').children('span').addClass('active');
+            for(var i=0;i<self;i++){
+                if(per90[0][i]==0){
+                    $(perfirst[i]).css('width','5px');
+                }else {
+                    $(perfirst[i]).css('width', 'calc(' + per90[0][i] + '% - 30px)');
+                }
+            }
+        }else{
+            $(this).css('background-image','url(../images/nochoose.png)');
+            $('.admin-content-body div.gameinfo div.left div p.per90min').children('span').removeClass('active');
+            for(var i=0;i<self;i++){
+                $(perfirst[i]).css('width','0px');
+            }
+            $('.admin-content-body div.gameinfo div.left div p.per90min').css('opacity','0')
+        }
+    })
+    var arr=[
+        [3,1,5,2,0,3,18,3,4,1,1,0,0,3,0,3,0,0,0,'0%'],
+        [0,0,1,0,1,2,23,8,2,0,1,0,0,2,0,2,0,0,0,'0%'],
+        [0,0,1,3,0,0,14,5,2,1,3,1,1,3,0,4,1,0,0,'0%'],
+        [0,0,3,3,3,2,15,5,0,3,1,2,0,2,0,3,0,0,0,'0%'],
+        [0,0,4,7,3,0,23,7,1,1,1,0,1,1,0,1,0,0,0,'0%']
+    ]
+    var arrwidth=[
+        [83,83,64,40,0,68,49,34.9,69,45.5,41.7,0,0,57.7,0,53.6,0,0,0,0],
+        [0,0,21.7,0,41.7,58.8,55.3,58.8,52.6,0,41.7,0,0,47.6,0,43.5,0,0,0,0],
+        [0,0,26.3,50,0,0,43,47,52.5,45.5,68.2,62.5,71.4,57.7,0,60.6,83,0,0,0,0,0,0],
+        [0,0,52,50,68,59,44.5,47,0,71.5,41.6,77,0,47.6,0,53.5,0,0,0,0],
+        [0,0,55,70,67,0,54,57,34,45,45,0,70,30,0,28,0,0,0,0]
+    ];
+    var per90=[
+        [27,27,36,60,90,32,51,65.1,31,54.5,58.3,90,90,42.3,0,46.4,90,0,0,0],
+        [90,90,78.3,90,58.3,41.2,44.7,41.2,41.4,90,58.3,90,90,52.4,0,56.5,90,0,0,0],
+        [90,90,73.7,50,90,90,57,53,47.5,54.5,31.8,37.5,28.6,42.3,0,39.4,17,0,0,0,0,0,0],
+        [90,90,48,50,32,41,55.5,53,90,28.5,58.4,23,90,52.4,0,46.5,90,0,0,0],
+        [90,90,45,30,33,90,46,43,66,55,55,90,30,70,0,72,90,0,0,0]
+    ];
+    $('.admin-content-body div.gamelist li').click(function(){
+        $(this).addClass('active').siblings('.active').removeClass('active');
+        var index=$(this).index('.admin-content-body div.gamelist li');
+        var selfspans=$('.admin-content-body div.gameinfo div.left div p.self span:nth-child(2)');
+        var selffirst=$('.admin-content-body div.gameinfo div.left div p.self span:first-child');
+        var perfirst=$('.admin-content-body div.gameinfo div.left div p.per90min span:first-child');
+        var self=$('.admin-content-body div.gameinfo div.left div p.self span:nth-child(2)').length;
+        for(var i=0;i<self;i++){
+            selfspans[i].innerHTML=arr[index][i];
+            if(arrwidth[index][i]==0){
+                $(selffirst[i]).css('width','5px');
+            }else{
+                $(selffirst[i]).css('width','calc('+arrwidth[index][i]+'% - 30px)');
+            }
+            if(per90[index][i]==0){
+                $(perfirst[i]).css('width','5px');
+            }else {
+                $(perfirst[i]).css('width', 'calc(' + per90[index][i] + '% - 30px)');
+            }
+        }
+    })
+    var index=$(this).index('.admin-content-body div.gamelist li');
+    var selfspans=$('.admin-content-body div.gameinfo div.left div p.self span:nth-child(2)');
+    var selffirst=$('.admin-content-body div.gameinfo div.left div p.self span:first-child');
+    var perfirst=$('.admin-content-body div.gameinfo div.left div p.per90min span:first-child');
+    var self=$('.admin-content-body div.gameinfo div.left div p.self span:nth-child(2)').length;
+    for(var i=0;i<self;i++){
+        selfspans[i].innerHTML=arr[0][i];
+        if(arrwidth[0][i]==0){
+            $(selffirst[i]).css('width','5px');
+        }else{
+            $(selffirst[i]).css('width','calc('+arrwidth[0][i]+'% - 30px)');
+        }
+        /*if(per90[0][i]==0){
+            $(perfirst[i]).css('width','5px');
+        }else {
+            $(perfirst[i]).css('width', 'calc(' + per90[0][i] + '% - 30px)');
+        }*/
+    }
+    $('.am-topbar-brand').click(function(){
+        window.location.href='../yulan.html';
+    })
+</script>
+</body>
+</html>

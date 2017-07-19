@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#frameBox{
+				border: 5px solid;
+			}
+		</style>
+	</head>
+	<body>
+		<button onclick="button(this)">1.html</button>
+		<div id="frameBox"> 
+			<iframe id="frameWin" src="2.html" frameborder="0" scrolling="no" onload="autoHeight();"></iframe> 
+		</div>
+		
+		<script type="text/javascript">
+			function button (idx) {
+				var frameWin = document.getElementById("frameWin"); 
+				frameWin.src = idx.innerHTML;
+				if (idx.innerHTML == "1.html") {
+					idx.innerHTML = "2.html"
+				} else{
+					idx.innerHTML = "1.html"
+				}
+			}
+		    function autoHeight(){
+		        var iframe = document.getElementById("frameWin");
+		        console.log(iframe.contentDocument.body.offsetHeight);
+		        iframe.height = iframe.contentDocument.body.offsetHeight;
+		        if(iframe.Document){//ie自有属性
+		            iframe.style.height = iframe.Document.documentElement.scrollHeight;
+		        }else if(iframe.contentDocument){//ie,firefox,chrome,opera,safari
+		            
+		        }
+		    }
+
+		
+//			function test2(){ 
+//				var frameWin = document.getElementById("frameWin"); 
+//				var frameBox = document.getElementById("frameBox"); 
+//				var newHeight; 
+//				if (frameWin.Document){ 
+//					newHeight = frameWin.Document.body.scrollHeight + "px"; 
+//				}else{ 
+//					newHeight = frameWin.contentDocument.body.scrollHeight + "px"; 
+//				} 
+//				frameWin.style.height = newHeight; 
+//				frameBox.style.height = newHeight; 
+//			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,485 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>球队俱乐部管理</title>
+		<meta name="description" content="这是一个 index 页面">
+		<meta name="keywords" content="index">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<!--	<link rel="icon" type="image/png" href="assets/i/favicon.png">-->
+
+		<link rel="stylesheet" href="assets/css/amazeui.min.css" />
+		<link rel="stylesheet" href="assets/css/admin.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/layer.css" />-->
+		<script src="assets/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/china.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="assets/css/wqt.css" />
+	</head>
+
+	<body>
+
+		<div class="am-topbar am-topbar-inverse admin-header">
+			<div class="am-topbar-brand">
+				<strong><img src="i/logo3.png" alt="" /></strong> <small>中国青少年足球数据库</small>
+			</div>
+			<div class="am-collapse am-collapse1  am-topbar-collapse" id="topbar-collapse">
+				<a href="#" class="l-sy"></a>
+				<a href="#" class="l-link2"></a>
+				<a href="#" class="l-link3" target="_blank" style=" position: relative;top: -9px;">您好，Admin</a>
+				<a href="#" class="l-link4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="am-cf admin-main">
+			<!-- sidebar start -->
+			<div class="admin-sidebar" id="admin-offcanvas">
+				<div class="am-offcanvas-bar admin-offcanvas-bar">
+					<ul class="am-list admin-sidebar-list" >
+						<li class="admin-parent">
+							<a class="am-cf"   href="yulan.html" ><span class="am-icon-file"></span><img
+									src="images/icon_ce_shuju.png"
+									alt=""/>数据管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+							<ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-in" id="collapse-nav1">
+								<li class="nav-sub-item" id="collapse-nav1">
+									<a href="#collapse-sub-nav1" data-am-collapse="{parent: '#collapse-nav1'}" class="am-cf">
+										<span class="am-icon-check"></span> 档案管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+									</a>
+									<ul class="l-nav-3 navbar-thr paddingleft0 am-in" id="collapse-sub-nav1">
+										<li>
+											<a href="d-qiuyuan_2.html"><span>球员管理</span></a>
+										</li>
+										<li>
+											<a href="d-caipan.html"><span>裁判管理</span></a>
+										</li>
+										<li>
+											<a href="d-jiaolian.html"><span>教练管理</span></a>
+										</li>
+										<li>
+											<a class="active" href="d-julebu.html"><span>球队/俱乐部管理</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a href="leaguematches.html" class="am-cf"><span class="am-icon-puzzle-piece"></span> 联赛管理</a>
+								</li>
+								<li class="nav-sub-item">
+									<a href="videos.html" class="am-cf"><span class="am-icon-th"></span> 视频管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="#collapse-nav2"><span class="am-icon-table"></span><img
+									src="images/icon_ce_gongzuo.png"
+									alt=""/>工作管理</a>
+							<ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-collapse" id="collapse-nav2">
+								<li class="nav-sub-item" id="collapse-nav2">
+									<a href="#collapse-sub-nav2" data-am-collapse="{parent: '#collapse-nav2'}" class="am-cf">
+										<span class="am-icon-check"></span> 流程管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+									</a>
+									<ul class="l-nav-3 navbar-thr paddingleft0 am-collapse" id="collapse-sub-nav2">
+										<li>
+											<a href="lc-baom2.html"><span>球队报名</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a href="#" class="am-cf"><span class="am-icon-puzzle-piece"></span> 信息管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="###"><span class="am-icon-table"></span><img
+									src="images/icon_ce_xitong.png"
+									alt=""/>系统管理</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_guo.png"
+									alt=""/>国少</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_guo.png"
+									alt=""/>国青</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_guo.png"
+									alt=""/>国奥</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="inform.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_tongzhi.png"
+									alt=""/>通知</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- sidebar end -->
+
+			<!-- content start -->
+			<style type="text/css">
+				.julebutop{
+					width: 100%;
+					margin-bottom: 20px;
+				}
+				.admin-content p{
+					font-size: 14px;
+					margin: 0;
+				}
+				.admin-content span{
+					font-size: 16px;
+					display: block;
+				}
+				.jltitle{
+					border-bottom: 1px solid #DDDDDD;
+				}
+				.jltitle h3{
+					padding-left: 15px;
+					border-left: 3px solid #1db135;
+					font-weight: normal;
+				}
+				.julebumain1{
+					float: left;
+					width: 35%;
+					height: 235px;
+					background: white;
+					padding:20px 30px;
+				}
+				.julebumain1 .zjlmain img{
+					margin-top: 20px;
+					width: 105px;
+					float: left;
+				}
+				.julebumain1 .zjlmain p{
+					width: 50%;
+					float: right;
+					margin-top: 40px;
+					font-size: 14px;
+				}
+				.julebumain2{
+					float: left;
+					width: 63%;
+					margin-left: 2%;
+					height: 235px;
+					background: white;
+					padding:20px 30px;
+				}
+				.jlzmain{
+					width: 100%;
+				}
+				.jlzmain ul{
+					width: 100%;
+					margin: 0;
+					padding: 0;
+					margin-top: 18px;
+				}
+				.jlzmain ul:after{
+					content: "";
+					display: block;
+					width: 0;
+					height: 0;
+					clear: both;
+				}
+				.jlzmain ul li{
+					float: left;
+					width: 24%;
+					margin-left: 1%;
+				}
+				.jlzmain ul li img{
+					float: left;
+					width: 50px;
+					margin-right: 2%;
+				}
+				.jlzmain ul li p{
+					width: 54%;
+					overflow: hidden;
+					float: left;
+					margin-top: 0px;
+				}
+				.jlzmain ul li p span{
+					font-size: 16px;
+					line-height: 15px;
+					/*text-align: center;*/
+				}
+				
+				/*3*/
+				.julebumain3{
+					float: left;
+					width: 35%;
+					background: white;
+					padding:20px 30px;
+				}
+				.bfmain{
+					width: 100%;
+					margin: 0;
+					padding: 0;
+					margin-top: 15px;
+					border-bottom: 1px solid #DDDDDD;
+				}
+				.bfmain li{
+					width: 100%;
+				}
+				.bfmain li time{
+					display: block;
+					text-align: center;
+					font-size: 14px;
+				}
+				.bfmain li p:after{
+					content: "";
+					display: block;
+					width: 0;
+					height: 0;
+					clear: both;
+				}
+				.bfmain li p span{
+					font-size: 20px;
+				}
+				.bfmain li p .score{
+					width: 30%;
+					text-align: center;
+					font-size: 30px;
+				}
+				.bfmain li p .bfmainlef{
+					float: left;
+				}
+				.bfmain li p .bfmainrig{
+					float: right;
+				}
+				.bfmain li p i{
+					float: left;
+					color: #CCCCCC;
+					font-size: 18px;
+					font-style: normal;
+					width: 40%;
+					text-align: center;
+					margin-top: 10px;
+				}
+				.bfmain li p i.vs{
+					font-size: 20px;
+					color: #333333;
+				}
+				
+				
+				/*4*/
+				.julebumain4{
+					float: left;
+					width: 63%;
+					margin-left: 2%;
+					background: white;
+					padding:20px 30px;
+				}
+				.qymain{
+					width: 100%;
+				}
+				.qymain tr th{
+					height: 40px;
+					font-weight: normal;
+					background: #f5f5f5;
+					text-align: center;
+				}
+				.qymain tr td{
+					height: 45px;
+					text-align: center;
+				}
+				.qymain tr td img{
+					width: 30px;
+					text-align: center;
+					vertical-align: middle;
+				}
+				.qymain tr td a img{
+					width: 20px;
+					text-align: center;
+					vertical-align: middle;
+				}
+			</style>
+			<div class="admin-content">
+				<div class="julebutop">
+					<div class="julebumain1">
+						<div class="jltitle">
+							<h3>主教练</h3>
+						</div>
+						<div class="zjlmain">
+							<img src="images/make.jpg"/>
+							<p>
+								<span>马克.佩扎伊沃利</span>
+								执教级别：欧A
+							</p>
+						</div>
+						
+					</div>
+					
+					<div class="julebumain2">
+						<div class="jltitle">
+							<h3>教练组</h3>
+						</div>
+						<div class="jlzmain">
+							<ul>
+								<li>
+									<img src="images/parent.jpg"/>
+									<p>助理教练<span>VAN BURREN.MARCEL</span></p>
+								</li>
+								<li>
+									<img src="images/parent.jpg"/>
+									<p>助理教练<span>JAYME. BERND</span></p>
+								</li>
+								<li>
+									<img src="images/parent.jpg"/>
+									<p>队医<span>蒿俊闵</span></p>
+								</li>
+								<li>
+									<img src="images/parent.jpg"/>
+									<p>康复理疗师<span>-</span></p>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<img src="images/parent.jpg"/>
+									<p>体能教练<span>-</span></p>
+								</li>
+								<li>
+									<img src="images/parent.jpg"/>
+									<p>守门员教练<span>-</span></p>
+								</li>
+								<li>
+									<img src="images/parent.jpg"/>
+									<p>领队<span>-</span></p>
+								</li>
+								<li>
+									<img src="images/parent.jpg"/>
+									<p>队务<span>-</span></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<style type="text/css">
+					
+				</style>
+				<div class="julebutop">
+					<div class="julebumain3">
+						<div class="jltitle">
+							<h3>比分</h3>
+						</div>
+						<ul class="bfmain">
+							<li>
+								<time>12月 24日 周六 18:30</time>
+								<p><span class="bfmainlef">广州恒大</span><span class="bfmainrig">上海上港</span></p>
+								<p><span class="bfmainlef score">0</span><i>即将开赛</i><span class="bfmainrig score">0</span></p>
+							</li>
+						</ul>
+						<ul class="bfmain">
+							<li>
+								<time>12月 26日 周一 18:30</time>
+								<p><span class="bfmainlef">广州恒大</span><span class="bfmainrig">山东鲁能</span></p>
+								<p><span class="bfmainlef score">0</span><i>即将开赛</i><span class="bfmainrig score">0</span></p>
+							</li>
+						</ul>
+						<ul class="bfmain">
+							<li>
+								<time>10月 26日 周三 17:35</time>
+								<p><span class="bfmainlef">江苏苏宁</span><span class="bfmainrig">广州恒大</span></p>
+								<p><span class="bfmainlef score">0</span><i class="vs">VS</i><span class="bfmainrig score">2</span></p>
+							</li>
+						</ul>						
+					</div>
+					
+					<div class="julebumain4">
+						<div class="jltitle">
+							<h3>球员</h3>
+						</div>
+						<table class="qymain" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<th>头像</th>
+								<th>姓名</th>
+								<th>年龄</th>
+								<th>位置</th>
+								<th>身高</th>
+								<th>体重</th>
+								<th>比赛数据</th>
+							</tr>
+							<tr>
+								<td><img src="images/parent.jpg"/></td>
+								<td>麦高崚</td>
+								<td>18</td>
+								<td>前锋</td>
+								<td>168</td>
+								<td>70</td>
+								<td><a href="###"><img src="images/2.png"/></a></td>
+							</tr>
+							<tr>
+								<td><img src="images/parent.jpg"/></td>
+								<td>祝福</td>
+								<td>19</td>
+								<td>前锋</td>
+								<td>170</td>
+								<td>72</td>
+								<td><a href="###"><img src="images/2.png"/></a></td>
+							</tr>
+							<tr>
+								<td><img src="images/parent.jpg"/></td>
+								<td>吴越</td>
+								<td>18</td>
+								<td>中场</td>
+								<td>172</td>
+								<td>70</td>
+								<td><a href="###"><img src="images/2.png"/></a></td>
+							</tr>
+							<tr>
+								<td><img src="images/parent.jpg"/></td>
+								<td>黄志远</td>
+								<td>19</td>
+								<td>中场</td>
+								<td>175</td>
+								<td>73</td>
+								<td><a href="###"><img src="images/2.png"/></a></td>
+							</tr>
+							<tr>
+								<td><img src="images/parent.jpg"/></td>
+								<td>陈晓阳</td>
+								<td>17</td>
+								<td>中场</td>
+								<td>168</td>
+								<td>65</td>
+								<td><a href="###"><img src="images/2.png"/></a></td>
+							</tr>
+							<tr>
+								<td><img src="images/parent.jpg"/></td>
+								<td>吴宇翔</td>
+								<td>19</td>
+								<td>后卫</td>
+								<td>171</td>
+								<td>68</td>
+								<td><a href="###"><img src="images/2.png"/></a></td>
+							</tr>
+							<tr>
+								<td><img src="images/parent.jpg"/></td>
+								<td>郭滔</td>
+								<td>17</td>
+								<td>后卫</td>
+								<td>168</td>
+								<td>68</td>
+								<td><a href="###"><img src="images/2.png"/></a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				
+			</div>
+			<!-- content end -->
+		</div>
+
+		<!--[if (gte IE 9)|!(IE)]><!-->
+		<script src="assets/js/jquery.min.js"></script>
+		<!--<![endif]-->
+		<script src="assets/js/amazeui.min.js"></script>
+	</body>
+
+</html>

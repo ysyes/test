@@ -1,0 +1,133 @@
+#box .header input{
+    margin-right: 0;
+    width:125px;
+}
+#box .header div.select i{
+    display: inline-block;
+    width:26px;
+    height:26px;
+    background:url('../../img/search.png') no-repeat right;
+    cursor: pointer;
+}
+/*冻结样式*/
+div.content tbody tr td span.disabled{
+	color: #CCCCCC;
+}
+div.content .disabled td{
+	color: #CCCCCC;
+}
+div.content .disabled td span:nth-child(3){
+	color: #292929;
+}
+div.content .disabled td span:nth-child(2){
+	color: #3b8bff;
+}
+/*修改密码弹框*/
+#updatePassWord{
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background:transparent;
+    z-index: 999;
+}
+div.updatePassWord{
+    width:330px;
+    height:230px;
+    padding:0 30px;
+    background: #fff;
+    position: fixed;
+    left:50%;
+    top:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 1px #ddd;
+}
+div.updatePassWord p{
+    font-size: 16px;
+    color:#292929;
+    display: inline-block;
+    width:66px;
+    text-align: right;
+    line-height:30px;
+    margin-right:14px;
+}
+div.updatePassWord h3{
+	font-size: 16px;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	font-weight: normal;
+	margin-top: 10px;
+}
+div.updatePassWord>div{
+    margin:15px auto;
+    text-align: center;
+}
+div.updatePassWord p.tishi,div.logout p.tishi{
+    border-bottom: 1px solid #d7e7ff;
+    float: none;
+    width: 100%;
+    text-align: left;
+    height:44px;
+    line-height: 44px;
+}
+div.updatePassWord p.tishi span,div.logout p.tishi span{
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
+div.updatePassWord input{
+    box-sizing: border-box;
+    border:1px solid #e4e4e4;
+    width:156px;
+    outline:none;
+    height:30px;
+    font-family: "Microsoft Yahei";
+    padding:1px;
+    color:#292929;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+div.updatePassWord div.yuanmima{
+    margin-top:10px;
+}
+div.updatePassWord div.button,div.logout div.button{
+    margin-top:20px;
+    text-align: center;
+}
+div.updatePassWord button,div.logout button{
+    width:76px;
+    font-size: 16px;
+    height:28px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+button.gray{
+    box-sizing: border-box;
+    padding: 0;
+    outline:none;
+    cursor: pointer;
+    background:#fff;
+    color: #3b8bff;
+    border:1px solid #3b8bff;
+}
+button.red{
+    box-sizing: border-box;
+    padding: 0;
+    border:0;
+    color: #ffffff;
+    background: #3b8bff;
+    outline: none;
+    cursor: pointer;
+    margin-right:20px;
+}

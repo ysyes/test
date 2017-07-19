@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		密码<input type="password" name="" id="" value="" />
+		<button>点击</button>
+	</body>
+	<script type="text/javascript">
+		var btn = document.querySelector("button");
+		var inp = document.querySelector("input")
+		btn.onclick = function () {
+			//inp.setAttribute("type","text");
+			inp.type = "text";
+			console.log(inp.type);
+		}
+		
+	</script>
+</html>

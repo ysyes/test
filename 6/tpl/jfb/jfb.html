@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>积分榜</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/page.css"/>
+    <link rel="stylesheet" href="jfbstyle.css"/>
+    <link rel="stylesheet" type="text/css" href="jfbyl.css"/>
+    <script type="text/javascript" src="../../lib/WdatePicker.js" ></script>
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <p>积分榜</p>
+            <div></div>
+        </div>
+        <div class="add">
+            <a href="scjfb.html"><button class="button">添加积分榜</button></a>
+        </div>
+        <div class="show">
+            <ul class="title">
+                <li class="active">积分榜</li>
+                <li>
+                    <input class="Wdate date" type="text" name="leagueyear" placeholder="赛事年份" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy'})"/><i></i>
+                </li>
+            </ul>
+            <div class="content">
+                <table class="table1">
+                    <thead>
+                    <tr>
+                        <th width="220px">联赛名称</th>
+                        <th width="286px">详情</th>
+                        <th width="230px">赛事年份</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- <tr>
+                        <td>中超第28轮恒大</td>
+                         <td><a>详情</a></td>
+                        <td>2016-10-09 08:36:25</td>
+                    </tr>
+                    <tr>
+                        <td>中超第28轮恒大</td>
+                        <td><a>详情</a></td>
+                        <td>2016-10-09 08:36:25</td>
+                    </tr>
+                    <tr>
+                        <td>中超第28轮恒大</td>
+                        <td><a>详情</a></td>
+                        <td>2016-10-09 08:36:25</td>
+                    </tr>
+                    <tr>
+                        <td>中超第28轮恒大</td>
+                        <td><a href="">详情</a></td>
+                        <td>2016-10-09 08:36:25</td>
+                    </tr> -->
+                    </tbody>
+                </table>
+                <div class="page">
+                    <ul>
+                        <li class="disable">上一页</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>下一页</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="mask">
+        <div class="yulan">
+            <div id="show">
+				<div style="display: block;" class="table" id="dataMainFirst">
+					<table>
+						
+					</table>
+					
+					<div class="dataFooter">
+						<p>
+							<span class="first"></span>晋级
+							<span class="second"></span>资格赛
+							<span class="last"></span>降级
+						</p>
+						<p class="rule">同名排名规则:先后比较&nbsp;&nbsp;相互积分/净胜球/总进球数</p>
+					</div>
+				</div>
+				
+				
+				<div class="table">
+					<div id="dataMainSecond">
+							
+					</div>
+				</div>
+				
+            </div>
+            <div class="button">
+                <a href="jfb.html"><button class="button back">返回</button></a>
+            </div>
+        </div>
+    </span>
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/page.js"></script>
+    <script src="jfb.js"></script>
+</body>
+</html>

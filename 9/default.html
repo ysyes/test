@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>后台录入系统</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/default.css"/>
+</head>
+<body>
+    <div id="header">
+        <div class="title">
+            <p><img src="img/logo.png" alt=""/>后台录入系统</p>
+            <div class="userInfo">
+                <img src="img/user.png" alt=""/><span>宝贝V计划</span><i></i>
+                <ul style="display: none;"><li><b></b><img src="img/user.png" alt=""/><span>宝贝V计划</span></li><li><i></i>修改密码</li><li><i></i>退出登录</li></ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <ul class="list">
+            <li class="active"><img src="img/blue_news.png"/>新闻</li>
+            <li><img src="img/zixun.png"/>一条资讯</li>
+            <li><img src="img/yonghu.png"/>用户</li>
+            <li><img src="img/qiudui.png">球队</li>
+            <li><img src="img/saishi.png"/>赛事</li>
+            <li><img src="img/qingbao.png"/>比赛情报</li>
+            <li><img src="img/minganzi.png"/>敏感字</li>
+            <li><img src="img/sousuoci.png"/>热门搜索词</li>
+            <li><img src="img/qudao.png"/>渠道</li>
+            <li><img src="img/admin.png"/>管理员</li>
+            <li><img src="img/rule.png"/>角色</li>
+            <li><img src="img/program.png"/>模块</li>
+        </ul>
+        <iframe src="tpl/news/news.html" frameborder="0" scrolling=""></iframe>
+    </div>
+    <div class="module1" style='display:none;'>
+        <div class="updatePassWord">
+            <p class="tishi">修改密码 <span>×</span></p>
+            <div class="yuanmima">
+                <p>原密码</p><input type="password" name="oldpassword" maxlength="20" autofocus required pattern="(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])^[\x00-\xff]{6,20}$"/>
+            </div>
+           <div>
+               <p>新密码</p><input type="password" name="newpassword" placeholder="6-20位大小写字母加数字" required pattern="(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])^[\x00-\xff]{6,20}$"/>
+           </div>
+           <div>
+               <p>确认密码</p><input type="password" name="relpassword" placeholder="6-20位大小写字母加数字" required pattern="(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])^[\x00-\xff]{6,20}$"/>
+           </div>
+            <div class="button">
+                <button class="gray">取消</button><button class="red">确认</button>
+            </div>
+        </div>
+    </div>
+    <div class="module2" style='display:none;'>
+        <div class="logout">
+            <p class="tishi">提示 <span>×</span></p>
+            <p>确定要退出动彩后台么？</p>
+            <div class="button">
+                <button class="gray">取消</button><button class="red">确定</button>
+            </div>
+        </div>
+    </div>
+    <div class="module3" style="display: none;">
+        <div class="alertFn">
+            <p></p>
+            <button class="red">确定</button>
+        </div>
+    </div>
+    <script src="lib/jquery-2.2.3.min.js"></script>
+    <script src="js/default.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>文章管理</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/page.css"/>
+    <link rel="stylesheet" href="wzglstyle.css"/>
+    <script type="text/javascript" src="../../lib/WdatePicker.js" ></script>
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <p>文章管理</p>
+            <div></div>
+        </div>
+        <div class="publish">
+            <a href="fbwz.html"><button>发表文章</button></a>
+        </div>
+        <div class="show">
+            <form>
+                <ul class="title">
+                    <li class="active">全部</li>
+                    <li>
+                        <div>
+                            <input class="name" type="text" placeholder="文章名称" name="title"/>
+                            <i></i>
+                        </div>
+                        <div>
+                            <select name="status" class="state">
+                                <option value="">--全部状态--</option>
+                                <option value="1">启用</option>
+                                <option value="0">禁用</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input class="Wdate date" type="text" name="starttime" placeholder="起始日期" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd'})"/>
+                           <span><u></u></span><input class="Wdate date" type="text" name="endtime" placeholder="结束日期" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd'})"/>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+
+            <div class="content">
+                <table class="table1">
+                    <thead>
+                    <tr>
+                        <th width="300px">标题</th>
+                        <th width="200px">发表时间</th>
+                        <th width="126px">来源</th>
+                        <th width="86px">分类</th>
+                        <th width="130">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!--<tr articalid="1">-->
+                        <!--<td><a href="plgl.html">中超第28轮恒大主场战胜延边富德</a></td>-->
+                        <!--<td>2016-10-09 08:36:25</td>-->
+                        <!--<td>已发表</td>-->
+                        <!--<td>-->
+                            <!--<a href="" class="able">编辑</a>-->
+                            <!--<a href="" class="disable">禁用</a>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--<tr articalid="2">-->
+                        <!--<td><a href="plgl.html">中超第28轮恒大主场战胜延边富德</a></td>-->
+                        <!--<td>2016-10-09 08:36:25</td>-->
+                        <!--<td>已发表</td>-->
+                        <!--<td>-->
+                            <!--<a href="" class="able">编辑</a>-->
+                            <!--<a href="" class="able">恢复</a>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    </tbody>
+                </table>
+                <div class="page">
+                    <ul>
+                        <li class="disable">上一页</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>下一页</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/page.js"></script>
+    <script src="wzgl.js"></script>
+</body>
+</html>

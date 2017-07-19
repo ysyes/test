@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft yahei";
+}
+select::-ms-expand { 
+	display: none; 
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+html{
+	overflow-x:auto;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	color: #333;
+}
+body{
+	min-width: 1000px;
+	box-sizing: border-box;
+	padding: 20px;
+	background: #ededed;
+}
+#box{
+	box-sizing: border-box;
+	padding: 10px 20px;
+	width: 100%;
+	/*height: 100%;*/
+	min-height: 100%;
+	margin-bottom: 20px;
+	background: white;
+	box-shadow: 0 0 10px 5px #CCCCCC;
+	position: relative;
+	padding-bottom: 100px;
+}
+#box header{
+	height: 40px;
+	width: 100%;
+	font-size: 18px;
+	color: #e3442a;
+	line-height: 40px;
+	background: url(../../img/icon_saishi_red.png) no-repeat 0 3px;
+}
+#box header h3{
+	font-weight: normal;
+	float: left;
+	margin-left: 35px;
+	font-size: 18px;
+}
+#box header h3 a{
+	font-size: 18px;
+	color: #e3442a;
+}
+#box header>a{
+	display: block;
+	height: 38px;
+	color: #e3442a;
+	text-align: center;
+	line-height: 38px;
+	border: 1px solid #E4442A;
+	border-radius: 3px;
+	float: right;
+	padding-right:5px;
+	font-size: 16px;
+}
+#box header a span{
+	float: left;
+	height: 38px;
+	font-weight: bold;
+	padding: 0 5px;
+	font-size: 30px;
+	line-height: 35px;
+}
+#box table{
+	border-collapse: 0;
+	border-spacing: 0;
+	font-size: 16px;
+	width: 100%;
+	margin-top: 10px;
+}
+#box table a{
+	font-size: 16px;
+}
+#box table a:hover{
+	color: #E3442A;
+}
+#box table thead tr th{
+	background: #E4442A;
+	color: white;
+	font-weight: normal;
+	height: 50px;
+	line-height: 50px;
+}
+#box table tbody tr td{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: 1px solid #CCCCCC;
+}
+#box table tbody tr td img{
+	float: left;
+	display: block;
+	margin: 5px auto;
+	width: 40px;
+	height: 40px;
+}
+#box table tbody tr td a{
+	margin: 0 5px;
+	cursor: pointer;
+}
+#box .tcdPageCode{
+	box-sizing: border-box;
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}

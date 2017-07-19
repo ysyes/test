@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function insertEnter(str, n) {
+			    var len = str.length;
+			    var strTemp = '';
+			    if (len > n) {
+			        strTemp = str.substring(0, n);
+			        str = str.substring(n, len);
+			        return strTemp + '\n' + insertEnter(str, n);
+			    } else {
+			        return str;
+			    }
+			}
+			var str = "22qabcwersabcdqsswdfgabchq";
+			console.log(insertEnter(str,4))
+		</script>
+	</body>
+</html>

@@ -1,0 +1,65 @@
+[{
+  "team_id":"1",
+  "name":"山东鲁能",
+  "logo":"zc12"
+},{
+  "team_id":"2",
+  "name":"重庆力帆",
+  "logo":"zc11"
+},{
+  "team_id":"3",
+  "name":"北京国安",
+  "logo":"zc10"
+},{
+  "team_id":"4",
+  "name":"石家庄永昌",
+  "logo":"zc09"
+},{
+  "team_id":"5",
+  "name":"广州富力",
+  "logo":"zc08"
+},{
+  "team_id":"6",
+  "name":"河南建业",
+  "logo":"zc07"
+},{
+  "team_id":"7",
+  "name":"天津泰达",
+  "logo":"zc06"
+},{
+  "team_id":"8",
+  "name":"上海绿地申花",
+  "logo":"zc05"
+},{
+  "team_id":"9",
+  "name":"河北华夏幸福",
+  "logo":"zc04"
+},{
+  "team_id":"10",
+  "name":"上海上港",
+  "logo":"zc03"
+},{
+  "team_id":"11",
+  "name":"广州恒大淘宝",
+  "logo":"zc01"
+},{
+  "team_id":"12",
+  "name":"长春亚泰",
+  "logo":"zc16"
+},{
+  "team_id":"13",
+  "name":"辽宁宏运",
+  "logo":"zc15"
+},{
+  "team_id":"14",
+  "name":"杭州绿城",
+  "logo":"zc14"
+},{
+  "team_id":"15",
+  "name":"延边富德",
+  "logo":"zc13"
+},{
+  "team_id":"16",
+  "name":"江苏苏宁易购",
+  "logo":"zc02"
+}]

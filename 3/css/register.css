@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+li{
+	list-style: none;
+}
+body{
+	background: #EBEBEB;
+	color: #333333;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+a{
+	text-decoration: none;
+}
+.register{
+	height: 550px;
+	width: 916px;
+	margin: 0 auto;
+	background: white;
+	border-radius: 10px;
+	margin-top: 70px;
+	padding-left: 84px;
+	position: relative;
+	margin-bottom: 20px;
+}
+.register h2{
+	font-size: 24px;
+	line-height: 97px;
+	font-weight: normal;
+	color: #0055A1;
+}
+.register div{
+	height: 40px;
+	margin-bottom: 27px;
+	font-size: 0;
+}
+.register div p{
+	width: 97px;
+	height: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	float: left;
+}
+.register div input{
+	width: 260px;
+	height: 38px;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	font-size: 20px;
+	text-align: center;
+	color: #333333;
+	float: left;
+}
+
+.register div .truefalse{
+	width: 50px;
+}
+.register div .true{
+	width: 50px;
+	background: url(../img/true.png) no-repeat 8px 10px;
+}
+.register div .false{
+	width: 50px;
+	background: url(../img/false.png) no-repeat 8px 10px;
+}
+.register div span{
+	display: block;
+	float: left;
+	height: 40px;
+	font-size: 15px;
+	line-height: 40px;
+	color: #666666;
+}
+.register .tel input{
+	width: 130px;
+}
+.register .tel .button{
+	width: 114px;
+	height: 40px;
+	margin-left: 14px;
+	background: #EBEBEB;
+	color: #333333;
+	font-size: 15px;
+	line-height: 40px;
+}
+.register p{
+	font-size: 15px;
+	color: #666666;
+}
+.register p input{
+	width: 15px;
+	height: 15px;
+	margin-left: 97px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.register p .check{
+	display: inline-block;
+	color: red;
+	margin-left: 105px;
+	display: none;
+}
+.register .sub{
+	margin-left: 97px;
+	height: 63px;
+	background: #ef8750;
+	color: white;
+	font-size: 20px;
+	border: none;
+	margin-top: 20px;
+}
+#xieyi{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	background: white;
+	width: 1000px;
+	height: 550px;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+#xieyi button{
+	height: 50px;
+	background: #ef8750;
+	color: white;
+	font-size: 20px;
+	width: 150px;
+	border: none;
+	margin-top: 20px;
+}
+#xieyi iframe{
+	border: none;
+	text-align: center;
+}
+footer{
+	width: 1000px;
+	margin: 0 auto;
+	color: #999999;
+	font-size: 16px;
+}
+footer span{
+	float: right;
+}

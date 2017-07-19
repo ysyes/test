@@ -1,0 +1,144 @@
+ul.title li:first-child{
+    width:84px;
+}
+ul.title li:last-child{
+    width:calc(100% - 84px);
+}
+ul.title li:last-child input,ul.title li:last-child select{
+    height:24px;
+    float:left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+ul.title li:last-child input.date{
+    width:120px;
+}
+ul.title li:last-child input:first-child{
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+ul.title li:last-child input:nth-child(3){
+    border-radius: 0;
+}
+ul.title li:last-child select.state{
+    width:118px;
+    box-sizing: border-box;
+    color:#ccc;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    text-align: center;
+    outline:none;
+    height:24px;
+    padding:0;
+    border:1px solid #ccc;
+    appearance:none;
+    -moz-appearance:none;    /*for firefox*/
+    -webkit-appearance:none;    /*for chrome*/
+    padding-right: 26px;
+    overflow: hidden;
+    background: url(../../img/down.png) no-repeat right #fff;
+}
+ul.title li:last-child input.name{
+    width:114px;
+}
+ul.title li:last-child div{
+    float:right;
+    height:24px;
+    padding-top:13px;
+    margin-left:10px;
+}
+ul.title li:last-child span{
+    float: left;
+    width:15px;
+    height:24px;
+    background:#ccc;
+}
+ul.title li:last-child span u{
+    float: left;
+    margin-left:4px;
+    margin-top:11px;
+    width:7px;
+    height:2px;
+    background:#fff;
+}
+ul.title li i{
+    float:left;
+    width:26px;
+    height:24px;
+    background-image:url('../../img/search.png');
+    background-color:#0055a1;
+    background-repeat:no-repeat;
+    border-top-right-radius: 3px;
+    background-position: center;
+    border-bottom-right-radius: 3px;
+}
+div.content>div:first-child{
+    height:50px;
+    line-height:50px;
+    width:70%;
+    float:left;
+    color:#333;
+    font-size:16px;
+    margin:0 14px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+div.content div.button{
+    width: 20%;
+    float: right;
+}
+div.content div.button button{
+    width: 80px;
+    height: 34px;
+    margin-top: 6px;
+    font-size:15px;
+    border:0;
+}
+div.content .table1 thead th{
+    border:0;
+    background:#ebebeb;
+    color:#666;
+}
+div.content .table1 thead th:first-child{
+    text-align: left;
+    padding-left:14px;
+}
+div.content .table1 tbody tr td:first-child{
+    text-align: left;
+    color:#333;
+    padding-left:14px;
+}
+div.content .table1 tbody td{
+    border-bottom:1px solid #ccc;
+    height:64px;
+}
+div.content .table1 tbody tr:nth-child(even){
+    background:#fff;
+}
+div.content .table1 tbody tr td:nth-child(2) input{
+    width:272px;
+    height:28px;
+}
+.table1 tbody td a{
+    display: inline-block;
+    box-sizing: border-box;
+    width:39px;
+    height:22px;
+    font-size: 14px;
+    text-align: center;
+    border-radius:3px;
+    font-family: '微软雅黑';
+    padding:4px 0;
+    text-decoration: none;
+    cursor:pointer;
+}
+.table1 tbody td a.able{
+    border:1px solid #0055a1;
+    color:#0055a1;
+}
+.table1 tbody td a.disable{
+    border:1px solid  rgba(255, 0, 0, 0.52);
+    color: rgba(255, 0, 0, 0.52);
+}

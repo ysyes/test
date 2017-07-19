@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p{
+				width: 100px;
+				height:700px;
+				background:black;
+			}
+		</style>
+	</head>
+		<p></p>
+		<p></p>
+	<body>
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript">
+			var scrollFunc = function(e) {
+				e = e || window.event;
+				if(e.wheelDelta) { //IE/Opera/Chrome 
+					if(e.wheelDelta == 120) {
+						//向上滚动事件 
+						console.log(e.wheelDeta + "向上");
+
+					} else {
+						//向上滚动事件 
+						console.log(e.wheelDeta + "向下");
+					}
+				} else if(e.detail) {
+					//Firefox 
+					if(e.detail == -3) {
+						//向上滚动事件<br> 
+						console.log(e.detail + "向上");
+					} else {
+						//向下滚动事件<br> 
+						console.log(e.detail + "向下 ");
+					}
+				}
+			};
+			if(document.addEventListener) {
+				//adding the event listerner for Mozilla 
+				document.addEventListener("DOMMouseScroll", scrollFunc, false);
+			}
+			//IE/Opera/Chrome 
+			window.onmousewheel = document.onmousewheel = scrollFunc;
+		</script>
+	</body>
+
+</html>

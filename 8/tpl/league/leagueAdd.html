@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>赛事</title>
+		<link rel="stylesheet" type="text/css" href="leagueAdd.css"/>
+	</head>
+	<body>
+		<div id="box">
+			<header>
+				<h3>赛事新增</h3>
+			</header>
+			<div class="main">
+				<ul>
+					<li>
+						<p>赛事名称</p>
+						<input type="text" id="teamName" value="" placeholder='请输入赛事名称' maxlength='20'/>
+						<span>*</span>
+						<p>赛事代码</p>
+						<input type="text" id="teamCode" value="" placeholder='请输入赛事代码'/>
+						<span>*</span>
+					</li>
+					<li>
+						<p>洲</p>
+						<select id="continent">
+							<option value="">请选择洲</option>
+						</select>
+						<span></span>
+						<p>国家</p>
+						<select id="country">
+							<option value="">请选择国家</option>
+						</select>
+						<span></span>
+					</li>
+					<li>
+						<p>性别</p>
+						<select id="sex">
+							<option value="1">男足</option>
+							<option value="0">女足</option>
+						</select>
+						<span>*</span>
+						<p>类型</p>
+						<select id="type">
+							<option value="1">俱乐部</option>
+							<option value="2">国家队</option>
+							<option value="3">省队</option>
+						</select>
+						<span>*</span>
+					</li>
+					<li>
+						<p>升级名额</p>
+						<input type="text" id="top" value="" placeholder='请输入升级名额' maxlength='2'/>
+						<span></span>
+						<p>杯赛名额</p>
+						<input type="text" id="middle" value="" placeholder='例:3,4 数字代表名次' maxlength='15'/>
+						<span></span>
+					</li>
+					<li>
+						<p>降级名额</p>
+						<input type="text" id="lower" value="" placeholder='请输入降级名额' maxlength='2'/>
+						<span></span>
+					</li>
+				</ul>
+				<div class="logoUpload">
+					<p>LOGO</p>
+					<div class="showLogo">
+						<img id="image" src="../../img/up.png"/>
+					</div>
+					<a href="javascript:;">上传<input type="file" accept="image/png,image/jpeg" value="" onchange="selectImage(this)"/></a>
+				</div>
+				<div class="button">
+					<button class="submit">提交</button>
+					<a href="league.html"><button class="cancel">返回</button></a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../lib/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="../../js/map.js" ></script>
+		<script type="text/javascript" src="leagueAdd.js" ></script>
+	</body>
+</html>

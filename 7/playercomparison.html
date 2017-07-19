@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>同道 对比</title>
+		<meta name="description" content="这是一个 index 页面">
+		<meta name="keywords" content="index">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" href="assets/css/amazeui.min.css" />
+		<link rel="stylesheet" href="assets/css/admin.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my.css" />
+		<link rel="stylesheet" href="css/leaguemanage.css" />
+		<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/china.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="assets/css/wqt.css" />
+	</head>
+
+	<body>
+		<div class="am-topbar am-topbar-inverse admin-header">
+			<div class="am-topbar-brand">
+				<strong><img src="i/logo3.png" alt="" /></strong> <small>中国青少年足球数据库</small>
+			</div>
+			<div class="am-collapse am-collapse1  am-topbar-collapse" id="topbar-collapse">
+				<a href="#" class="l-sy"></a>
+				<a href="#" class="l-link2"></a>
+				<a href="#" class="l-link3" target="_blank" style=" position: relative;
+    top: -9px;">您好，Admin</a>
+				<a href="#" class="l-link4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="am-cf admin-main">
+			<!-- sidebar start -->
+			<div class="admin-sidebar" id="admin-offcanvas">
+				<div class="am-offcanvas-bar admin-offcanvas-bar">
+					<ul class="am-list admin-sidebar-list" id="accordion">
+						<li class="admin-parent">
+							<a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="yulan.html"><span class="am-icon-file"></span> 数据管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+							<ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-in" id="collapse-nav1">
+								<li class="nav-sub-item" id="collapse-nav1">
+									<a href="#collapse-sub-nav1" data-am-collapse="{parent: '#collapse-nav1'}" class="am-cf">
+										<span class="am-icon-check"></span> 档案管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+									</a>
+									<ul class="l-nav-3 navbar-thr paddingleft0 am-in" id="collapse-sub-nav1">
+										<li>
+											<a class="active" href="d-qiuyuan.html"><span>球员管理</span></a>
+										</li>
+										<li>
+											<a href="d-caipan.html"><span>裁判管理</span></a>
+										</li>
+										<li>
+											<a href="d-jiaolian.html"><span>教练管理</span></a>
+										</li>
+										<li>
+											<a href="d-julebu.html"><span>球队/俱乐部管理</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a href="leaguematches.html" class="am-cf"><span class="am-icon-puzzle-piece"></span> 联赛管理</a>
+								</li>
+								<li class="nav-sub-item">
+									<a href="videos.html" class="am-cf"><span class="am-icon-th"></span> 视频管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="#collapse-nav2"><span class="am-icon-table"></span>工作管理</a>
+							<ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-collapse" id="collapse-nav2">
+								<li class="nav-sub-item" id="collapse-nav2">
+									<a href="#collapse-sub-nav2" data-am-collapse="{parent: '#collapse-nav2'}" class="am-cf">
+										<span class="am-icon-check"></span> 流程管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+									</a>
+									<ul class="l-nav-3 navbar-thr paddingleft0 am-collapse" id="collapse-sub-nav2">
+										<li>
+											<a href="lc-baom2.html"><span>球队报名</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a href="#" class="am-cf"><span class="am-icon-puzzle-piece"></span> 信息管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="###"><span class="am-icon-table"></span>系统管理</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span>国少</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span>国青</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span>国奥</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="inform.html"><span class="am-icon-table"></span>通知</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- sidebar end -->
+
+			<!-- content start -->
+			<div class="admin-content">
+				<div class="admin-content-body">
+					<div class="data-cmpar">
+						
+						<div class="dc-container clearfix">
+							<div class="title title-normal">
+								<span>球员对比</span>
+							</div>
+							<div class="col-md-3">
+								<div class="dc-left">
+									<div class="dc-player-img">
+										<img class="image-responsive" src="images/dc-player-img.png" alt="张小白"/>
+									</div>
+									<div class="dc-player-info">
+										<span class="name">张小白</span>
+										<span class="name">Xiaobai.Zhang</span>
+										<span>18岁</span>
+										<span>中国 湖北武汉</span>
+									</div>
+								</div>
+							</div>
+							<div class="dc-main col-md-6">
+								<div class="table-container">
+									<table class="table text-center table-compare table-thead-center">
+										<tbody>
+										<tr>
+												<td>秘鲁 </td>
+												<td>国籍</td>
+												<td>巴西</td>
+											</tr>
+											<tr>
+												<td>63次/进24球</td>
+												<td>生日</td>
+												<td>0次/进0球 </td>
+											</tr>
+											<tr>
+												<td>1984/01/01(31岁)</td>
+												<td>生日</td>
+												<td>1989/07/13(25岁) </td>
+											</tr>
+											<tr>
+												<td>左右</td>
+												<td>习惯脚</td>
+												<td>左右</td>
+											</tr>
+											<tr>
+												<td>184cm</td>
+												<td>身高</td>
+												<td>180cm</td>
+											</tr>
+											<tr>
+												<td>72kg</td>
+												<td>体重</td>
+												<td>72kg</td>
+											</tr>
+											<tr>
+												<td>弗拉门戈</td>
+												<td>俱乐部</td>
+												<td>上海门港</td>
+											</tr>
+											<tr>
+												<td>AM/ST</td>
+												<td>位置</td>
+												<td>AM/ST</td>
+											</tr>
+											<tr>
+												<td>£2.9M</td>
+												<td>身价</td>
+												<td>£13.75M</td>
+											</tr>
+											<tr>
+												<td>£30,000/周</td>
+												<td>工资</td>
+												<td>£55,000/周</td>
+											</tr>
+											<tr>
+												<td>2018/8/10</td>
+												<td>合同到期</td>
+												<td>2020/12/31</td>
+											</tr>
+											
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="dc-right ">
+									<div class="dc-player-img">
+										<img class="image-responsive" src="images/dc-player-img2.png" alt="张小白"/>
+									</div>
+									<div class="dc-player-info">
+										<span class="name">张小白</span>
+										<span class="name">Xiaobai.Zhang</span>
+										<span>18岁</span>
+										<span>中国 湖北武汉</span>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="data-img-cmpar">
+						<div class="title title-normal">
+							<span>球员对比</span>
+						</div>
+						<div class="echart-body">
+							<div id="echart-comparise"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="comparison.js"></script>
+	</body>
+
+</html>

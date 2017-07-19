@@ -1,0 +1,252 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	color: white;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+select::-ms-expand { 
+	display: none; 
+}
+html,body{
+	width: 1024px;
+	min-height: 700px;
+	position: relative;
+	background: url(../img/bg_picture.png) no-repeat;
+	min-width: 1000px;
+}
+header{
+	padding-top: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	font-size: 16px;
+	background: url(../img/starting_lineup.png) no-repeat center;
+}
+header span{
+	opacity: 0.7;
+}
+header ul li{
+	margin-top: 8px;
+}
+header ul select{
+	padding-left: 5px;
+	width: 94px;
+	height: 26px;
+	border: 1px solid #ecb479;
+	background: url(../img/drop.jpg) no-repeat right;
+	appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    color: #edac1e;
+    font-size: 16px;
+    text-align: center;
+}
+header ul select option{
+	color: #edac1e;
+	text-align: center;
+}
+header ul li input{
+	width: 22px;
+	height: 22px;
+	outline: none;
+	border: none;
+}
+header button{
+	width: 98px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	border: 1px solid #EDAC1E;
+	background: none;
+	border-radius: 15px;
+	color: #EDAC1E;
+	font-size: 18px;
+	align-self: flex-end;
+	outline: none;
+	position: relative;
+	top: 10px;
+	cursor: pointer;
+}
+header button:active{
+	background: #EDAC1E;
+	color: rgba(255,255,255,0.8);
+}
+#main{
+	width: 100%;
+	height: 447px;
+	margin-top: 32px;
+	position: relative;
+}
+#main:after{
+	content: "";
+	width: 0;
+	height: 0;
+	display: block;
+	clear: both;
+}
+#main .left{
+	width: 170px;
+	float: left;
+}
+#main .right{
+	width: 170px;
+	float: right;
+}
+#main .left input,#main .right input{
+	display: block;
+	width: 160px;
+	height: 40px;
+	background: #7563c3;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	margin-top: 30px;
+	color: rgba(255,255,255,0.9);
+}
+#main .left input{
+	text-align: right;
+	padding-right: 10px;
+}
+#main .right input{
+	text-align: left;
+	padding-left: 10px;
+}
+#main .left img,#main .right img{
+	display: block;
+	margin-top: 30px;
+}
+#main .right img{
+	float: right;
+}
+#main .borderShadow{
+	width: 752px;
+	height: 56px;
+	background: url(../img/touying.png) no-repeat;
+	position: absolute;
+	bottom: -30px;
+	left: calc(50% - 376px);
+	z-index: 1;
+}
+#box{
+	width: 660px;
+	height: 447px;
+	background: url(../img/qiuchang.png) no-repeat;
+	position: absolute;
+	top: 0;
+	left: calc(50% - 330px);
+	z-index: 10;
+}
+#box ul{
+	width: 330px;
+	height: 447px;
+	float: left;
+	position: relative;
+}
+#box ul li{
+	width: 36px;
+	height: 36px;
+	position:absolute;
+	top: 20px;
+	left: 20px;
+	
+}
+#box ul li .size{
+	width: 32px;
+	height: 32px;
+	background: #e70012;
+	border-radius: 18px;
+	outline: none;
+	border: 2px solid white;
+	text-align: center;
+	line-height: 32px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: move;
+	box-shadow: 0 0 5px 0 #333;
+}
+#box .visiting_team li .size{
+	background: #21b0f2;
+}
+#box ul li .name{
+	width: 100px;
+	position: absolute;
+	font-size: 14px;
+	outline: none;
+	border: none;
+	background: none;
+	top: 34px;
+	left: -32px;
+	text-align: center;
+	color: white;
+	text-shadow: 0 0 5px #333333;
+}
+footer{
+	width: 100%;
+	text-align: center;
+	color: #EDAC1E;
+	font-size: 14px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 64px;
+}
+#back{
+	position:fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	display: none;
+	z-index: 999;
+}
+#show{
+	width: 660px;
+	height: ;
+	position: absolute;
+	top: calc(50% - 250px);
+	left: calc(50% - 330px);
+	text-align: center;
+}
+#show .image{
+	width: 660px;
+	height: 447px;
+	display: block;
+}
+#show div{
+	height: 36px;
+	margin: 0 auto;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+#show a{
+	display: block;
+	width: 98px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	border: 1px solid #EDAC1E;
+	border-radius: 15px;
+	color: #EDAC1E;
+	font-size: 18px;
+	cursor: pointer;
+	margin: 0 25px;
+}
+#show a.cancel:hover{
+	background: #EDAC1E;
+	color: rgba(255,255,255,0.7);
+}
+#show a.down{
+	background: #EDAC1E;
+	color: rgba(255,255,255,0.7);
+}
+#show a.down:hover{
+	background: #db9700;
+}

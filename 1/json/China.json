@@ -1,0 +1,757 @@
+{
+	"teamName": "中国",
+	"teamImg": "img/banner_China.jpg",
+	"menjiang": {
+		"yangzhi":{
+			"intro":{
+				"weizhi":"门将",
+				"headImg": "img/China/m1.jpg",
+				"name": "杨智",
+				"height": "186",
+				"year": "34",
+				"weight": "62",
+				"nationality": "中国",
+				"club": "北京国安乐视",
+				"time": "275"
+			},
+			"data": {
+				"pujiu": "9",
+				"chuanqiu": "8",
+				"shiqiu": "2",
+				"huangpai": "1",
+				"hongpai": "0",
+				"lingfeng": "270"
+			}
+		},
+		"guchao":{
+			"intro":{
+				"weizhi":"门将",
+				"headImg": "img/China/m2.jpg",
+				"name": "顾超",
+				"height": "193",
+				"year": "28",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "江苏苏宁",
+				"time": "275"
+			},
+			"data": {
+				"pujiu": "99",
+				"chuanqiu": "8",
+				"shiqiu": "2",
+				"huangpai": "1",
+				"hongpai": "0",
+				"lingfeng": "270"
+			}
+		},
+		"zengcheng":{
+			"intro":{
+				"weizhi":"门将",
+				"headImg": "img/China/m3.jpg",
+				"name": "曾诚",
+				"height": "192",
+				"year": "30",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "广州恒大",
+				"time": "275"
+			},
+			"data": {
+				"pujiu": "99",
+				"chuanqiu": "8",
+				"shiqiu": "2",
+				"huangpai": "1",
+				"hongpai": "0",
+				"lingfeng": "270"
+			}
+		}
+	},
+	"qianfeng": {
+		"wulei":{
+			"intro":{
+				"weizhi":"前锋",
+				"headImg": "img/China/q1.jpg",
+				"name": "武磊",
+				"height": "174",
+				"year": "26",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "上海上港",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		}, 
+		"jiangning":{
+			"intro":{
+				"weizhi":"前锋",
+				"headImg": "img/China/q2.jpg",
+				"name": "姜宁",
+				"height": "174",
+				"year": "31",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "河北华夏幸福",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"zhangyuning":{
+			"intro":{
+				"weizhi":"前锋",
+				"headImg": "img/China/q3.jpg",
+				"name": "张玉宁",
+				"height": "183",
+				"year": "20",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "维特斯",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"gaolin":{
+			"intro":{
+				"weizhi":"前锋",
+				"headImg": "img/China/q4.jpg",
+				"name": "郜林",
+				"height": "185",
+				"year": "31",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "广州恒大",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		}
+	},
+	"qianwei": {
+		"wuxi":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/China/z1.jpg",
+				"name": "吴曦",
+				"height": "180",
+				"year": "28",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "江苏苏宁",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"huangbowen":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/China/z2.jpg",
+				"name": "黄博文",
+				"height": "181",
+				"year": "30",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "广州恒大",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"yuhai":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/China/z3.jpg",
+				"name": "于海",
+				"height": "183",
+				"year": "30",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "上海上港",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"yudabao":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/China/z4.jpg",
+				"name": "于大宝",
+				"height": "182",
+				"year": "29",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "北京国安乐视",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"caihuikang":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/China/z5.jpg",
+				"name": "蔡慧康",
+				"height": "183",
+				"year": "28",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "上海上港",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"zhengzhi":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/China/z6.jpg",
+				"name": "郑智",
+				"height": "180",
+				"year": "24",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "广州恒大",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"zhangxizhe":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/China/z7.jpg",
+				"name": "张稀哲",
+				"height": "180",
+				"year": "26",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "北京国安乐视",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"haojunmin":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/China/z8.jpg",
+				"name": "蒿俊闵",
+				"height": "181",
+				"year": "30",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "山东鲁能",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"sunke":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/China/z9.jpg",
+				"name": "孙可",
+				"height": "180",
+				"year": "28",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "天津权健",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		}
+	},
+	"houwei": {
+		"fengxiaoting":{
+			"intro":{
+				"weizhi":"后卫",
+				"headImg": "img/China/h1.jpg",
+				"name": "冯潇霆",
+				"height": "186",
+				"year": "32",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "广州恒大",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"lixuepeng":{
+			"intro":{
+				"weizhi":"后卫",
+				"headImg": "img/China/h2.jpg",
+				"name": "李学鹏",
+				"height": "185",
+				"year": "29",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "广州恒大",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"zhaomingjian":{
+			"intro":{
+				"weizhi":"后卫",
+				"headImg": "img/China/h3.jpg",
+				"name": "赵明剑",
+				"height": "180",
+				"year": "30",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "山东鲁能",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"dinghaifeng":{
+			"intro":{
+				"weizhi":"后卫",
+				"headImg": "img/China/h4.jpg",
+				"name": "丁海峰",
+				"height": "182",
+				"year": "26",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "河北华夏幸福",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"zhanglinpeng":{
+			"intro":{
+				"weizhi":"后卫",
+				"headImg": "img/China/h5.jpg",
+				"name": "张琳芃",
+				"height": "185",
+				"year": "28",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "广州恒大",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"jiangzhipeng":{
+			"intro":{
+				"weizhi":"后卫",
+				"headImg": "img/China/h6.jpg",
+				"name": "姜至鹏",
+				"height": "180",
+				"year": "28",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "广州富力",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"renhang":{
+			"intro":{
+				"weizhi":"后卫",
+				"headImg": "img/China/h7.jpg",
+				"name": "任航",
+				"height": "185",
+				"year": "28",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "江苏苏宁",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		}
+	}
+}

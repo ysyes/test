@@ -1,0 +1,407 @@
+.ft {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.cl {
+	clear: both;
+}
+
+.color {
+	border-bottom: 4px solid #84BE87;
+}
+
+.listcolor {
+	color: red;
+}
+
+.navcolor {
+	/*color: #FFFFFF;*/
+	background-image: url('image/li_bg.jpg');
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	-moz-background-size: 100%;
+	-webkit-background-size: 100%;
+}
+
+body {
+	font-family: 'Microsoft Yahei';
+	width: 7.5rem;
+	height: 12.7rem;
+	color: #fff;
+	font-size: 0.3rem;
+	margin: 0;
+	padding: 0;
+	-webkit-overflow-scrolling: touch;
+}
+
+#wap {
+	width: 100%;
+}
+
+
+/*header*/
+
+#header {
+	width: 100%;
+	height: 0.9rem;
+	background: #2B5E97;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
+#header .competition {
+	width: 25%;
+	height: 0.9rem;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 0.85rem;
+}
+
+#header .competition a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#header .onanther {
+	width: 25%;
+	height: 0.9rem;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 0.85rem;
+}
+
+#header .navshow {
+	width: 4.4rem;
+	height: 11.64rem;
+	position: fixed;
+	top: 1.71rem;
+	left: -6.585rem;
+	background: #ffffff;
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff');
+	background-color: rgba(75, 130, 180, 1);
+}
+
+.dest {
+	position: fixed;
+	top: 0.91rem;
+	left: -6.585rem;
+}
+
+#header .navlist {
+	z-index: 800;
+	width: 100%;
+	color: #ffffff;
+	filter: none;
+	font-weight: 700;
+}
+
+#header .navlist li {
+	width: 3.315rem;
+	padding-left: 1.085rem;
+	height: 1.24rem;
+	border-bottom: 1px solid #ffffff;
+	line-height: 1.24rem;
+	text-align: left;
+	font-size: 0.5rem;
+	font-weight: 400;
+	font-family: 微软雅黑;
+}
+
+
+/*#header .navlist li:nth-last-child(1){border: none;}*/
+
+#header .navlist li a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+#header .anther {
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 0.85rem;
+	width: 1.875rem;
+	position: fixed;
+	top: 0.9rem;
+	left: 5.625rem;
+	background: #2B5E97;
+	display: none;
+}
+
+#header .anther .competitions {
+	height: 0.9rem;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 0.85rem;
+	width: 100%;
+}
+
+#header .anther .competitions a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#date_lun {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0.9rem;
+	z-index: 86;
+	background: #FFFFFF;
+	color: #000;
+	line-height: 0.8rem;
+	font-size: 0.25rem;
+}
+
+#date_lun .datetimes {
+	width: 7.5rem;
+}
+
+#date_lun .datetimes .nav {
+	width: 0.8rem;
+	height: 0.8rem;
+	z-index: 900
+}
+
+#date_lun .datetimes .nav .nav_logo {
+	width: 0.58rem;
+	height: 0.58rem;
+	margin: 0.11rem;
+	background-image: url('./image/nav1.png');
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	-moz-background-size: 100%;
+	-webkit-background-size: 100%;
+}
+
+
+/*比赛*/
+
+#date_lun .datetime {
+	width: 3.7rem;
+	padding-left: 0.0rem;
+	height: 0.8rem;
+	border-left: 1px solid #bce8f1;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+/*轮次*/
+
+#date_lun .datelun {
+	width: 2rem;
+	height: 0.8rem;
+	text-align: center;
+	border-left: 1px solid #bce8f1;
+	box-sizing: border-box;
+}
+
+#date_lun .datelun_logo {
+	width: 0.3rem;
+	height: 0.2rem;
+	margin: 0.3rem 0.2rem 0.3rem 0rem;
+	background-image: url('./image/icon_dropdown.gif');
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	-moz-background-size: 100%;
+	-webkit-background-size: 100%;
+}
+
+#date_lun .datetime_logo {
+	width: 0.3rem;
+	height: 0.2rem;
+	margin: 0.3rem 0.2rem 0.3rem 0rem;
+	background-image: url('./image/icon_dropdown.gif');
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	-moz-background-size: 100%;
+	-webkit-background-size: 100%;
+}
+
+
+/*比赛下拉*/
+
+.dateall {
+	display: none;
+	z-index: 750;
+	width: 4.15rem;
+	height: 3.5rem;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: fixed;
+	top: 1.7rem;
+	left: 3.35rem;
+	background-color: #fff;
+	border-bottom: 1px solid #bce8f1;
+}
+
+.dateall ul {
+	width: 100%;
+	z-index: 800;
+	height: 100%;
+	overflow: scroll;
+}
+
+.dateall ul li {
+	width: 100%;
+	text-align: center;
+	height: 0.8rem;
+	border-bottom: 1px solid #bce8f1;
+}
+
+
+/*轮次下拉*/
+
+.datealllun {
+	display: none;
+	z-index: 750;
+	width: 2.5rem;
+	height: 3.5rem;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: fixed;
+	top: 1.7rem;
+	left: 0.8rem;
+	background-color: #fff;
+	border-bottom: 1px solid #bce8f1;
+}
+
+.datealllun ul {
+	width: 100%;
+	z-index: 800;
+	height: 100%;
+	overflow: scroll;
+}
+
+.datealllun ul li {
+	width: 2rem;
+	text-align: center;
+	padding-right: 0.5rem;
+	height: 0.8rem;
+	border-bottom: 1px solid #bce8f1;
+}
+
+
+/*content*/
+
+
+/*#content_bg{
+
+            width: 100%;
+
+            height: 2rem;
+
+            position: fixed;
+
+            top:1.7rem;
+
+			z-index:9;
+
+            background:url(image/football.png) top center no-repeat; background-size:cover;
+
+        }*/
+
+#content {
+	width: 100%;
+	height: 2rem;
+	position: fixed;
+	top: 1.7rem;
+	z-index: -1;
+	background: url(image/football.png) top center no-repeat;
+	background-size: cover;
+	/*margin: 0.35rem auto 0 auto;*/
+	/*background: #FFFFFF;*/
+	/*border-radius: 0.17rem;*/
+}
+
+#content ul {
+	width: 6.2rem;
+	margin: 0 auto;
+	line-height: 0.675rem;
+	color: #000;
+	font-size: 0.28rem;
+}
+
+#content ul li {
+	width: 100%;
+	height: 0.7rem;
+	padding-top: 0.2rem;
+	line-height: 0.7rem;
+	text-align: center;
+}
+
+#content ul li:nth-child(2) {
+	padding-top: 0;
+	width: 100%;
+	height: 1.1rem;
+	line-height: 1.1rem;
+	text-align: center;
+}
+
+#content ul li .listtop {
+	width: 100%;
+	height: 100%;
+}
+
+#content ul li .listtop div {
+	height: 100%;
+	text-align: center;
+}
+
+#content ul li:nth-child(2) div:nth-child(1) {
+	width: 2.3rem;
+	height: 0.9rem;
+}
+
+#content ul li:nth-child(2) div:nth-child(1) img {
+	width: 0.9rem;
+	height: 0.9rem;
+}
+
+#content ul li:nth-child(2) div:nth-child(2) {
+	width: 1.2rem;
+	color: #ffffff;
+	font-size: 0.35rem;
+	line-height: 0.5rem;
+}
+
+#content ul li:nth-child(2) div:nth-child(3) {
+	width: 2.5rem;
+	height: 0.9rem;
+}
+
+#content ul li:nth-child(2) div:nth-child(3) img {
+	width: 0.9rem;
+	height: 0.9rem;
+}
+
+#content ul li:nth-child(1) .listtop div:nth-child(1) {
+	width: 2.5rem;
+}
+
+#content ul li:nth-child(1) .listtop div:nth-child(2) {
+	width: 1.2rem;
+	color: #fff;
+	font-family: 楷体;
+	font-style: italic;
+	font-size: 0.6rem;
+	text-align: center;
+	font-weight: 700;
+}
+
+#content ul li:nth-child(1) .listtop div:nth-child(3) {
+	width: 2.5rem;
+}

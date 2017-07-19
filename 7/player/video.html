@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>同道 技术视频</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/my.css" />
+    <link rel="stylesheet" href="../css/leaguemanage.css" />
+    <script src="../js/echarts.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/china.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="../assets/css/wqt.css" />
+    <style>
+        body,a{
+            color: #262626;
+        }
+        ul,li,p,h1,h2,h3,h4,h5{
+            margin:0;
+            padding:0;
+        }
+        .admin-content-body>div.title{
+            height:54px;
+            padding:12px 0;
+            background: #fff;
+        }
+        .admin-content-body ul.title{
+            padding:0;
+            width: 720px;
+            margin:0 auto;
+            overflow: hidden;
+        }
+        .admin-content-body ul.title li{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            float: left;
+            width:120px;
+            height:30px;
+            border:1px solid #cc3123;
+            border-right-width:0;
+        }
+        .admin-content-body ul.title li.active{
+            background: #cc3123;
+        }
+        .admin-content-body ul.title li.active a{
+            color: #fff;
+        }
+        .admin-content-body ul.title li a{
+            display: block;
+            height:30px;
+            line-height: 30px;
+            color:#cc3123;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .admin-content-body ul.title li:last-child{
+            border-right-width: 1px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+        .admin-content-body ul.title li:first-child{
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+        .admin-content-body div.video{
+            /*padding:20px;*/
+            height:auto;
+            background: #fff;
+            margin:10px 0;
+        }
+        .admin-content-body div.video video{
+            width: 700px;
+            display: block;
+            margin: 0 auto;
+            /*height:300px;*/
+            background: #ccc;
+        }
+        .admin-content-body>div#list{
+            background: #fff;
+            padding:10px 16px;
+        }
+        .admin-content-body>div#list p{
+            font-size: 16px;
+            margin-bottom:8px;
+        }
+        .admin-content-body>div#list>div{
+            overflow: hidden;
+        }
+        .admin-content-body>div#list ul{
+            width: 120%;
+        }
+        .admin-content-body>div#list ul{
+            overflow:hidden;
+            height:84px;
+            /*width: 100%;*/
+        }
+        .admin-content-body>div#list  ul li{
+            width: 130px;
+            height:84px;
+            background: #eee;
+            margin-right: 10px;
+            float: left;
+            position: relative;
+            background: url("../images/picture_qing_shipin.png") no-repeat;
+            background-size: cover;
+            cursor: pointer;
+            border:2px solid #fff;
+        }
+        .admin-content-body>div#list ul li img{
+            position: absolute;
+            width: 36px;
+            height:36px;
+            right:20px;
+            top:24px;
+        }
+        .admin-content-body>div#list ul li p{
+            position: absolute;
+            color: #fff;
+            left:20px;
+            top:20px;
+        }
+        .admin-content-body>div#list ul li.active{
+            border:2px solid  #cc3123;
+        }
+    </style>
+</head>
+
+<body>
+<div class="am-topbar am-topbar-inverse admin-header">
+    <div class="am-topbar-brand">
+        <strong><img src="../i/logo3.png" alt="" /></strong> <small>中国青少年足球数据库</small>
+    </div>
+    <div class="am-collapse am-collapse1  am-topbar-collapse" id="topbar-collapse">
+        <a href="#" class="l-sy"></a>
+        <a href="#" class="l-link2"></a>
+        <a href="#" class="l-link3" target="_blank" style=" position: relative;
+    top: -9px;">您好，Admin</a>
+        <a href="#" class="l-link4" target="_blank"></a>
+    </div>
+</div>
+<div class="am-cf admin-main">
+    <!-- sidebar start -->
+    <div class="admin-sidebar" id="admin-offcanvas">
+        <div class="am-offcanvas-bar admin-offcanvas-bar">
+            <ul class="am-list admin-sidebar-list" id="accordion">
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="../yulan.html"><span class="am-icon-file"></span><img
+                            src="../images/icon_ce_shuju.png"
+                            alt=""/>数据管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                    <ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-in" id="collapse-nav1">
+                        <li class="nav-sub-item" id="collapse-nav1">
+                            <a href="#collapse-sub-nav1" data-am-collapse="{parent: '#collapse-nav1'}" class="am-cf">
+                                <span class="am-icon-check"></span> 档案管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+                            </a>
+                            <ul class="l-nav-3 navbar-thr paddingleft0 am-in" id="collapse-sub-nav1">
+                                <li>
+                                    <a class="active" href="../d-qiuyuan_2.html"><span>球员管理</span></a>
+                                </li>
+                                <li>
+                                    <a href="../d-caipan.html"><span>裁判管理</span></a>
+                                </li>
+                                <li>
+                                    <a href="../d-jiaolian.html"><span>教练管理</span></a>
+                                </li>
+                                <li>
+                                    <a href="../d-julebu.html"><span>球队/俱乐部管理</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="../leaguematches.html" class="am-cf"><span class="am-icon-puzzle-piece"></span> 联赛管理</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="../videos.html" class="am-cf"><span class="am-icon-th"></span> 视频管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="#collapse-nav2"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_gongzuo.png"
+                            alt=""/>工作管理</a>
+                    <ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-collapse" id="collapse-nav2">
+                        <li class="nav-sub-item" id="collapse-nav2">
+                            <a href="../lc-baom2.html" data-am-collapse="{parent: '#collapse-nav2'}" class="am-cf">
+                                <span class="am-icon-check"></span> 流程管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+                            </a>
+                            <ul class="l-nav-3 navbar-thr paddingleft0 am-collapse" id="collapse-sub-nav2">
+                                <li>
+                                    <a href="../lc-baom2.html"><span>球队报名</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#" class="am-cf"><span class="am-icon-puzzle-piece"></span> 信息管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="###"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_xitong.png"
+                            alt=""/>系统管理</a>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="../g-ruwei.html"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_guo.png"
+                            alt=""/>国少</a>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="../g-ruwei.html"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_guo.png"
+                            alt=""/>国青</a>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="../g-ruwei.html"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_guo.png"
+                            alt=""/>国奥</a>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="../inform.html"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_tongzhi.png"
+                            alt=""/>通知</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- content start -->
+    <div class="admin-content">
+        <div class="admin-content-body">
+            <div class="title">
+                <ul class="title">
+                    <li><a href="gaikuang.html">球员概况</a></li>
+                    <li><a href="gamelist.html">比赛列表</a></li>
+                    <li class="active"><a href="video.html">技术视频</a></li>
+                    <li><a href="tongji.html">成长统计</a></li>
+                    <li><a href="peixun.html">球员培训</a></li>
+                    <li><a href="qiutan.html">球探报告</a></li>
+                </ul>
+            </div>
+            <div class="video">
+                <video src="http://ouzhiting.oss-cn-hangzhou.aliyuncs.com/%E7%94%B3%E8%8A%B1U16%E7%90%83%E5%91%98%E9%99%88%E7%94%B3%E5%90%89/%E8%BF%9B%E7%90%83/%E8%BF%9B%E7%90%831.mp4" autoplay controls>您的浏览器不支持 video 标签。</video>
+            </div>
+            <div id="list">
+                <p>技术视频(15)</p>
+                <div>
+                <ul>
+                    <li class="active">
+                        <p>进球<br>Goal</p>
+                        <img src="../images/icon_qing_play.png" alt=""/></li>
+                    <li>
+                        <p>射门<br>Shot</p>
+                        <img src="../images/icon_qing_play.png" alt=""/></li>
+                    <li>
+                        <p>突破<br>Dribble</p>
+                        <img src="../images/icon_qing_play.png" alt=""/></li>
+                    <li>
+                        <p>助攻<br>Assist</p>
+                        <img src="../images/icon_qing_play.png" alt=""/></li>
+                    <li>
+                        <p>控球<br>Trap</p>
+                        <img src="../images/icon_qing_play.png" alt=""/></li>
+                    <li>
+                        <p>威胁球<br>Last Pass</p>
+                        <img src="../images/icon_qing_play.png" alt=""/></li>
+                    <li>
+                        <p>传球<br>Pass</p>
+                        <img src="../images/icon_qing_play.png" alt=""/></li>
+                    <li>
+                        <p>直塞<br>through ball</p>
+                        <img src="../images/icon_qing_play.png" alt=""/></li>
+                </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/js/jquery.min.js"></script>
+<script>
+    var arr=['http://ouzhiting.oss-cn-hangzhou.aliyuncs.com/%E7%94%B3%E8%8A%B1U16%E7%90%83%E5%91%98%E9%99%88%E7%94%B3%E5%90%89/%E8%BF%9B%E7%90%83/%E8%BF%9B%E7%90%831.mp4',
+        'http://ouzhiting.oss-cn-hangzhou.aliyuncs.com/%E7%94%B3%E8%8A%B1U16%E7%90%83%E5%91%98%E9%99%88%E7%94%B3%E5%90%89/%E5%B0%84%E9%97%A8/%E5%B0%84%E9%97%A81.mp4',
+        'http://ouzhiting.oss-cn-hangzhou.aliyuncs.com/%E7%94%B3%E8%8A%B1U16%E7%90%83%E5%91%98%E9%99%88%E7%94%B3%E5%90%89/%E5%8A%A9%E6%94%BB/%E5%8A%A9%E6%94%BB1.mov','http://ouzhiting.oss-cn-hangzhou.aliyuncs.com/%E7%94%B3%E8%8A%B1U16%E7%90%83%E5%91%98%E9%99%88%E7%94%B3%E5%90%89/%E7%AA%81%E7%A0%B4/%E7%AA%81%E7%A0%B41.mp4',
+        'http://ouzhiting.oss-cn-hangzhou.aliyuncs.com/%E7%94%B3%E8%8A%B1U16%E7%90%83%E5%91%98%E9%99%88%E7%94%B3%E5%90%89/%E5%8A%A9%E6%94%BB/%E5%8A%A9%E6%94%BB1.mov',
+        'http://ouzhiting.oss-cn-hangzhou.aliyuncs.com/%E7%94%B3%E8%8A%B1U16%E7%90%83%E5%91%98%E9%99%88%E7%94%B3%E5%90%89/%E6%8E%A7%E7%90%83/%E6%8E%A7%E7%90%831.mp4',
+        'http://ouzhiting.oss-cn-hangzhou.aliyuncs.com/%E7%94%B3%E8%8A%B1U16%E7%90%83%E5%91%98%E9%99%88%E7%94%B3%E5%90%89/%E5%A8%81%E8%83%81%E7%90%83/%E5%A8%81%E8%83%81%E7%90%83.mov',
+        'http://ouzhiting.oss-cn-hangzhou.aliyuncs.com/%E7%94%B3%E8%8A%B1U16%E7%90%83%E5%91%98%E9%99%88%E7%94%B3%E5%90%89/%E5%8A%A9%E6%94%BB/%E5%8A%A9%E6%94%BB1.mov',
+        'http://ouzhiting.oss-cn-hangzhou.aliyuncs.com/%E7%94%B3%E8%8A%B1U16%E7%90%83%E5%91%98%E9%99%88%E7%94%B3%E5%90%89/%E7%AA%81%E7%A0%B4/%E7%AA%81%E7%A0%B41.mp4'];
+    $('#list li').click(function(){
+        var index=$(this).index('#list li');
+        $('div.video video').attr('src',arr[index]);
+        $(this).addClass('active').siblings('li.active').removeClass('active');
+    })
+    $('.am-topbar-brand').click(function(){
+        window.location.href='../yulan.html';
+    })
+</script>
+</body>
+
+</html>

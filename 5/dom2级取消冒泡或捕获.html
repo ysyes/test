@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				font-size: 30px;
+			}
+			div{
+				height: 500px;
+				width: 500px;
+				background: paleturquoise;
+			}
+			section{
+				height: 300px;
+				width: 300px;
+				background: greenyellow;
+			}
+			h1{
+				height: 150px;
+				width: 150px;
+				background: blueviolet;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<section>
+				<h1>
+					h1
+				</h1>
+				section
+			</section>
+			div
+		</div>
+	</body>
+	<script type="text/javascript">
+		var h1 = document.querySelector("h1");
+		var section = document.querySelector("section");
+		var div = document.querySelector("div");
+		h1.addEventListener("click",function () {
+			event.stopPropagation();
+			alert("h1");
+		},false);
+		section.addEventListener("click",function () {
+			alert("section");
+		},false);
+		div.addEventListener("click",function () {
+			alert("div");
+		},false)
+	</script>
+</html>

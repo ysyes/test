@@ -1,0 +1,107 @@
+#show .display{
+	width: 650px;
+	height: 40px;
+}
+#show .display div{
+	width: 640px;
+	padding-left: 10px;
+	height: 65px;
+	font-size: 24px;
+	line-height: 65px;
+}
+#show .display p{
+	height: 40px;
+	width: 640px;
+	padding-left: 10px;
+	color: white;
+	font-size: 18px;
+	line-height: 40px;
+	background: #0575d7;
+}
+#show .table table{
+	width: 650px;
+	font-size: 16px;
+	table-layout:fixed;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: none;
+}
+#show table tr{
+	height: 60px;
+}
+#show table tr:hover{
+	background: #eee;
+}
+#show table tr th{
+	background: #f3f3f3;
+	font-weight: normal;
+	line-height: 60px;
+}
+#show table tr .paiming{
+	width: 56px;
+}
+#show table tr .teamImg{
+	width: 35px;
+}
+#show table tr .qiudui{
+	width: 125px;
+}
+#show table tr .sai{
+	width: 75px;
+}
+#show table tr .fen{
+	width: 75px;
+}
+/*#show table tr .zuijin{
+	width: 56px;
+}*/
+#show table tr td{
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	border-bottom: 1px solid #D9D9D9;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#show table img{
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+#show table p{
+	width: 38px;
+	height: 38px;
+	background: #D8D8D8;
+	text-align: center;
+	line-height: 38px;
+	margin: 0 auto;
+	border-radius: 3px;
+}
+#show .first{
+	background: #f5483c;
+	color: white;
+}
+#show .second{
+	background: #f7a300;
+	color: white;
+}
+#show .last{
+	background: #999;
+}
+#show .dataFooter p{
+	margin-top: 20px;
+	color: #808080;
+	font-size: 16px;
+	line-height: 16px;
+}
+#show .dataFooter .rule{
+	padding-left: 20px;
+	margin-top: 10px;
+}
+#show .dataFooter p span{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	margin: 0 10px 0 20px;
+}

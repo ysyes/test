@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../lib/page/jq.page.css"/>
+    <link rel="stylesheet" type="text/css" href="user.css"/>
+    <script type="text/javascript" src="../../lib/WdatePicker.js" ></script>
+</head>
+<body>
+<div id="box">
+    <div class="header">
+        <div class="admin"><img src="../../img/blue_yonghu.png" alt=""/><span>用户</span></div>
+        <div class="select">
+            <select>
+            	<option value="0">所有渠道</option>
+                <option value="1">Android</option>
+                <option value="2">iOS</option>
+                <option value="3">WP</option>
+                <option value="4">网站</option>
+            </select>
+            <input value="" type="text" placeholder="手机号" maxlength="11"/><i></i>
+        </div>
+    </div>
+    <div class="show">
+        <div class="content">
+            <table>
+                <thead>
+                <tr>
+                    <th>用户名</th>
+                    <th>昵称</th>
+                    <th>用户主队</th>
+                    <th>创建时间</th>
+                    <th>来源</th>
+                    <th>渠道名称</th>
+                    <th>手机号</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+	                <!-- <tr class="disabled" data-id = "1">
+	                    <td>流星</td>
+	                    <td>宝贝V计划</td>
+	                    <td>国安</td>
+	                    <td>2016-11-25</td>
+	                    <td>微信</td>
+	                    <td>360</td>
+	                    <td>1838383838</td>
+	                    <td><span>开言</span><span>激活</span><span>重置密码</span></td>
+	                </tr>
+	                <tr data-id = "2">
+	                    <td>流星</td>
+	                    <td>宝贝N计划</td>
+	                    <td>国安</td>
+	                    <td>2016-11-25</td>
+	                    <td>微信</td>
+	                    <td>360</td>
+	                    <td>1838383838</td>
+	                    <td><span class="disabled">开言</span><span>冻结</span><span>重置密码</span></td>
+	                </tr> -->
+                </tbody>
+            </table>
+        </div>
+        <div class="tcdPageCode">
+        	<div id="tcdPageCode"></div>
+        </div>
+    </div>
+    <div id="updatePassWord" style='display:none;'>
+        <div class="updatePassWord">
+            <p class="tishi">重置密码 <span>×</span></p>
+            <h3>宝贝V计划</h3>
+            <div>
+                <p>新密码</p><input maxlength="20" type="password" class="newpassword" placeholder="6-20位大小写字母加数字"/>
+            </div>
+            <div>
+                <p>确认密码</p><input maxlength="20" type="password" class="relpassword" placeholder="重复输入上面密码"/>
+            </div>
+            <div class="button">
+            	<button class="red">确认</button>
+                <button class="gray">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../lib/jquery-2.2.3.min.js"></script>
+<script src="../../lib/page/jq.page.js"></script>
+<script src="user.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+div.content table tbody td:last-child{
+    position: relative;
+}
+/*div.editor{*/
+    /*position:absolute;*/
+    /*width:120px;*/
+    /*height:auto;*/
+    /*left:50%;*/
+    /*border:1px solid #ddd;*/
+    /*background: #fff;*/
+    /*transform: translateX(-36%);*/
+    /*top:46px;*/
+    /*-webkit-border-radius: 5px;*/
+    /*-moz-border-radius: 5px;*/
+    /*border-radius: 5px;*/
+    /*box-shadow: 0 0 3px 1px #ededed;*/
+/*}*/
+/*div.editor li{*/
+    /*height:40px;*/
+    /*text-align: left;*/
+    /*line-height:40px;*/
+    /*padding-left:10px;*/
+/*}*/
+/*div.editor i{*/
+    /*position: absolute;*/
+    /*width:24px;*/
+    /*height:14px;*/
+    /*background: url(../../img/sanjiao.png);*/
+    /*left:50%;*/
+    /*top:-14px;*/
+    /*transform: translateX(-50%);*/
+/*}*/
+div.module{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 999;
+}
+div.addAdminRole{
+    width:180px;
+    height:auto;
+    border:1px solid #ddd;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.2);
+    background: #fff;
+}
+div.addAdminRole ul{
+    padding:10px 30px;
+}
+div.addAdminRole li{
+    height:45px;
+    line-height: 45px;
+    color:#4d4d4d;
+}
+div.addAdminRole li span{
+	margin-left:10px;
+}
+div.addAdminRole div.button{
+    border-top:1px solid #e6e6e6;
+}
+div.addAdminRole div.button button{
+    width:50%;
+    font-size: 16px;
+    height:40px;
+    float: left;
+}
+/*É¾³ýÌáÐÑ¿ò*/
+div.confirmModule{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 999;
+}
+div.confirm{
+    width:270px;
+    height:160px;
+    border:1px solid #ddd;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.2);
+    background: #fff;
+}
+div.confirm p{
+    height:110px;
+    line-height: 110px;
+    text-align: center;
+    color:#292929;
+}
+div.confirm button{
+    width:50%;
+    border:0;
+    border-top:1px solid #e6e6e6;
+    line-height: 50px;
+    font-size: 16px;
+    padding: 0;
+    box-sizing: border-box;
+    background:transparent;
+    outline:none;
+    cursor: pointer;
+}
+div.confirm button.gray{
+    color:#292929;
+    border-right:1px solid #e6e6e6;
+}
+div.confirm button.red{
+    color:#c62f17;
+}

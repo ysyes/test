@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <style>
+        div.content table td:nth-child(9) input{
+            background: transparent;
+            border: 0;
+            text-align: center;
+            width: 60px;
+            font-size: 16px;
+        }
+        #box .header div{
+            float: right;
+            margin-right: 10px;
+        }
+        #box .header div.search{
+            margin-top:13px;
+        }
+        #box .header a{
+            float: right;
+        }
+        #box .header select{
+            padding-right: 26px;
+            width:145px;
+            height:26px;
+            padding-left:10px;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            background: url(../../img/xiala_s.png) no-repeat right;
+            margin-right: 10px;
+            border:1px solid #E3442A;
+            outline:none;
+            border-right: 0;
+            color: #333;
+            font-family: "Microsoft Yahei";
+        }
+        #daochu{
+            position: absolute;
+            left:0;
+            top:0;
+            right:0;
+            bottom:0;
+            background:transparent;
+            z-index: 999;
+            display:none;
+        }
+        #daochu .daochu{
+            width:215px;
+            height:170px;
+            background: #fff;
+            padding:10px 15px;
+            position: fixed;
+            left:50%;
+            top:50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 6px 1px #ddd;
+            display: none;
+        }
+        .daochu div{
+            overflow: auto;
+        }
+        .daochu div.type{
+            border-bottom:1px solid #ddd;
+        }
+        .daochu>p{
+            font-size: 16px;
+            text-align: center;
+            line-height: 35px;
+        }
+        .daochu div>p{
+            line-height: 40px;
+            float: left;
+            width: 50%;
+            font-size: 15px;
+            text-align: center;
+        }
+        .daochu button{
+            width:50%;
+            height:40px;
+            float:left;
+            background:#fff;
+            border:0;
+            outline:none;
+            font-size: 16px;
+            cursor:pointer;
+        }
+        .daochu button.confirm{
+            color:#E3442A;
+        }
+        #loading{
+        	width: 100px;
+        	height: 100px;
+        	position: fixed;
+            left:50%;
+            top:50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+        #loading img{
+        	width: 100px;
+        	width: 100px;
+        }
+        /* 导入框 */
+        #import select{
+            padding-right: 26px;
+            width:145px;
+            height:26px;
+            padding-left:10px;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            background: url(../../img/xiala.png) no-repeat right;
+            margin-right: 10px;
+            border:1px solid #E3442A;
+            outline:none;
+            border-right: 0;
+            color: #bbb;
+            font-family: "Microsoft Yahei";
+        }
+        #import,#importConfirm{
+            position: fixed;
+            left:0;
+            top:0;
+            right:0;
+            bottom:0;
+            background:rgba(0,0,0,0.06);
+            z-index: 999;
+            display:none; 
+        }
+        #import .import,#importConfirm .importConfirm{
+            width:410px;
+            height:290px;
+            background: #fff;
+            /*padding:10px 15px;*/
+            position: fixed;
+            left:50%;
+            top:50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 6px 1px #ddd;
+        }
+        #importConfirm .importConfirm{
+            width: 360px;
+        }
+        #import p.title,#importConfirm p.title{
+            line-height: 40px;
+            text-align: center;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        #import div.file,#importConfirm div.file{
+            height:200px;
+            padding:34px;
+        }
+        #importConfirm div.file p{
+            line-height: 34px;
+            width: 100%;
+		    height: 34px;
+		    overflow: hidden;
+        }
+        #importConfirm div.file p.text{
+            color:#e3442a;
+        }
+        #import select{
+            background-image: url(../../img/xiala.png);
+            height:40px;
+            width:157px;
+        }
+        #import div.button,#importConfirm div.button{
+            width:100%;
+        }
+        #import div.button button,#importConfirm div.button button{
+            width: 50%;
+            float: left;
+            border-top:1px solid #e6e6e6;
+            height:50px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        #import .excel{
+            width: 330px;
+            height: 40px;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            margin-top:40px;
+        }
+        #import .excel span{
+            float: left;
+            color: #CCCCCC;
+            font-size: 14px;
+            display: inline-block;
+            line-height: 40px;
+            height: 40px;
+            width: 250px;
+            border: 1px solid #E3442A;
+            box-sizing: border-box;
+            padding-left: 5px;
+        }
+        #import .excel a{
+            float: left;
+            display:block;
+            background: #E3442A;
+            height: 40px;
+            width: 80px;
+            color: white;
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+        }
+        #import .excel input{
+            position: absolute;
+            font-size: 100px;
+            right: 0;
+            top: 0;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div class="header">
+        <div class="admin"><img src="../../img/icon_saicheng_red.png" alt=""/><span>赛程管理</span></div>
+        <div class="addBtn daoruButton"><img src="../../img/icon_daoru.png" alt=""/><span>导入数据</span></div>
+        <div class="addBtn daochuButton"><img src="../../img/daochu.png" alt=""/><span>导出数据</span></div>
+        <a href="addGameplan.html">
+            <div class="addBtn"><b>+</b><span>新增赛程</span></div>
+        </a>
+        <div class="search">
+            <select class="leagueyear" name="leagueyear">
+                <option value="2016">2016赛季</option>
+                <option value="2017">2017赛季</option>
+                <option value="2018">2018赛季</option>
+                <option value="2019">2019赛季</option>
+                <option value="2020">2020赛季</option>
+                <option value="2021">2021赛季</option>
+                <option value="2022">2022赛季</option>
+                <option value="2023">2023赛季</option>
+                <option value="2024">2024赛季</option>
+                <option value="2025">2025赛季</option>
+                <option value="2026">2026赛季</option>
+            </select>
+            <select class="league" name="leagueid">
+            </select>
+            <select class="group" name="groupid">
+            </select>
+        </div>
+    </div>
+    <div class="show">
+        <div class="content">
+            <table>
+                <thead>
+                <tr>
+                    <th><input type="checkbox" name="quanxuan" value='all'/>全选</th>
+                    <th>赛季</th>
+                    <th>赛事</th>
+                    <th>分组</th>
+                    <th>轮次</th>
+                    <th>主队</th>
+                    <th>客队</th>
+                    <th>比赛时间</th>
+                    <th>比分</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>2016赛季</td>
+                    <td>中超</td>
+                    <td>A组</td>
+                    <td>3轮</td>
+                    <td>黑龙江火山鸣泉</td>
+                    <td>广州恒大淘宝</td>
+                    <td>11-23 17：30</td>
+                    <td><input type="text" value="3:2" disabled/></td>
+                    <td>编辑</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>2016赛季</td>
+                    <td>中超</td>
+                    <td>A组</td>
+                    <td>3轮</td>
+                    <td>黑龙江火山鸣泉</td>
+                    <td>广州恒大淘宝</td>
+                    <td>11-23 17：30</td>
+                    <td><input type="text" value="3:2" disabled/></td>
+                    <td>编辑</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>2016赛季</td>
+                    <td>中超</td>
+                    <td>A组</td>
+                    <td>3轮</td>
+                    <td>黑龙江火山鸣泉</td>
+                    <td>广州恒大淘宝</td>
+                    <td>11-23 17：30</td>
+                    <td><input type="text" value="3:2" disabled/></td>
+                    <td>编辑</td>
+                </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="daochu">
+    <div class="daochu">
+        <p>导出为</p>
+        <div class="type">
+            <p>
+                <input type="radio" name="type" value="2" id="typeall"/><label for="typeall">汇总</label>
+            </p>
+            <p>
+                <input type="radio" name="type" value="1" id="typedetail" checked/><label for="typedetail">明细</label>
+            </p>
+        </div>
+        <div>
+            <p>
+                <input type="radio" name="content" value="1" id="team" checked/><label for="team">球队</label>
+            </p>
+            <p>
+                <input type="radio" name="content" value="2" id="player"/><label for="player">球员</label>
+            </p>
+        </div>
+        <div class="button">
+            <button class="confirm">确认</button>
+            <button class="back">取消</button>
+        </div>
+    </div>
+    <div id="loading">
+    	<img src="../../img/loading.gif"/>
+    </div>
+</div>
+<div id="import">
+    <div class="import">
+        <p class="title">导入数据</p>
+        <div class="file">
+            <select class="leagueyear" name="leagueyear">
+                <option value="2016">2016赛季</option>
+                <option value="2017">2017赛季</option>
+                <option value="2018">2018赛季</option>
+                <option value="2019">2019赛季</option>
+                <option value="2020">2020赛季</option>
+                <option value="2021">2021赛季</option>
+                <option value="2022">2022赛季</option>
+                <option value="2023">2023赛季</option>
+                <option value="2024">2024赛季</option>
+                <option value="2025">2025赛季</option>
+                <option value="2026">2026赛季</option>
+            </select>
+            <select class="leagueid" name="leagueid">
+            </select>
+            <div class="excel">
+                <span>上传EXCEL文件</span>
+                <a href="javascript:;">上传</a>
+                <input type="file" name="" value="" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel"/>
+            </div>
+        </div>
+        <div class="button">
+            <button class="gray">取消</button>
+            <button class="red">确认</button>
+        </div>
+    </div>
+</div>
+<div id="importConfirm">
+    <div class="importConfirm">
+        <p class="title">确认导入</p>
+        <div class="file">
+            <p class="leagueyear">2016赛季</p>
+            <p class="league">中超联赛</p>
+            <p class="filename">2016中超联赛积分榜.excel</p>
+            <p class="text">确认要将此数据导入到<span >赛程</span>里吗？</p>
+        </div>
+        <div class="button">
+            <button class="gray">取消</button>
+            <button class="red">确认</button>
+        </div>
+    </div>
+</div>
+<script src="../../lib/jquery-2.2.3.min.js"></script>
+<script src="gameplan.js"></script>
+</body>
+</html>

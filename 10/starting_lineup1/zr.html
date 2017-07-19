@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首发阵容</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="js/spectrum.css"/>
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="js/spectrum.js" ></script>
+		<script type="text/javascript" src="js/html2canvas.js" ></script>
+		<style type="text/css">
+			.sp-dd{
+				display: none;
+			}
+			.sp-preview{
+				width: 20px;
+				margin-right: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<ul class="home_contral">
+				<li>
+					<span>人数：</span>
+					<select class="number">
+						<option value="11">11人</option>
+						<option value="10">10人</option>
+						<option value="9">9人</option>
+						<option value="8">8人</option>
+						<option value="7">7人</option>
+						<option value="6">6人</option>
+						<option value="5">5人</option>
+					</select>
+				</li>
+				<li>
+					<span>阵型：</span>
+					<select class="formation">
+						<option value="4-3-3">4-3-3</option>
+						<option value="4-4-2">4-4-2</option>
+						<option value="4-4-2(菱形)">4-4-2(菱形)</option>
+						<option value="4-2-3-1">4-2-3-1</option>
+						<option value="4-3-2-1">4-3-2-1</option>
+						<option value="4-1-4-1">4-1-4-1</option>
+						<option value="4-5-1">4-5-1</option>
+						<option value="5-3-2">5-3-2</option>
+						<option value="5-4-1">5-4-1</option>
+						<option value="3-4-3">3-4-3</option>
+						<option value="3-5-2(双腰)">3-5-2(双腰)</option>
+						<option value="3-5-2(单腰)">3-5-2(单腰)</option>
+						<option value="3-3-4">3-3-4</option>
+					</select>
+				</li>
+				<li>
+					<span>圆色：</span>
+					<input type="color" class="circleColor" value="#e70012" />
+					<span>字色：</span>
+					<input type="color" class="fontColor" value="#ffffff" />
+				</li>
+			</ul>
+			<button>导出图片</button>
+			<ul class="visiting_contral">
+				<li>
+					<span>人数：</span>
+					<select class="number">
+						<option value="11">11人</option>
+						<option value="10">10人</option>
+						<option value="9">9人</option>
+						<option value="8">8人</option>
+						<option value="7">7人</option>
+						<option value="6">6人</option>
+						<option value="5">5人</option>
+					</select>
+				</li>
+				<li>
+					<span>阵型：</span>
+					<select class="formation">
+						<option value="4-3-3">4-3-3</option>
+						<option value="4-4-2">4-4-2</option>
+						<option value="4-4-2(菱形)">4-4-2(菱形)</option>						
+						<option value="4-2-3-1">4-2-3-1</option>
+						<option value="4-3-2-1">4-3-2-1</option>
+						<option value="4-1-4-1">4-1-4-1</option>
+						<option value="4-5-1">4-5-1</option>
+						<option value="5-3-2">5-3-2</option>
+						<option value="5-4-1">5-4-1</option>
+						<option value="3-4-3">3-4-3</option>
+						<option value="3-5-2(双腰)">3-5-2(双腰)</option>
+						<option value="3-5-2(单腰)">3-5-2(单腰)</option>
+						<option value="3-3-4">3-3-4</option>
+					</select>
+				</li>
+				<li>
+					<span>圆色：</span>
+					<input type="color" class="circleColor" value="#21b0f2" />
+					<span>字色：</span>
+					<input type="color" class="fontColor" value="#ffffff" />
+				</li>
+			</ul>
+		</header>
+		<div id="main">
+			<div class="left">
+				<img src="img/home_team.png"/>
+				<input type="text" name="" id="" value="" placeholder="输入主队队名"/>
+			</div>
+			<div id="box">
+				<ul class="home_team">
+					<li>
+						<!--<input class="size" maxlength="2" type="text" value="28" placeholder="号码" disabled="disabled"/>
+						<input class="name" type="text" value="刘殿座" placeholder="输入姓名"/>-->
+					</li>
+				</ul>
+				<ul class="visiting_team">
+					<!--<li>
+						<input class="size" type="text" value="28" placeholder="号码"/>
+						<input class="name" type="text" value="刘殿座" placeholder="输入姓名"/>
+					</li>-->
+				</ul>
+			</div>
+			<div class="right">
+				<input type="text" name="" id="" value="" placeholder="输入客队队名"/>
+				<img src="img/visiting_team.png"/>
+			</div>
+			<div class="borderShadow">
+				
+			</div>
+		</div>
+		<footer>
+			技术支持:北京同道伟业体育科技有限公司
+		</footer>
+		<div id="back">
+			<div id="show">
+				<img class="image" src=""/>
+				<div>
+					<a class="cancel">取消</a>
+					<a class="down" href="">下载</a>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			//主队改变颜色
+			$("header .home_contral .circleColor").change(function () {
+				$("#box .home_team .size").css("background",$(this).val())
+			})
+			$("header .home_contral .fontColor").change(function () {
+				$("#box .home_team .size").css("color",$(this).val())
+			})
+			//客队改变颜色
+			$("header .visiting_contral .circleColor").change(function () {
+				$("#box .visiting_team .size").css("background",$(this).val())
+			})
+			$("header .visiting_contral .fontColor").change(function () {
+				$("#box .visiting_team .size").css("color",$(this).val())
+			})
+			//主队鼠标移动
+			$("#box").on("mousedown",".home_team li .size",function (even) {
+				var that = $(this).parent();
+				//box框距离浏览器的高度宽度
+				var top = $("#box").offset().top - $(window).scrollTop();
+				var left = $("#box").offset().left;
+				var selfX = even.offsetX;
+				var selfY = even.offsetY;
+				document.onmousemove = function (even) {
+					console.log(selfX);
+					var x = even.clientX - left-selfX;
+					var y = even.clientY - top-selfY;
+					if (x < 0) {
+						x = 0;
+					} else if(x >314){
+						x = 314;
+					}
+					if (y < 0) {
+						y = 0;
+					} else if(y >414){
+						y = 414;
+					}
+					that.css({
+						"left":x+"px",
+						"top":y+"px"						
+					})
+				}
+			})
+			//客队鼠标移动
+			$("#box").on("mousedown",".visiting_team li .size",function (even) {
+				var that = $(this).parent();
+				//box框距离浏览器的高度宽度
+				var top = $("#box").offset().top - $(window).scrollTop();
+				var left = $("#box").offset().left;
+				var selfX = even.offsetX;
+				var selfY = even.offsetY;
+				document.onmousemove = function (even) {
+					
+					var x = even.clientX - left - selfX - 330;
+					var y = even.clientY - top -selfY;
+					if (x < -16) {
+						x = -16;
+					} else if(x >298){
+						x = 298;
+					}
+					if (y < 0) {
+						y = 0;
+					} else if(y >414){
+						y = 414;
+					}
+					that.css({
+						"left":x+"px",
+						"top":y+"px"						
+					})
+				}
+			})
+			document.onmouseup = function () {
+				document.onmousemove = false;
+			}
+			//球队阵型图
+			var formation = {
+				"4-3-3":[[61,224],[122,78],[122,170],[122,262],[122,354],[204,112],[204,216],[204,320],[286,112],[286,216],[286,320]],
+				"4-4-2":[[61,224],[122,78],[122,170],[122,262],[122,354],[228,82],[204,170],[204,262],[228,350],[286,176],[282,256]],
+				"4-4-2(菱形)":[[61,224],[122,78],[122,170],[122,262],[122,354],[206,142],[169,224],[241,224],[206,300],[286,176],[282,256]],
+				"4-2-3-1":[[61,224],[116,78],[116,170],[116,262],[116,354],[180,164],[180,268],[240,112],[240,216],[240,320],[300,216]],
+				"4-3-2-1":[[61,224],[116,78],[116,170],[116,262],[116,354],[180,112],[180,216],[180,320],[240,164],[240,268],[300,216]],
+				"4-1-4-1":[[61,224],[116,78],[116,170],[116,262],[116,354],[169,216],[212,101],[230,178],[230,254],[212,333],[292,224]],
+				"4-5-1":[[61,224],[122,78],[122,170],[122,262],[122,354],[204,52],[204,134],[204,216],[204,298],[204,380],[286,216]],
+				"5-3-2":[[61,224],[142,54],[122,134],[122,216],[122,298],[142,378],[204,112],[204,216],[204,320],[288,177],[278,257]],
+				"5-4-1":[[61,224],[142,54],[122,134],[122,216],[122,298],[142,378],[226,100],[208,181],[208,261],[226,342],[286,219]],
+				"3-4-3":[[61,224],[122,112],[122,216],[122,320],[204,78],[204,170],[204,262],[204,354],[286,112],[286,216],[286,320]],
+				"3-5-2(双腰)":[[61,224],[122,136],[122,216],[122,296],[211,88],[176,185],[176,253],[236,217],[211,353],[292,177],[292,257]],
+				"3-5-2(单腰)":[[61,224],[122,136],[122,216],[122,296],[211,88],[231,185],[176,217],[231,253],[211,353],[292,177],[292,257]],
+				"3-3-4":[[61,224],[122,112],[122,216],[122,320],[204,112],[204,216],[204,320],[286,78],[286,170],[286,262],[286,354]]
+			}
+			//修改人数
+			$("header .number").change(function () {
+				$("header .number").val($(this).val());
+				number($(this).val());
+			})
+			//默认11人
+			number(11)
+			function number(num){
+				var lis = "";
+				for (var i = 0; i < num; i++) {
+					lis +='<li><input class="size" type="text" maxlength="2" value="" placeholder="0" /><input class="name" type="text" value="" placeholder="姓名" /></li>';
+				}
+				$("#box .home_team").html(lis);
+				$("#box .visiting_team").html(lis);
+				//阵型
+				homeFormation(formation[$("header .home_contral .formation").val()]);
+				visitingFormation(formation[$("header .visiting_contral .formation").val()]);
+			}
+			//修改主队阵型
+			$("header .home_contral .formation").change(function () {
+				var val = $(this).val();
+				//console.log(formation[val]);
+				homeFormation(formation[val]);
+			})
+			function homeFormation (formationArr) {
+				for (var i = 0 ; i < $("header .number").val(); i++) {
+					$("#box .home_team li").eq(i).css({
+						"left":formationArr[i][0]-16+"px",
+						"top":formationArr[i][1]-16+"px"
+					})
+				}
+			}
+			//修改主队阵型
+			$("header .visiting_contral .formation").change(function () {
+				var val = $(this).val();
+				//console.log(formation[val]);
+				visitingFormation(formation[val]);
+			})
+			function visitingFormation (formationArr) {
+				for (var i = 0 ; i < $("header .number").val(); i++) {
+					$("#box .visiting_team li").eq(i).css({
+						"left":314-formationArr[i][0]+"px",
+						"top":formationArr[i][1]-16+"px"
+					})
+				}
+			}
+			//点击导出图片
+			$("header button").on("click", function () {
+				//显示弹窗
+				$("#back").show();
+                html2canvas($("#box"), {
+//                  height: 2000,
+                    onrendered: function (canvas) {
+                        var url = canvas.toDataURL();
+                        $("#show .image").attr("src",url);
+                        //以下代码为下载此图片功能
+                        var myDate = new Date();
+                        var month = myDate.getMonth()+1;
+                        var dates = myDate.getDate();
+                        var hours = myDate.getHours();
+                        var name = myDate.getMonth()+1+""+myDate.getDate()+"_"+myDate.getHours()+myDate.getMinutes()+".png";
+                       	var triggerDownload = $("#show .down").attr("href", url).attr("download",name);
+                    }
+                });
+            });
+            //点击下载
+            $("#show .down").click(function () {
+            	$("#back").hide();
+            })
+            //点击取消
+            $("#show .cancel").click(function () {
+            	$("#back").hide();
+            })
+            //input框锁定
+            /*$("#box").on("dblclick","input",function () {
+            	$(this).removeAttr("disabled");
+            	$(this).attr("checked","checked");
+            })*/
+		</script>
+	</body>
+</html>

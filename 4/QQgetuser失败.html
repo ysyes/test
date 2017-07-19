@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//获取QQ数据
+			/*$.ajax({
+				type:"get",
+				url:"https://graph.qq.com/user/get_user_info",
+				async:true,
+				data:{
+						oauth_consumer_key:"100330589",
+						access_token:"82D6BCC9B57B5D6B35D5B509955496D9",
+						openid:"1A7B116298CDEF8000B9865726B6DF26",
+						format:"json"
+				},
+				success:function (data) {
+					var result = JSON.parse(data);
+					console.log(result)
+				}
+			});*/
+
+			//getJSON
+			$.getJSON("https://graph.qq.com/user/get_user_info?oauth_consumer_key=100330589&access_token=82D6BCC9B57B5D6B35D5B509955496D9&openid=1A7B116298CDEF8000B9865726B6DF26&format=json",null,function (data) {
+				console.log(data)
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jQuery简单实用的分页插件Page - 站长素材</title>
+<link rel="stylesheet" href="js/page/jquery.page.css">
+</head>
+<body>
+	<div id="btn">
+		点击
+	</div>
+<br><br><br>
+<div id="page"></div>
+<script src="js/page/jquery.min.js"></script>
+<script type="text/javascript" src="js/page/jquery.page.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#page").Page({
+			totalPages: 2,//分页总数
+			liNums: 7,//分页的数字按钮数(建议取奇数)
+			cheakPage:1,
+			activeClass: 'activP', //active 类样式定义
+			callBack : function(page){
+				console.log(page)
+			},
+			
+		});
+		//回填
+//		$("#page li a").eq(0).html("3");
+//		$("#page li a").eq(0).click();
+		$("#btn").click(function () {			
+//			$("#page").Page({
+//				totalPages: 70,//分页总数
+//				liNums: 11,//分页的数字按钮数(建议取奇数)
+//				activeClass: 'activP', //active 类样式定义
+//				callBack : function(page){
+//					console.log(page)
+//				}
+//			});
+		})
+	})
+	window.sessionStorage.setItem("page",[1,2,3,4,5,6,7,8,9]);
+	console.log(window.sessionStorage.getItem("page"))
+</script>
+</body>
+</html>

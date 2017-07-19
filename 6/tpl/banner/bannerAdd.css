@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+li{
+	list-style: none;
+}
+html{
+	padding:0 42px;
+}
+body{
+	width: 100%;
+	color: #333333;
+}
+header{
+	position: relative;
+	margin-bottom: 25px;
+}
+header div{
+	width: 100%;
+	height: 62px;
+	border-bottom: 1px solid #E9E9E9;
+}
+header h2{
+	padding: 0 15px;
+	background: white;
+	font-size: 20px;
+	position: absolute;
+	bottom: -10px;
+	font-weight:normal;
+}
+.main{
+	border: 1px solid #CCCCCC;
+	margin-bottom: 20px;
+}
+.main ul{
+	height: 50px;
+	background: #ebebeb;
+	border-bottom: 1px solid #ccc;
+	border-radius: 3px 3px 0 0;
+}
+.main ul .title{
+	float: left;
+	height: 50px;
+	width: 108px;
+	background: white;
+	border-right: 1px solid #CCCCCC;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+	color: #0055A1;
+	border-bottom: 1px solid #fff;
+}
+.main h3{
+	font-size: 18px;
+	color: #333333;
+	font-weight: normal;
+	margin: 20px 0 15px 20px;
+	font-weight:normal;
+}
+.main h3 span{
+	font-size: 14px;
+	color: #999999;
+	margin-left: 10px;
+}
+#title{
+	width: 480px;
+	height: 50px;
+	font-size: 16px;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	margin-left: 20px;
+}
+.main form>div:after{
+	content: "";
+	display: block;
+	height: 0;
+	width: 0;
+	clear: both;
+}
+.main form>div>div{
+	float: left;
+	width: 400px;
+	overflow: hidden;
+}
+.main .img{
+	width: 280px;
+	height: 162px;
+	border-radius: 3px;
+	margin-left: 20px;
+}
+.main #uploading{
+	font-size: 20px;
+	margin-top: 60px;
+}
+.main #cancel{
+	width: 95px;
+	height: 30px;
+}
+.main form>div input{
+	display: block;
+	margin: 20px 20px;
+}
+.main .html{
+	margin-left: 20px;
+}
+.main button{
+	display: inline-block;
+	height: 50px;
+	width: 170px;
+	font-size: 18px;
+	margin: 20px;
+	border: 1px solid #0055A1;
+	border-radius: 3px;
+	color: #0055A1;
+	background: white;
+	cursor: pointer;
+}
+.main .submit{
+	background: #0055A1;
+	color: white;
+	margin-left: 260px;
+}

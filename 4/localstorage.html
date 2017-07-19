@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" />
+		<button onclick="btn()">提交</button>
+		<a href="localstorage1.html" target="_blank">跳转到1</a>
+		<script type="text/javascript">
+			function btn() {
+				var Text = document.getElementsByTagName("input")[0].value;
+				sessionStorage.setItem("name",Text);
+			}
+			
+		</script>
+	</body>
+</html>

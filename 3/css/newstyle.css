@@ -1,0 +1,171 @@
+/*html{font-size: 50%;}*/
+body,p,div,ul,li,input{
+    font-family:'SourceHanSansCN-Regular','Microsoft Yahei';
+    margin:0;
+    padding:0;
+}
+a{
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+}
+img{vertical-align: bottom;}
+ul{list-style: none;}
+#main{
+    margin:2.5rem 1.25rem;
+    margin-bottom:0;
+}
+#main p.title{
+    font-family: 'PingFangSC-Regular','Microsoft Yahei';
+    font-size:2.5rem;
+    color:#1a1a1a;
+    line-height:140%;
+}
+#main p.resource{
+    font-size:1.5rem;
+    color:#999;
+    margin-top:4%;
+}
+#main p.resource span.source{
+    margin-left:2%;
+}
+#main div.content{
+    margin-top:6%;
+}
+#main div.content img.img{
+    width:100%;
+}
+#main div.content{
+    font-size:2rem;
+    color:#333;
+    line-height:187.5%;
+    margin-top:2%;
+    margin-bottom:8%;
+    text-align:justify;
+    height:auto;
+    word-wrap: break-word;
+}
+#main div.content p.text{
+    text-indent: 2em;
+}
+#pinglun{
+    margin:0 1.25rem;
+    margin-top:8%;
+}
+#pinglun p.title{
+    font-size: 1.75rem;
+    color:#333;
+    padding-bottom:2%;
+}
+#pinglun li{
+    padding:3% 0;
+    border-top:1px solid #e6e6e6;
+    overflow: hidden;
+}
+#pinglun li>a{
+    display: block;
+    overflow: hidden;
+    float: left;
+    width:83%;
+    height:100%;
+    font-size:2.1875rem;
+}
+#pinglun li div{
+    float:left;
+    height:100%;
+ }
+#pinglun li a div:first-child{
+    width:15%;
+    margin-right:3%;
+}
+#pinglun li a div:last-child{
+    width:82%;
+
+}
+#pinglun li a div:first-child img{
+    width:100%;
+	max-width:3.75rem;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    border-radius: 4rem
+}
+#pinglun li div p.username{
+	float:left;
+	width:100%;
+    overflow:hidden;
+}
+#pinglun li div p.username span{
+    color:#e26c03;
+    font-size:1.5rem;
+    float: left;
+}
+#pinglun  li div p.username b{
+    float: left;
+}
+#pinglun li div p.date{
+    color:#a5a5a5;
+    font-size: 1.35rem;
+    line-height:175%;
+	float:left;
+	width:100%;
+}
+#pinglun li div p.username b{
+    color:#333;
+    font-weight: normal;
+    font-size:1.6rem;
+}
+#pinglun li div p.content,#pinglun li div p.content1,#pinglun li p.content2{
+    font-size: 1.725rem;
+    color:#333333;
+    overflow:hidden;
+    float:left;
+    width:100%;
+}
+#pinglun li div p.content2{
+    font-size: 1.525rem;
+}
+#pinglun li p.content2{
+    margin-top:0.5rem;
+    padding:0.5rem 0.5rem;
+    background:#f5f5f5;
+    margin-left:15%;
+    width:82%;
+}
+#pinglun li p.dianzan{
+    float:right;
+    width:17%;
+    height:100%;
+}
+#pinglun li p.dianzaned a span{
+    color:#e26c03;
+}
+#pinglun li p.dianzan a{
+    float: right;
+    height: 100%;
+    width:100%;
+}
+#pinglun li p.dianzan img{
+    width:1.5625rem;
+    height:1.75rem;
+    float:right;
+    padding: 26% 0;
+}
+#pinglun li p.dianzan span{
+    margin-right:10%;
+    color:#a5a5a5;
+    float:right;
+    font-size:1.35rem;
+    line-height:184%;
+    padding: 26% 0;
+}
+#pinglun p.more{
+    text-align: center;
+    margin:1.25rem 0;
+    margin-bottom:4.375rem;
+    height:4.25rem;
+}
+#pinglun p.more img{
+    cursor: pointer;
+    width:40%;
+    float: left;
+    margin-left:30%;
+}

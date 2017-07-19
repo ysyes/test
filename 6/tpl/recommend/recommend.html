@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>推荐信息-推荐列表</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/page.css"/>
+    <link rel="stylesheet" href="recommend.css"/>
+	<script type="text/javascript" src="../../lib/WdatePicker.js" ></script>
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <p>推荐列表</p>
+            <div></div>
+        </div>
+        <div class="add">
+            <a href="recommendAdd.html" class="rt"><button class="button">添加推荐</button></a>
+        </div>
+        <div class="show">
+            <ul class="title">
+                <li class="active">全部</li>
+                <li>
+                    <div>
+                        <input  class="Wdate player" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd'})" type="text" placeholder="比赛时间"/>
+                        <i></i>
+                    </div>
+                    <div>
+                        <select class="state star">
+                       	 	<option value="">--所有状态--</option>
+	                        <option value="0">比赛未开始</option>
+	                        <option value="1">比赛进行中</option>
+	                        <option value="2">比赛结束</option>
+	                    </select>
+
+                    </div>
+                    <div>
+                        <select class="state name">
+                            <option value="">--全部联赛--</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+            <div class="content">
+                <table class="table1">
+                    <thead>
+                    <tr>
+                        <th width="110px">联赛名称</th>
+                        <th width="200px">球队</th>
+                        <th width="200px">比赛时间</th>
+                        <th width="80px">比分</th>
+                        <th width="80px">状态</th>
+                        <th width="140px">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!--<tr>
+                        <td>中超联赛</td>
+                        <td>广州恒大VS延边富德</td>                  
+                        <td>周日 10-09 08:36:25</td>
+                        <td>2:1</td>
+                        <td>
+                            <a href="" class="able">编辑</a>
+                            <a href="" class="able">禁用</a>
+                        </td>
+                    </tr>
+                    <tr>
+                       	<td>中超联赛</td>
+                        <td>广州恒大VS延边富德</td>                  
+                        <td>周日 10-09 08:36:25</td>
+                        <td>2:1</td>
+                        <td>
+                            <a href="" class="able">编辑</a>
+                            <a href="" class="able">禁用</a>
+                        </td>
+                    </tr>-->
+                    </tbody>
+                </table>
+                <div class="page">
+                    <ul>
+                     <li class="disable">上一页</li>
+		             <li class="active">1</li>
+		             <li>2</li>
+		             <li>3</li>
+		             <li>下一页</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../js/jquery-2.2.3.min.js" ></script>
+    <script type="text/javascript" src="../../js/page.js" ></script>
+    <script type="text/javascript" src="recommend.js" ></script>
+</body>
+</html>

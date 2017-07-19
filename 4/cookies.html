@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+	</head>
+	<body>
+		输入姓名：<input type="" name="" id="name" value="" />
+		<script type="text/javascript">
+			//写入读取
+			$.cookie("name","哈哈哈");
+			console.log($.cookie("name"))
+			alert($.cookie("name"));
+			//删除cookie
+			$.cookie("username",null,{expires: -1,path:'/'});//path设置访问路径
+		</script>
+	</body>
+</html>

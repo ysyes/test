@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+		<meta http-equiv="Expires" content="0">
+	    <meta http-equiv="Pragma" content="no-cache">
+	    <meta http-equiv="Cache-control" content="no-cache">
+	    <meta http-equiv="Cache" content="no-cache">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta content="telephone=no" name="format-detection">
+		<title>同道伟业实时报告</title>
+		<link rel="stylesheet" type="text/css" href="js/swiper-3.4.2.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	</head>
+	<body>
+		<header>
+			<p>球队报告</p>
+			<p>球员报告</p>
+			<p>实时赛况</p>
+			<p>双方阵容</p>
+		</header>
+		<p class="teamtime"><span><!--进行中--></span><time><!--68'--></time></p>
+		<div id="score">
+			<p class="team"><span><!--上海上港--></span><img src=""/></p>
+			<p class="score"><span></span>-<span></span></p>
+			<p class="team"><img src=""/><span><!--广州恒大淘宝--></span></p>
+		</div>
+		<div id="playerSelect">
+			<div class="teamName">
+				<p data-id=""><span><!--广州恒大淘宝--></span></p>
+				<ul>
+					<li data-id=""><!--广州恒大淘宝--></li>
+					<li data-id=""><!--上海上港--></li>
+				</ul>
+			</div>
+			<div class="playerName">				
+				<p data-id=""><span><!--刘小龙--></span></p>
+				<ul>
+					<!--<li data-id="1" class="check">刘小龙8</li>
+					<li data-id="2">刘小龙2</li>
+					<li data-id="3">刘小龙3</li>
+					<li data-id="4">刘小龙4</li>
+					<li data-id="5">刘小龙5</li>
+					<li data-id="6">刘小龙6</li>-->
+				</ul>
+			</div>
+		</div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" id="teamMain">
+					<ul>
+						<li>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div>
+								<span></span>
+							</div>
+						</li>
+					</ul>
+					<div class="teamMainfooter">
+						<div class="teamchuan">
+							<ul class="teamMaintitle">
+								<li><span><!--向前--></span>/<span><!--向后--></span>/<span><!--向左--></span>/<span><!--向右--></span></li>
+								<li><!--传球方向--></li>
+								<li><span><!--向前--></span>/<span><!--向后--></span>/<span><!--向左--></span>/<span><!--向右--></span></li>
+							</ul>
+							<ul class="teamMaindata">
+								<li><span> </span><span> </span><span> </span><span> </span></li>
+								<li></li>
+								<li><span> </span><span> </span><span> </span><span> </span></li>
+							</ul>
+						</div>
+						<div class="teamchuan">
+							<ul class="teamMaintitle">
+								<li><span><!--向前--></span>/<span><!--向后--></span>/<span><!--向左--></span>/<span><!--向右--></span></li>
+								<li><!--传球占比%--></li>
+								<li><span><!--向前--></span>/<span><!--向后--></span>/<span><!--向左--></span>/<span><!--向右--></span></li>
+							</ul>
+							<ul class="teamMaindata">
+								<li><span> </span><span> </span><span> </span><span> </span></li>
+								<li>%</li>
+								<li><span> </span><span> </span><span> </span><span> </span></li>
+							</ul>
+						</div>
+						<div class="sanqu">
+							<ul class="teamMaintitle">
+								<li><span><!--进攻--></span>/<span><!--中场--></span>/<span><!--防守--></span></li>
+								<li><!--三区活动率--></li>
+								<li><span><!--进攻--></span>/<span><!--中场--></span>/<span><!--防守--></span></li>
+							</ul>
+							<ul class="teamMaindata">
+								<li><span> </span><span> </span><span> </span></li>
+								<li>%</li>
+								<li><span> </span><span> </span><span> </span></li>
+							</ul>
+						</div>
+						<div class="sanqu">
+							<ul class="teamMaintitle">
+								<li><span><!--左边--></span>/<span><!--中间--></span>/<span><!--右边--></span></li>
+								<li><!--进攻三区活动占比--></li>
+								<li><span><!--左边--></span>/<span><!--中间--></span>/<span><!--右边--></span></li>
+							</ul>
+							<ul class="teamMaindata">
+								<li><span> </span><span> </span><span> </span></li>
+								<li>%</li>
+								<li><span> </span><span> </span><span> </span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide" id="playerMain">
+					<div class="main">
+						<ul>
+							<li>
+								<span></span>
+								<p> </p>
+							</li>
+							<li>
+								<span></span>
+								<p> </p>
+							</li>
+							<li>
+								<span></span>
+								<p> </p>
+							</li>
+							<li>
+								<span></span>
+								<p> </p>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<span></span>
+								<p> </p>
+							</li>
+							<li>
+								<span></span>
+								<p> </p>
+							</li>
+							<li>
+								<span></span>
+								<p> </p>
+							</li>
+							<li>
+								<span></span>
+								<p> </p>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<span></span>
+								<p> </p>
+							</li>
+							<li>
+								<span></span>
+								<p> </p>
+							</li>
+							<li>
+								<span></span>
+								<p> </p>
+							</li>
+							<li>
+								<span></span>
+								<p> </p>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<p> </p>
+								<span></span>
+							</li>
+						</ul>
+					</div>						
+					<div class="chuanqiu">
+						<ul>
+							<li>
+								<p class="title"><!--传球成功率--></p>
+								<p><!--传球数:--><span></span></p>
+								<p><!--传球成功率:--><span></span></p>
+							</li>
+							<li id="chuanqiulv">
+								
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<p class="title"><!--对方半场传球成功率--></p>
+								<p><!--对方半场传球数:--><span></span></p>
+								<p><!--对方半场传球成功率:--><span></span></p>
+							</li>
+							<li id="banchangchuanqiu">
+								
+							</li>
+						</ul>
+					</div>
+					<div class="fangxiang">
+						<ul>
+							<li>
+								<p><!--向前传球:--><span></span></p>
+								<span><!--56.8%--></span>
+							</li>
+							<li>
+								<span><!--56.8%--></span>
+								<p><!--向后传球:--><span></span></p>
+							</li>
+							<li>
+								<p><!--向左传球--><span></span></p>
+								<span><!--56.8%--></span>
+							</li>
+							<li>
+								<span><!--56.8%--></span>
+								<p><!--向右传球--><span></span></p>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="sanqu">
+						<div>
+							<h2><!--三区活动率--></h2>
+							<ul>
+								<li>
+									<p><!--防守--></p>
+									<span> </span>
+								</li>
+								<li>
+									<p><!--中场--></p>
+									<span> </span>
+								</li>
+								<li>
+									<p><!--进攻--></p>
+									<span> </span>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<h2><!--进攻三区活动占比--></h2>
+							<ul>
+								<li>
+									<p><!--左边--></p>
+									<span> </span>
+								</li>
+								<li>
+									<p><!--中间--></p>
+									<span> </span>
+								</li>
+								<li>
+									<p><!--右边--></p>
+									<span> </span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="weizhi">
+						<h2><!--活动平均X轴、Y轴位置--></h2>
+						<ul>
+							<li>
+								<p><span>0</span>,<span>0</span></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="swiper-slide" id="fighting">
+					<div class="timelogo">
+						<img src="img/fighting_time.png"/>
+					</div>
+					<div class="main">
+						<i></i>
+						<ul>
+							<!--<li class="zhuli">
+								<p class="left"><span>啦啦啦啦</span><img src="img/fighting01.png" alt="" /></p>
+								<time>23'</time>
+								<p class="right"><img src="img/fighting01.png"/><span>啦啦啦啦</span></p>
+							</li>
+							<li class="keli">
+								<p class="left"><span>啦啦啦啦</span><img src="img/fighting02.png" alt="" /></p>
+								<time>23'</time>
+								<p class="right"><img src="img/fighting02.png"/><span>啦啦啦啦</span></p>
+							</li>
+							<li class="zhuli">
+								<p class="left"><span>啦啦啦啦<br /></span><img src="img/fighting03.png" alt="" /></p>
+								<time>23'</time>
+								<p class="right"><img src="img/fighting03.png"/><span>啦啦啦啦</span></p>
+							</li>
+							<li class="keli">
+								<p class="left"><span>啦啦啦啦</span><img src="img/fighting04.png" alt="" /></p>
+								<time>23'</time>
+								<p class="right"><img src="img/fighting04.png"/><span>啦啦啦啦<br />啦啦啦</span></p>
+							</li>
+							<li class="zhuli">
+								<p class="left"><span>啦啦啦啦</span><img src="img/fighting05.png" alt="" /></p>
+								<time>23'</time>
+								<p class="right"><img src="img/fighting05.png"/><span>啦啦啦啦</span></p>
+							</li>
+							<li class="keli">
+								<p class="left"><span>啦啦啦啦</span><img src="img/fighting06.png" alt="" /></p>
+								<time>23'</time>
+								<p class="right"><img src="img/fighting06.png"/><span>啦啦啦啦</span></p>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+				<div class="swiper-slide" id="lineup">
+					<h3>首发</h3>
+					<div class="lineupF">
+						<ul>
+							<!--<li><p>上海上港</p><span>4-3-3</span></li>
+							<li><span>8</span><p>啦啦啦</p></li>-->
+							
+						</ul>
+						<ul>
+							<!--<li><p>上海上港</p><span>4-3-3</span></li>
+							<li><span>88</span><p>啦啦啦</p></li>-->
+						</ul>
+					</div>
+					<h3>替补</h3>
+					<div class="lineupS">
+						<ul>
+							<!--<li><span>8</span><p>啦啦啦</p></li>-->
+						</ul>
+						<ul>
+							<!--<li><span>88</span><p>啦啦啦</p></li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-scrollbar"></div>
+		</div>
+		<div class="fightingfooter">
+			<p><img src="img/fighting01.png"/><span>进球</span></p>
+			<p><img src="img/fighting02.png"/><span>点球</span></p>
+			<p><img src="img/fighting03.png"/><span>乌龙</span></p>
+			<p><img src="img/fighting05.png"/><span>黄牌</span></p>
+			<p><img src="img/fighting06.png"/><span>红牌</span></p>
+			<p><img src="img/fighting04_1.png"/><span>换人</span></p>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="js/radialIndicator.js" ></script>
+		<script type="text/javascript" src="js/swiper-3.4.1.jquery.min.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+	</body>
+</html>

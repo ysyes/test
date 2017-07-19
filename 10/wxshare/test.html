@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+	</head>		
+	<body>
+		<ul>
+			<li>APPID:<input type="text" name="" id="APPID" value="" /></li>
+			<li>APPSECRET:<input type="text" name="" id="APPSECRET" value="" /></li>
+		</ul>
+		<button>查看access_token</button>
+		<script type="text/javascript" src="lib/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript">
+			$("button").click(function () {
+				var APPID = $("#APPID").val();
+				var APPSECRET = $("#APPSECRET").val();
+				var url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid="+APPID+"&secret="+APPSECRET;
+				window.location = url;
+			})			
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,734 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑","microsoft yahei";
+	-webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	color: white;
+}
+body{
+	background:#c32c2c;
+	background: -moz-linear-gradient(top,  #e77338 0%,#c32c2c 50%, #000000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e77338), color-stop(50%,#c32c2c), color-stop(100%,#000000));
+    background: -webkit-linear-gradient(top,  #e77338 0%,#c32c2c 50%,#000000 100%);
+    background: -o-linear-gradient(top,  #e77338 0%,#c32c2c 50%,#000000 100%);
+    background: -ms-linear-gradient(top,  #e77338 0%,#c32c2c 50%,#000000 100%);
+    background: linear-gradient(to bottom,  #e77338 0%,#c32c2c 50%,#000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e77338', endColorstr='#000000',GradientType=0 );
+}
+a,button,input{-webkit-tap-highlight-color:rgba(255,255,255,0);}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+header{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 7px;
+}
+header p{
+	float: left;
+	width: 25%;
+	height: 49px;
+	border-bottom: 1px solid rgba(0,0,0,0.12);
+	font-size: 16px;
+	text-align: center;
+	line-height: 49px;
+	color: #f1b8a6;
+}
+header p.check{
+	color: white;
+	border-bottom:1px solid #000000;
+}
+p.teamtime{
+	margin: 0 auto;
+	text-align: center;
+	width: 23%;
+	height: 20px;
+	line-height: 20px;
+	background: url(../img/shape_time.png) no-repeat;
+	background-size: 100% 100%;
+	font-size: 12px;
+}
+p.teamtime time{
+	font-size: 14px;
+	padding: 0 3%;
+}
+#score{
+	width: 94%;
+	max-width: 800px;
+	margin: 0 auto;
+	height: 40px;
+	margin-top: 3px;
+	background: url(../img/shape_02.png) no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	display: -webkit-flex;
+}
+#score p.team{
+	width: 38%;
+	font-size: 13px;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+}
+#score p.team img{
+	height: 30px;
+}
+#score p:nth-child(1){
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+}
+#score p:nth-child(3){
+	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+}
+#score p.score{
+	font-size: 25px;
+	line-height: 40px;
+	width: 24%;
+	text-align: center;
+}
+#score p.score span{
+	padding: 0 5px;
+}
+#playerSelect{
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #000000;
+	display: none;
+}
+#playerSelect div{
+	float: left;
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	position: relative;
+}
+#playerSelect div p span{
+	font-size: 13px;
+	padding-right: 15px;
+	background: url(../img/shape_sanjiao.png) no-repeat right center;
+	background-size: 10px;
+}
+#playerSelect ul{
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	font-size: 13px;
+	position: absolute;
+	top: 40px;
+	display: none;
+	border-radius: 0 0 5px 5px;
+	z-index: 10;
+}
+#playerSelect ul li{
+	height: 27px;
+	line-height: 27px;
+}
+#playerSelect ul li.check{
+	background: rgba(0,0,0,0.5);
+	border-radius:5px;
+}
+.swiper-container{
+	width: 94%;
+	padding: 0 3%;
+	margin-top: 10px;
+	/*height: 300px;*/
+}
+
+/*球员报告*/
+#teamMain{
+	width: 100%;
+	height: auto;
+	display: none;
+}
+#teamMain>ul{
+	width: 100%;
+}
+#teamMain>ul>li{
+	width: 100%;
+	margin-top: 18px;
+}
+#teamMain>ul ul{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	height: 30px;
+	line-height: 30px;
+}
+#teamMain>ul ul li{
+	font-size: 16px;
+	text-align: center;
+}
+#teamMain>ul ul li:nth-child(1){
+	width: 33%;
+}
+#teamMain>ul ul li:nth-child(3){
+	width: 33%;
+}
+#teamMain>ul ul li:nth-child(2){
+	width: 34%;
+	font-size: 12px;
+	background: url(../img/shape_03.png) no-repeat;
+	background-size: 100% 100%;
+}
+#teamMain>ul>li div{
+	width: 100%;
+	height: 10px;
+	margin-top: 5px;
+	background: #ffb700;
+}
+#teamMain>ul>li div span{
+	display: block;
+	height: 10px;
+	width: 50%;
+	background: white;
+	transition: 2s width;
+	-moz-transition: width 2s;
+	-webkit-transition: width 2s;
+	-o-transition: width 2s;
+}
+.teamMainfooter{
+	width: 100%;
+	font-size: 12px;
+	margin-top: 30px;
+}
+.teamMainfooter div{
+	margin-top: 20px;
+}
+.teamMainfooter div ul{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-around;
+}
+.teamMainfooter div ul.teamMaintitle{
+	height: 30px;
+	line-height: 30px;
+}
+.teamMainfooter div ul li:nth-child(1){
+	width: 38%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+}
+.teamMainfooter div ul li:nth-child(2){
+	width: 20%;
+	text-align: center;
+}
+.teamMainfooter div ul li:nth-child(3){
+	width: 38%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+}
+.teamMainfooter div ul.teamMaintitle li:nth-child(1){
+	background: url(../img/shape_04.png) no-repeat;
+	background-size: 100% 100%;
+}
+.teamMainfooter div ul.teamMaintitle li:nth-child(2){
+	text-align: center;
+	background: url(../img/shape_05.png) no-repeat;
+	background-size: 100% 100%;
+}
+.teamMainfooter div ul.teamMaintitle li:nth-child(3){
+	background: url(../img/shape_04.png) no-repeat;
+	background-size: 100% 100%;
+}
+.teamMainfooter div ul.teamMaindata{
+	margin-top: 5px;
+	height: 40px;
+	line-height: 40px;
+	background: url(../img/shape_06.png) no-repeat;
+	background-size: 100% 100%;
+}
+.teamMainfooter .sanqu ul li:nth-child(1){
+	width: 33%;
+}
+.teamMainfooter .sanqu ul li:nth-child(2){
+	width: 32%;
+	text-align: center;
+}
+.teamMainfooter .sanqu ul li:nth-child(3){
+	width: 33%;
+}
+
+/*球员数据*/
+#playerMain{
+	width: 100%;
+	display: none;
+	height: auto;
+}
+#playerMain .main{
+	width: 100%;
+}
+#playerMain .main ul{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+#playerMain .main ul>li{
+	margin-bottom: 1.333%;
+	float: left;
+	width: 24%;
+	max-width: 200px;
+	height: 60px;
+	border-radius: 5px;
+	background: rgba(255,255,255,0.2);
+	text-align: center;
+}
+#playerMain .main ul li span{
+	font-size: 27px;
+}
+#playerMain .main ul li p{
+	font-size: 13px;
+}
+#playerMain .main ul:last-child li{
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	max-width: none;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+#playerMain .main ul:last-child li p{
+	margin-left: 24px;
+	position: relative;
+}
+#playerMain .main ul:last-child li span{
+	margin-right: 20px;
+	font-size: 20px;
+}
+#playerMain .main ul:last-child li p:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 16px;
+	left: -14px;
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	background: green;	
+}
+#playerMain .chuanqiu{
+	width: 100%;
+	font-size: 13px;
+	margin-top: 10px;
+}
+#playerMain .chuanqiu ul{
+	padding: 15px 0;
+	height: 90px;
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	border-top: 1px solid rgba(255,255,255,0.2);
+}
+#playerMain .chuanqiu ul li:nth-child(1){
+	width: 60%;
+}
+#playerMain .chuanqiu ul li:nth-child(2){
+	width: 40%;
+	height: 90px;
+	width: 90px;
+	border-radius:50px;
+}
+#playerMain .chuanqiu ul li canvas{
+	width: 100%;
+	height: 100%;
+}
+#playerMain .chuanqiu ul li p{
+	margin-left: 20%;
+	line-height: 16px;
+	position: relative;
+}
+#playerMain .chuanqiu ul li p.title{
+	margin-top: 15px;
+	margin-bottom: 13px;
+}
+#playerMain .chuanqiu ul li p.title:before{
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background: #ea68a2;
+	position: absolute;
+	top: 3px;
+	left: -15px;
+}
+#playerMain .chuanqiu ul:last-child li p.title:before{
+	background: #00a0e9;
+}
+#playerMain .fangxiang{
+	padding:20px 0;
+	width: 100%;
+	height: 250px;
+	background:url(../img/shape_07.png) no-repeat center;
+	background-size:250px;
+	border-top: 1px solid rgba(255,255,255,0.2);
+}
+#playerMain .fangxiang ul{
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+#playerMain .fangxiang ul li{
+	position: absolute;
+	font-size: 13px;
+}
+#playerMain .fangxiang ul li:first-child,#playerMain .fangxiang ul li:nth-child(2){
+	height: 76px;
+	width: 100%;
+	line-height: 38px;	
+}
+#playerMain .fangxiang ul li:first-child{
+	top: 0;
+	left: 0;
+}
+#playerMain .fangxiang ul li:nth-child(2){
+	bottom: 0;
+	left: 0;
+}
+#playerMain .fangxiang ul li:nth-child(3),#playerMain .fangxiang ul li:nth-child(4){
+	height: 100%;
+	width: 76px;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
+#playerMain .fangxiang ul li:nth-child(3) p,#playerMain .fangxiang ul li:nth-child(4) p{
+	width: 15px;
+	line-height: 15px;
+	padding: 0 10px;
+}
+#playerMain .fangxiang ul li:nth-child(3)>span,#playerMain .fangxiang ul li:nth-child(4)>span{
+	display: block;
+	text-align: center;
+	width: 38px;
+}
+#playerMain .fangxiang ul li:nth-child(3) p span,#playerMain .fangxiang ul li:nth-child(4) p span{
+	display: block;
+	width: 15px;
+}
+#playerMain .fangxiang ul li:nth-child(3){
+	top: 0;
+	left: 0;
+}
+#playerMain .fangxiang ul li:nth-child(4){
+	top:0;
+	right: 0;
+}
+#playerMain .sanqu{
+	width: 100%;
+}
+#playerMain .sanqu div{
+	width: 100%;
+	padding:20px 0;
+	border-top: 1px solid rgba(255,255,255,0.2);
+}
+#playerMain .sanqu div h2{
+	font-size: 14px;
+	margin-bottom: 10px;
+	font-weight: normal;
+	text-align: center;
+}
+#playerMain .sanqu div ul{
+	height: 167px;
+	width: 320px;
+	max-width: 100%;
+	margin: 0 auto;
+	background: url(../img/qiuchang_01.png) no-repeat center;
+	background-size:100% 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+#playerMain .sanqu div ul li{
+	width: 30%;
+	text-align: center;
+}
+#playerMain .sanqu div ul li p{
+	font-size: 13px;
+	margin-top: 25%;
+	margin-bottom: 35%;
+}
+#playerMain .sanqu div ul li span{
+	font-size: 20px;
+	color: #fff000;
+}
+#playerMain .sanqu div:last-child ul{
+	height: 178px;
+	width: 300px;
+	background: url(../img/qiuchang_02.png) no-repeat center;
+	background-size:100% 100%;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+}
+#playerMain .sanqu div:last-child ul li p{
+	margin-top: 40%;
+	margin-bottom: 35%;
+}
+#playerMain .weizhi{
+	width: 100%;
+	padding:20px 0;
+	border-top: 1px solid rgba(255,255,255,0.2);
+}
+#playerMain .weizhi h2{
+	font-size: 14px;
+	margin-bottom: 10px;
+	font-weight: normal;
+	text-align: center;
+}
+#playerMain .weizhi ul{
+	height: 210px;
+	width: 310px;
+	max-width: 100%;
+	margin: 0 auto;
+	background: url(../img/qiuchang_03.png) no-repeat center;
+	background-size:100% 100%;
+	position: relative;
+}
+#playerMain .weizhi ul li{
+	font-size: 20px;
+    color: #fff000;
+    position: absolute;
+    top: auto;
+    left: auto;
+}
+#playerMain .weizhi ul li span{
+	padding: 0 5px;
+}
+
+/*实时赛况*/
+#fighting{
+	width: 100%;
+	height: auto;
+	display: none;
+	margin-bottom: 50px;
+}
+#fighting .timelogo{
+	width: 100%;
+	text-align: center;
+	height: 20px;
+	padding-bottom: 10px;
+}
+#fighting .timelogo img{
+	height: 100%;
+}
+#fighting .main{
+	width: 100%;
+}
+#fighting .main i{
+	margin: 0 auto;
+	display: block;
+	height: 100%;
+	width: 2px;
+	background: #e6e6e6;
+	position: absolute;
+	left: calc(50% - 1px);
+	z-index: -1;
+}
+#fighting .main i:before{
+	content: "";
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
+	background: #e6e6e6;
+	position: absolute;
+	left: -2px;
+	top: -2px;
+}
+#fighting .main i:after{
+	content: "";
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
+	background: #e6e6e6;
+	position: absolute;
+	left: -2px;
+	bottom: -2px;
+}
+#fighting .main ul{
+	width: 100%;
+	padding-top: 20px;
+}
+#fighting .main ul li.zhuli p.right{
+	opacity: 0;
+}
+#fighting .main ul li.keli p.left{
+	opacity: 0;
+}
+#fighting .main ul li{
+	width: 100%;
+	margin-bottom: 20px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+}
+#fighting .main ul li:last-child{
+	margin-bottom: 0;
+}
+#fighting .main ul li p{
+	padding: 4px 0;
+	width: 38%;
+	background: white;
+	border-radius: 5px;
+	color: black;
+	font-size: 13px;
+	line-height: 22px;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	position: relative;
+}
+#fighting .main ul li .left:after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-left:8px solid white;
+	border-right:8px solid transparent;
+	border-top:5px solid transparent;
+	border-bottom:5px solid transparent;
+	position: absolute;
+	left: 100%;
+	top: calc(50% - 5px);
+}
+#fighting .main ul li .right:before{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-left:8px solid transparent;
+	border-right:8px solid white;
+	border-top:5px solid transparent;
+	border-bottom:5px solid transparent;
+	position: absolute;
+	right: 100%;
+	top: calc(50% - 5px);
+}
+#fighting .main ul li p:first-child{
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+}
+#fighting .main ul li p img{
+	width: 24px;
+	margin: 0 5px;
+}
+#fighting .main ul li time{
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #E6E6E6;
+	border-radius: 30px;
+	background: white;
+	text-align: center;
+	line-height: 30px;
+	color: #10c787;
+	font-size: 15px;
+	margin: 0 15px;
+}
+.fightingfooter{
+	height: 40px;
+	width: 94%;
+	padding: 0 3%;
+	border-top:1px solid rgba(255,255,255,0.1);
+	background: rgba(255,255,255,0.1);
+	display: flex;
+	display: -webkit-flex;
+	position:absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	display: none;
+}
+.fightingfooter p{
+	width: 20%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+}
+.fightingfooter p img{
+	width: 20px;
+}
+
+/*双方阵容*/
+#lineup{
+	width: 100%;
+	height: auto;
+	display: none;
+	padding-bottom: 20px;
+}
+#lineup h3{
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+	padding: 5px 0;
+}
+#lineup div{
+	width: 100%;
+	font-size: 14px;
+	background: rgba(255,255,255,0.1);
+	border-radius: 5px;
+	display: flex;
+	display: -webkit-flex;
+}
+#lineup div ul{
+	width: 50%;
+	padding: 10px 0;
+}
+#lineup div ul li{
+	height: 30px;
+	width: 85%;
+	padding-left: 15%;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+}
+#lineup div ul:first-child li{
+	border-right: 1px solid rgba(255,255,255,0.2);
+}
+#lineup div ul li span{
+	display: block;
+	width: 16%;
+}
+#lineup div.lineupF ul li:first-child{
+	border-right:none;
+	font-size: 12px;
+	color: black;
+}
+#lineup div.lineupF ul li:first-child span{
+	width: auto;
+	margin-left: 5%;
+}
+

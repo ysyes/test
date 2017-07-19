@@ -1,0 +1,452 @@
+[
+	{
+		"group": "第14轮",
+		"games": [
+			{
+				"id": 0,
+				"gameTime": "2016-06-08 03:00",
+				"homeTeam": "山东鲁能泰山",
+				"awayTeam": "北京国安乐视",
+				"turn": 0,
+				"status": 0
+			}, 
+			{
+				"id": 1,
+				"gameTime": "2016-06-26 19:35",
+				"homeTeam": "石家庄永昌",
+				"awayTeam": "延边富德",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 2,
+				"gameTime": "2016-07-03 15:30",
+				"homeTeam": "延边富德",
+				"awayTeam": "杭州绿城",
+				"turn": 0,
+				"status": 1
+			}
+		]
+	}, 
+	{
+		"group": "第15轮",
+		"games": [
+			{
+				"id": 2,
+				"gameTime": "2016-07-03 15:30",
+				"homeTeam": "延边富德",
+				"awayTeam": "杭州绿城",
+				"turn": 0,
+				"status": 1
+			}
+		]
+	}, 
+	{
+		"group": "第16轮",
+		"games": [
+			{
+				"id": 3,
+				"gameTime": "2016-07-08 19:35",
+				"homeTeam": "辽宁宏运",
+				"awayTeam": "石家庄永昌",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 4,
+				"gameTime": "2016-07-09 15:30",
+				"homeTeam": "延边富德",
+				"awayTeam": "上海绿地申花",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 5,
+				"gameTime": "2016-07-09 19:35",
+				"homeTeam": "北京国安",
+				"awayTeam": "天津泰达",
+				"turn": 0,
+				"status": 1
+			}
+		]
+	}, 
+	{
+		"group": "第17轮",
+		"games": [
+			{
+				"id": 6,
+				"gameTime": "2016-07-16 15:30",
+				"homeTeam": "延边富德",
+				"awayTeam": "江苏苏宁",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 7,
+				"gameTime": "2016-07-16 19:35",
+				"homeTeam": "华夏幸福",
+				"awayTeam": "北京国安",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 8,
+				"gameTime": "2016-07-16 19:35",
+				"homeTeam": "上海绿地申花",
+				"awayTeam": "上海上港",
+				"turn": 0,
+				"status": 1
+			}
+		]
+	}, 
+	{
+		"group": "第18轮",
+		"games": [
+			{
+				"id": 9,
+				"gameTime": "2016-07-20 19:35",
+				"homeTeam": "江苏苏宁",
+				"awayTeam": "河北华夏",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 10,
+				"gameTime": "2016-07-20 19:35",
+				"homeTeam": "山东鲁能泰山",
+				"awayTeam": "杭州绿城",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 11,
+				"gameTime": "2016-07-20 19:35",
+				"homeTeam": "广州富力",
+				"awayTeam": "广州恒大",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 12,
+				"gameTime": "2016-07-20 19:35",
+				"homeTeam": "河南建业",
+				"awayTeam": "辽宁宏运",
+				"turn": 0,
+				"status": 1
+			},
+			{
+				"id": 13,
+				"gameTime": "2016-07-20 19:35",
+				"homeTeam": "上海上港",
+				"awayTeam": "重庆力帆",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 14,
+				"gameTime": "2016-07-20 19:35",
+				"homeTeam": "天津泰达",
+				"awayTeam": "长春亚泰",
+				"turn": 0,
+				"status": 0
+			}, 
+			{
+				"id": 15,
+				"gameTime": "2016-07-21 19:35",
+				"homeTeam": "石家庄永昌",
+				"awayTeam": "上海绿地申花",
+				"turn": 0,
+				"status": 0
+			}
+		]
+	}, 
+	{
+		"group": "第19轮",
+		"games": [
+			{
+				"id": 16,
+				"gameTime": "2016-07-23 15:30",
+				"homeTeam": "延边富德",
+				"awayTeam": "广州富力",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 17,
+				"gameTime": "2016-07-23 19:35",
+				"homeTeam": "杭州绿城",
+				"awayTeam": "天津泰达",
+				"turn": 0,
+				"status": 0
+			}, 
+			{
+				"id": 18,
+				"gameTime": "2016-07-23 19:35",
+				"homeTeam": "辽宁宏运",
+				"awayTeam": "上海上港",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 19,
+				"gameTime": "2016-07-24 19:35",
+				"homeTeam": "河北华夏",
+				"awayTeam": "长春亚泰",
+				"turn": 0,
+				"status": 0
+			}, 
+			{
+				"id": 20,
+				"gameTime": "2016-07-24 19:35",
+				"homeTeam": "重庆力帆",
+				"awayTeam": "石家庄永昌",
+				"turn": 0,
+				"status": 0
+			}, 
+			{
+				"id": 21,
+				"gameTime": "2016-07-24 19:35",
+				"homeTeam": "江苏苏宁",
+				"awayTeam": "河南建业",
+				"turn": 0,
+				"status": 0
+			}, 
+			{
+				"id": 22,
+				"gameTime": "2016-07-24 19:35",
+				"homeTeam": "山东鲁能",
+				"awayTeam": "上海申花",
+				"turn": 0,
+				"status": 0
+			}, 
+			{
+				"id": 23,
+				"gameTime": "2016-08-09 19:35",
+				"homeTeam": "广州恒大淘宝",
+				"awayTeam": "北京国安",
+				"turn": 0,
+				"status": 1
+			}
+		]
+	}, 
+	{
+		"group": "第20轮",
+		"games": [
+			{
+				"id": 24,
+				"gameTime": "2016-07-29 19:35",
+				"homeTeam": "北京国安",
+				"awayTeam": "杭州绿城",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 25,
+				"gameTime": "2016-07-30 15:30",
+				"homeTeam": "延边富德",
+				"awayTeam": "山东鲁能",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 26,
+				"gameTime": "2016-07-30 19:35",
+				"homeTeam": "河南建业",
+				"awayTeam": "广州恒大",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 27,
+				"gameTime": "2016-07-30 19:35",
+				"homeTeam": "上海申花",
+				"awayTeam": "江苏苏宁",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 28,
+				"gameTime": "2016-07-31 19:35",
+				"homeTeam": "长春亚泰",
+				"awayTeam": "重庆力帆",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 29,
+				"gameTime": "2016-07-31 19:35",
+				"homeTeam": "广州富力",
+				"awayTeam": "上海上港",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 30,
+				"gameTime": "2016-07-31 19:35",
+				"homeTeam": "石家庄永昌",
+				"awayTeam": "河北华夏",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 31,
+				"gameTime": "2016-07-31 19:35",
+				"homeTeam": "天津泰达",
+				"awayTeam": "辽宁宏运",
+				"turn": 0,
+				"status": 1
+			}
+		]
+	}, 
+	{
+		"group": "第22轮",
+		"games": [
+			{
+				"id": 32,
+				"gameTime": "2016-08-12 19:35",
+				"homeTeam": "北京国安",
+				"awayTeam": "重庆力帆",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 33,
+				"gameTime": "2016-08-13 15:30",
+				"homeTeam": "延边富德",
+				"awayTeam": "上海上港",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 34,
+				"gameTime": "2016-08-13 19:35",
+				"homeTeam": "杭州绿城",
+				"awayTeam": "河南建业",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 35,
+				"gameTime": "2016-08-13 19:35",
+				"homeTeam": "上海绿地申花",
+				"awayTeam": "广州恒大淘宝",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 36,
+				"gameTime": "2016-08-13 19:35",
+				"homeTeam": "石家庄永昌",
+				"awayTeam": "天津泰达",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 37,
+				"gameTime": "2016-08-14 19:35",
+				"homeTeam": "长春亚泰",
+				"awayTeam": "江苏苏宁",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 38,
+				"gameTime": "2016-08-14 19:35",
+				"homeTeam": "广州富力",
+				"awayTeam": "山东鲁能泰山",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 39,
+				"gameTime": "2016-08-14 19:35",
+				"homeTeam": "河北华夏",
+				"awayTeam": "辽宁宏运",
+				"turn": 0,
+				"status": 1
+			}
+		]
+	}, 
+	{
+		"group": "第23轮",
+		"games": [
+			{
+				"id": 40,
+				"gameTime": "2016-08-19 19:35",
+				"homeTeam": "上海上港",
+				"awayTeam": "石家庄永昌",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 41,
+				"gameTime": "2016-08-20 15:30",
+				"homeTeam": "广州恒大",
+				"awayTeam": "杭州绿城",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 42,
+				"gameTime": "2016-08-20 19:35",
+				"homeTeam": "上海申花",
+				"awayTeam": "辽宁宏运",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 43,
+				"gameTime": "2016-08-20 19:35",
+				"homeTeam": "天津泰达",
+				"awayTeam": "山东鲁能",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 44,
+				"gameTime": "2016-08-21 19:35",
+				"homeTeam": "长春亚泰",
+				"awayTeam": "延边富德",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 45,
+				"gameTime": "2016-08-21 19:35",
+				"homeTeam": "重庆力帆",
+				"awayTeam": "广州富力",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 46,
+				"gameTime": "2016-08-21 19:35",
+				"homeTeam": "河南建业",
+				"awayTeam": "河北华夏",
+				"turn": 0,
+				"status": 1
+			}, 
+			{
+				"id": 47,
+				"gameTime": "2016-08-21 19:35",
+				"homeTeam": "江苏苏宁",
+				"awayTeam": "北京国安",
+				"turn": 0,
+				"status": 1
+			}
+		]
+	}, 
+	{
+		"group": "第24轮",
+		"games": [
+			{
+				"id": 48,
+				"gameTime": "2016-08-21 19:35",
+				"homeTeam": "测试1",
+				"awayTeam": "测试2",
+				"turn": 0,
+				"status": 1
+			}
+		]
+	}
+]

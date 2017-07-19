@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>管理员管理</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="stylesheet" type="text/css" href="../../css/page.css"/>
+		<link rel="stylesheet" type="text/css" href="administrator.css"/>
+		<script type="text/javascript" src="../../lib/WdatePicker.js" ></script>
+	</head>
+	<body>
+		<header>
+			<div></div>
+			<h2>管理员管理</h2>
+		</header>
+		<div class='btn'><a href="adminAdd.html"><button>新增管理员</button></a></div>
+		<div class="main">
+			<ul>
+				<li class="title">管理员</li>
+				<li class="so"><input class="Wdate" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd'})" type="text" value="" placeholder="登录时间"/><span></span></li>
+			</ul>
+			<table border="0" cellspacing="0" cellpadding="0">
+				<thead>
+					<tr>
+						<th class="name">管理员</th>
+						<th class="realname">昵称</th>
+						<th class="mobile">手机号</th>
+						<th class="time">最后登录时间</th>
+						<th class="operate">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!--<tr data-id = "">-->
+						<!--<td>太龙海</td>-->
+						<!--<td>2016-10-09 08:36:25</td>-->
+						<!--<td>-->
+							<!--<a class='able' href="adminiUpdate.html">修改</a>-->
+							<!--<a class='able'>禁用</a>-->
+						<!--</td>-->
+					<!--</tr>-->
+					<!--<tr>-->
+						<!--<td>太龙海</td>-->
+						<!--<td>2016-10-09 08:36:25</td>-->
+						<!--<td>-->
+							<!--<a class='able' href="adminiUpdate.html">修改</a>-->
+							<!--<a class='able'>禁用</a>-->
+						<!--</td>-->
+					<!--</tr>-->
+					<!--<tr>-->
+						<!--<td>太龙海</td>-->
+						<!--<td>2016-10-09 08:36:25</td>-->
+						<!--<td>-->
+							<!--<a  class='able' href="adminiUpdate.html">修改</a>-->
+							<!--<a  class='able'>禁用</a>-->
+						<!--</td>-->
+					<!--</tr>-->
+				</tbody>
+			</table>
+			<div class="page">
+                    <ul>
+                        <li class="disable">上一页</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>下一页</li>
+                    </ul>
+                </div>
+		</div>
+		<script type="text/javascript" src="../../js/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="../../js/page.js" ></script>
+		<script type="text/javascript" src="administrator.js"></script>
+	</body>
+</html>

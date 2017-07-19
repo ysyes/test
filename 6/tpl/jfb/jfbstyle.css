@@ -1,0 +1,90 @@
+div.header div{
+    width:calc(100% - 80px);
+}
+div.add{
+    overflow: hidden;
+    padding:10px 0;
+}
+div.show{
+	margin-top:0;
+}
+div.add button{
+    width:130px;
+    float:right;
+    height:40px;
+    background:#0055a1;
+    font:16px/40px '微软雅黑';
+    color:#fff;
+    outline: none;
+    border:0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+ul.title li:last-child{
+    width:calc(100% - 110px);
+}
+ul.title input.date{
+    width:150px;
+}
+ul.title li i{
+    display: inline-block;
+    width:26px;
+    height:26px;
+    background-image:url('../../img/search.png');
+    background-color:#0055a1;
+    background-repeat:no-repeat;
+    border-top-right-radius: 3px;
+    background-position: center;
+    border-bottom-right-radius: 3px;
+    margin-bottom:-8px;
+}
+div.content table.table1 tbody td{
+    height:52px;
+    padding:0 20px;
+    text-align: center;
+    font-size: 16px;
+}
+div.content table.table1 tr th{
+    padding:0 20px;
+    box-sizing: border-box;
+}
+div.content table.table1 tbody tr td:first-child{
+    color:#333;
+}
+div.content table.table1 td a{
+    font-size: 16px;
+    color:#0055a1;
+    text-decoration: none;
+    cursor:pointer;
+}
+body{
+	position: relative;
+}
+.mask{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    background:#fff;
+    z-index: 99;
+    display: none;
+}
+.yulan{
+    background:#fff;
+    width: 100%;
+}
+#show{
+	width:650px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin:0 auto;
+    margin-top:30px;
+    border:1px solid #ccc;
+}
+.yulan div.button{
+    text-align: center;
+    margin-top:30px;
+}

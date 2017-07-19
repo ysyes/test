@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>球员报告</title>
+		<meta name="description" content="这是一个 index 页面">
+		<meta name="keywords" content="index">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" href="assets/css/amazeui.min.css" />
+		<link rel="stylesheet" href="assets/css/admin.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my.css" />
+		<link rel="stylesheet" href="css/leaguemanage.css" />
+		<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/china.js" type="text/javascript" charset="utf-8"></script>
+				<link rel="stylesheet" href="assets/css/wqt.css" />
+	</head>
+
+	<body>
+		<div class="am-topbar am-topbar-inverse admin-header">
+			<div class="am-topbar-brand">
+				<strong><img src="i/logo3.png" alt="" /></strong> <small>中国青少年足球数据库</small>
+			</div>
+			<div class="am-collapse am-collapse1  am-topbar-collapse" id="topbar-collapse">
+				<a href="#" class="l-sy"></a>
+				<a href="#" class="l-link2"></a>
+				<a href="#" class="l-link3" target="_blank" style=" position: relative;
+    top: -9px;">您好，Admin</a>
+				<a href="#" class="l-link4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="am-cf admin-main">
+			<!-- sidebar start -->
+			<div class="admin-sidebar" id="admin-offcanvas">
+				<div class="am-offcanvas-bar admin-offcanvas-bar">
+					<ul class="am-list admin-sidebar-list" id="accordion">
+						<li class="admin-parent">
+							<a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="yulan.html"><span class="am-icon-file"></span> 数据管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+							<ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-in" id="collapse-nav1">
+								<li class="nav-sub-item" id="collapse-nav1">
+									<a href="#collapse-sub-nav1" data-am-collapse="{parent: '#collapse-nav1'}" class="am-cf">
+										<span class="am-icon-check"></span> 档案管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+									</a>
+									<ul class="l-nav-3 navbar-thr paddingleft0 am-in" id="collapse-sub-nav1">
+										<li>
+											<a class="active" href="d-qiuyuan.html"><span>球员管理</span></a>
+										</li>
+										<li>
+											<a href="d-caipan.html"><span>裁判管理</span></a>
+										</li>
+										<li>
+											<a href="d-jiaolian.html"><span>教练管理</span></a>
+										</li>
+										<li>
+											<a href="d-julebu.html"><span>球队/俱乐部管理</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a href="leaguematches.html" class="am-cf"><span class="am-icon-puzzle-piece"></span> 联赛管理</a>
+								</li>
+								<li class="nav-sub-item">
+									<a href="videos.html" class="am-cf"><span class="am-icon-th"></span> 视频管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="#collapse-nav2"><span class="am-icon-table"></span>工作管理</a>
+							<ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-collapse" id="collapse-nav2">
+								<li class="nav-sub-item" id="collapse-nav2">
+									<a href="#collapse-sub-nav2" data-am-collapse="{parent: '#collapse-nav2'}" class="am-cf">
+										<span class="am-icon-check"></span> 流程管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+									</a>
+									<ul class="l-nav-3 navbar-thr paddingleft0 am-collapse" id="collapse-sub-nav2">
+										<li>
+											<a href="lc-baom2.html"><span>球队报名</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a href="#" class="am-cf"><span class="am-icon-puzzle-piece"></span> 信息管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="###"><span class="am-icon-table"></span>系统管理</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span>国少</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span>国青</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span>国奥</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="inform.html"><span class="am-icon-table"></span>通知</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- sidebar end -->
+
+			<!-- content start -->
+			<div class="admin-content">
+				<div class="admin-content-body">
+					<div class="info-content">
+						<div class="tab-container">
+							<ul class="tab-nav tab-before-line">
+								<li>
+									<a href="situation.html">概况</a>
+								</li>
+								<li>
+									<a href="match.html">比赛</a>
+								</li>
+								<li>
+									<a href="grow.html">成长</a>
+								</li>
+								<li class="active">
+									<a href="reports.html">定性评价</a>
+								</li>
+								<li>
+									<a href="train.html">培训</a>
+								</li>
+								<li>
+									<a href="transfer.html">转会</a>
+								</li>
+								<li>
+									<a href="contract.html">合同</a>
+								</li>
+								<li>
+									<a href="guardian.html">监护人</a>
+								</li>
+							</ul>
+							<div class="tab-con">
+								<!--报告-->
+								<div class="reports">
+									<div class="select-box select-inline clearfix">
+										<div class="select-item form-group clearfix">
+											<label class="label">时间:</label>
+											<div class="form-box">
+												<select class="form-control">
+													<option>2016</option>
+													<option>2015</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="table-container">
+										<table class="table table-default table-striped text-center table-thead-center table-thead-left">
+											<thead>
+												<tr>
+													<th width="7.85%">日期 </th>
+													<th width="7.85%">报告人</th>
+													<th width="11.25%">身份</th>
+													<th width="4%">评分</th>
+													<th class="text-left">评价内容 </th>
+													<th class="text-left">备注</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>2016.10</td>
+													<td>刘玉建</td>
+													<td>足球技术顾问</td>
+													<td>89.1</td>
+													<td class="text-left"><span>速度奇快，头脑冷静，</span></td>
+													<td class="text-left"><span>观看精英赛第2轮 </span></td>
+												</tr>
+												<tr>
+													<td>2016.09</td>
+													<td>张崇来</td>
+													<td>足球技术顾问</td>
+													<td>88.2</td>
+													<td class="text-left"><span>头球抢点能力在国内属于上乘 突破能力强</span></td>
+													<td class="text-left"><span>观看精英赛第3轮 观看精英赛第4轮 观看精英赛第2轮 观看队内训练</span></td>
+												</tr>
+												<tr>
+													<td>2016.08</td>
+													<td>吴忠军</td>
+													<td>足球技术顾问</td>
+													<td>89.4</td>
+													<td class="text-left"><span>门前把握机会能力较差，背身做球传球能力也在国内球员中数一数二</span></td>
+													<td class="text-left"><span>观看队内训练 观看队内训练</span></td>
+												</tr>
+												<tr>
+													<td>2016.06</td>
+													<td>成耀东</td>
+													<td>足球技术顾问</td>
+													<td>88.1</td>
+													<td class="text-left"><span>速度奇快，头脑冷静，头球抢点能力在国内属于上乘 突破能力强</span></td>
+													<td class="text-left"><span>观看精英赛第2轮 </span></td>
+												</tr>
+												<tr>
+													<td>2016.04</td>
+													<td>孙博伟</td>
+													<td>足球技术顾问</td>
+													<td>86.4</td>
+													<td class="text-left"><span>背身做球传球能力也在国内球员中数一数二，但门前把握机会能力较差 </span></td>
+													<td class="text-left"><span> 观看队内训练</span></td>
+												</tr>
+												<tr>
+													<td>2016.03</td>
+													<td>王忠立</td>
+													<td>足球技术顾问</td>
+													<td>87.1</td>
+													<td class="text-left"><span>头球抢点能力在国内属于上乘 突破能力强，背身做球传球能力也在国内球员中数一数二，但门前把握机会能力较差 脚</span></td>
+													<td class="text-left"><span>观看精英赛第3轮 观看精英赛第4轮 观看精英赛第2轮 观看队内训练 观看队内训练</span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="echartspeed.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,297 @@
+html,body{
+    height:100%;
+    min-width: 1000px;
+}
+#header{
+    width:100%;
+    height:72px;
+    background-color: #effef9;
+}
+#header div{
+    float:left;
+}
+#header .logo{
+    width:200px;
+    height:100%;
+}
+#header .title{
+    width:100%;
+}
+#header .title p{
+    color:#131d48;
+    font-size: 22px;
+    line-height: 58px;
+    padding:7px 0;
+    padding-left:20px;
+    float: left;
+    font-family: '楷体';
+    font-weight: bold;
+    text-shadow:0 3px 0 #e5e5e5;
+}
+#header div.userInfo{
+    box-sizing: border-box;
+    float: right;
+    margin:11px 0;
+    margin-right: 40px;
+    width:154px;
+    height:50px;
+    padding:9px 7px 9px 12px;
+    position: relative;
+    cursor: pointer;
+    color:#131d48;
+}
+#header div.userInfo img{
+    margin-right:6px;
+    width:27px;
+    margin-bottom:2px;
+}
+#header div.userInfo span{
+    font-size: 16px;
+    line-height:32px;
+}
+#header div.userInfo>i{
+    float:right;
+    margin-top:13px;
+    width:11px;
+    height:6px;
+    transform: rotateX(180deg);
+    background: url('../img/yonghuxiala.png') no-repeat;
+}
+#header div.userInfo ul{
+    width:154px;
+    height:auto;
+    position: absolute;
+    left:0;
+    top:61px;
+    background:#fff;
+    box-shadow: 0 0 6px 1px #DDDDDD;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#header div.userInfo ul li{
+    height:50px;
+    line-height: 50px;
+    background:#fff;
+}
+#header div.userInfo ul li:first-child{
+    background: #3b8bff;
+    color:#fff;
+    padding-left:8px;
+    height:54px;
+    line-height: 45px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#header div.userInfo ul li:first-child b{
+    position: absolute;
+    width:21px;
+    height:12px;
+    background: url('../img/blue_sanjiao.png');
+    left: 15px;
+    top:-12px;
+}
+#header div.userInfo ul li:not(:first-child):hover{
+    background:#d7e7ff;
+}
+#header div.userInfo ul li i{
+    float: left;
+    width:24px;
+    height:24px;
+    background:url(../img/xiugai.png) no-repeat;
+    margin-right:8px;
+    margin-left:15px;
+    margin-top:17px;
+}
+#header div.userInfo ul li:nth-child(3){
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#header div.userInfo ul li:nth-child(3) i{
+    background:url(../img/tuichu.png) no-repeat;
+}
+#main{
+    height:calc(100% - 72px);
+}
+#main ul.list{
+    float: left;
+    height:100%;
+    width:200px;
+    background:#effef9;
+    min-height:560px;
+    padding-top:20px;
+}
+#main ul.list li{
+    height:40px;
+    color:#131d48;
+    line-height:40px;
+    cursor: pointer;
+    padding-left:25px;
+    font-size: 16px;
+}
+#main ul.list li img{
+    vertical-align: middle;
+    margin-bottom:2px;
+    margin-right:10px;
+    width:26px;
+}
+#main ul.list li.active{
+    background:#e4e9ec;
+    opacity: 1;
+    color:#3b8bff;
+}
+#main iframe{
+    float:left;
+    width:calc(100% - 200px);
+    height:100%;
+    min-height:560px;
+}
+div.module1,div.module2,div.module3{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 999;
+}
+div.updatePassWord,div.logout,div.alertFn{
+    width:360px;
+    height:330px;
+    border:1px solid #ddd;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.2);
+    background: #fff;
+}
+div.updatePassWord{
+    padding:30px 45px;
+}
+div.logout,div.alertFn{
+    width:270px;
+    height:160px;
+}
+div.alertFn p{
+    height:110px;
+    line-height: 110px;
+    text-align: center;
+    color:#292929;
+}
+div.alertFn p{
+    display: table-cell;
+    width: 100%;
+    line-height: 20px;
+    padding:20px;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+div.alertFn button.red{
+    border-top:1px solid #e6e6e6;
+    height:45px;
+    width:100%;
+    font-size: 16px;
+    /*text-align: right;*/
+    margin-left:0;
+    background:#fff;
+    color:#333;
+}
+div.logout{
+    width:253px;
+    height:155px;
+    padding:0 12px;
+}
+div.logout P:nth-child(2){
+    margin:20px 0 25px 0;
+    text-align: center;
+}
+div.updatePassWord{
+    width:387px;
+    height:237px;
+    padding:0 30px;
+}
+div.updatePassWord p{
+    font-size: 16px;
+    color:#292929;
+    display: inline-block;
+    width:66px;
+    text-align: right;
+    line-height:30px;
+    margin-right:14px;
+}
+div.updatePassWord>div{
+    margin:15px auto;
+    text-align: center;
+}
+div.updatePassWord p.tishi,div.logout p.tishi{
+    border-bottom: 1px solid #d7e7ff;
+    float: none;
+    width: 100%;
+    text-align: left;
+    height:44px;
+    line-height: 44px;
+}
+div.updatePassWord p.tishi span,div.logout p.tishi span{
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
+div.updatePassWord input{
+    box-sizing: border-box;
+    border:1px solid #e4e4e4;
+    width:156px;
+    outline:none;
+    height:30px;
+    font-family: "Microsoft Yahei";
+    padding:1px;
+    color:#292929;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+div.updatePassWord div.yuanmima{
+    margin-top:10px;
+}
+div.updatePassWord div.button,div.logout div.button{
+    margin-top:20px;
+    text-align: center;
+}
+div.updatePassWord button,div.logout button{
+    width:76px;
+    font-size: 16px;
+    height:28px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+button.gray{
+    box-sizing: border-box;
+    padding: 0;
+    outline:none;
+    cursor: pointer;
+    background:#fff;
+    color: #3b8bff;
+    border:1px solid #3b8bff;
+}
+button.red{
+    box-sizing: border-box;
+    padding: 0;
+    border:0;
+    color: #ffffff;
+    background: #3b8bff;
+    outline: none;
+    cursor: pointer;
+    margin-left:20px;
+}

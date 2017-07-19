@@ -1,0 +1,118 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+body{
+	position: relative;
+	color: #333333;
+	background: #ebebeb;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+header{
+	width: 100%;
+	min-width: 1000px;
+	height: 60px;
+	background: #20559C;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+}
+header nav{
+	width: 1000px;
+	height: 60px;
+	margin: 0 auto;
+}
+header nav ul{
+	height: 60px;
+}
+header nav ul li{
+	float: left;
+	height: 60px;
+}
+header nav ul li a{
+	display: block;
+	padding: 0 60px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	color: white;
+}
+header nav ul .index{
+	padding: 0 55px;
+	width: 50px;
+}
+header nav ul .index img{
+	width: 50px;
+	height: 50px;
+	margin-top: 5px;
+}
+
+header nav ul li .checked{
+	background: #3275d0;
+}
+header nav ul li a:hover{
+	background: #3275d0;
+}
+.box{
+	width: 864px;
+	margin: 0 auto;
+	margin-top:70px;
+	padding:0 68px ;
+	padding-bottom: 10px;
+	background: white;
+	color: #333333;
+	border-radius: 3px;
+}
+.box:after{
+	content: "";
+	height: 0px;
+	width: 0px;
+	display: block;
+	clear: both;
+}
+.box>h2{
+	font-size: 22px;
+	line-height: 72px;
+	padding-left: 6px;
+}
+.box .page{
+	background: #f7f7f7;
+	font-size: 18px;
+	padding: 10px 40px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+}
+.page .title{
+	height: 40px;
+	line-height: 40px;
+}
+.page .title h3{
+	color: #21449c;
+	float: left;
+}
+.page .title span{
+	float: right;
+	font-size: 14px;
+}
+.page .tit{
+	line-height: 30px;
+	font-size: 16px;
+}
+.page .tit span{
+	margin-right: 50px;
+}
+.page .main{
+	font-size: 14px;
+	line-height: 25px;
+}

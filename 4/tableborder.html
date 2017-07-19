@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				width: 1000px;
+				height: 200px;
+				overflow: auto;
+			}
+			table {
+				width: 0px;
+				border-collapse: collapse;
+				border-spacing: 0;
+				table-layout: fixed;
+				position: relative;
+			}
+			table thead tr td {
+				background: #308CB8;
+				color: #fefefe;
+				font-size: 16px;
+				text-align: center;
+				border-right: 1px solid black;
+				padding: 0 10px;
+				height: 50px;
+				width: 80px;
+				box-sizing: inherit;
+			}
+			table thead tr td:first-child{
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			table thead tr td:nth-child(2){
+				position: relative;
+				top: 0;
+				left: 0;
+			}
+			table tbody tr td {
+				height: 40px;
+				font-size: 14px;
+				text-align: center;
+				overflow: hidden;
+				border-right: 1px solid white;
+				background: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<table>
+				<thead>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>qq</td>
+						<td>ww</td>
+						<td>ee</td>
+						<td>rr</td>
+						<td>tt</td>
+						<td>qq</td>
+						<td>ww</td>
+						<td>ee</td>
+						<td>rr</td>
+						<td>tt</td>
+						<td>qq</td>
+						<td>ww</td>
+						<td>ee</td>
+						<td>rr</td>
+						<td>tt</td>
+					</tr>
+					<tr>
+						<td>yy</td>
+						<td>aa</td>
+						<td>ss</td>
+						<td>dd</td>
+						<td>ff</td>
+						<td>qq</td>
+						<td>ww</td>
+						<td>ee</td>
+						<td>rr</td>
+						<td>tt</td>
+						<td>qq</td>
+						<td>ww</td>
+						<td>ee</td>
+						<td>rr</td>
+						<td>tt</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<script>
+			//标题固定
+			$("div").scroll(function () {
+				var left = $("div").scrollLeft();
+				var top = $("div").scrollTop();
+				$("thead tr td").eq(0).css("left",left);
+				$("thead tr td").eq(1).css("left",left);
+			})
+		</script>
+	</body>
+
+</html>

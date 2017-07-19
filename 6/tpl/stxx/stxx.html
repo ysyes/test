@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>伤停信息-伤停列表</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/page.css"/>
+    <link rel="stylesheet" href="stlbstyle.css"/>
+
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <p>伤停列表</p>
+            <div></div>
+        </div>
+        <div class="add">
+            <a href="stadd.html" class="rt"><button class="button">添加伤停</button></a>
+        </div>
+        <div class="show">
+            <ul class="title">
+                <li class="active">全部</li>
+                <li>
+                <form>
+                	<div>
+                        <input class="player" type="text" placeholder="球员" name="footballer"/>
+                        <i></i>
+                    </div>
+                    <div>
+                        <select name="teamcode" class="state team">
+                            <option value="">--全部球队--</option>
+                   		</select>
+                    </div>
+                    <div>
+                        <select name="leaguecode" class="state name">
+                            <option value="">---全部联赛---</option>
+                        </select>
+                    </div>
+                </form>
+                </li>
+            </ul>
+            <div class="content">
+                <table class="table1">
+                    <thead>
+                    <tr>
+                        <th width="110px">联赛名称</th>
+                        <th width="110px">球队</th>
+                        <th width="80px">球员</th>
+                        <th width="80px">位置</th>
+                        <th width="66px">场次</th>
+                        <th width="100px">受伤状态</th>
+                        <th width="80px">备注</th>
+                        <th width="110px">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!--<tr>-->
+                        <!--<td>中超联赛</td>-->
+                        <!--<td>广州恒大</td>-->
+                        <!--<td>曾诚</td>-->
+                        <!--<td>中场</td>-->
+                        <!--<td>4</td>-->
+                        <!--<td>受伤</td>-->
+                        <!--<td>膝伤</td>-->
+                        <!--<td>-->
+                            <!--<a href="" class="able">编辑</a>-->
+                            <!--<a href="" class="disable">删除</a>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>中超联赛</td>-->
+                        <!--<td>广州恒大</td>-->
+                        <!--<td>曾诚</td>-->
+                        <!--<td>中场</td>-->
+                        <!--<td>4</td>-->
+                        <!--<td>受伤</td>-->
+                        <!--<td>膝伤</td>-->
+                        <!--<td>-->
+                            <!--<a href="" class="able">编辑</a>-->
+                            <!--<a href="" class="disable">删除</a>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    </tbody>
+                </table>
+               	<div class="page">
+                    <ul>
+                        <li class="disable">上一页</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>下一页</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/page.js"></script>
+    <script src="stlb.js"></script>
+</body>
+</html>

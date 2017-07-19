@@ -1,0 +1,199 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+body{
+	color: #333333;
+	background: #e9e9e9;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+header{
+	height: 60px;
+	min-width: 1180px;
+	width: 100%;
+	background: #0055a1;
+}
+header ul{
+	width: 1180px;
+	height: 60px;
+	margin: 0 auto;
+}
+header ul li{
+	float: left;
+	margin-left: 65px;
+	font-size: 24px;
+	color: white;
+	line-height: 60px;
+}
+header ul .login{
+	float: right;
+}
+header ul .login img{
+	vertical-align:middle;
+	margin: 0 10px;
+	cursor: pointer;
+}
+header ul .login span{
+	font-size: 18px;
+}
+#box{
+	width: 1180px;
+	margin: 25px auto;
+	background: white;
+	box-shadow:0 0 3px 3px #ccc
+}
+#box:after{
+	content: "";
+	height: 0px;
+	width: 0px;
+	display: block;
+	clear: both;
+}
+#title{
+	float: left;
+	/*padding-top: 57px;*/
+	width: 180px;
+	background: #f7f7f7;
+}
+#title ul li{
+	width: 177px;
+	height: 55px;
+	color: #999999;
+	border-right: 3px solid #f7f7f7;
+	cursor: pointer;
+}
+#title ul .check{
+	border-right: 3px solid #0055A1;
+	color: #0055A1;
+}
+#title ul li p{
+	width: 150px;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	margin: 0 auto;
+	border-bottom: 1px solid #eee;
+}
+#main{
+	float: left;
+	width: 1000px;
+}
+footer{
+	height: 65px;
+	min-width: 1180px;
+	width: 100%;
+	background: #0055a1;
+	padding-top: 35px;
+}
+footer ul{
+	width: 1000px;
+	margin: 0 auto;
+}
+footer ul li{
+	float: left;
+	width: 135px;
+	height: 30px;
+	border-right: 1px solid white;
+	text-align: center;
+}
+footer ul li:last-child{
+	border:0;
+}
+footer ul li a{
+	font-size: 16px;
+	line-height: 30px;
+	color: #eee;
+}
+footer ul li a:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+.loginAddAmend{
+	width: 600px;
+	height: 400px;
+	background: white;
+	margin: 30px auto;
+	padding: 20px 100px;
+	border-radius: 3px;
+}
+.loginAddAmend h4{
+	width: 118px;
+	height: 40px;
+	border-bottom: 4px solid #0055A1;
+	font-size: 24px;
+	text-align: center;
+	line-height: 40px;
+	font-weight: normal;
+	color: #0055A1;
+}
+.loginAddAmend ul{
+	width: 430px;
+	margin: 0 auto;
+}
+.loginAddAmend ul li{
+	text-align: right;
+	margin-top: 24px;
+	font-size: 20px;
+	color: #333333;
+}
+.loginAddAmend ul li input{
+	width: 352px;
+	height: 54px;
+	border-radius: 3px;
+	border: 1px solid #CCCCCC;
+	text-align: center;
+	font-size: 20px;
+}
+#login ul .test input{
+	width: 176px;
+}
+#login ul .test span{
+	display: block;
+	float: right;
+	width: 113px;
+	height: 54px;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	margin-left: 63px;
+}
+#login ul .test span img{
+	width: 113px;
+	height: 54px;
+}
+.loginAddAmend button{
+	display: block;
+	width: 170px;
+	height: 65px;
+	background: #0055A1;
+	color: white;
+	font-size: 24px;
+	line-height: 65px;
+	text-align: center;
+	border: none;
+	margin: 40px auto;
+	border-radius:3px ;
+	cursor: pointer;
+}
+#amendBox{
+	position: fixed;
+	top: 60px;
+	left: 50%;
+	margin-left: -400px;
+	display: none;
+}
+#amendBox div{
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	cursor: pointer;
+}
+#amendBox ul li input{
+	width: 332px;
+}

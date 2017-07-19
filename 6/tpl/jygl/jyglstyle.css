@@ -1,0 +1,35 @@
+ul.title input.date{
+    width:98px;
+}
+ul.title input.username{
+    width:150px;
+}
+ul.title li i{
+    display: inline-block;
+    width:26px;
+    height:26px;
+    background-image:url('../../img/search.png');
+    background-color:#0055a1;
+    background-repeat:no-repeat;
+    border-top-right-radius: 3px;
+    background-position: center;
+    border-bottom-right-radius: 3px;
+    margin-bottom:-8px;
+    margin-left:-5px;
+}
+div.content{
+    height:calc(100% - 50px);
+}
+div.content>div{
+    display: none;
+    height:100%;
+}
+div.content>div:first-child{
+    display: block;
+}
+.page{
+    overflow: hidden;
+    position: absolute;
+    right:15px;
+    bottom:12px;
+}

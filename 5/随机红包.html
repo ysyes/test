@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		600 - 1600
+	</body>
+	
+	<script type="text/javascript">
+	//每i个数条件:
+	/*
+		1. 6 -16之间
+		2. 剩余钱数 >=剩余(10-i)个数 * 6
+		3. 剩余钱数<= 剩余(10-i)个数 * 16
+	*/
+	var money = 100;
+	for (var i = 1 ;i < 10; i ++) {
+		suiji(i);
+	}
+	function suiji(num) {
+		for (var j = 1; j > 0;j ++) {
+			var fen = Math.floor(Math.random() * 1000 + 600)/100;
+			if ((money - fen) >= (10 - num) * 6 && (money - fen) <= (10 - num) * 16) {
+				console.log(fen);
+				money -= fen;
+				if (num == 9) {
+					console.log(money);
+				}
+				return;
+			}
+		}
+	}
+		
+	</script>
+</html>

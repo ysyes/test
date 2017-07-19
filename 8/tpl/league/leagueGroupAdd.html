@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>赛事分组新增</title>
+		<link rel="stylesheet" type="text/css" href="leagueAdd.css"/>
+		<style type="text/css">
+			header a{
+				color: #e3442a;
+			}
+			header span{
+				margin-left: 10px;
+			}
+			.main ul li select[disabled='disabled']{
+	   			background-color:#efefef;
+	   		}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<header>
+				<h3></h3>
+			</header>
+			<div class="main">
+				<ul>
+					<li>
+						<p>赛季</p>
+						<select id="leagueyear">
+							<option value="2016">2016赛季</option>
+							<option value="2017">2017赛季</option>
+							<option value="2018">2018赛季</option>
+							<option value="2019">2019赛季</option>
+							<option value="2020">2020赛季</option>
+							<option value="2021">2021赛季</option>
+							<option value="2022">2022赛季</option>
+							<option value="2023">2023赛季</option>
+							<option value="2024">2024赛季</option>
+							<option value="2025">2025赛季</option>
+							<option value="2026">2026赛季</option>
+						</select>
+						<span>*</span>
+					</li>
+					<li>
+						<p>赛事</p>
+						<select id="leagueid" disabled="disabled">
+						</select>
+						<span>*</span>
+					</li>
+					<li>
+						<p>组名称</p>
+						<input type="text" id="teamName" value="" placeholder='请输入组名称'/>
+						<span>*</span>
+					</li>
+					<li>
+						
+						<p>组代码</p>
+						<input type="text" id="teamCode" value=""  placeholder='请输入组代码'/>
+						<span>*</span>
+					</li>
+				</ul>
+				<div class="button">
+					<button class="submit">提交</button>
+					<a href="leagueGroup.html"><button class="cancel">返回</button></a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../lib/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="leagueGroupAdd.js" ></script>
+	</body>
+</html>

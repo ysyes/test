@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>比赛管理</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/page.css"/>
+    <script type="text/javascript" src="../../lib/WdatePicker.js" ></script>
+    <link rel="stylesheet" href="bsgl.css"/>
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <p>比赛管理</p>
+            <div></div>
+        </div>
+        <div class="show">
+            <ul class="title">
+                <li class="active">比赛管理</li>
+                <li>
+                    <select name="status" class="state">
+                    	<option value="">--所有状态--</option>
+                        <option value="1">未开赛</option>
+                        <option value="2">上半场</option>
+                        <option value="3">中场</option>
+                        <option value="4">下半场</option>
+                        <option value="5">加时赛上半场</option>
+                        <option value="6">加时赛下半场</option>
+                        <option value="7">点球决战</option>
+                        <option value="8">完场</option>
+                        <option value="9">推迟</option>
+                        <option value="10">中断</option>
+                        <option value="11">腰斩</option>
+                        <option value="12">取消</option>
+                        <option value="13">待定</option>
+                    </select>
+                    <input class="Wdate date" type="text" name="date" placeholder="比赛日期" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd'})"/><i></i>
+                </li>
+            </ul>
+            <div class="content">
+                <table class="table1">
+                    <thead>
+                    <tr>
+                        <th width="236px">球队</th>
+                        <th width="200px">比赛时间</th>
+                        <th width="100px">状态</th>
+                        <th width="100px">比分</th>
+                        <th width="100px">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!--<tr>-->
+                        <!--<td>广州恒大 vs 广州恒大</td>-->
+                        <!--<td>2016-10-09 08:36:25</td>-->
+                        <!--<td>未开赛</td>-->
+                        <!--<td><input type="text" disabled value="11:12"/></td>-->
+                        <!--<td><a class="able">编辑</a></td>-->
+                    <!--</tr>-->
+                    </tbody>
+                </table>
+                <div class="page">
+                    <ul>
+                        <li class="disable">上一页</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>下一页</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/page.js"></script>
+    <script src="bsgl.js"></script>
+</body>
+</html>

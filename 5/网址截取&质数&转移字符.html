@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<div id="box">
+		<input type="text" />
+		<button>验证</button>
+	</div>
+	<script type="text/javascript">
+		//截取网址?后面数据返回对象
+		function getUrl(url) {
+			var main = {};
+			var arr = url.split("?")[1].split("&");
+			for (var i = 0; i < arr.length ; i++) {
+				main[arr[i].split("=")[0]] = arr[i].split("=")[1];
+			}
+			return main;
+		}
+		//console.log(getUrl("www.baidu.com?name=ys&age=18"));
+		
+		
+		
+		
+		//0-1000质数
+		var num = "";
+		for (var i = 2 ; i <= 1000 ; i ++) {
+			var idx = true;
+			for (var j = 2 ; j < i ; j ++) {
+				if (i%j == 0) {
+					idx = false;
+					break;
+				}
+			}
+			if (idx) {
+				num  += i + " " ;
+			}	
+		}
+		//console.log(num);
+		
+		
+		
+		//对<,>,",&进行转义。
+		function escapeHtml(str) {
+			return str.replace(/[<>&"]/g,function (match) {
+				switch(match){
+					case "<" : return "&lt;";
+					case ">" : return "&gt;";
+					case "&" : return "&amp;";
+					case "\"" : return "&quot;"
+				}
+			})
+		}
+		//console.log(escapeHtml("st<du\"<ah>d&f"));
+	</script>
+</body>
+</html>

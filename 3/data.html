@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>动彩</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="lib/jquery.mCustomScrollbar.css"/>
+		<link rel="stylesheet" href="css/data.css" />
+		<style type="text/css">
+			/*滚动条样式*/
+			.mCSB_inside > .mCSB_container{
+				    margin-right: 8px;
+			}
+			.mCSB_scrollTools{
+				width: 8px;
+			}
+			.mCSB_scrollTools .mCSB_draggerRail{
+				background-color: #fff;
+			}
+			.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+			    background-color: #ccc;
+			    width: 2px;
+			}
+			.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+				background-color: #CCCCCC;
+			}
+			.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+			.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+				background-color: #CCCCCC; 
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a class="index" href="index.html"><img src="img/index.png"/></a></li>
+					<li><a href="recommend.html">推荐</a></li>
+					<li><a href="guess.html">竞猜</a></li>
+					<li><a class="checked" href="data.html">数据</a></li>
+					<li><a href="injured.html">伤停</a></li>
+					<li><a href="mycenter.html">个人中心</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="box">
+			<div class="left">
+				<div class="dataTitle">
+					<img src="img/data/logo.png"/>
+					<p>2016赛季<span>中超</span>联赛—<b>积分榜</b></p>
+				</div>
+				<div style="display: block;" class="table content mCustomScrollbar" id="dataMainFirst">
+					<table>
+						<!--<tr>
+							<th class="paiming">排名</th>
+							<th class="teamImg"></th>
+							<th class="qiudui">球队</th>
+							<th class="sai">赛</th>
+							<th class="fen">分</th>
+							<th class="sheng">胜/平/负</th>
+							<th class="jin">进/失/净</th>
+						</tr>
+				
+						<tr>
+							<td><p class="first">1</p></td>
+							<td><img src="img/index/biao.jpg"/></td>
+							<td>广州恒大</td>
+							<td>24</td>
+							<td>51</td>
+							<td>16/5/3</td>
+							<td>46/14/32</td>
+						</tr>
+						<tr>
+							<td><p class="second">2</p></td>
+							<td><img src="img/index/biao.jpg"/></td>
+							<td>广州恒大</td>
+							<td>24</td>
+							<td>51</td>
+							<td>16/5/3</td>
+							<td>46/14/32</td>
+						</tr>
+						<tr>
+							<td><p class="second">3</p></td>
+							<td><img src="img/index/biao.jpg"/></td>
+							<td>广州恒大</td>
+							<td>24</td>
+							<td>51</td>
+							<td>16/5/3</td>
+							<td>46/14/32</td>
+						</tr>
+						<tr>
+							<td><p>4</p></td>
+							<td><img src="img/index/biao.jpg"/></td>
+							<td>广州恒大</td>
+							<td>24</td>
+							<td>51</td>
+							<td>16/5/3</td>
+							<td>46/14/32</td>
+						</tr>
+						<tr>
+							<td><p>4</p></td>
+							<td><img src="img/index/biao.jpg"/></td>
+							<td>广州恒大</td>
+							<td>24</td>
+							<td>51</td>
+							<td>16/5/3</td>
+							<td>46/14/32</td>
+						</tr>
+						<tr>
+							<td><p>4</p></td>
+							<td><img src="img/index/biao.jpg"/></td>
+							<td>广州恒大</td>
+							<td>24</td>
+							<td>51</td>
+							<td>16/5/3</td>
+							<td>46/14/32</td>
+						</tr>
+						<tr>
+							<td><p>4</p></td>
+							<td><img src="img/index/biao.jpg"/></td>
+							<td>广州恒大</td>
+							<td>24</td>
+							<td>51</td>
+							<td>16/5/3</td>
+							<td>46/14/32</td>
+						</tr>
+						<tr>
+							<td><p>4</p></td>
+							<td><img src="img/index/biao.jpg"/></td>
+							<td>广州恒大</td>
+							<td>24</td>
+							<td>51</td>
+							<td>16/5/3</td>
+							<td>46/14/32</td>
+						</tr>
+						<tr>
+							<td><p class="last">5</p></td>
+							<td><img src="img/index/biao.jpg"/></td>
+							<td>广州恒大</td>
+							<td>24</td>
+							<td>51</td>
+							<td>16/5/3</td>
+							<td>46/14/32</td>
+						</tr>
+						<tr>
+							<td><p class="last">5</p></td>
+							<td><img src="img/index/biao.jpg"/></td>
+							<td>广州恒大</td>
+							<td>24</td>
+							<td>51</td>
+							<td>16/5/3</td>
+							<td>46/14/32</td>
+						</tr>-->
+					</table>
+					
+					<div class="dataFooter">
+						<p>
+							<span class="first"></span>晋级
+							<span class="second"></span>资格赛
+							<span class="last"></span>降级
+						</p>
+						<p class="rule">同名排名规则:先后比较&nbsp;&nbsp;相互积分/净胜球/总进球数</p>
+					</div>
+				</div>
+				
+				
+				<div class="table content mCustomScrollbar">
+					<div id="dataMainSecond">
+						
+					
+						<!--<div class="display">
+							<p>A组</p>
+						</div>
+						<table>
+							<tr>
+								<th class="paiming">排名</th>
+								<th class="teamImg"></th>
+								<th class="qiudui">球队</th>
+								<th class="sai">赛</th>
+								<th class="fen">分</th>
+								<th class="sheng">胜/平/负</th>
+								<th class="jin">进/失/净</th>
+								<th class="zuijin">左一最近</th>
+							</tr>
+					
+							<tr>
+								<td><p class="first">1</p></td>
+								<td><img src="img/index/biao.jpg"/></td>
+								<td>广州恒大</td>
+								<td>24</td>
+								<td>51</td>
+								<td>16/5/3</td>
+								<td>46/14/32</td>
+								<td>平 胜 胜 平</td>
+							</tr>
+							<tr>
+								<td><p class="first">2</p></td>
+								<td><img src="img/index/biao.jpg"/></td>
+								<td>广州恒大</td>
+								<td>24</td>
+								<td>51</td>
+								<td>16/5/3</td>
+								<td>46/14/32</td>
+								<td>平 胜 胜 平</td>
+							</tr>
+							<tr>
+								<td><p>3</p></td>
+								<td><img src="img/index/biao.jpg"/></td>
+								<td>广州恒大</td>
+								<td>24</td>
+								<td>51</td>
+								<td>16/5/3</td>
+								<td>46/14/32</td>
+								<td>平 胜 胜 平</td>
+							</tr>
+							<tr>
+								<td><p>4</p></td>
+								<td><img src="img/index/biao.jpg"/></td>
+								<td>广州恒大</td>
+								<td>24</td>
+								<td>51</td>
+								<td>16/5/3</td>
+								<td>46/14/32</td>
+								<td>平胜胜平</td>
+							</tr>
+							<tr>
+								<td><p>5</p></td>
+								<td><img src="img/index/biao.jpg"/></td>
+								<td>广州恒大</td>
+								<td>24</td>
+								<td>51</td>
+								<td>16/5/3</td>
+								<td>46/14/32</td>
+								<td>平胜胜平</td>
+							</tr>
+						</table>
+						
+						<div class="display">
+							<p>A组</p>
+						</div>
+						<table>
+							<tr>
+								<th class="paiming">排名</th>
+								<th class="teamImg"></th>
+								<th class="qiudui">球队</th>
+								<th class="sai">赛</th>
+								<th class="fen">分</th>
+								<th class="sheng">胜/平/负</th>
+								<th class="jin">进/失/净</th>
+								<th class="zuijin">左一最近</th>
+							</tr>
+					
+							<tr>
+								<td><p class="first">1</p></td>
+								<td><img src="img/index/biao.jpg"/></td>
+								<td>广州恒大</td>
+								<td>24</td>
+								<td>51</td>
+								<td>16/5/3</td>
+								<td>46/14/32</td>
+								<td>平 胜 胜 平</td>
+							</tr>
+							<tr>
+								<td><p class="first">2</p></td>
+								<td><img src="img/index/biao.jpg"/></td>
+								<td>广州恒大</td>
+								<td>24</td>
+								<td>51</td>
+								<td>16/5/3</td>
+								<td>46/14/32</td>
+								<td>平 胜 胜 平</td>
+							</tr>
+							<tr>
+								<td><p>3</p></td>
+								<td><img src="img/index/biao.jpg"/></td>
+								<td>广州恒大</td>
+								<td>24</td>
+								<td>51</td>
+								<td>16/5/3</td>
+								<td>46/14/32</td>
+								<td>平 胜 胜 平</td>
+							</tr>
+							<tr>
+								<td><p>4</p></td>
+								<td><img src="img/index/biao.jpg"/></td>
+								<td>广州恒大</td>
+								<td>24</td>
+								<td>51</td>
+								<td>16/5/3</td>
+								<td>46/14/32</td>
+								<td>平胜胜平</td>
+							</tr>
+							<tr>
+								<td><p>5</p></td>
+								<td><img src="img/index/biao.jpg"/></td>
+								<td>广州恒大</td>
+								<td>24</td>
+								<td>51</td>
+								<td>16/5/3</td>
+								<td>46/14/32</td>
+								<td>平胜胜平</td>
+							</tr>
+						</table>-->
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<div class="right content mCustomScrollbar">
+				<ul>
+					<!--<li class="check"><img src="img/injured/zhongchao.png"/><span>中超</span></li>
+					<li data-code = "deja"><img src="img/injured/zhongjia.png"/><span>中甲</span></li>
+					<li><img src="img/injured/zhongyi.png"/><span>中乙南</span></li>
+					<li><img src="img/injured/zhongyi.png"/><span>中乙北</span></li>
+					<li><img src="img/injured/zuxie.png"/><span>足协</span></li>
+					<li><img src="img/injured/yaguan.png"/><span>亚冠</span></li>
+					<li><img src="img/injured/ouguan.png"/><span>欧冠</span></li>
+					<li><img src="img/injured/yingchao.png"/><span>英超</span></li>
+					<li><img src="img/injured/xijia.png"/><span>西甲</span></li>
+					<li><img src="img/injured/dejia.png"/><span>德甲</span></li>
+					<li><img src="img/injured/yijia.png"/><span>意甲</span></li>
+					<li><img src="img/injured/shiyu.png"/><span>世亚预</span></li>
+					<li><img src="img/injured/shiyu.png"/><span>世欧预</span></li>
+					<li><img src="img/injured/shiyu.png"/><span>世非预</span></li>
+					<li><img src="img/injured/shiyu.png"/><span>南美预</span></li>-->
+				</ul>
+			</div>
+		</div>
+		
+		<iframe src="footer.html" style="min-width: 1000px;" width="100%" height="200" frameborder="0" scrolling="no"></iframe>
+		<script type="text/javascript" src="lib/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="lib/jquery.mCustomScrollbar.concat.min.js" ></script>
+		<script type="text/javascript" src="js/data.js" ></script>
+	</body>
+</html>

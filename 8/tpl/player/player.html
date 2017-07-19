@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>球员</title>
+		<link rel="stylesheet" type="text/css" href="../league/league.css"/>
+		<link rel="stylesheet" href="../../lib/page/page.css" />
+		<style type="text/css">
+			body{
+				min-width:1200px;
+			}
+			#box header{
+				background: url(../../img/icon_qiuyuan_red.png) no-repeat 0 3px;
+			}
+			#box header div{
+				float: right;
+				margin-right: 10px;
+			}
+			#box header select{
+				padding-right: 26px;
+				width:145px;
+				height:26px;
+				padding-left:10px;
+				appearance: none;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				background: url(../../img/xiala_s.png) no-repeat right;
+				margin-right: 10px;
+				border:1px solid #E3442A;
+				outline:none;
+				border-right: 0;
+				color: #333;
+			}
+			#box table tbody tr td img{
+				display: block;
+				width: 35px;
+				height: 35px;
+				border-radius: 18px;
+				border: 1px solid #EDEDED;
+				vertical-align: middle;
+				float: left;
+				margin:0 5px;
+    			margin-top: 7px;
+			}
+			#box table tbody tr td:first-child{
+				text-align:left;
+				line-height:50px;
+			}
+			#box table tbody tr td.gray{
+				color:#ccc;
+			}
+			#zhuanhui{
+				position: absolute;
+				left:0;
+				top:0;
+				right:0;
+				bottom:0;
+				background:transparent;
+				z-index: 999;
+				display:none;
+			}
+			#zhuanhui .zhuanhui{
+				width:495px;
+				height:225px;
+				background: #fff;
+				padding:10px 15px;
+				position: fixed;
+				left:50%;
+				top:50%;
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				-o-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				box-shadow: 0 0 6px 1px #ddd;
+			}
+			.zhuanhui>p{
+				border-bottom:1px solid #ddd;
+				line-height: 40px;
+			}
+			.zhuanhui>p span{
+				display: inline-block;
+				width:50px;
+				line-height: 40px;
+				text-align: center;
+				border-bottom: 2px solid #e3432b;
+			}
+			.zhuanhui button{
+				float:left;
+				background:#fff;
+				border:0;
+				outline:none;
+				font-size: 16px;
+				cursor:pointer;
+				margin:25px 100px;
+			}
+			.zhuanhui button.confirm{
+				color:#E3442A;
+			}
+			.zhuanhui .now select{
+				width:135px;
+				height:27px;
+				outline: none;
+				font-size: 13px;
+				font-family: 'Microsoft yahei';
+				border:1px solid #E3442A;
+				color: #333;
+				margin-left: 10px;
+				padding-left:10px;
+				appearance:none;
+				-moz-appearance:none;
+				-webkit-appearance:none;
+				-ms-expand: none;
+				background: url(../../img/select.png) no-repeat right;
+				background-size: 20%;
+			}
+			.zhuanhui .now select[name='leagueyear']{
+				margin:0;
+			}
+			.zhuanhui>div{
+				overflow:hidden;
+			}
+			.zhuanhui div.info{
+				float:left;
+			}
+			.zhuanhui p.ago{
+				line-height:40px;
+				margin-bottom:15px;
+			}
+			.zhuanhui .check{
+				margin-top: 20px;
+			}
+			.zhuanhui>div img{
+				height:60px;
+				float:left;
+				margin-top:16px;
+				margin-left:10px;
+			}
+			#box table tbody tr td{
+				line-height:21px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<header>
+				<h3>球员</h3>
+				<a href="playerAdd.html" class="headerAdd">
+					<span>+</span>新增球员
+				</a>
+				<div>
+					<select class="leagueyear" name="leagueyear">
+						<option value="2016">2016赛季</option>
+						<option value="2017">2017赛季</option>
+						<option value="2018">2018赛季</option>
+						<option value="2019">2019赛季</option>
+						<option value="2020">2020赛季</option>
+						<option value="2021">2021赛季</option>
+						<option value="2022">2022赛季</option>
+						<option value="2023">2023赛季</option>
+						<option value="2024">2024赛季</option>
+						<option value="2025">2025赛季</option>
+						<option value="2026">2026赛季</option>
+					</select>
+					<select class="league" name="league">
+					</select>
+					<select class="team" name="team">
+					</select>
+				</div>
+			</header>
+			<table>
+				<thead>
+					<tr>
+						<th>球员</th>
+						<th>性别</th>
+						<th>代码</th>
+						<th>赛事名称</th>
+						<th>球队名称</th>
+						<th>籍贯</th>
+						<th>生日</th>
+						<th>身高/体重</th>
+						<th>球衣</th>
+						<th>注册号</th>
+						<th>位置</th>
+						<th>习惯脚</th>
+						<th>身价(万元)</th>
+						<th>状态</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!--<tr>-->
+						<!--<td><img src="../league/saishilogo.png"/>格乌瓦尼奥</td>-->
+						<!--<td>男</td>-->
+						<!--<td>ZC092</td>-->
+						<!--<td>中超联赛</td>-->
+						<!--<td>黑龙江火山明泉</td>-->
+						<!--<td>黑龙江省</td>-->
+						<!--<td>90-12-21</td>-->
+						<!--<td>175/70</td>-->
+						<!--<td>18</td>-->
+						<!--<td>18</td>-->
+						<!--<td>左前锋</td>-->
+						<!--<td>左脚</td>-->
+						<!--<td>5000万</td>-->
+						<!--<td>在编</td>-->
+						<!--<td><a href="playerEdit.html?playerid=11&name=个瓦屋&code=zt123&city=上海市&birthday=1991-02-11&height=180&weight=60&positions=守门员&sex=1&foot=2&jerseynumber=17&registernumber=123456&salary=20万&image=../league/saishilogo.png">编辑</a></td>-->
+					<!--</tr>-->
+				</tbody>
+			</table>
+			<div class="tcdPageCode">
+        		<div id="tcdPageCode"></div>
+        	</div>
+		</div>
+		<div id="zhuanhui">
+			<div class="zhuanhui">
+				<p><span>转会</span></p>
+				<div>
+					<div class="info">
+						<p class="ago">
+							<span class="name">格乌瓦</span><span class="code">(10979865)</span><span class="team">国安</span>
+						</p>
+						<div class="now">
+							<select class="leagueyear" name="leagueyear">
+								<option value="2016">2016赛季</option>
+								<option value="2017">2017赛季</option>
+								<option value="2018">2018赛季</option>
+								<option value="2019">2019赛季</option>
+								<option value="2020">2020赛季</option>
+								<option value="2021">2021赛季</option>
+								<option value="2022">2022赛季</option>
+								<option value="2023">2023赛季</option>
+								<option value="2024">2024赛季</option>
+								<option value="2025">2025赛季</option>
+								<option value="2026">2026赛季</option>
+							</select>
+							<select class="league" name="league">
+							</select>
+							<select class="team" name="team"></select>
+						</div>
+					</div>
+					<img src="../../img/zhuan.png" alt=""/>
+				</div>
+				<div class="check">
+					
+				</div>
+				<div class="button">
+					<button class="back">取消</button>
+					<button class="confirm">确认</button>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../lib/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="../../lib/page/jquery.page.js" ></script>
+		<script type="text/javascript" src="player.js" ></script>
+	</body>
+</html>

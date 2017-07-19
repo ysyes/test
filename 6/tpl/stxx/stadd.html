@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>伤停信息-添加伤停信息</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="stadd.css"/>
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <p>伤停信息</p><div></div>
+        </div>
+        <div class="show">
+            <ul class="title">
+                <li class="active">添加伤停信息</li>
+                <li></li>
+            </ul>
+            <div class="content">
+            <form>
+             <div class="name">
+                    <p>联赛名称<span> *</span></p>
+                    <select name="leaguecode">
+                    <option>--全部联赛--</option>
+                    </select>
+                </div>
+                <div class="teamName">
+                    <p>球队名称<span> *</span></p>
+                    <select name="teamcode">
+                    <option>--全部球队--</option>
+                    </select>
+                </div>
+                <div class="playerName">
+                    <p>球员名称<span> *</span></p>
+                    <input type="text" name="footballer" class="default"/>
+                </div>
+                <div class="station">
+                    <p>位置<span> *</span></p>
+                    <select name="locationcode">
+                        <option value="中场">中场</option>
+                        <option value="前锋">前锋</option>
+                        <option value="后卫">后卫</option>
+                        <option value="主教练">主教练</option>
+                        <option value="门将">门将</option>
+                    </select>
+                </div>
+                <div class="session">
+                    <p>场次<span> *</span></p>
+                    <input name='num' onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" type="text" class='default'/>
+                </div>
+                <div class="goal">
+                    <p>进球<span> *</span></p>
+                    <select name="goal">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="hurt">
+                    <p>受伤状态<span> *</span></p>
+                    <select name="status">
+                        <option value="受伤">受伤</option>
+                        <option value="恢复">恢复</option>
+                        <option value="停赛">停赛</option>
+                    </select>
+                </div>
+                <div class="note">
+                    <p>备注</p>
+                    <input type="text" class="default note" name="remark" />
+                </div>
+            </form>
+                <div class="button">
+                    <button class="button submit">提交</button>
+                    <a href='stxx.html'><button class="button back">返回</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="stadd.js"></script>
+</body>
+</html>

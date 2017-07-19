@@ -1,0 +1,213 @@
+
+div.show{
+    position:relative;
+    margin-top:0;
+}
+div.add{
+    overflow: hidden;
+    padding:10px 0;
+}
+div.add button{
+    width:130px;
+    float:right;
+    height:40px;
+    background:#0055a1;
+    font:16px/40px '微软雅黑';
+    color:#fff;
+    outline: none;
+    border:0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+ul.title input{
+	width:160px;
+	color: #666666;
+}
+ul.title li:last-child{
+    width:calc(100% - 220px);
+}
+ul.title li i{
+    display: inline-block;
+    width:26px;
+    height:26px;
+    background-image:url('../../img/search.png');
+    background-color:#0055a1;
+    background-repeat:no-repeat;
+    border-top-right-radius: 3px;
+    background-position: center;
+    border-bottom-right-radius: 3px;
+    margin-bottom:-8px;
+}
+div.content>div{
+    display: none;
+    height:100%;
+}
+div.content>div:first-child{
+    display: block;
+}
+div.content table.table1 thead th{
+    height:38px;
+    line-height:38px;
+}
+div.content .table1 tbody td:first-child div{
+	display:inline-block;
+    width:100px;
+    height:68px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background:#ebebeb;
+}
+div.content .table1 tbody td:first-child div img{
+	width:100%;
+	max-width:100px;
+	max-height:68px;
+}
+div.content .table1 tbody tr:nth-child(even){
+    background:#fff;
+}
+
+div.content .table1 tbody td{
+    padding:10px 20px;
+}
+.table1 tbody td a{
+    display: inline-block;
+    box-sizing: border-box;
+    width:39px;
+    height:22px;
+    font-size: 14px;
+    text-align: center;
+    border-radius:3px;
+    font-family: '微软雅黑';
+    padding:4px 0;
+    text-decoration: none;
+    cursor:pointer;
+}
+.table1 tbody td a.able{
+    border:1px solid #0055a1;
+    color:#0055a1;
+}
+.table1 tbody td a.disable{
+    border:1px solid rgba(255, 0, 0, 0.52);
+    color: rgba(255, 0, 0, 0.52);
+}
+ul.status{
+    overflow: hidden;
+}
+ul.status li{
+    float:left;
+    padding:10px 30px;
+    color:#999;
+    cursor: pointer;
+}
+ul.status li.active{
+    color:#0055a1;
+    border-bottom: 1px solid #0055A1;
+}
+.product thead th{
+    background:#ebebeb;
+    font-weight:normal;
+    color:#333;
+    line-height: 40px;
+}
+.product thead th:first-child{
+    text-align: left;
+    padding-left:20px;
+}
+.product thead th:nth-child(2){
+    text-align: right;
+    padding-right:20px;
+}
+.product tbody tr:first-child td{
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.product tbody tr:nth-child(2) td:nth-child(5){
+    color:#0055A1;
+}
+.product tbody td{
+    color:#999;
+    height: 70px;
+    text-align: center;
+    vertical-align:middle;
+}
+.pinfo{
+    margin-bottom:20px;
+}
+.info{
+    padding:10px 0;
+    background: #ebebeb;
+    overflow: hidden;
+}
+.info li{
+    text-align: center;
+    border-right: 1px solid #999;
+    color:#333;
+    float:left;
+    width:33%;
+    min-height:50px;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 50px;
+    padding:10px;
+    box-sizing: border-box;
+}
+.info li:first-child{
+    line-height: 15px;
+}
+.info li:nth-child(2) input{
+    color:#999;
+    min-height: 50px;
+    background: #ebebeb;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    font-family: '微软雅黑';
+    text-align: center;
+}
+.info li:nth-child(3){
+    color:#ff8400;
+    border-right: 0;
+}
+#yifahuo .info li:nth-child(2){
+    color:#333;
+    background: #ebebeb;
+    line-height: 25px;
+}
+.info li:nth-child(3),.product tbody tr:nth-child(2) td:nth-child(5){
+	cursor:pointer;
+}
+div.bohuireson{
+	position:fixed;
+	width:500px;
+	height:300px;
+	background:#fff;
+	top:20%;
+    left:calc(50% - 250px);
+    padding: 20px;
+	box-sizing:border-box;
+	z-index:999;
+	display:none;
+}
+div.bohuireson p{
+	line-height:30px;
+	color:#0055a1;
+}
+div.bohuireson textarea{
+	width:100%;
+	height:200px;
+}
+.btn{
+	float:right;
+	margin-top:10px;
+}
+.btn a{
+	cursor:pointer;
+}
+.btn a.queren{
+	color:#0055a1;
+	margin-right:10px;
+}

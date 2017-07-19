@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 900px;
+				height: 300px;
+				position: relative;
+				font-size: 0;
+			}
+			img{
+				width: 300px;
+				height: 300px;
+			}
+			.shade{
+				position: absolute;
+				transition: all .5s ease;
+				top: 0;
+				left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/2.png"/>
+			<img src="img/2.png"/>
+			<img src="img/2.png"/>
+			<div class="shade">
+				<img src="img/5BE7DElist-layer.png"/>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var imgs = document.getElementsByTagName("img");
+		var shade = document.getElementsByClassName("shade");
+		for (var i = 0 ; i < imgs.length - 1 ; i ++) {
+			imgs[i].idx = i; 
+			imgs[i].onclick = function () {
+				shade[0].style.left = this.idx * 300 + "px";
+			}
+		}
+	</script>
+</html>

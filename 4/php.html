@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript">
+			$.ajax({
+				type:"get",
+				url:"http://192.168.1.92:8282/Index/test",
+				async:true,
+				success:function (data) {
+					console.log(data);
+				},
+				error:function () {
+					console.log("请求错误")
+				}
+			});
+		</script>
+	</body>
+</html>

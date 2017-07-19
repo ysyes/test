@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			#box{
+				width: 100px;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+	<script type="text/javascript" src="js/radialIndicator.js" ></script>
+	<script type="text/javascript">
+		$("#box").radialIndicator({
+			radius:100,
+			barColor: '#87CEEB',
+	        barWidth: 10,
+	        initValue: 0,
+	        frameTime:15,
+	        roundCorner : true,
+	        displayNumber:true,
+	        percentage: true
+		});
+		var radialObj = $('#box').data('radialIndicator');
+		radialObj.animate(60);
+	</script>
+</html>

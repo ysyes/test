@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+li{
+	list-style: none;
+}
+#header{
+	height: 5.28rem;
+	width: 10.8rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+#header .nav{
+	height: 1.28rem;
+	width: 10.8rem;
+	background: #2b5e97;
+	overflow: hidden;
+}
+#header .nav ul{
+	height: 1.28rem;
+	width: 20rem;
+}
+#header .nav ul li{
+	float: left;
+	height: 1.28rem;
+	text-align: center;
+	color: white;
+	font-size: 0.48rem;
+	line-height: 1.28rem;
+}
+#header .banner{
+	height: 3rem;
+	width: 10.8rem;
+}
+#header .banner img{
+	width: 10.8rem;
+	height: 3rem;
+}
+#header .team{
+	height: 1rem;
+	width: 10.8rem;
+	text-align: center;
+	font-size: 0.46rem;
+	line-height: 1rem;
+	background: white;
+}
+#main{
+	margin-top: 5.28rem;
+}
+#main a{
+	display: block;
+	height: 1.3rem;
+	width: 10.8rem;
+}
+/*#main a:after{
+	clear:both;
+	content:'.';
+	display:block;
+	width: 0;height: 0;
+	visibility:hidden;
+}*/
+#main .tit{
+	height: 0.84rem;
+	width: 10.19rem;
+	background: #eeebeb;
+	font-size: 0.46rem;
+	font-weight: normal;
+	line-height: 0.84rem;
+	padding-left: 0.61rem;
+}
+#main ul{
+	width: 10.8rem;
+}
+#main ul li{
+	height: 1.3rem;
+	width: 10.8rem;
+	margin: 0.3rem 0;
+	clear: both;
+	background: url(../img/pin.png) no-repeat 10.04rem ;
+	background-size: 0.36rem 0.6rem;
+}
+#main ul li .headimg{
+	float: left;
+	width: 1.3rem;
+	height: 1.3rem;
+	border-radius:0.65rem;
+	overflow: hidden;
+	margin-left: 0.4rem;
+}
+#main ul li .headimg img{
+	width: 1.3rem;
+	height: 1.3rem;
+}
+#main ul li span{
+	float: left;
+	font-size: 0.48rem;
+	line-height: 1.3rem;
+	margin-left: 0.3rem;
+}

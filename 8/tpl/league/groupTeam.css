@@ -1,0 +1,149 @@
+#box header h3 span{
+	margin-left: 10px;
+}
+#box header a{
+	cursor: pointer;
+}
+a{
+	cursor: pointer;
+}
+select::-ms-expand { 
+	display: none; 
+}
+#groupTeamAddBac{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0);
+	display: none;
+}
+#groupTeamAdd{
+	width: 420px;
+	height: 420px;
+	background: white;
+	border: 1px solid #CCCCCC;
+	box-shadow: 0 0 10px 3px #ccc;
+	position: absolute;
+	top: 110px;
+	margin-left: -210px;
+	left: 50%;
+	padding:0 35px;
+}
+#groupTeamAdd h2{
+	height: 60px;
+	width: 420px;
+	text-align: center;
+	border-bottom: 1px solid #E3442A;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 70px;
+}
+#groupTeamAdd h2 span{
+	font-size: 16px;
+}
+#groupTeamAdd .sel{
+	height: 2px;
+	width: 420px;
+	background: #e3432b;
+}
+#groupTeamAdd ul{
+	width: 420px;
+	height: 280px;
+	overflow-y: scroll;
+}
+#groupTeamAdd ul li{
+	float: left;
+	width: 200px;
+	overflow: hidden;
+	margin-top: 5px;
+	font-size: 14px;
+	line-height: 25px;
+	height:25px;
+}
+#groupTeamAdd .button{
+	width: 420px;
+	text-align: center;
+}
+#groupTeamAdd .button button{
+	width: 80px;
+	height: 40px;
+	border: 1px solid #E3442A;
+	background: #E3442A;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	margin: 10px;
+	cursor:pointer;
+	outline:none;
+}
+#groupTeamAdd .button .cancel{
+	background: white;
+	color: #E3442A;
+}
+#groupTeamAdd .button .submit:hover{
+	background: #cb3921;
+}
+#groupTeamAdd .button .cancel:hover{
+	background: #e3442a;
+	color: white;
+}
+div.module{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 999;
+}
+div.logout{
+    width:270px;
+    height:160px;
+    border:1px solid #ddd;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.2);
+    background: #fff;
+}
+div.logout p{
+    height:70px;
+    /*line-height: 110px;*/
+    padding-top: 40px;
+    text-align: center;
+    color:#292929;
+}
+div.logout button{
+    width:50%;
+    border-top:1px solid #e6e6e6;
+    line-height: 50px;
+    font-size: 16px;
+}
+div.logout button.gray{
+    border-right:1px solid #e6e6e6;
+}
+button.gray{
+    box-sizing: border-box;
+    padding: 0;
+    border:0;
+    background:transparent;
+    outline:none;
+    cursor: pointer;
+    color:#292929;
+}
+button.red{
+    box-sizing: border-box;
+    padding: 0;
+    border:0;
+    background:transparent;
+    color:#c62f17;
+    outline: none;
+    cursor: pointer;
+}

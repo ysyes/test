@@ -1,0 +1,260 @@
+{
+	"teamName": "日本",
+	"teamImg": "img/banner_Japan.jpg",
+	"menjiang": {
+		"wulei1":{
+			"intro":{
+				"weizhi":"门将",
+				"headImg": "img/wulei.png",
+				"name": "日本武磊门1",
+				"height": "172",
+				"year": "24",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "上海上港",
+				"time": "275"
+			},
+			"data": {
+				"pujiu": "99",
+				"chuanqiu": "8",
+				"shiqiu": "2",
+				"huangpai": "1",
+				"hongpai": "0",
+				"lingfeng": "270"
+			}
+		},
+		"wulei2":{
+			"intro":{
+				"weizhi":"门将",
+				"headImg": "img/wulei.png",
+				"name": "日本武磊门2",
+				"height": "172",
+				"year": "24",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "上海上港",
+				"time": "275"
+			},
+			"data": {
+				"pujiu": "99",
+				"chuanqiu": "8",
+				"shiqiu": "2",
+				"huangpai": "1",
+				"hongpai": "0",
+				"lingfeng": "270"
+			}
+		}
+	},
+	"qianfeng": {
+		"wulei1":{
+			"intro":{
+				"weizhi":"前锋",
+				"headImg": "img/wulei.png",
+				"name": "日本武磊前1",
+				"height": "172",
+				"year": "24",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "上海上港",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		}, 
+		"wulei2":{
+			"intro":{
+				"weizhi":"前锋",
+				"headImg": "img/wulei.png",
+				"name": "日本武磊前2",
+				"height": "172",
+				"year": "24",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "上海上港",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		}
+	},
+	"qianwei": {
+		"wulei1":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/wulei.png",
+				"name": "日本武磊中1",
+				"height": "172",
+				"year": "24",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "上海上港",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"wulei2":{
+			"intro":{
+				"weizhi":"前卫",
+				"headImg": "img/wulei.png",
+				"name": "日本武磊中2",
+				"height": "172",
+				"year": "24",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "上海上港",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		}
+	},
+	"houwei": {
+		"wulei1":{
+			"intro":{
+				"weizhi":"后卫",
+				"headImg": "img/wulei.png",
+				"name": "日本武磊后1",
+				"height": "172",
+				"year": "24",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "上海上港",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		},
+		"wulei2":{
+			"intro":{
+				"weizhi":"后卫",
+				"headImg": "img/wulei.png",
+				"name": "日本武磊后2",
+				"height": "172",
+				"year": "24",
+				"weight": "62",
+				"sex": "男",
+				"nationality": "中国",
+				"club": "上海上港",
+				"time": "275"
+			},
+			"jingong":{
+				"jinqiu": "8",
+				"weixie": "8",
+				"shemen": "22",
+				"chuanqiu": "22",
+				"shezheng": "12",
+				"tupo": "12",
+				"zhugong": "5",
+				"beiqinfan": "11"
+			}, 
+			"fangshou":{
+				"qiangduan": "8",
+				"fangui": "5",
+				"jiewei": "5",
+				"huangpai": "2",
+				"hongpai": "0",
+				"fengdu": "2",
+				"lanjie": "2",
+				"kongzhong": "1"
+			}
+		}
+	}
+}

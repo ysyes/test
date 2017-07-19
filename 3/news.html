@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>动彩新闻</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="css/newstyle.css"/>
+</head>
+<body>
+    <div id="main">
+        <p class="title">
+            <!--中超第28轮广州恒大主场战平延边富德 提前两轮夺得中超冠军-->
+        </p>
+        <p class="resource"><span class="time"></span><span class="source"></span></p>
+        <div class="content">
+        	<img style="display: block; margin: 10rem auto; width: 20%;" src="images/loading.gif" alt=""/>
+            <!--<img class="img" src="images/news_picture.png" alt=""/>-->
+            <p class="text"></p>
+            <!--上周日的时候，中超冠军的悬念就提前结束了。夺冠后，恒大俱乐部又完成了和斯科拉里的续约，从某种角度上说，恒大2016赛季的中超已经结束，剩下两场，不过是例行公事的演出而已。和苏宁的对碰，来的不是时候，若此时，冠军悬念尚存，那么这场比赛，完全有可能重演2012年南京奥运的盛况，然而此时无关大局，加之夺冠以后多少会带来的疲惫感和松懈感，让恒大的战意稍减，这都是人之常情。-->
+        </div>
+    </div>
+    <div id="pinglun">
+        <p style="display: none;" class="title hide">热门评论</p>
+        <ul>
+            <!--<li commentid="2">-->
+                <!--<a href="http://www.pl.com?act=pl&id=">-->
+                    <!--<div>-->
+                        <!--<img src="images/touxiang.png" alt=""/>-->
+                    <!--</div>-->
+                    <!--<div>-->
+                        <!--<p class="username"><span>奋斗的茶多酚</span></p>-->
+                        <!--<p class="date">9-23 14:19</p>-->
+                        <!--<p class="content">-->
+                            <!--继续加油，广州恒大！！！-->
+                        <!--</p>-->
+                    <!--</div>-->
+                <!--</a>-->
+                    <!--<p class="dianzan">-->
+                        <!--<a href="http://www.pl.com?act=dz&id=">-->
+                            <!--<img src="images/icon_zan.png" alt=""/>-->
+                            <!--<span>23</span>-->
+                        <!--</a>-->
+                    <!--</p>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="http://www.pl.com?act=pl&id=">-->
+                    <!--<div>-->
+                        <!--<img src="images/touxiang.png" alt=""/>-->
+                    <!--</div>-->
+                    <!--<div>-->
+                        <!--<p class="username">-->
+                            <!--<span>胶合板厂</span><b>回复</b><span>奋斗的茶多酚</span></p>-->
+                        <!--<p class="date">9-23 14:19</p>-->
+                        <!--<p class="content1">-->
+                            <!--继续加油，广州恒大！！！-->
+                        <!--</p>-->
+                    <!--</div>-->
+                <!--</a>-->
+                    <!--<p class="dianzan">-->
+                        <!--<a href="http://www.pl.com?act=dz&id=" target="_blank">-->
+                            <!--<img src="images/icon_zan.png" alt=""/>-->
+                            <!--<span>23</span>-->
+                        <!--</a>-->
+                    <!--</p>-->
+                <!--<p class="content2">可以！！！可以！！！可以！！！可以！！！可以！！！可以！！！可以！！！可以！！！可以！！！</p>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="http://www.pl.com?act=pl&id=">-->
+                    <!--<div>-->
+                        <!--<img src="images/touxiang.png" alt=""/>-->
+                    <!--</div>-->
+                    <!--<div>-->
+                        <!--<p class="username"><span>大王斗小王</span></p>-->
+                        <!--<p class="date">9-23 14:19</p>-->
+                        <!--<p class="content">-->
+                            <!--继续加油，广州恒大！！！-->
+                        <!--</p>-->
+                    <!--</div>-->
+                <!--</a>-->
+                    <!--<p class="dianzan">-->
+                        <!--<a href="http://www.pl.com?act=dz&id=" target="_blank">-->
+                            <!--<img src="images/icon_zan.png" alt=""/>-->
+                            <!--<span>23</span>-->
+                        <!--</a>-->
+                    <!--</p>-->
+            <!--</li>-->
+        </ul>
+        <p class="more"><img style="display: none;" class="hide" src="images/news_icon_jiazai.png"/></p>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/news.js"></script>
+    <script type="text/javascript">
+    	//单独加载评论
+		function commentAdd(){
+			$.ajax({
+		        url:'v1/news/h5/'+newid+'/recommend/1',
+		        type:'GET',
+		        dataType:'JSON',
+		        headers:{"cfadata-usercode":userCode},
+		        success:function(data){
+		        	console.log(data);
+		            if(data.resultcode==1000){
+		                if(1<=data.totalpage){
+		                	//清空评论内容
+		                	$('#pinglun ul').html("");
+		                	//加载评论
+		                    jiazaipinglun(data);
+		                    //返回顶部/评论区
+		                    returnTop();
+		                    if (data.totalpage==1) {
+		                    	$('p.more img').attr('src','images/news_icon_nomore.png');
+		                    }
+		                }
+		            }else{
+		                $('p.more img').attr('src','images/news_icon_nomore.png');
+		            }
+		        }
+		    });
+		}
+    </script>
+</body>
+</html>

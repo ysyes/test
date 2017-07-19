@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/commonAdd.css"/>
+    <script type="text/javascript" src="../../lib/WdatePicker.js" ></script>
+   	<style>
+   		div.show select[disabled='disabled']{
+   			background-color:#efefef;
+   		}
+   	</style>
+</head>
+<body>
+<div id="box">
+    <div class="header">
+        <div class="admin"><img src="../../img/icon_saicheng_red.png" alt=""/><span>赛程新增</span></div>
+    </div>
+    <div class="show">
+        <form>
+            <div>
+                <p>赛季</p>
+                <select name="leagueyear" id="">
+                    <option value="2016">2016赛季</option>
+                    <option value="2017">2017赛季</option>
+                    <option value="2018">2018赛季</option>
+                    <option value="2019">2019赛季</option>
+                    <option value="2020">2020赛季</option>
+                    <option value="2021">2021赛季</option>
+                    <option value="2022">2022赛季</option>
+                    <option value="2023">2023赛季</option>
+                    <option value="2024">2024赛季</option>
+                    <option value="2025">2025赛季</option>
+                    <option value="2026">2026赛季</option>
+                </select><span>*</span>
+            </div>
+            <div>
+                <p>赛事名称</p>
+                <select name="leagueid" >
+                </select><span>*</span>
+            </div>
+            <div>
+                <p>分组</p>
+                <select name="groupid" ></select><span>*</span>
+            </div>
+            <div>
+                <p>主队名称</p>
+                <select name="hostteamid" ></select><span>*</span>
+            </div>
+            <div>
+                <p>客队名称</p>
+                <select name="clientteamid" ></select><span>*</span>
+            </div>
+            <div>
+                <p>轮次</p>
+                <input type="text" name="gamesession" placeholder="请输入轮次"/>
+                <span>*</span>
+            </div>
+            <div>
+                <p>比赛时间</p>
+                <input name="gametime" class="Wdate default date" type="text" placeholder="请输入比赛时间" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd HH:mm:ss'})"/>
+                <span>*</span>
+            </div>
+            <div>
+                <p>比分</p>
+                <input type="text" name="score" placeholder="请输入比分"/>
+                <span>*</span>
+            </div>
+        </form>
+        <div class="button">
+            <button class="submit">提交</button>
+            <a href="gameplan.html"><button class="back">返回</button></a>
+        </div>
+    </div>
+</div>
+<script src="../../lib/jquery-2.2.3.min.js"></script>
+<script src="addGameplan.js"></script>
+</body>
+</html>

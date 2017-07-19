@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>视频分段播放</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#box{
+				float: left;
+				width: 700px;
+				height: 400px;
+				background: black;
+			}
+			p input{
+				width: 300px;
+				height: 20px;
+				margin-bottom: 10px;
+			}
+			li{
+				list-style: none;
+			}
+			li input{
+				width: 80px;
+				height: 20px;
+			}
+			button{
+				margin: 10px;
+				width: 100px;
+				height: 40px;
+				font-size: 20px;
+				cursor: pointer;
+			}
+			textarea{
+				width: 200px;
+				height: 400px;
+			}
+			p.timeadd{
+				width: 60px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				border: 1px solid gray;
+				cursor: pointer;
+			}
+			i{
+				font-style: normal;
+				padding-left: 40px;
+				font-size: 13px;
+				cursor: pointer;
+			}
+			i:hover{
+				color: crimson;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			
+		</div>
+		<textarea rows="15">该处是用来监听播放器实时返回的各种状态</textarea>
+		<p>视频链接:<input class="link" type="text" value="http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4"/></p>
+		<ul>
+			<li>时间段<span>1</span>：<input class="statr" type="text" placeholder="开始时间" />~<input class="end" type="text" placeholder="结束时间" />秒</li>
+			<li>时间段<span>2</span>：<input class="statr" type="text" />~<input class="end" type="text" />秒<i>删除</i></li>
+			<li>时间段<span>3</span>：<input class="statr" type="text" />~<input class="end" type="text" />秒<i>删除</i></li>
+		</ul>
+		<p class="timeadd" onclick="timeAdd()">添加</p>
+		<button onclick="clickFn()">加载播放</button>
+		<script type="text/javascript" src="ckplayer/ckplayer.js" ></script>
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<script>
+			var timeArr = [];
+			var timeIdx = 0;
+			function clickFn() {
+				//清空
+				$("textarea").val("");
+				timeArr = [];
+				timeIdx = 0;
+				
+				for (var i=0;i < $("li").length; i++) {
+					var startime = $(".statr").eq(i).val();
+					var endtime = $(".end").eq(i).val();
+					if (startime !== "" && endtime !== "" && Number(startime) < Number(endtime)) {
+						var arr = [];
+						arr.push(Number(startime));
+						arr.push(Number(endtime));
+						timeArr.push(arr);
+					}
+				}
+				var videourl = $(".link").val();
+				var flashvars={
+				    f:videourl,
+				    c:'0',
+				    h:'3',
+				   	p:'1',//默认播放
+				};
+				var video=[videourl+'->video/mp4'];
+				CKobject.embed('ckplayer/ckplayer.swf','box','ckplayer_a1','100%','100%',false,flashvars,video);
+				//跳转到播放时间
+				if (timeArr.length > 0) {
+					CKobject.getObjectById('ckplayer_a1').videoSeek(timeArr[timeIdx][0]);
+				}				
+			}
+			
+			//监听事件	
+			function ckplayer_status(str){				
+				if (str.split("time:")[1] != undefined && str.split("time:")[0] == "") {
+					//打印状态
+					$("textarea").val(str+'\n'+$("textarea").val());
+					
+					var videotime = Number(str.split("time:")[1]);
+					if (videotime >= timeArr[timeIdx][1]) {
+						timeIdx ++;
+						if (timeIdx >= timeArr.length) {
+							//全部播放完毕暂停
+							CKobject.getObjectById('ckplayer_a1').videoPause();
+							alert("播放完毕");
+						} else{
+							//播放下一条
+							CKobject.getObjectById('ckplayer_a1').videoSeek(timeArr[timeIdx][0]);
+						}
+						
+					}
+				}
+			}
+			//新增
+			function timeAdd () {
+				var idx = $("ul li").length + 1;
+				$("ul").append('<li>时间段<span>'+idx+'</span>：<input class="statr" type="text" />~<input class="end" type="text" />秒<i>删除</i></li>');
+			}
+			//删除
+			$("ul").on("click","li i",function () {
+				$(this).parent().remove();
+				$("ul span").each(function (idx) {
+					$(this).html(idx + 1);
+				})
+			})
+		</script>
+	</body>
+</html>

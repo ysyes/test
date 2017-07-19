@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>推荐添加</title>
+		<script type="text/javascript" src="../../lib/WdatePicker.js" ></script>
+		<link rel="stylesheet" type="text/css" href="recommendAdd.css"/>
+	</head>
+	<body>
+		<header>
+			<div></div>
+			<h2>推荐添加</h2>
+		</header>
+		<form>
+		<h3>联赛名称</h3>
+		<select class="name" name='leaguecode'>
+		</select>
+		<h3>比赛时间</h3>
+		<input name='gametime' type="text" class="Wdate" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd HH:mm:ss'})" id="date" value="" />
+		<div id="box">
+			<div id="left">
+				<h3>主队名称</h3>
+				<select class="teamL" name='teamacode'>
+				</select>
+				<h3>实力百分比</h3>
+				<!-- <input type="text" value="" name='strengtha'/> -->
+				<span class="left">50</span><input type='range' value='50' min="0" max="100" step="1">
+				<h3>分析</h3>
+				<textarea name="strengthcontenta" rows="" cols=""></textarea>
+				<h3>伤停分析</h3>
+				<textarea name="injurycontenta" rows="" cols=""></textarea>
+			</div>
+			<div id="right">
+				<h3>客队名称</h3>
+				<select class="teamR" name='teambcode'>
+				</select>
+				<h3>实力百分比</h3>
+				<span class="right">50</span><!-- <input type="text" value="" name='strengthb'/> -->
+				<h3>分析</h3>
+				<textarea name="strengthcontentb" rows="" cols=""></textarea>
+				<h3>伤停分析</h3>
+				<textarea name="injurycontentb" rows="" cols=""></textarea>
+			</div>
+			
+		</div>
+		</form>
+		<button class="submit">提交</button>
+		<a href='recommend.html'><button class="return">返回</button></a>
+		<script type="text/javascript" src="../../js/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="recommendAdd.js"></script>
+	</body>
+</html>

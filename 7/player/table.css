@@ -1,0 +1,119 @@
+
+body,a{
+    color: #262626;
+}
+ul,li,p,h1,h2,h3,h4,h5{
+    margin:0;
+    padding:0;
+}
+.admin-content-body{
+    height:100%;
+}
+.admin-content-body>div.title{
+    height:54px;
+    padding:12px 0;
+    background: #fff;
+}
+.admin-content-body ul.title{
+    padding:0;
+    width: 720px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.admin-content-body ul.title li{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    float: left;
+    width:120px;
+    height:30px;
+    border:1px solid #cc3123;
+    border-right-width:0;
+}
+.admin-content-body ul.title li.active{
+    background: #cc3123;
+}
+.admin-content-body ul.title li.active a{
+    color: #fff;
+}
+.admin-content-body ul.title li a{
+    display: block;
+    height:30px;
+    line-height: 30px;
+    color:#cc3123;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+.admin-content-body ul.title li:last-child{
+    border-right-width: 1px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.admin-content-body ul.title li:first-child{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.admin-content-body div.box{
+    background: #fff;
+    padding:16px;
+    margin-top: 10px;
+    min-height:calc(100% - 74px);
+}
+.admin-content-body div.box p{
+    height:30px;
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom:16px;
+}
+.admin-content-body div.box select{
+    width:120px;
+    height:30px;
+    padding-left:5px;
+    padding-right:30px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url(../images/btn_qing_xiala.png) no-repeat right;
+    outline: none;
+}
+.admin-content-body div.box table{
+    width: 100%;
+}
+.admin-content-body div.box th{
+    background: #f0f0f0;
+    border-top:1px solid #cc3123!important;
+    border-bottom:1px solid #e6e6e6;
+    height:40px;
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    padding:0 15px;
+}
+.admin-content-body div.box thead tr th:nth-child(5),.admin-content-body div.box thead tr th:nth-child(4){
+    text-align: left;
+    padding:7px 20px;
+}
+.admin-content-body div.box td{
+    height:40px;
+    vertical-align: top;
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+    line-height: 23px;
+    border-bottom:1px solid #e6e6e6;
+    padding:7px;
+    min-width: 100px;
+}
+.admin-content-body div.box tbody tr td:nth-child(5),.admin-content-body div.box tbody tr td:nth-child(4){
+    text-align: left;
+    padding:7px 20px;
+}
+.admin-content-body div.box tbody tr:nth-child(even) td{
+    background: #f0f0f0;
+    /*border-top:1px solid #e6e6e6;*/
+}
+.admin-content-body div.box tbody tr td:nth-child(3){
+    min-width: 130px;
+}

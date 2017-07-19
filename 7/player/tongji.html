@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>同道 成长统计</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/my.css" />
+    <link rel="stylesheet" href="../css/leaguemanage.css" />
+    <script src="../js/echarts.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/china.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="../assets/css/wqt.css" />
+    <link rel="stylesheet" href="table.css"/>
+    <style>
+        .admin-content-body div.box{
+            min-height: auto;
+        }
+        .admin-content-body div.zhexian{
+            margin-top:10px;
+            background: #fff;
+            padding:16px;
+        }
+        .echart-con{
+            border:0;
+            padding:0;
+        }
+        .echart-body .danwei{
+            font-size: 18px;
+            color: #333;
+        }
+        .echart-body .danwei>em{
+            font-size: 16px;
+        }
+        .w100{
+            width: auto;
+        }
+        .echart-body .select-box .form-control{
+            border-radius: 0;
+            color: #0d0d0d;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            background: url(../images/btn_qing_xiala.png) no-repeat right;
+            padding-right: 30px;
+            width: auto;
+            padding-left: 5px;
+        }
+        .check-box .label{
+            font-size: 15px;
+            font-family: "黑体";
+        }
+        .echart-body .select-box .form-group .w100{
+            width: auto;
+        }
+        .admin-content-body div.box td,.admin-content-body div.box tbody tr td:nth-child(3),.admin-content-body div.box thead tr th:nth-child(5), .admin-content-body div.box thead tr th:nth-child(4),.admin-content-body div.box tbody tr td:nth-child(5), .admin-content-body div.box tbody tr td:nth-child(4){
+            min-width: auto;
+            text-align: center;
+            vertical-align:middle;
+            padding:0 15px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="am-topbar am-topbar-inverse admin-header">
+    <div class="am-topbar-brand">
+        <strong><img src="../i/logo3.png" alt="" /></strong> <small>中国青少年足球数据库</small>
+    </div>
+    <div class="am-collapse am-collapse1  am-topbar-collapse" id="topbar-collapse">
+        <a href="#" class="l-sy"></a>
+        <a href="#" class="l-link2"></a>
+        <a href="#" class="l-link3" target="_blank" style=" position: relative;
+    top: -9px;">您好，Admin</a>
+        <a href="#" class="l-link4" target="_blank"></a>
+    </div>
+</div>
+<div class="am-cf admin-main">
+    <!-- sidebar start -->
+    <div class="admin-sidebar" id="admin-offcanvas">
+        <div class="am-offcanvas-bar admin-offcanvas-bar">
+            <ul class="am-list admin-sidebar-list" >
+                <li class="admin-parent">
+                    <a class="am-cf"  href="../yulan.html"><span class="am-icon-file"></span><img
+                            src="../images/icon_ce_shuju.png" alt=""/>数据管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                    <ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-in" id="collapse-nav1">
+                        <li class="nav-sub-item" id="collapse-nav1">
+                            <a href="#collapse-sub-nav1" data-am-collapse="{parent: '#collapse-nav1'}" class="am-cf">
+                                <span class="am-icon-check"></span> 档案管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+                            </a>
+                            <ul class="l-nav-3 navbar-thr paddingleft0 am-in" id="collapse-sub-nav1">
+                                <li>
+                                    <a class="active" href="../d-qiuyuan_2.html"><span>球员管理</span></a>
+                                </li>
+                                <li>
+                                    <a href="../d-caipan.html"><span>裁判管理</span></a>
+                                </li>
+                                <li>
+                                    <a href="../d-jiaolian.html"><span>教练管理</span></a>
+                                </li>
+                                <li>
+                                    <a href="../d-julebu.html"><span>球队/俱乐部管理</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="../leaguematches.html" class="am-cf"><span class="am-icon-puzzle-piece"></span> 联赛管理</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="../videos.html" class="am-cf"><span class="am-icon-th"></span> 视频管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="#collapse-nav2"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_gongzuo.png" alt=""/>工作管理</a>
+                    <ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-collapse" id="collapse-nav2">
+                        <li class="nav-sub-item" id="collapse-nav2">
+                            <a href="#collapse-sub-nav2" data-am-collapse="{parent: '#collapse-nav2'}" class="am-cf">
+                                <span class="am-icon-check"></span> 流程管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+                            </a>
+                            <ul class="l-nav-3 navbar-thr paddingleft0 am-collapse" id="collapse-sub-nav2">
+                                <li>
+                                    <a href="../lc-baom2.html"><span>球队报名</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#" class="am-cf"><span class="am-icon-puzzle-piece"></span> 信息管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="###"><span class="am-icon-table"></span><img src="../images/icon_ce_xitong.png" alt=""/>系统管理</a>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="../g-ruwei.html"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_guo.png" alt=""/>国少</a>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="../g-ruwei.html"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_guo.png" alt=""/>国青</a>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="../g-ruwei.html"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_guo.png" alt=""/>国奥</a>
+                </li>
+                <li class="admin-parent">
+                    <a class="am-cf" href="../inform.html"><span class="am-icon-table"></span><img
+                            src="../images/icon_ce_tongzhi.png" alt=""/>通知</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- content start -->
+    <div class="admin-content">
+        <div class="admin-content-body">
+            <div class="title">
+                <ul class="title">
+                    <li><a href="gaikuang.html">球员概况</a></li>
+                    <li><a href="gamelist.html">比赛列表</a></li>
+                    <li><a href="video.html">技术视频</a></li>
+                    <li class="active"><a href="tongji.html">成长统计</a></li>
+                    <li><a href="peixun.html">球员培训</a></li>
+                    <li><a href="qiutan.html">球探报告</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>赛季</th>
+                        <th>赛事</th>
+                        <th>出场</th>
+                        <th>出场时间</th>
+                        <th>进球</th>
+                        <th>助攻</th>
+                        <th>射门</th>
+                        <th>突破</th>
+                        <th>直塞球</th>
+                        <th>传中</th>
+                        <th>抢断</th>
+                        <th>解围</th>
+                        <th>空中争顶</th>
+                        <th>黄牌</th>
+                        <th>红牌</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>2017</td>
+                        <td>U16</td>
+                        <td>5</td>
+                        <td>269min</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>19</td>
+                        <td>15</td>
+                        <td>7</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>U15</td>
+                        <td>6</td>
+                        <td>332min</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>27</td>
+                        <td>17</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>2015</td>
+                        <td>U14</td>
+                        <td>8</td>
+                        <td>430min</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>29</td>
+                        <td>21</td>
+                        <td>8</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>2014</td>
+                        <td>U13</td>
+                        <td>7</td>
+                        <td>360min</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>24</td>
+                        <td>18</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>2013</td>
+                        <td>U12</td>
+                        <td>8</td>
+                        <td>410min</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>20</td>
+                        <td>15</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="zhexian">
+                <div class="echart-con">
+                    <div class="echart-body clearfix">
+                        <div class="col-md-4 echart-padding">
+                            <div class="clearfix">
+                                <div class="f-left w100">
+                                    <span class="danwei">速度<em> / 秒</em></span>
+                                </div>
+                                <div class="f-right select-inline select-box">
+                                    <div class="select-item form-group clearfix">
+                                        <label class="label">指标：</label>
+                                        <div class="form-box w100">
+                                            <select class="form-control">
+                                                <option selected>30米</option>
+                                                <option>60米</option>
+                                                <option>100米</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="echart-speed" style="width: 100%; height: 310px;">
+
+                            </div>
+                            <div class="check-wrapper clearfix">
+                                <div class="col-md-4 text-center check-box">
+                                    <label class="label player-name">陈申吉<input type="checkbox" class="check-input"/> </label>
+                                </div>
+                                <div class="col-md-4 text-center check-box">
+                                    <label class="label player-type">国字号球员<input type="checkbox" class="check-input"/> </label>
+                                </div>
+                                <div class="col-md-4 text-center check-box">
+                                    <label class="label player-bz">联赛标准<input type="checkbox" class="check-input" /> </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 echart-padding">
+                            <div class="clearfix">
+                                <div class="f-left w100">
+                                    <span class="danwei">距离<em> / 米</em></span>
+                                </div>
+                                <div class="f-right select-inline select-box">
+                                    <div class="select-item form-group clearfix">
+                                        <label class="label">指标：</label>
+                                        <div class="form-box w100">
+                                            <select style="width: 120px;" class="form-control">
+                                                <option selected>12分钟跑</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="echart-speed2" style="width: 100%; height: 310px;">
+
+                            </div>
+                            <div class="check-wrapper clearfix">
+                                <div class="col-md-4 text-center check-box">
+                                    <label class="label player-name">陈申吉<input type="checkbox" class="check-input"/> </label>
+                                </div>
+                                <div class="col-md-4 text-center check-box">
+                                    <label class="label player-type">国字号球员<input type="checkbox" class="check-input"/> </label>
+                                </div>
+                                <div class="col-md-4 text-center check-box">
+                                    <label class="label player-bz">联赛标准<input type="checkbox" class="check-input" /> </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 echart-padding">
+                            <div class="clearfix">
+                                <div class="f-left w100">
+                                    <span class="danwei">肺活量<em> / 毫升</em></span>
+                                </div>
+                            </div>
+                            <div id="echart-speed3" style="width: 100%; height: 310px;">
+
+                            </div>
+                            <div class="check-wrapper clearfix">
+                                <div class="col-md-4 text-center check-box">
+                                    <label class="label player-name">陈申吉<input type="checkbox" class="check-input"/> </label>
+                                </div>
+                                <div class="col-md-4 text-center check-box">
+                                    <label class="label player-type">国字号球员<input type="checkbox" class="check-input"/> </label>
+                                </div>
+                                <div class="col-md-4 text-center check-box">
+                                    <label class="label player-bz">联赛标准<input type="checkbox" class="check-input" /> </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../echartspeed.js"></script>
+<script src="../assets/js/jquery.min.js"></script>
+<script>
+    $('.am-topbar-brand').click(function(){
+        window.location.href='../yulan.html';
+    })
+</script>
+</body>
+
+</html>

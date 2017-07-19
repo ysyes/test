@@ -1,0 +1,144 @@
+#header,#main div.box{
+    width:1000px;
+    margin:0 auto;
+}
+#header{
+    padding:10px 0;
+}
+#main{
+    background:url(../img/background.png) no-repeat;
+    background-size: cover;
+    min-width: 1200px;
+}
+#main .box{
+    width:100%;
+    overflow: hidden;
+}
+#main .login{
+    float:right;
+    height:388px;
+    width:390px;
+    background: rgba(255,255,255,0.5);
+    margin-top:36px;
+    margin-bottom:60px;
+}
+#main .login h2{
+    background: rgba(255,255,255,0.9);
+    height:45px;
+    padding-left:34px;
+    line-height: 45px;
+    color:#666;
+    font-size: 18px;
+    font-weight: normal;
+}
+#main .login .box {
+    margin: 10px 0 0 70px;
+}
+#main .login .box div{
+	line-height:30px;
+	color:rgb(233, 20, 20);
+	margin-bottom:10px;
+}
+#main .login p{
+    margin-bottom:20px;
+}
+#main .login p input{
+	outline:none;
+}
+#main .login p i{
+	display:none;
+	position:absolute;
+    width:150px;
+    height:34px;
+    box-shadow:0 0 6px 1px #ddd;
+    -webkit-border-radius: 3px;
+    -moz-border-radius:3px;
+    border-radius: 3px;
+    background: #fff;
+    color:#555;
+    font-size:14px;
+    padding-left:10px;
+    font-style:normal;
+    left:0;
+    top:45px;
+    line-height:34px;
+}
+#main .login p i b{
+	position:absolute;
+	width:24px;
+	height:14px;
+	background:url(../img/sanjiao.png);
+	left:10px;
+	top:-14px;
+}
+#main .login p input[type='text'],#main .login p input[type='password']{
+    box-sizing: border-box;
+    width:250px;
+    height:40px;
+    border:2px solid #c1c9d2;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-family: 'Microsoft Yahei';
+    background: #fbffc2;
+    color:#999;
+    font-size:14px;
+    padding-left:5px;
+}
+#main .login p input[type='text'].red, #main .login p input[type='password'].red{
+	border-color:#e16a6a;
+}
+#main .login p:nth-child(2){
+	position:relative;
+}
+#main .login p:nth-child(3) input{
+    width:115px;
+    margin-right:42px;
+}
+#main .login p:nth-child(3) img{
+    width:93px;
+    height:40px;
+    border:2px solid #c1c9d2;
+    background: #fbffc2;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#main .login p:last-child{
+    line-height: 20px;
+}
+#main .login button{
+    width:250px;
+    height:40px;
+    border:0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color:#fefefe;
+    background:#d4452c ;
+    font-size:18px;
+    cursor: pointer;
+}
+#main .login input[type='checkbox']{
+    width:14px;
+    height:14px;
+    border:2px solid #707088;
+    background: #fff;
+}
+#main .login label{
+    color:#333;
+    font-size: 14px;
+    margin-left:6px;
+}
+#footer{
+    margin-top:20px;
+    margin-bottom:50px;
+}
+#footer p{
+    color:#999;
+    font-size: 14px;
+    text-align: center;
+}
+#footer p:first-child{
+    margin-bottom:8px;
+}

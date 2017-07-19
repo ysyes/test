@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>交易管理</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/page.css"/>
+    <link rel="stylesheet" href="jyglstyle.css"/>
+    <script type="text/javascript" src="../../lib/WdatePicker.js" ></script>
+</head>
+<body>
+<div id="main">
+    <div class="header">
+        <p>交易统计</p>
+        <div></div>
+    </div>
+    <div class="show">
+        <ul class="title">
+            <li class="active">投注记录</li>
+            <li>存款管理</li>
+            <!--<li>取款管理</li>-->
+            <li>
+            <form>
+            	<input class="date" type="text" name="date" placeholder="比赛日期" onFocus="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd'})"/>
+                <input class='name' type="text" placeholder="球队名称" name="teamname"/>
+                <input class="num" type="text" placeholder="投注单号" name="code"/>
+                <input style="display: none;" class="username" type="text" placeholder="会员名称/充值单号" name="content"/><i></i>
+            </form>
+            </li>
+        </ul>
+        <div class="content">
+            <div>
+                <table class="table1">
+                    <thead>
+                    <tr>
+                        <th width="90px">手机号</th>
+                        <th width="120px">投注单号</th>
+                        <th width="200px">比赛信息</th>
+                        <th width="116px">投注时间</th>
+                        <th width="70px">投注金额</th>
+                        <th width="70px">可赢</th>
+                        <th width="70px">结果</th>
+                        <th width="70px">状态</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- <tr>
+                        <td>1398726374</td>
+                        <td>wx25778886</td>
+                        <td>
+                            <p>
+                                广州恒大vs北京国安</p>
+                            <p>2016-08-22</p>
+                            <p>广州恒大 +0.5@2.0</p>
+                        </td>
+                        <td>
+                            <p>2016-08-21</p>
+                            <p>08:36:35</p>
+                        </td>
+                        <td>5000</td>
+                        <td>50000</td>
+                        <td>22:22</td>
+                        <td>全赢<br/>/赢一半</td>
+                    </tr>
+                    <tr>
+                        <td>1398726374</td>
+                        <td>wx25778886</td>
+                        <td>
+                            <p>
+                                广州恒大vs北京国安</p>
+                            <p>2016-08-22</p>
+                            <p>广州恒大 +0.5@2.0</p>
+                        </td>
+                        <td>
+                            <p>2016-08-21</p>
+                            <p>08:36:35</p>
+                        </td>
+                        <td>5000</td>
+                        <td>50000</td>
+                        <td>22:22</td>
+                        <td>全赢<br/>/赢一半</td>
+                    </tr> -->
+                    </tbody>
+                </table>
+                <div class="page">
+                    <ul>
+                        <li class="disable">上一页</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>下一页</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <table class="table1">
+                    <thead>
+                    <tr>
+                        <th width="110px">付款单号</th>
+                        <th width="80px">昵称</th>
+                        <th width="140px">存款时间</th>
+                        <th width="126px">存款方式</th>
+                        <th width="90px">存款金额</th>
+                        <th width="90px">状态</th>
+                        <th width="100px">失败理由</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- <tr>
+                        <td style="padding:0 15px;">wx25778886</td>
+                        <td>我是小达人</td>
+                        <td>
+                            <p>2016-08-21</p>
+                            <p>08:36:35</p>
+                        </td>
+                        <td>微信支付</td>
+                        <td>5000</td>
+                        <td>充值成功</td>
+                        <td>第二期</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:0 15px;">wx25778886</td>
+                        <td>我是小达人</td>
+                        <td>
+                            <p>2016-08-21</p>
+                            <p>08:36:35</p>
+                        </td>
+                        <td>微信支付</td>
+                        <td>5000</td>
+                        <td>充值成功</td>
+                        <td>第二期</td>
+                    </tr> -->
+                    </tbody>
+                </table>
+                <div class="page">
+                    <ul>
+                        <li class="disable">上一页</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>下一页</li>
+                    </ul>
+                </div>
+            </div>
+            <div>33333</div>
+        </div>
+    </div>
+</div>
+<script src="../../js/jquery-2.2.3.min.js"></script>
+<script src="jygl.js"></script>
+</body>
+</html>

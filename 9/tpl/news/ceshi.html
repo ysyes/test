@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        span{
+            float: left;
+            width:15px;
+            height:15px;
+            background: url(../../img/moren.png) no-repeat;
+            background-size: cover;
+            margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h3><span></span><a href="">测试文字</a></h3>
+    <input type="text"/>
+    <script src="../../lib/jquery-2.2.3.min.js"></script>
+<script>
+    var type=1;
+    switch(type){
+        case 1 :type='android';break;
+        case 2 :type='ios';break;
+        case 3 :type='wp';break;
+        case 4 :type='网站';break;
+    }
+    console.log(type)
+    var src="id=1&name=2&desc=3";
+    var hrefarr=src.split('&')
+    console.log(hrefarr)
+    for(var i= 0,obj={};i<hrefarr.length;i++){
+        var name=hrefarr[i].split('=')[0];
+        var value=hrefarr[i].split('=')[1];
+        obj[name]=value;
+    }
+    console.log(obj)
+    $('input').on('input propertychange',function(e){
+        console.log($('input').val())
+    })
+</script>
+</body>
+</html>

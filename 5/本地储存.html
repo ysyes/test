@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>本地储存技术，刷新计数</title>
+	</head>
+	<h1></h1>
+	<body>
+		<script type="text/javascript">
+			var num = localStorage.getItem("num") || "";
+			var h1 = document.getElementsByTagName("h1")[0];
+			if (num != "") {
+				h1.innerHTML = Number(num)+1;
+				localStorage.setItem("num",Number(num)+1);
+			}else{
+				localStorage.setItem("num","1");
+				h1.innerHTML = "1";
+			}
+			
+		</script>
+	</body>
+</html>

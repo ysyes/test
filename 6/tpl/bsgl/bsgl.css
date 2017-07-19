@@ -1,0 +1,78 @@
+ul.title li:last-child{
+    width:calc(100% - 110px);
+}
+ul.title li:last-child select.state{
+    width:118px;
+    box-sizing: border-box;
+    color:#ccc;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    text-align: center;
+    outline:none;
+    height:26px;
+    padding:0;
+    border:1px solid #ccc;
+    appearance:none;
+    -moz-appearance:none;    /*for firefox*/
+    -webkit-appearance:none;    /*for chrome*/
+    padding-right: 26px;
+    overflow: hidden;
+    background: url(../../img/down.png) no-repeat right #fff;
+}
+ul.title li i{
+    float:right;
+    width:26px;
+    height:26px;
+    margin-top:13px;
+    background-image:url('../../img/search.png');
+    background-color:#0055a1;
+    background-repeat:no-repeat;
+    border-top-right-radius: 3px;
+    background-position: center;
+    border-bottom-right-radius: 3px;
+}
+ul.title li:last-child input,ul.title li:last-child select{
+    height:26px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width:100px;
+}
+ul.title li:last-child input{
+    width:130px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+#main .table1 tbody td{
+    height:53px;
+    font-size:16px;
+}
+.table1 tbody td:first-child{
+    color:#333;
+}
+.table1 tbody td input{
+    width:100%;
+    text-align: center;
+    font-family: '微软雅黑';
+    background: transparent;
+    border:0;
+    font-size: 16px;
+    color: #999;
+}
+.table1 tbody td a{
+    display: inline-block;
+    box-sizing: border-box;
+    width:39px;
+    height:22px;
+    font-size: 14px;
+    text-align: center;
+    border-radius:3px;
+    font-family: '微软雅黑';
+    padding:4px 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+.table1 tbody td a.able{
+    border:1px solid #0055a1;
+    color:#0055a1;
+}

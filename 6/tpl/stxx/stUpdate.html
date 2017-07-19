@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>伤停信息-添加伤停信息</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="stadd.css"/>
+</head>
+<body>
+<div id="main">
+    <div class="header">
+        <p>编辑伤停</p><div></div>
+    </div>
+    <div class="show">
+        <ul class="title">
+            <li class="active">伤停信息</li>
+            <li></li>
+        </ul>
+        <div class="content">
+            <form>
+                <div class="name">
+                    <p>联赛名称</p>
+                    <select name="leaguecode">
+                    </select>
+                </div>
+                <div class="teamName">
+                    <p>球队名称</p>
+                    <select name="teamcode">
+                    </select>
+                </div>
+                <div class="playerName">
+                    <p>球员名称</p>
+                    <input type="text" name="footballer" class="default"/>
+                </div>
+                <div class="station">
+                    <p>位置</p>
+                    <select name="locationcode">
+                        <option value="中场">中场</option>
+                        <option value="前锋">前锋</option>
+                        <option value="后卫">后卫</option>
+                        <option value="主教练">主教练</option>
+                        <option value="门将">门将</option>
+                    </select>
+                </div>
+                <div class="session">
+                    <p>场次</p>
+                    <input name='num' onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" type="text" class='default'/>
+                </div>
+                <div class="goal">
+                    <p>进球</p>
+                    <select name="goal">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="hurt">
+                    <p>受伤状态</p>
+                    <select name="status">
+                        <option value="受伤">受伤</option>
+                        <option value="恢复">恢复</option>
+                        <option value="停赛">停赛</option>
+                    </select>
+                </div>
+                <div class="note">
+                    <p>备注</p>
+                    <input type="text" class="default note" name="remark"/>
+                </div>
+            </form>
+            <div class="button">
+                <button class="button submit">提交</button>
+                <a href='stxx.html'><button class="button back">返回</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../js/jquery-2.2.3.min.js"></script>
+<script>
+    function list(){
+        $.ajax({
+            url:'../../v1/menu/league',
+            type:'GET',
+            contentType:'application/json',
+            dataType:'json',
+            success:function(data){
+                if(data.resultcode==1000){
+                    $(data.leagues).each(function(){
+                        $('select[name="leaguecode"]').append('<option value='+this.code+'>'+this.name+'</option>')
+                    });
+                }else if(data.resultcode==998){
+                    window.parent.returnLogin();
+                }
+
+            }
+        });
+    }
+    $('select[name="leaguecode"]').change(function(){
+		if($(this).val()==''){
+			$('select[name="teamcode"]').html('')
+			$('select[name="teamcode"]').append('<option value="">--全部球队--</option>');
+		}else{
+		$.ajax({
+			url:'../../v1/menu/team/'+$('select[name="leaguecode"]').val(),
+			type:'GET',
+			contentType:'application/json',
+	        dataType:'json',
+			success:function(data){
+				if(data.resultcode==1000){
+					$('select[name="teamcode"]').html('');
+					$(data.leagues).each(function(){
+						$('select[name="teamcode"]').append('<option value='+this.code+'>'+this.name+'</option>');
+					})
+				}else if(data.resultcode==998){
+					window.parent.returnLogin();
+			    }
+				
+			}
+		});}
+	})
+    list();
+    var id=window.location.href.split('=')[1];
+    function load(){
+        $.ajax({
+            url:'../../v1/injury/update/init/'+id,
+            type:'GET',
+            contentType:'application/json',
+            success:function(data){
+                if(data.resultcode==1000){
+                    console.log(data);
+                    $('select[name="leaguecode"]').val(data.leaguecode);
+                    var me=data;   
+                    $.ajax({
+						url:'../../v1/menu/team/'+$('select[name="leaguecode"]').val(),
+						type:'GET',
+						contentType:'application/json',
+				        dataType:'json',
+						success:function(data){
+							if(data.resultcode==1000){
+								$('select[name="teamcode"]').html('');
+								$(data.leagues).each(function(){
+									$('select[name="teamcode"]').append('<option value='+this.code+'>'+this.name+'</option>');
+                   					$('select[name="teamcode"]').val(me.teamcode);
+								})
+							}else if(data.resultcode==998){
+								window.parent.returnLogin();
+						    }
+							
+						}
+					});
+                    $('input[name="footballer"]').val(data.footballer);
+                    $('select[name="locationcode"]').val(data.locationcode);
+                    $('input[name="num"]').val(data.num);
+                    $('select[name="goal"]').val(data.goal);
+                    $('select[name="status"]').val(data.status);
+                    $('input[name="remark"]').val(data.remark);
+                }else if(data.resultcode==998){
+                    window.parent.returnLogin();
+                }
+            }
+        })
+    }
+    load();
+    $('button.submit').click(function(e){
+        e.preventDefault();
+        var data=$('form').serializeArray();
+        for(var i= 0,obj={};i<data.length;i++){
+            var name=data[i].name;
+            var value=data[i].value;
+            obj[name]=value;
+        }
+
+        obj.text=obj.editorValue;
+        obj=JSON.stringify(obj);
+        $.ajax({
+            url:'../../v1/injury/update/'+id,
+            type:'POST',
+            data:obj,
+            contentType:'application/json',
+            datatype:'json',
+            success:function(data){
+                console.log(data.msg)
+                if(data.resultcode==1000){
+                    if(confirm('修改成功')){
+                        window.location = 'stxx.html';
+                    }
+                }else if(data.resultcode==998){
+                    window.parent.returnLogin();
+                }else if(data.resultcode==1999){
+                    alert(data.msg);
+                }
+            }
+        })
+    })
+</script>
+</body>
+</html>

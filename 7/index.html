@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>同道 数据管理</title>
+		<meta name="description" content="这是一个 index 页面">
+		<meta name="keywords" content="index">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<link rel="stylesheet" href="assets/css/amazeui.min.css" />
+		<link rel="stylesheet" href="assets/css/admin.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my.css" />
+		<link rel="stylesheet" href="assets/css/wqt.css" />
+		<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/china.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			#item-old {
+				float: left;
+			}
+			
+			#itemple {
+				float: right;
+			}
+			.admin-content-list li a{
+				width: 100%;
+				display: inline-block;
+			}
+			.color-site{
+				font-weight: bold;
+			} 
+		</style>
+	</head>
+
+	<body>
+		<div class="am-topbar am-topbar-inverse admin-header">
+			<div class="am-topbar-brand">
+				<strong><img src="i/logo3.png" alt="" /></strong> <small>中国青少年足球数据库</small>
+			</div>
+			<div class="am-collapse am-collapse1  am-topbar-collapse" id="topbar-collapse">
+				<a href="#" class="l-sy"></a>
+				<a href="#" class="l-link2"></a>
+				<a href="#" class="l-link3" target="_blank" style=" position: relative;
+    top: -9px;">您好，Admin</a>
+				<a href="#" class="l-link4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="am-cf admin-main">
+			<!-- sidebar start -->
+			<div class="admin-sidebar" id="admin-offcanvas">
+				<div class="am-offcanvas-bar admin-offcanvas-bar">
+					<ul class="am-list admin-sidebar-list" id="accordion">
+						<li class="admin-parent">
+							<a class="am-cf active" data-am-collapse="{parent: '#accordion'}" href="#collapse-nav1"><span class="am-icon-file"></span><img
+									src="images/icon_ce_shuju.png"
+									alt=""/>数据管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+							<ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0" id="collapse-nav1">
+								<li class="nav-sub-item" id="collapse-nav1">
+									<a href="#collapse-sub-nav1" data-am-collapse="{parent: '#collapse-nav1'}" class="am-cf am-collapsed">
+										<span class="am-icon-check"></span> 档案管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+									</a>
+									<ul class="l-nav-3 navbar-thr paddingleft0 am-collapse" id="collapse-sub-nav1">
+										<li>
+											<a href="d-qiuyuan_2.html"><span>球员管理</span></a>
+										</li>
+										<li>
+											<a href="d-caipan.html"><span>裁判管理</span></a>
+										</li>
+										<li>
+											<a href="d-jiaolian.html"><span>教练管理</span></a>
+										</li>
+										<li>
+											<a href="d-julebu.html"><span>球队/俱乐部管理</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a href="leaguematches.html" class="am-cf"><span class="am-icon-puzzle-piece"></span> 联赛管理</a>
+								</li>
+								<li class="nav-sub-item">
+									<a href="videos.html" class="am-cf"><span class="am-icon-th"></span> 视频管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="#collapse-nav2"><span class="am-icon-table"></span><img
+									src="images/icon_ce_gongzuo.png"
+									alt=""/>工作管理</a>
+							<ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-collapse" id="collapse-nav2">
+								<li class="nav-sub-item" id="collapse-nav2">
+									<a href="#collapse-sub-nav2" data-am-collapse="{parent: '#collapse-nav2'}" class="am-cf">
+										<span class="am-icon-check"></span> 流程管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+									</a>
+									<ul class="l-nav-3 navbar-thr paddingleft0 am-collapse" id="collapse-sub-nav2">
+										<li>
+											<a href="lc-baom2.html"><span>球队报名</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a class="am-cf" href="###"><span class="am-icon-puzzle-piece"></span> 信息管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="###"><span class="am-icon-table"></span><img
+									src="images/icon_ce_xitong.png"
+									alt=""/>系统管理</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_guo.png"
+									alt=""/>国少</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_guo.png"
+									alt=""/>国青</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_guo.png"
+									alt=""/>国奥</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="inform.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_tongzhi.png"
+									alt=""/>通知</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- sidebar end -->
+
+			<!-- content start -->
+			
+				<div class="admin-content">
+					<div class="admin-content-body">
+						<ul class="am-avg-md-4 am-margin am-padding admin-content-list data-list-con">
+							<li>
+								<a href="d-qiuyuan_2.html">
+								<span class="am-icon-btn am-icon-file-text data-title">青少年球员注册数</span>
+								<p><i class="color-site">8,422</i><br/><span class="txtdata"><i>同去年环比</i><span class="sort-sheng">↑</span><em>5%</em></p>
+								</span>
+							</a>
+							</li>
+							<li>
+								<a href="d-caipan.html">
+								<span class="am-icon-btn am-icon-file-text data-title">青少年裁判注册数</span>
+								<p><i class="color-site">356</i><br/><span class="txtdata"><i>同去年环比</i><span class="sort-sheng">↑</span><em>2%</em></p>
+								</span>
+								</a>
+							</li>
+							<li>
+								<a href="d-jiaolian.html">
+								<span class="am-icon-btn am-icon-file-text data-title">青少年教练注册数</span>
+								<p><i class="color-site">242</i><br/><span class="txtdata"><i>同去年环比</i><span class="sort-sheng">↑</span><em>3%</em></p>
+								</span>
+								</a>
+							</li>
+
+						</ul>
+						<div class="am-item cf">
+							<div id="item-old" style="width:50%;height:400px;"></div>
+							<div id="itemple" style="width:50%;height:400px;"></div>
+						</div>
+
+						<div class="am-item1" style="width: 100%;">
+							<div id="item1" style="width:100%;height:400px;"></div>
+							<!--		<ul class="am-item-sort">
+							<li>
+								<label for="male">Male</label>
+								<input type="checkbox" name="sort" id="male" />
+							</li>
+							<li>
+								<label for="female">Female</label>
+								<input type="checkbox" name="sort" id="female" />
+							</li>
+							<li>
+								<label for="male">Male</label>
+								<input type="checkbox" name="sort" id="male" />
+							</li>
+							<li>
+								<label for="female">Female</label>
+								<input type="checkbox" name="sort" id="female" />
+							</li>
+						</ul>-->
+						</div>
+						<div class="am-item2 cf">
+							<div class="am-item2-left fll" style="width: 50%;height:540px;">
+								<div id="chinamap" style="height:400px;"></div>
+							</div>
+							<div class="am-item2-right flr" style="width: 48%;height:540px;">
+								<div id="main" style="height:540px;"></div>
+							</div>
+						</div>
+
+					
+					</div>
+
+			<!-- content end -->
+
+			</div>
+
+			<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+			<!--[if (gte IE 9)|!(IE)]><!-->
+			<script src="assets/js/jquery.min.js"></script>
+			<!--<![endif]-->
+			<script src="assets/js/amazeui.min.js"></script>
+			<script src="js/my.js" type="text/javascript" charset="utf-8"></script>
+
+			<script type="text/javascript">
+				// 基于准备好的dom，初始化echarts实例
+
+				// 指定图表的配置项和数据
+
+				var myChart = echarts.init(document.getElementById('main'));
+				option = {
+					title: {
+				        text:'球员数排行',
+				        left: 'center',
+				        top:'2%'
+				    },
+					tooltip: {
+						trigger: 'axis',
+						axisPointer: { // 坐标轴指示器，坐标轴触发有效
+							type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+						}
+					},
+					legend: {
+						bottom: "3%",
+						data: ['前锋', '中场', '后卫', '守门员']
+					},
+					grid: {
+						left: '1%',
+						right: '4%',
+						bottom: '13%',
+						containLabel: true
+					},
+					xAxis: [{
+						type: 'category',
+						data: ['北京', '上海','广州', '云南', '贵州', '山东', '天津']  //横坐标值
+					}],
+					yAxis: [{
+						type: 'value'
+					}],
+					series: [{
+						name: '前锋',
+						type: 'bar',
+						data: [390, 332, 301, 334, 320, 330, 320]
+					},{
+						name: '中场',
+						type: 'bar',
+						stack: '后告',
+						data: [220, 182, 191, 234, 290, 300, 310]
+					}, {
+						name: '后卫',
+						type: 'bar',
+						stack: '广告',
+						data: [150, 232, 201, 154, 190, 200, 210]
+					}, {
+						name: '守门员',
+						type: 'bar',
+						data: [90, 72, 71, 74, 70, 60, 60]
+					}]
+				};
+
+				myChart.setOption(option);
+			</script>
+	</body>
+
+</html>

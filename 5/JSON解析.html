@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul class="box">
+			
+		</ul>
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript">
+			$.ajax({
+				type:"get",
+				url:"JSON/car.json",
+				async:true,
+				success:function (data) {
+					for (var i in data.ListContents) {
+						var li = document.createElement("li");
+						li.innerText = data.ListContents[i].PinYin;
+						$(".box").append(li)
+					}
+				}
+			});
+			
+			$.getJSON("JSON/ceshi.json",function (data) {
+				console.log(data);
+//				for (var i = 0 ; i < data.length ; i ++) {
+//					console.log(data[i]["首发阵容"]);
+//				}
+				for (var i in data) {
+					console.log(data[i]["首发阵容"]);
+				}
+			})
+		</script>
+	</body>
+</html>

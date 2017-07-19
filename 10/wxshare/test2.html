@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li>access_token:<input type="text" name="" id="token" value="" /></li>
+		</ul>
+		<button>查看ticket</button>
+		<script type="text/javascript" src="lib/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript">
+			$("button").click(function () {
+				var token = $("#token").val();
+				var url = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token="+token+"&type=jsapi";
+				window.location = url;
+			})			
+		</script>
+	</body>
+</html>

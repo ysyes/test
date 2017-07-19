@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li>aaa</li>
+			<li>aaa</li>
+			<li>aaa</li>
+			<li>aaa</li>
+			<li>aaa</li>
+			<li>aaa</li>
+		</ul>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.2.3.js" ></script>
+	<script type="text/javascript">
+		$("ul li").click(function (){
+			var num = $("ul li").index($(this));
+			console.log(num);
+		})
+	</script>
+</html>

@@ -1,0 +1,182 @@
+html{
+    overflow-x:auto;
+    height:100%;
+    min-height:600px;
+}
+body{
+    height:100%;
+    background:#effef9;
+}
+#box{
+    box-sizing: border-box;
+    width:calc(100% - 20px);
+    min-height:calc(100% - 20px);
+    height:auto;
+    min-width: 1050px;
+    background: #ffffff;
+    padding:0 20px;
+    padding-bottom:80px;
+    position: relative;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom:20px;
+}
+#box div.header{
+    height:60px;
+    padding:10px 0;
+}
+#box div.header div.admin{
+    float:left;
+    line-height: 40px;
+}
+#box div.header div.admin img{
+    vertical-align: middle;
+}
+#box div.header div.admin span{
+    color:#3b8bff;
+    font-size: 18px;
+    margin-left:3px;
+}
+#box div.header div.addBtn{
+    box-sizing: border-box;
+    border:1px solid #3b8bff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    float:right;
+    width:100px;
+    height:40px;
+    color: #3b8bff;
+    cursor: pointer;
+}
+#box div.header div.addBtn b{
+    font-size: 26px;
+    float: left;
+    margin-top: 6px;
+    margin-left: 5px;
+    font-weight: normal;
+}
+#box div.header div.addBtn img{
+    float:left;
+    margin:12px 6px;
+}
+#box div.header div.addBtn span{
+    line-height: 40px;
+    font-size: 16px;
+}
+div.show{
+    overflow: hidden;
+}
+div.content table{
+    width:100%;
+}
+div.content table th{
+    background:#3b8bff;
+    color:#fff;
+    font-weight: normal;
+    height:50px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+div.content table tbody td:first-child{
+    line-height: 50px;
+}
+div.content table tbody td:first-child img{
+    height:40px;
+    width:40px;
+    margin-bottom:5px;
+    margin-right:5px;
+}
+div.content table tbody td{
+    text-align: center;
+    font-size: 16px;
+    color:#292929;
+    height:50px;
+    vertical-align: middle;
+    border-bottom:1px solid #ccc;
+}
+div.content table tbody td.gray{
+    color:#ccc;
+}
+div.content tbody td.gray span:first-child{
+    color:#292929;
+}
+div.content tbody td:last-child span{
+    margin:0 5px;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+div.content tbody td:last-child span.able{
+    color:#3b8cff;
+}
+div.content tbody td:last-child span a{
+    color:#292929;
+    text-decoration: none;
+    font-size: 16px;
+}
+div.content tbody td:last-child span:hover,div.content tbody td:last-child span.red,div.content tbody td:last-child span:link,div.content tbody td:last-child span a:hover,div.content tbody td:last-child span a.red{
+    color:#3b8bff;
+}
+div.tcdPageCode{
+    position: absolute;
+    bottom:0;
+    width:100%;
+}
+button.gray{
+    box-sizing: border-box;
+    padding: 0;
+    border:0;
+    background:transparent;
+    outline:none;
+    cursor: pointer;
+    color:#292929;
+    border-right:1px solid #e6e6e6;
+}
+button.red{
+    box-sizing: border-box;
+    padding: 0;
+    border:0;
+    background:transparent;
+    color:#c62f17;
+    outline: none;
+    cursor: pointer;
+}
+#box .header div.select{
+    float:right;
+    margin-top:14px;
+}
+#box .header select,#box .Wdate{
+    box-sizing: border-box;
+    padding-right: 26px;
+    width:145px;
+    height:26px;
+    padding-left:10px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url(../img/xiala_s.png) no-repeat right;
+    margin-right: 10px;
+    border:1px solid #3b8bff;
+    outline:none;
+    border-right: 0;
+    color: #bbb;
+    font-family: "Microsoft Yahei";
+}
+#box .header input{
+    box-sizing: border-box;
+    padding-right: 26px;
+    width:145px;
+    height:26px;
+    padding-left:10px;
+    margin-right: 10px;
+    border:1px solid #3b8bff;
+    outline:none;
+    color: #bbb;
+    font-family: "Microsoft Yahei";
+}

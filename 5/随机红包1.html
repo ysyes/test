@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var money = 10000;
+		for (var i = 1 ;i < 10; i ++) {
+			suiji(i);
+		}
+		function suiji(num) {
+			for (var j = 1; j > 0;j ++) {
+				var fen = parseInt(Math.random() * 601 + 600);
+				if ((money - fen) >= (10 - num) * 600 && (money - fen) <= (10 - num) * 1200) {
+					console.log("第" + num + "位:" + fen/100 + "元");
+					money -= fen;
+					if (num == 9) {
+						console.log("第" + 10 + "位:" + money/100 + "元");
+					}
+					return;
+				}
+			}
+		}
+	</script>
+</html>

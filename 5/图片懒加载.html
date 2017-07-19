@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 100%;
+			}
+			img{
+				width: 80%;
+				min-height: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img lujing="img/0.jpg" src=""/>
+			<img lujing="img/1.jpg" src=""/>
+			<img lujing="img/2.jpg" src=""/>
+			<img lujing="img/3.jpg" src=""/>
+			<img lujing="img/4.jpg" src=""/>
+			<img lujing="img/5.jpg" src=""/>
+			<img lujing="img/6.jpg" src=""/>
+			<img lujing="img/7.jpg" src=""/>
+			<img lujing="img/8.jpg" src=""/>
+			<img lujing="img/9.jpg" src=""/>
+			<img lujing="img/10.jpg" src=""/>
+			<img lujing="img/11.jpg" src=""/>
+			<img lujing="img/12.jpg" src=""/>
+			<img lujing="img/13.jpg" src=""/>
+			<img lujing="img/14.jpg" src=""/>
+			<img lujing="img/15.jpg" src=""/>
+			<img lujing="img/16.jpg" src=""/>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var img = document.querySelectorAll("img");
+		var seeheight = document.documentElement.clientHeight;
+		document.onscroll = function () {
+			var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+			for (var i = 0 ;i < img.length ; i++) {
+				var imgheight = img[i].offsetTop;
+				if (imgheight < scrolltop + seeheight - 300) {
+					img[i].src = img[i].getAttribute("lujing");
+				}
+			}
+		}
+	</script>
+</html>

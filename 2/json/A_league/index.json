@@ -1,0 +1,718 @@
+[
+  {
+    "group": "第15轮",
+    "games": [
+      {
+        "id": 0,
+        "gameTime": "2016-06-08 03:00",
+        "homeTeam": "北京人和",
+        "awayTeam": "大连一方",
+        "turn": 0,
+        "status": 0
+      },
+      {
+        "id": 1,
+        "gameTime": "2016-06-26 17:30",
+        "homeTeam": "青岛黄海",
+        "awayTeam": "大连一方",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 2,
+        "gameTime": "2016-06-25 16:30",
+        "homeTeam": "梅州客家",
+        "awayTeam": "天津权健",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 3,
+        "gameTime": "2016-06-25 19:35",
+        "homeTeam": "北京北控",
+        "awayTeam": "上海申鑫",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 5,
+        "gameTime": "2016-07-02 16:30",
+        "homeTeam": "新疆天山",
+        "awayTeam": "深圳佳兆业",
+        "turn": 0,
+        "status": 0
+      }
+    ]
+  },
+  {
+    "group": "第16轮",
+    "games": [
+      {
+        "id": 4,
+        "gameTime": "2016-07-02 15:00",
+        "homeTeam": "浙江毅腾",
+        "awayTeam": "大连一方",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 6,
+        "gameTime": "2016-07-02 19:30",
+        "homeTeam": "内蒙古中优",
+        "awayTeam": "青岛中能",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 7,
+        "gameTime": "2016-07-02 19:35",
+        "homeTeam": "天津权健",
+        "awayTeam": "青岛黄海",
+        "turn": 0,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "第17轮",
+    "games": [
+      {
+        "id": 8,
+        "gameTime": "2016-07-10 15:30",
+        "homeTeam": "青岛中能",
+        "awayTeam": "深圳佳兆业",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 9,
+        "gameTime": "2016-07-10 19:35",
+        "homeTeam": "武汉卓尔",
+        "awayTeam": "大连超越",
+        "turn": 0,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "第18轮",
+    "games": [
+      {
+        "id": 10,
+        "gameTime": "2016-07-16 15:00",
+        "homeTeam": "湖南湘涛",
+        "awayTeam": "天津权健",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 15,
+        "gameTime": "2016-07-16 16:00",
+        "homeTeam": "大连超越",
+        "awayTeam": "北京人和",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 11,
+        "gameTime": "2016-07-16 19:00",
+        "homeTeam": "青岛黄海",
+        "awayTeam": "梅州客家",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 16,
+        "gameTime": "2016-07-16 19:35",
+        "homeTeam": "深圳佳兆业",
+        "awayTeam": "上海申鑫",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 17,
+        "gameTime": "2016-07-16 19:35",
+        "homeTeam": "内蒙古中优",
+        "awayTeam": "武汉卓尔",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 12,
+        "gameTime": "2016-07-17 15:30",
+        "homeTeam": "浙江毅腾",
+        "awayTeam": "贵州恒丰智诚",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 13,
+        "gameTime": "2016-07-17 19:35",
+        "homeTeam": "新疆天山雪豹",
+        "awayTeam": "青岛中能",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 14,
+        "gameTime": "2016-07-17 19:35",
+        "homeTeam": "北京北控",
+        "awayTeam": "大连一方",
+        "turn": 0,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "第19轮",
+    "games": [
+      {
+        "id": 18,
+        "gameTime": "2016-07-23 19:00",
+        "homeTeam": "新疆天山雪豹",
+        "awayTeam": "青岛黄海",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 19,
+        "gameTime": "2016-07-23 19:00",
+        "homeTeam": "大连一方",
+        "awayTeam": "大连超越",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 20,
+        "gameTime": "2016-07-23 19:35",
+        "homeTeam": "武汉卓尔",
+        "awayTeam": "深圳佳兆业",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 21,
+        "gameTime": "2016-07-24 15:00",
+        "homeTeam": "贵州恒丰智诚",
+        "awayTeam": "湖南湘涛",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 22,
+        "gameTime": "2016-07-24 16:30",
+        "homeTeam": "梅州客家",
+        "awayTeam": "浙江毅腾",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 23,
+        "gameTime": "2016-07-24 16:30",
+        "homeTeam": "天津权健",
+        "awayTeam": "北京北控",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 24,
+        "gameTime": "2016-07-24 19:45",
+        "homeTeam": "上海申鑫",
+        "awayTeam": "青岛中能",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 25,
+        "gameTime": "2016-08-31 19:35",
+        "homeTeam": "内蒙古中优",
+        "awayTeam": "北京人和",
+        "turn": 0,
+        "status": 0
+      }
+    ]
+  },
+  {
+    "group": "第20轮",
+    "games": [
+      {
+        "id": 26,
+        "gameTime": "2016-07-30 15:30",
+        "homeTeam": "青岛中能",
+        "awayTeam": "武汉卓尔",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 27,
+        "gameTime": "2016-07-30 19:30",
+        "homeTeam": "大连超越",
+        "awayTeam": "天津权健",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 28,
+        "gameTime": "2016-07-30 19:35",
+        "homeTeam": "湖南湘涛",
+        "awayTeam": "梅州客家",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 29,
+        "gameTime": "2016-07-31 19:00",
+        "homeTeam": "浙江毅腾",
+        "awayTeam": "青岛黄海",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 30,
+        "gameTime": "2016-07-31 19:35",
+        "homeTeam": "深圳佳兆业",
+        "awayTeam": "北京人和",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 31,
+        "gameTime": "2016-07-31 19:35",
+        "homeTeam": "内蒙古中优",
+        "awayTeam": "大连一方",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 32,
+        "gameTime": "2016-07-31 19:35",
+        "homeTeam": "北京北控",
+        "awayTeam": "贵州恒丰智诚",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 33,
+        "gameTime": "2016-07-31 19:45",
+        "homeTeam": "上海申鑫",
+        "awayTeam": "新疆天山雪豹",
+        "turn": 0,
+        "status": 0
+      }
+    ]
+  },
+  {
+    "group": "第21轮",
+    "games": [
+      {
+        "id": 34,
+        "gameTime": "2016-08-06 15:00",
+        "homeTeam": "贵州恒丰智诚",
+        "awayTeam": "大连超越",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 35,
+        "gameTime": "2016-08-06 16:30",
+        "homeTeam": "梅州客家",
+        "awayTeam": "北京北控",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 36,
+        "gameTime": "2016-08-06 19:00",
+        "homeTeam": "青岛黄海",
+        "awayTeam": "湖南湘涛",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 37,
+        "gameTime": "2016-08-06 19:30",
+        "homeTeam": "武汉卓尔",
+        "awayTeam": "上海申鑫",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 38,
+        "gameTime": "2016-08-06 19:35",
+        "homeTeam": "浙江毅腾",
+        "awayTeam": "新疆天山雪豹",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 39,
+        "gameTime": "2016-08-07 19:00",
+        "homeTeam": "大连一方",
+        "awayTeam": "深圳佳兆业",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 40,
+        "gameTime": "2016-08-07 19:35",
+        "homeTeam": "北京人和",
+        "awayTeam": "青岛中能",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 41,
+        "gameTime": "2016-08-07 19:35",
+        "homeTeam": "天津权健",
+        "awayTeam": "内蒙古中优",
+        "turn": 0,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "第22轮",
+    "games": [
+      {
+        "id": 42,
+        "gameTime": "2016-08-13 15:00",
+        "homeTeam": "湖南湘涛",
+        "awayTeam": "浙江毅腾",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 43,
+        "gameTime": "2016-08-13 16:30",
+        "homeTeam": "新疆天山雪豹",
+        "awayTeam": "武汉卓尔",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 44,
+        "gameTime": "2016-08-13 19:30",
+        "homeTeam": "大连超越",
+        "awayTeam": "梅州客家",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 45,
+        "gameTime": "2016-08-13 19:35",
+        "homeTeam": "北京北控",
+        "awayTeam": "青岛黄海",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 46,
+        "gameTime": "2016-08-13 19:00",
+        "homeTeam": "内蒙古中优",
+        "awayTeam": "贵州恒丰智诚",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 47,
+        "gameTime": "2016-08-14 19:30",
+        "homeTeam": "青岛中能",
+        "awayTeam": "大连一方",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 48,
+        "gameTime": "2016-08-14 19:35",
+        "homeTeam": "深圳佳兆业",
+        "awayTeam": "天津权健",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 49,
+        "gameTime": "2016-08-14 19:35",
+        "homeTeam": "上海申鑫",
+        "awayTeam": "北京人和",
+        "turn": 0,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "第23轮",
+    "games": [
+      {
+        "id": 50,
+        "gameTime": "2016-06-29 19:00",
+        "homeTeam": "浙江毅腾",
+        "awayTeam": "北京北控",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 51,
+        "gameTime": "2016-08-20 15:00",
+        "homeTeam": "贵州恒丰智诚",
+        "awayTeam": "深圳佳兆业",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 52,
+        "gameTime": "2016-08-20 19:00",
+        "homeTeam": "新疆天山雪豹",
+        "awayTeam": "湖南湘涛",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 53,
+        "gameTime": "2016-08-20 19:30",
+        "homeTeam": "青岛黄海",
+        "awayTeam": "大连超越",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 54,
+        "gameTime": "2016-08-21 15:30",
+        "homeTeam": "天津权健",
+        "awayTeam": "青岛中能",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 55,
+        "gameTime": "2016-08-21 16:30",
+        "homeTeam": "梅州客家",
+        "awayTeam": "内蒙古中优",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 56,
+        "gameTime": "2016-08-21 19:00",
+        "homeTeam": "大连一方",
+        "awayTeam": "上海申鑫",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 57,
+        "gameTime": "2016-08-21 19:35",
+        "homeTeam": "北京人和",
+        "awayTeam": "武汉卓尔",
+        "turn": 0,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "第24轮",
+    "games": [
+      {
+        "id": 58,
+        "gameTime": "2016-08-27 19:35",
+        "homeTeam": "深圳佳兆业",
+        "awayTeam": "梅州客家",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 59,
+        "gameTime": "2016-08-27 19:35",
+        "homeTeam": "内蒙古中优",
+        "awayTeam": "青岛黄海",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 60,
+        "gameTime": "2016-08-27 19:35",
+        "homeTeam": "北京人和",
+        "awayTeam": "新疆天山雪豹",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 61,
+        "gameTime": "2016-08-27 19:35",
+        "homeTeam": "武汉卓尔",
+        "awayTeam": "大连一方",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 62,
+        "gameTime": "2016-08-28 15:30",
+        "homeTeam": "青岛中能",
+        "awayTeam": "贵州恒丰智诚",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 63,
+        "gameTime": "2016-08-28 19:30",
+        "homeTeam": "大连超越",
+        "awayTeam": "浙江毅腾",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 64,
+        "gameTime": "2016-08-28 19:35",
+        "homeTeam": "北京北控",
+        "awayTeam": "湖南湘涛",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 65,
+        "gameTime": "2016-08-28 19:45",
+        "homeTeam": "上海申鑫",
+        "awayTeam": "天津权健",
+        "turn": 0,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "第25轮",
+    "games": [
+      {
+        "id": 66,
+        "gameTime": "2016-09-03 15:30",
+        "homeTeam": "湖南湘涛",
+        "awayTeam": "大连超越",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 67,
+        "gameTime": "2016-09-03 19:00",
+        "homeTeam": "浙江毅腾",
+        "awayTeam": "呼和浩特中优",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 68,
+        "gameTime": "2016-09-03 19:30",
+        "homeTeam": "青岛黄海",
+        "awayTeam": "深圳佳兆业",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 69,
+        "gameTime": "2016-09-03 19:35",
+        "homeTeam": "北京北控",
+        "awayTeam": "新疆天山雪豹",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 70,
+        "gameTime": "2016-09-04 15:00",
+        "homeTeam": "贵州恒丰智诚",
+        "awayTeam": "上海申鑫",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 71,
+        "gameTime": "2016-09-04 15:30",
+        "homeTeam": "梅州客家",
+        "awayTeam": "青岛中能",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 72,
+        "gameTime": "2016-09-04 15:30",
+        "homeTeam": "天津权健",
+        "awayTeam": "武汉卓尔",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 73,
+        "gameTime": "2016-09-04 19:00",
+        "homeTeam": "大连一方",
+        "awayTeam": "北京人和",
+        "turn": 0,
+        "status": 1
+      }
+    ]
+  },
+  {
+    "group": "第27轮",
+    "games": [
+      {
+        "id": 82,
+        "gameTime": "2016-09-17 15:30",
+        "homeTeam": "湖南湘涛",
+        "awayTeam": "深圳佳兆业",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 83,
+        "gameTime": "2016-09-17 19:30",
+        "homeTeam": "大连超越",
+        "awayTeam": "新疆天山雪豹",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 84,
+        "gameTime": "2016-09-17 19:35",
+        "homeTeam": "北京北控",
+        "awayTeam": "呼和浩特中优",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 85,
+        "gameTime": "2016-09-18 15:00",
+        "homeTeam": "贵州恒丰智诚",
+        "awayTeam": "北京人和",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 86,
+        "gameTime": "2016-09-18 15:00",
+        "homeTeam": "浙江毅腾",
+        "awayTeam": "青岛中能",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 87,
+        "gameTime": "2016-09-18 15:30",
+        "homeTeam": "梅州客家",
+        "awayTeam": "武汉卓尔",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 88,
+        "gameTime": "2016-09-18 19:45",
+        "homeTeam": "上海申鑫",
+        "awayTeam": "青岛黄海",
+        "turn": 0,
+        "status": 1
+      },
+      {
+        "id": 89,
+        "gameTime": "2016-09-18 19:45",
+        "homeTeam": "天津权健",
+        "awayTeam": "大连一方",
+        "turn": 0,
+        "status": 1
+      }
+    ]
+  }
+]

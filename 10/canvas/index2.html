@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>画布测试</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				width: 600px;
+				height: 400px;
+				border: 1px solid;
+				margin: 50px auto;
+				background: url(footballmap.png) no-repeat;
+				background-size:100% 100% ;
+				text-align: center;
+			}
+			div canvas{
+				width: 95.1%;
+				height: 91%;
+				background: red;
+				margin-top: 1.9%;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<canvas id="box" width="600" height="400">不支持canvas</canvas>
+		</div>
+		<button onclick="timeFn()">走你</button>
+		<script>
+			var c = document.getElementById("box");
+			var ctx = c.getContext("2d");
+			ctx.lineCap = "round";//线条形状
+			ctx.strokeStyle = "#0000FF";//颜色
+			ctx.lineWidth = 5;//线宽
+			/*ctx.moveTo(100,100);
+			ctx.lineTo(100,200);
+			ctx.stroke();//绘制线框
+			ctx.strokeStyle = "#0000FF";
+			ctx.lineWidth = 5;
+			ctx.lineTo(200,200);
+			ctx.lineTo(200,100);
+			ctx.stroke();
+			ctx.moveTo(300,300);
+			ctx.lineTo(500,400);
+			ctx.stroke();
+			ctx.beginPath();//开始重新绘图
+			ctx.arc(100,100,10,0,2*Math.PI);//画圆
+			ctx.fillStyle="green";
+			ctx.fill();//填充
+			ctx.clearRect(100,100,300,300);//清空画布*/
+			//动画画线
+			var lineArr = [[0,0],[500,300]];
+			var addX = (lineArr[1][0] - lineArr[0][0])/100;
+			var addY = (lineArr[1][1] - lineArr[0][1])/100;
+			var x1 = lineArr[0][0];
+			var y1 = lineArr[0][1];
+			function timeFn() {
+				ctx.clearRect(0,0,600,400);
+				ctx.beginPath();
+				ctx.arc(lineArr[0][0],lineArr[0][1],10,0,2*Math.PI);
+				ctx.fillStyle = "#0000FF";
+				ctx.fill();
+				x1 += addX;
+				y1 += addY;
+				if (x1 < lineArr[1][0]) {
+					ctx.moveTo(lineArr[0][0],lineArr[0][1]);
+					ctx.lineTo(x1,y1);
+					ctx.strokeStyle = "#0000FF";
+					ctx.stroke();
+					setTimeout(timeFn,10);
+				}else{
+					ctx.moveTo(lineArr[0][0],lineArr[0][1]);
+					ctx.lineTo(lineArr[1][0],lineArr[1][1]);
+					ctx.strokeStyle = "#0000FF";
+					ctx.stroke();
+					ctx.beginPath();
+					ctx.arc(lineArr[1][0],lineArr[1][1],10,0,2*Math.PI);
+					ctx.fillStyle = "#0000FF";
+					ctx.fill();					
+				}
+			}
+		</script>
+	</body>
+</html>

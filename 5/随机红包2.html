@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				font-size: 20px;
+				line-height: 30px;
+				font-family: "黑体";
+			}
+			input{
+				height: 40px;
+				width: 100px;
+				margin: 8px;
+			}
+			#btn{
+				margin-top: 20px;
+			}
+			.left{
+				float: left;
+				margin: 50px;
+				text-align: center;
+			}
+			.rigth{
+				margin-top: 50px;
+				float: left;
+				height: 300px;
+				padding-left: 20px;
+				width: 180px;
+				border: 1px solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="left">
+			总金额:<input type="text" id="money" placeholder="输入总金额(元)" value="100"/><br/>
+			分几份:<input type="number" id="num" placeholder="分几份" value="10"/><br/>
+			最少钱:<input type="number" id="min" placeholder="最少钱" value="6"/><br/>
+			最多钱:<input type="number" id="max" placeholder="最多钱" value="16"/><br/>
+			<input type="button" id="btn" value="生成" />
+		</div>
+		<div class="rigth"></div>
+	</body>
+	
+	<script type="text/javascript">
+		
+		var btn = document.querySelector("#btn");
+		var main = document.querySelector(".rigth")
+		var money;
+		var fen;
+		var min;
+		var max;
+		var str;
+		btn.onclick = function () {
+			str = "";
+			money = Number(document.querySelector("#money").value * 100);
+			fen = Number(document.querySelector("#num").value);
+			min = Number(document.querySelector("#min").value * 100);
+			max = Number(document.querySelector("#max").value * 100);
+			if (max * fen >= money && min * fen <= money  && min >= 0 && max <= money) {
+				for (var i = 1 ;i < fen; i ++) {
+					suiji(i);
+				}
+				/*var i = 0;
+				var timeId = setInterval(function () {
+					i ++;
+					if (i == fen - 1) {
+						clearInterval(timeId);
+					}
+					console.log(i);
+					suiji(i);
+					
+				},100)*/
+			} else{
+				main.innerText = "输入最大/最小错误"
+				console.log("输入最大/最小错误");
+			}
+		}
+		
+		function suiji(num) {
+			for (var j = 1; j > 0;j ++) {
+				var moneyfen = parseInt(Math.random() * (max - min + 1) + min);
+				if ((money - moneyfen) >= (fen - num) * min && (money - moneyfen) <= (10 - num) * max) {
+					str += "第" + num + "位:" + moneyfen/100 + "元\n";
+					console.log("第" + num + "位:" + moneyfen/100 + "元");
+					money -= moneyfen;
+					if (num == fen - 1) {
+						str += "第" + fen + "位:" + money/100 + "元";
+						console.log("第" + fen + "位:" + money/100 + "元");
+						main.innerText = str;
+					}
+					return;
+				}
+			}
+		}
+		
+	</script>
+</html>

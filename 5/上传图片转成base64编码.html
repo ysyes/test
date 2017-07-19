@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--<input type="file" name="" id="file" value="" />
+		<button onclick="btn()">点击</button>-->
+
+		<img id="image" src="" />
+		<br/>
+		<input type="file" onchange="selectImage(this);" />
+		<br />
+		<input type="button" onclick="uploadImage();" value="提交" />
+
+		<script>
+			var image = '';
+			function selectImage(file) {
+				if(!file.files || !file.files[0]) {
+					return;
+				}
+				var reader = new FileReader();
+				reader.onload = function(evt) {
+					document.getElementById('image').src = evt.target.result;
+					image = evt.target.result;
+					console.log("图片的地址是：" + image);
+				}
+				reader.readAsDataURL(file.files[0]);
+			}
+
+//			function btn() {
+//				var fileImg = document.getElementsByTagName("input").value;
+//				console.log(fileImg)
+//			}
+		</script>
+	</body>
+
+</html>

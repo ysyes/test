@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<meta property="wb:webmaster" content="fb75019b7334fe4b" />-->
+		<title>同道伟业</title>
+		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=2668855799&debug=true" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<h1>测试</h1>
+		<!--<wb:login-button type="3,2" onlogin="login" onlogout="logout"></wb:login-button>-->
+		<!--<wb:share-button type="button" size="middle"></wb:share-button>-->
+		<div id="wb_connect_btn"></div>
+		<iframe width="30%" height="450" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=0&noborder=1&isWeibo=1&isFans=0&uid=2736814724&verifier=c29383ad&dpc=1"></iframe>
+		<script type="text/javascript">
+//			WB2.anyWhere(function(W) {
+//				W.parseCMD("/users/show.json", function(sResult, bStatus) {
+//					try {
+//						//to do something...
+//					} catch(e) {}
+//				}, {
+//					uid: '123456789'
+//				} {
+//					method: 'get'
+//				});
+//			});
+
+//			WB2.logout(function() {
+//				//callback function
+//			});
+
+			WB2.anyWhere(function(W) {
+				W.widget.connectButton({
+					id: "wb_connect_btn",
+					type: '1,1',
+					callback: {
+						login: function(o) { //登录后的回调函数
+							alert("login: " + o.screen_name)
+						},
+						logout: function() { //退出后的回调函数
+							alert('logout');
+						}
+					}
+				});
+			});
+			
+			
+//			function login(o) {
+//				alert(o.screen_name)
+//			}
+//
+//			function logout() {
+//				alert('logout');
+//			}
+		</script>
+
+	</body>
+
+</html>

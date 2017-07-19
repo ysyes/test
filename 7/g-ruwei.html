@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>国少入围</title>
+		<meta name="description" content="这是一个 index 页面">
+		<meta name="keywords" content="index">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" href="assets/css/amazeui.min.css" />
+		<link rel="stylesheet" href="assets/css/admin.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my.css" />
+		<link rel="stylesheet" href="css/leaguemanage.css" />
+		<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/china.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="assets/css/wqt.css" />
+		<style type="text/css">
+			.tab-nav>li{
+				width: 20%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="am-topbar am-topbar-inverse admin-header">
+			<div class="am-topbar-brand">
+				<strong><img src="i/logo3.png" alt="" /></strong> <small>中国青少年足球数据库</small>
+			</div>
+			<div class="am-collapse am-collapse1  am-topbar-collapse" id="topbar-collapse">
+				<a href="#" class="l-sy"></a>
+				<a href="#" class="l-link2"></a>
+				<a href="#" class="l-link3" target="_blank" style=" position: relative;
+    top: -9px;">您好，Admin</a>
+				<a href="#" class="l-link4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="am-cf admin-main">
+			<!-- sidebar start -->
+			<div class="admin-sidebar" id="admin-offcanvas">
+				<div class="am-offcanvas-bar admin-offcanvas-bar">
+					<ul class="am-list admin-sidebar-list" id="accordion">
+						<li class="admin-parent">
+							<a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="yulan.html"><span class="am-icon-file"></span><img
+									src="images/icon_ce_shuju.png"
+									alt=""/>数据管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+							<ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0" id="collapse-nav1">
+								<li class="nav-sub-item" id="collapse-nav1">
+									<a href="#collapse-sub-nav1" data-am-collapse="{parent: '#collapse-nav1'}" class="am-cf">
+										<span class="am-icon-check"></span> 档案管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+									</a>
+									<ul class="l-nav-3 navbar-thr paddingleft0 am-in" id="collapse-sub-nav1">
+										<li>
+											<a href="d-qiuyuan.html"><span>球员管理</span></a>
+										</li>
+										<li>
+											<a href="d-caipan.html"><span>裁判管理</span></a>
+										</li>
+										<li>
+											<a href="d-jiaolian.html"><span>教练管理</span></a>
+										</li>
+										<li>
+											<a href="d-julebu.html"><span>球队/俱乐部管理</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a href="leaguematches.html" class="am-cf"><span class="am-icon-puzzle-piece"></span> 联赛管理</a>
+								</li>
+								<li class="nav-sub-item">
+									<a href="videos.html" class="am-cf"><span class="am-icon-th"></span> 视频管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" data-am-collapse="{parent: '#accordion'}" href="#collapse-nav2"><span class="am-icon-table"></span><img
+									src="images/icon_ce_gongzuo.png"
+									alt=""/>工作管理</a>
+							<ul class="am-list am-collapse l-nav-2 admin-sidebar-sub paddingleft0 am-collapse" id="collapse-nav2">
+								<li class="nav-sub-item" id="collapse-nav2">
+									<a href="#collapse-sub-nav2" data-am-collapse="{parent: '#collapse-nav2'}" class="am-cf">
+										<span class="am-icon-check"></span> 流程管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span>
+									</a>
+									<ul class="l-nav-3 navbar-thr paddingleft0 am-collapse" id="collapse-sub-nav2">
+										<li>
+											<a href="lc-baom2.html"><span>球队报名</span></a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a href="#" class="am-cf"><span class="am-icon-puzzle-piece"></span> 信息管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="###"><span class="am-icon-table"></span><img
+									src="images/icon_ce_xitong.png"
+									alt=""/>系统管理</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf active" href="g-ruwei.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_guo.png"
+									alt=""/>国少</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_guo.png"
+									alt=""/>国青</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="g-ruwei.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_guo.png"
+									alt=""/>国奥</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" href="inform.html"><span class="am-icon-table"></span><img
+									src="images/icon_ce_tongzhi.png"
+									alt=""/>通知</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- sidebar end -->
+
+			<!-- content start -->
+			<div class="admin-content">
+				<div class="admin-content-body">
+					<div class="info-content">
+						<div class="tab-container">
+							<ul class="tab-nav tab-before-line">
+								
+								<li class="active">
+									<a href="g-ruwei.html">入围名单及个人信息</a>
+								</li>
+								<li>
+									<a href="guoshao.html">教练组信息</a>
+								</li>
+								<li>
+									<a href="g-lishi.html">历史比赛数据</a>
+								</li>
+								<li>
+									<a href="g-saicheng.html">赛程</a>
+								</li>
+								<li>
+									<a href="g-tongdao.html">同道比赛分析报告</a>
+								</li>
+							</ul>
+							<div class="tab-con">
+								<!--培训-->
+								<div class="train-con">
+									<div class="table-container">
+										<table class="table table-default table-striped text-center table-thead-center">
+											<thead>
+												<tr>
+													<th>编号 </th>
+													<th>姓名</th>
+													<th>年龄</th>
+													<th>俱乐部</th>
+													<th>位置</th>
+													<th>同道指数</th>
+													<th>射门</th>
+													<th>技巧</th>
+													<th>防守</th>
+													<th>身体机能</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>000001</td>
+													<td>麦高崚</td>
+													<td>19</td>
+													<td>广州恒大</td>
+								
+													<td style="color: #bd6e4d;">前锋</td>
+													<td style="color: #bd6e4d;">85</td>
+													<td>76</td>
+													<td>76</td>
+													<td>79</td>
+													<td>84</td>
+												</tr>
+												<tr>
+													<td>000002</td>
+													<td>祝福</td>
+													<td>18</td>
+													<td>广州恒大</td>
+													
+													<td style="color: #bd6e4d;">前锋</td>
+													<td style="color: #bd6e4d;">83</td>
+													<td>69</td>
+													<td>73</td>
+													<td>78</td>
+													<td>82</td>
+												</tr>
+												<tr>
+													<td>000003</td>
+													<td>吴越</td>
+													<td>17</td>
+													<td>广州恒大</td>
+													
+													<td style="color: #bd6e4d;">中场</td>
+													<td style="color: #bd6e4d;">82</td>
+													<td>73</td>
+													<td>69</td>
+													<td>80</td>
+													<td>83</td>
+												</tr>
+												<tr>
+													<td>000004</td>
+													<td>黄志远</td>
+													<td>18</td>
+													<td>广州恒大</td>
+													
+													<td style="color: #bd6e4d;">中场</td>
+													<td style="color: #bd6e4d;">81</td>
+													<td>69</td>
+													<td>77</td>
+													<td>68</td>
+													<td>82</td>
+												</tr>
+												<tr>
+													<td>000005</td>
+													<td>陈晓阳</td>
+													<td>16</td>
+													<td>广州恒大</td>
+													<td style="color: #bd6e4d;">后卫</td>
+													<td style="color: #bd6e4d;">80</td>
+													<td>67</td>
+													<td>76</td>
+													<td>73</td>
+													<td>81</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

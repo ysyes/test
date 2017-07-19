@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			section{
+				margin: 50px;
+				width: 200px;
+				height: 100px;
+				background: green;
+				border: 1px solid;
+			}
+			section p{
+				width: 30%;
+				height: 30%;
+				background: greenyellow;
+				margin-top:30%;/*margin百分比是按照宽度*/
+			}
+			
+			.box{
+				height: 400px;
+				width: 400px;
+				background: red;
+				_background: blue;
+				border: 100px solid transparent;/*透明色*/
+				box-sizing: border-box;/*盒子边框不占宽度*/
+				/*box-sizing: content-box;*//*默认:占宽度*/
+				
+			}
+			.box p{
+				margin-top: 50px;
+				height: 100px;
+				width: 100px;
+				background: green;
+			}
+			.box1{
+				width: 200px;
+				height: 200px;
+				border: 1px solid;
+			}
+			.box1 h1{
+				height: 50px;
+				width: 150px;
+				margin: 5px;
+				background: paleturquoise;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<p></p>
+		</section>
+		<div class="box">
+			<p></p>
+		</div>
+		<div class="box1">
+			<h1>自带的</h1>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var div = document.querySelector(".box1");
+		var h = document.querySelector("h1");
+		var h1 = document.createElement("h1");
+		h1.innerHTML = "新建的h1";
+		//div后面加入h1
+		//div.appendChild(h1);
+		//在h前插入h1;
+		//div.insertBefore(h1,h)
+		//把h替换成h1;
+		//div.replaceChild(h1,h)
+		//将克隆的元素添加到div中，true包括内容，false只复制节点
+		//div.appendChild(h.cloneNode(false));
+		//删除父集节点下的h
+		//div.removeChild(h)
+	</script>
+</html>

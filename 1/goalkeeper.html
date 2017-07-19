@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>球员信息</title>
+		<link rel="stylesheet" type="text/css" href="css/goalkeeper.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<a href=""><img src="img/arrow.png"/></a>
+			<span><!--武磊个人数据--></span>
+		</div>
+		<div class="personal">
+			<img src="img/wulei2.png"/>
+			<div class="personal_right">
+				<h2><!--武磊--></h2>
+				<div class="personal_main">
+					<!--<ul>
+						<li>位置 : 门将</li>
+						<li>身高 : 172cm</li>
+						<li>国籍 : 中国</li>
+						<li>俱乐部 : 上海上港</li>
+					</ul>
+					<ul>
+						<li>年龄 : 24岁</li>
+						<li>体重 : 62kg</li>
+					</ul>-->
+				</div>
+			</div>
+		</div>
+		<div class="times">
+			世预赛已出场时间 : <span><!--275--></span>分钟
+		</div>
+		<h2 class="jg_tit">门将数据</h2>
+		<div class="jg_main">
+			<ul class="jg_lef">
+				<!--<li>扑救 ： 24次</li>
+				<li class="bac_gray">失球 ： 2次</li>
+				<li> 零封 ： 270分钟</li>
+				<li class="bac_gray"></li>-->
+			</ul>
+			<ul class="jg_rig">
+				<!--<li>传球 ： 8次</li>
+				<li class="bac_gray">黄牌 ： 1张</li>
+				<li>红牌 ： 0张</li>
+				<li class="bac_gray"></li>-->
+			</ul>
+		</div>
+		
+		<script type="text/javascript">
+			function rem() {
+				var html = document.getElementsByTagName("html")[0];
+				html.style.fontSize = window.innerWidth/10.8 + "px";
+			}
+			rem();
+			window.onresize = function () {
+				rem();
+			}
+		</script>
+		<!--<script type="text/javascript" src="lib/flexible.js"></script>-->
+		<script type="text/javascript" src="lib/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="js/goalkeeper.js"></script>
+		
+	</body>
+		
+</html>

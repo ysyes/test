@@ -1,0 +1,90 @@
+div.show{
+    position:relative;
+}
+div.add{
+    overflow: hidden;
+    padding:10px 0;
+}
+div.show{
+	margin-top:0;
+}
+div.add button{
+    width:130px;
+    float:right;
+    height:40px;
+    background:#0055a1;
+    font:16px/40px '微软雅黑';
+    color:#fff;
+    outline: none;
+    border:0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+ul.title li:last-child{
+    width:calc(100% - 110px);
+}
+ul.title input.name{
+    width:120px;
+}
+ul.title li i{
+    display: inline-block;
+    width:26px;
+    height:26px;
+    background-image:url('../../img/search.png');
+    background-color:#0055a1;
+    background-repeat:no-repeat;
+    border-top-right-radius: 3px;
+    background-position: center;
+    border-bottom-right-radius: 3px;
+    margin-bottom:-8px;
+}
+div.content table.table1 tbody td{
+    height:52px;
+    padding:0 20px;
+    text-align: center;
+}
+div.content table.table1 tr th{
+    padding:0 20px;
+    box-sizing: border-box;
+    height:38px;
+    line-height:38px;
+}
+div.content .table1 tbody td{
+    font-size: 16px;
+}
+div.content table.table1 tr th:first-child{
+    text-align: left;
+}
+div.content table.table1 tbody tr td:last-child a{
+    display: inline-block;
+    text-align: center;
+    line-height: 22px;
+    width:39px;
+    height:22px;
+    border:1px solid #0055a1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+div.content table.table1 tbody tr td:first-child{
+    color:#333;
+    text-align: left;
+
+}
+div.content table.table1 td a{
+    font-size: 16px;
+    color:#0055a1;
+    text-decoration: none;
+    cursor: pointer;
+}
+div.content table.table1 td:last-child a.able{
+    color:#0055a1;
+    border-color:#0055a1;
+}
+div.content table.table1 td:last-child a.disable{
+    color: rgba(255, 0, 0, 0.52);
+    border-color: rgba(255, 0, 0, 0.52);
+}

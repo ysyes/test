@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			h1{
+				font-size: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>第一页</li>
+			<li>第二页</li>
+			<li>第三页</li>
+		</ul>
+		<div id="box">
+			
+		</div>
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript">
+			$("ul li").click(function () {
+				var idx = $("ul li").index($(this));
+				$("#box").load(idx + 1 +".html");
+			})
+		</script>
+	</body>
+</html>

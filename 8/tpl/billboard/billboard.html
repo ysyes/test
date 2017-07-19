@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <style>
+        #box .chooseName{
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #E3442A;
+            margin-top: 10px;
+        }
+        #box .chooseName li{
+            cursor: pointer;
+            float: left;
+            width: 100px;
+            height: 50px;
+            border: 1px solid #E3442A;
+            border-bottom: none;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #E3442A;
+            text-align: center;
+            line-height: 50px;
+            border-left:0;
+        }
+        #box .chooseName li:first-child{
+            border-left:1px solid #E3442A;
+        }
+        #box .chooseName li.checked{
+            background: #E3442A;
+            color: white;
+        }
+        #box .header div{
+            float: right;
+            margin-right: 10px;
+        }
+        #box .header div.search{
+            margin-top:13px;
+        }
+        #box .header a{
+            float: right;
+        }
+        #box .header select,#import select{
+            padding-right: 26px;
+            width:145px;
+            height:26px;
+            padding-left:10px;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            background: url(../../img/xiala_s.png) no-repeat right;
+            margin-right: 10px;
+            border:1px solid #E3442A;
+            outline:none;
+            border-right: 0;
+            color: #333;
+            font-family: "Microsoft Yahei";
+        }
+        div.content>div{
+            display: none;
+        }
+        div.content div>table thead th{
+            background: #fff;
+            color:#e3442a;
+            border-bottom:1px solid #ccc;
+        }
+        div.content div>table td img{
+            height:40px;
+        }
+        div#scoreboard tbody td:nth-child(2),div#shooter tbody td:nth-child(2),div#shooter tbody td:nth-child(3),div#assistboard tbody td:nth-child(2),div#assists tbody td:nth-child(2),div#assists tbody td:nth-child(3),div#host tbody td:nth-child(2),div#client tbody td:nth-child(2){
+            text-align: left;
+        }
+        div#scoreboard tbody td:nth-child(2) span,div#shooter tbody td:nth-child(2) span,div#shooter tbody td:nth-child(3) span,div#assistboard tbody td:nth-child(2) span,div#assists tbody td:nth-child(2) span,div#assists tbody td:nth-child(3) span,div#host tbody td:nth-child(2) span,div#client tbody td:nth-child(2) span{
+            display: inline-block;
+            margin-bottom:10px;
+            margin-left:5px;
+        }
+        #import,#importConfirm{
+            position: fixed;
+            left:0;
+            top:0;
+            right:0;
+            bottom:0;
+            background:rgba(0,0,0,0.06);
+            z-index: 999;
+            display:none;
+        }
+        #import .import,#importConfirm .importConfirm{
+            width:410px;
+            height:290px;
+            background: #fff;
+            /*padding:10px 15px;*/
+            position: fixed;
+            left:50%;
+            top:50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 6px 1px #ddd;
+        }
+        #importConfirm .importConfirm{
+            width: 360px;
+        }
+        #import p.title,#importConfirm p.title{
+            line-height: 40px;
+            text-align: center;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        #import div.file,#importConfirm div.file{
+            height:200px;
+            padding:34px;
+        }
+        #importConfirm div.file p{
+            line-height: 34px;
+            width: 100%;
+		    height: 34px;
+		    overflow: hidden;
+        }
+        #importConfirm div.file p.text{
+            color:#e3442a;
+        }
+        #importConfirm div.file p.text span{
+            border-bottom: 1px solid #e3442a;
+        }
+        #import select{
+            background-image: url(../../img/xiala.png);
+            height:40px;
+            width:157px;
+        }
+        #import div.button,#importConfirm div.button{
+            width:100%;
+        }
+        #import div.button button,#importConfirm div.button button{
+            width: 50%;
+            float: left;
+            border-top:1px solid #e6e6e6;
+            height:50px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        #import .excel{
+            width: 330px;
+            height: 40px;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            margin-top:40px;
+        }
+        #import .excel span{
+            float: left;
+            color: #CCCCCC;
+            font-size: 14px;
+            display: inline-block;
+            line-height: 40px;
+            height: 40px;
+            width: 250px;
+            border: 1px solid #E3442A;
+            box-sizing: border-box;
+            padding-left: 5px;
+        }
+        #import .excel a{
+            float: left;
+            display:block;
+            background: #E3442A;
+            height: 40px;
+            width: 80px;
+            color: white;
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+        }
+        #import .excel input{
+            position: absolute;
+            font-size: 100px;
+            right: 0;
+            top: 0;
+            opacity: 0;
+        }
+        /*删除确认框*/
+        div.confirmModule{
+            position: absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            z-index: 999;
+        }
+        div.confirm{
+            width:270px;
+            height:160px;
+            border:1px solid #ddd;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            z-index: 999;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 6px 0 rgba(0,0,0,0.2);
+            background: #fff;
+        }
+        div.confirm p{
+            height:110px;
+            line-height: 110px;
+            text-align: center;
+            color:#292929;
+        }
+        div.confirm button{
+            width:50%;
+            border:0;
+            border-top:1px solid #e6e6e6;
+            line-height: 50px;
+            font-size: 16px;
+            padding: 0;
+            box-sizing: border-box;
+            background:transparent;
+            outline:none;
+            cursor: pointer;
+        }
+        div.confirm button.gray{
+            color:#292929;
+            border-right:1px solid #e6e6e6;
+        }
+        div.confirm button.red{
+            color:#c62f17;
+        }
+        #box table tbody tr td:nth-child(3) img{
+            width: 35px;
+            height: 35px;
+            border-radius: 18px;
+            border: 1px solid #EDEDED;
+            margin:0 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div class="header">
+        <div class="admin"><img src="../../img/icon_bangdan_red.png" alt=""/><span>榜单</span></div>
+        <a href="addScoreboard.html">
+            <div class="addBtn"><b>+</b><span>新增数据</span></div>
+        </a>
+        <div class="addBtn"><img src="../../img/icon_daoru.png" alt=""/><span>导入数据</span></div>
+        <div class="search">
+            <select class="leagueyear" name="leagueyear">
+                <option value="2016">2016赛季</option>
+                <option value="2017">2017赛季</option>
+                <option value="2018">2018赛季</option>
+                <option value="2019">2019赛季</option>
+                <option value="2020">2020赛季</option>
+                <option value="2021">2021赛季</option>
+                <option value="2022">2022赛季</option>
+                <option value="2023">2023赛季</option>
+                <option value="2024">2024赛季</option>
+                <option value="2025">2025赛季</option>
+                <option value="2026">2026赛季</option>
+            </select>
+            <select class="league" name="leagueid">
+            </select>
+        </div>
+    </div>
+    <ul class="chooseName">
+        <li class="checked">积分榜</li>
+        <li>射手榜</li>
+        <li>球员助攻榜</li>
+        <li>球队助攻榜</li>
+        <li>主队积分榜</li>
+        <li>客队积分榜</li>
+    </ul>
+    <div class="content">
+        <div style="display:block;" id="scoreboard">
+            <table>
+                <thead>
+                <tr>
+                    <th>排名</th>
+                    <th>球队</th>
+                    <th>场次</th>
+                    <th>胜/平/负</th>
+                    <th>进/失/净</th>
+                    <th>积分</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!--<tr>-->
+                    <!--<td>1</td>-->
+                    <!--<td><img src="" alt=""/>广州恒大淘宝</td>-->
+                    <!--<td>29</td>-->
+                    <!--<td>21/5/3</td>-->
+                    <!--<td>56/21/35</td>-->
+                    <!--<td>71</td>-->
+                    <!--<td><span>删除</span><span><a href="">编辑</a></span></td>-->
+                <!--</tr>-->
+                </tbody>
+            </table>
+        </div>
+        <div id='shooter'>
+            <table>
+                <thead>
+                <tr>
+                    <th>排名</th>
+                    <th>球队</th>
+                    <th>球员</th>
+                    <th>进球时间</th>
+                    <th>出场时间</th>
+                    <th>进球</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!--<tr>-->
+                    <!--<td>1</td>-->
+                    <!--<td><img src="" alt=""/>广州恒大淘宝</td>-->
+                    <!--<td><img src="" alt=""/>埃尔克森克森</td>-->
+                    <!--<td>100.22</td>-->
+                    <!--<td>2400</td>-->
+                    <!--<td>22</td>-->
+                    <!--<td><span>删除</span><span><a href="">编辑</a></span></td>-->
+                <!--</tr>-->
+                </tbody>
+            </table>
+        </div>
+        <div id="assists">
+            <table>
+                <thead>
+                <tr>
+                    <th>排名</th>
+                    <th>球队</th>
+                    <th>球员</th>
+                    <th>助攻</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!--<tr>-->
+                    <!--<td>1</td>-->
+                    <!--<td><img src="" alt=""/>广州恒大淘宝</td>-->
+                    <!--<td><img src="" alt=""/>埃尔克森克森</td>-->
+                    <!--<td>29</td>-->
+                    <!--<td><span>删除</span><span><a href="">编辑</a></span></td>-->
+                <!--</tr>-->
+                </tbody>
+            </table>
+        </div>
+        <div id="assistboard">
+            <table>
+                <thead>
+                <tr>
+                    <th>排名</th>
+                    <th>球队</th>
+                    <th>助攻</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="" alt=""/>广州恒大淘宝</td>
+                    <td>29</td>
+                    <td><span>删除</span><span><a href="">编辑</a></span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id='host'>
+        	<table>
+                <thead>
+                <tr>
+                    <th>排名</th>
+                    <th>球队</th>
+                    <th>场次</th>
+                    <th>胜/平/负</th>
+                    <th>进/失/净</th>
+                    <th>积分</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!--<tr>-->
+                    <!--<td>1</td>-->
+                    <!--<td><img src="" alt=""/>广州恒大淘宝</td>-->
+                    <!--<td>29</td>-->
+                    <!--<td>21/5/3</td>-->
+                    <!--<td>56/21/35</td>-->
+                    <!--<td>71</td>-->
+                    <!--<td><span>删除</span><span><a href="">编辑</a></span></td>-->
+                <!--</tr>-->
+                </tbody>
+            </table>
+        </div>
+        <div id='client'>
+        	<table>
+                <thead>
+                <tr>
+                    <th>排名</th>
+                    <th>球队</th>
+                    <th>场次</th>
+                    <th>胜/平/负</th>
+                    <th>进/失/净</th>
+                    <th>积分</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!--<tr>-->
+                    <!--<td>1</td>-->
+                    <!--<td><img src="" alt=""/>广州恒大淘宝</td>-->
+                    <!--<td>29</td>-->
+                    <!--<td>21/5/3</td>-->
+                    <!--<td>56/21/35</td>-->
+                    <!--<td>71</td>-->
+                    <!--<td><span>删除</span><span><a href="">编辑</a></span></td>-->
+                <!--</tr>-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="import">
+    <div class="import">
+        <p class="title">导入数据</p>
+        <div class="file">
+            <select class="leagueyear" name="leagueyear">
+                <option value="2016">2016赛季</option>
+                <option value="2017">2017赛季</option>
+                <option value="2018">2018赛季</option>
+                <option value="2019">2019赛季</option>
+                <option value="2020">2020赛季</option>
+                <option value="2021">2021赛季</option>
+                <option value="2022">2022赛季</option>
+                <option value="2023">2023赛季</option>
+                <option value="2024">2024赛季</option>
+                <option value="2025">2025赛季</option>
+                <option value="2026">2026赛季</option>
+            </select>
+            <select class="leagueid" name="leagueid">
+            </select>
+            <div class="excel">
+                <span>上传EXCEL文件</span>
+                <a href="javascript:;">上传</a>
+                <input type="file" name="" value="" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel"/>
+            </div>
+        </div>
+        <div class="button">
+            <button class="gray">取消</button>
+            <button class="red">确认</button>
+        </div>
+    </div>
+</div>
+<div id="importConfirm">
+    <div class="importConfirm">
+        <p class="title">确认导入</p>
+        <div class="file">
+            <p class="leagueyear">2016赛季</p>
+            <p class="league">中超联赛</p>
+            <p class="filename">2016中超联赛积分榜.excel</p>
+            <p class="text">确认要将此数据导入到<span >积分榜</span>里吗？</p>
+        </div>
+        <div class="button">
+            <button class="gray">取消</button>
+            <button class="red">确认</button>
+        </div>
+    </div>
+</div>
+<div class="confirmModule" style='display:none;'>
+    <div class="confirm">
+        <p>确定删除吗？</p>
+        <button class="gray">取消</button><button class="red">确定</button>
+    </div>
+</div>
+<script src="../../lib/jquery-2.2.3.min.js"></script>
+<script src="billboard.js"></script>
+</body>
+</html>

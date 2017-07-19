@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>球员信息</title>
+		<link rel="stylesheet" href="lib/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/player.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<a href=""><img src="img/arrow.png"/></a>
+			<span><!--武磊个人数据--></span>
+		</div>
+		<div class="personal">
+			<img src=""/>
+			<div class="personal_right">
+				<h2><!--武磊--></h2>
+				<div class="personal_main">
+					<!--<ul>
+						<li>位置 : 前锋</li>
+						<li>身高 : 172cm</li>
+						<li>国籍 : 中国</li>
+						<li>俱乐部 : 上海上港</li>
+					</ul>
+					<ul>
+						<li>年龄 : 24岁</li>
+						<li>体重 : 62kg</li>
+					</ul>-->
+				</div>
+			</div>
+		</div>
+		<div class="times">
+			世预赛已出场时间 : <span><!--275--></span>分钟
+		</div>
+		
+		<div class="swiper-container">
+			
+			<div class="contol">
+				<div class="swiper-button-prev">进攻</div>
+        		<div class="swiper-button-next">防守</div>
+			</div>
+			
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<h2 class="jg_tit">进攻数据</h2>
+					<div class="jg_main">
+						<ul class="jg_lef">
+							<!--<li>进球 ： 8球</li>
+							<li class="bac_gray">射门 ： 22脚</li>
+							<li> 射正 ： 12脚</li>
+							<li class="bac_gray">助攻 ： 5次</li>-->
+						</ul>
+						<ul class="jg_rig">
+							<!--<li>威胁球 ： 8球</li>
+							<li class="bac_gray">传球数 ： 22次</li>
+							<li>突破数 ： 12次</li>
+							<li class="bac_gray">被侵犯 ： 11次</li>-->
+						</ul>
+					</div>
+				</div>
+				
+				
+				<div class="swiper-slide">
+					<h2 class="fs_tit">防守数据</h2>
+					<div class="fs_main">
+						<ul class="fs_lef">
+							<!--<li>抢断 ： 8次</li>
+							<li class="bac_gray">解围 ： 5次</li>
+							<li>封堵 ： 2次</li>
+							<li class="bac_gray">拦截 ： 2次</li>-->
+						</ul>
+						<ul class="fs_rig">
+							<!--<li>犯规 ： 5次</li>
+							<li class="bac_gray">黄牌 ： 2张</li>
+							<li>红牌 ： 0张</li>
+							<li class="bac_gray">空中球抢断 ： 1次</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		<script type="text/javascript" src="lib/swiper.min.js" ></script>
+		<script type="text/javascript">
+			function rem() {
+				var html = document.getElementsByTagName("html")[0];
+				html.style.fontSize = window.innerWidth/10.8 + "px";
+			}
+			rem();
+			window.onresize = function () {
+				rem();
+			}
+			
+			 var swiper = new Swiper('.swiper-container', {
+		        effect: 'flip',
+		        grabCursor: true,
+		        nextButton: '.swiper-button-next',
+        		prevButton: '.swiper-button-prev'
+		    });
+		</script>
+		<!--<script type="text/javascript" src="lib/flexible.js"></script>-->
+		
+		<script type="text/javascript" src="lib/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="js/player.js"></script>
+	</body>
+	
+</html>
