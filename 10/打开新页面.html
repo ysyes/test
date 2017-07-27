@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<span>点击</span>
+		<script type="text/javascript" src="lib/jquery-2.2.3.min.js" ></script>
+		<script>
+			$("span").click(function () {
+				//不行
+				/*var openLink = $(" ");
+				openLink.attr('href', 'http://www.baidu.com');
+				openLink[0].click();*/
+				//可以
+				/*var a = $("<a href='http://www.baidu.com' target='_blank' >test</a>").get(0);
+				var e = document.createEvent('MouseEvents');
+				e.initEvent('click', true, true);
+				a.dispatchEvent(e);*/
+				
+				
+				window.open("http://www.baidu.com");
+			})			
+		</script>
+	</body>
+</html>
