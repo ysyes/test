@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		
+		<a target="_blank" href="https://tdvideo.oss-cn-beijing.aliyuncs.com/2017/1/4561/18_1501786938292_6153_16_1247.mp4" download="1.mp4">点击下载</a>
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<script>
+			function downloadFn(src) {
+			    var a = $("<a></a>").attr("href", src).attr("download", "").appendTo("body");
+			    a[0].click();
+			    a.remove();
+			}
+			//downloadFn("https://tdvideo.oss-cn-beijing.aliyuncs.com/2017/1/4561/18_1501786938292_6153_16_1247.mp4")
+		</script>
+	</body>
+
+</html>

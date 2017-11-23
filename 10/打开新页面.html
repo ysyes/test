@@ -5,9 +5,12 @@
 		<title></title>
 	</head>
 	<body>
-		<span>点击</span>
+		<a><span>点击</span></a>
+		
 		<script type="text/javascript" src="lib/jquery-2.2.3.min.js" ></script>
 		<script>
+			var urlarr =  ["index.html","new_file.html","index.html"];
+			var i = 0;
 			$("span").click(function () {
 				//不行
 				/*var openLink = $(" ");
@@ -20,8 +23,18 @@
 				a.dispatchEvent(e);*/
 				
 				
-				window.open("http://www.baidu.com");
-			})			
+				//window.open("http://www.baidu.com");
+				$("a").attr("href","index.html");
+				$("a").attr("download","");
+			})
+			$("a").click(function () {
+				i ++;
+				if (i < 3) {
+					$(this).attr("href",urlarr[i]);
+					$(this).attr("download",urlarr[i]);
+					$("span").click();
+				}				
+			})
 		</script>
 	</body>
 </html>
