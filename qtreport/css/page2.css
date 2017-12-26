@@ -1,0 +1,66 @@
+#box .container{
+    margin: 0 32px;
+}
+#box .container p.title{
+    font-size: 14px;
+    color: #252525;
+    margin:34px 0 6px;
+}
+#box table{
+    width: 100%;
+}
+#box table th{
+    height:40px;
+    background: #ffe100;
+    font-size: 10px;
+    color:#252525;
+    font-weight: normal;
+    border-top:3px solid #000;
+    border-bottom:1px solid #000;
+}
+#box table td{
+    font-size: 10px;
+    color: #252525;
+    height:28px;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom:1px solid #000;
+}
+#box table tr:nth-child(even) td{
+    background: #f4f2f0;
+}
+#box table.current td{
+    width: 11.11%;
+    border-right:1px solid #000;
+}
+#box table.current tr td:last-child{
+    border-right: 0;
+}
+#box table.current tr:nth-child(even) td{
+    background: #fff;
+    height:28px;
+}
+#box table.current tr:nth-child(odd) td{
+    background: #ffe100;
+    height: 34px;
+}
+#box table.current tr:first-child td{
+    border-top:3px solid #000;
+}
+#box .evaluate{
+    border-top:3px solid #000;
+    background: #f4f2f0;
+    padding:20px 24px;
+}
+#box .evaluate p{
+    font-size: 12px;
+    line-height: 12px;
+    color: #252525;
+    margin-bottom:16px;
+}
+#box .evaluate p:last-child{
+    margin: 0 ;
+}
+#box .evaluate p.gray{
+    color: #888;
+}

@@ -1,0 +1,144 @@
+#main .table{
+	padding-top: 23px;
+}
+#main .table h3{
+	height: 26px;
+	line-height: 26px;
+	font-size: 14px;
+	font-weight: normal;
+}
+#main .table ul{
+	height: 62px;
+	border: 1px solid #000000;
+	border-right: none;
+}
+#main .table ul.name{
+	border-bottom: none;
+}
+#main .table ul li{
+	float: left;
+	width: 25%;
+	height: 61px;
+	border-right: 1px solid #000000;
+	line-height: 61px;
+	font-size: 10px;
+	text-align: center;
+	position: relative;
+}
+#main .table ul li p.title{
+	float: left;
+	width: 40%;
+}
+#main .table ul li p.titles{
+	float: left;
+	width: 60%;
+}
+#main .table ul.name li p.titles{
+	height: 60%;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	border-left: 1px solid #000000;
+	border-top: 1px solid #000000;
+	background: #FFE100;
+	padding: 7px 0;
+	line-height: 12px;
+}
+#main .table ul.value li p.titles{
+	border-left: 1px solid #000000;
+}
+
+#main .mainbox{
+	margin-top: 10px;
+}
+#main .mainbox>li{
+	height: 166px;
+	margin-bottom: 4px;
+}
+#main .mainbox .main{
+	float: left;
+	height: 166px;
+	width: 263px;
+	background: #F4F2F0;
+	border-top: 3px solid #000000;
+	position: relative;
+}
+#main .mainbox li .main:last-child{
+	float: right;
+}
+#main .mainbox .main ul li{
+	float: left;
+	padding-top: 8px;
+	font-size: 10px;
+	line-height: 14px;
+}
+#main .mainbox .main ul li:nth-child(1){
+	width: 73px;
+	padding-top: 6px;
+	padding-left: 8px;
+	font-size: 12px;
+}
+#main .mainbox .main ul li:nth-child(2){
+	width: 140px;
+}
+#main .mainbox .main ul li:nth-child(3){
+	width: 50px;
+}
+#main .mainbox .main .chart{
+	width: 100%;
+	height: 110px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#main .mainbox .main .chart div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#main .mainbox .main .chart div.title{
+	height: 12px;
+	line-height: 12px;
+	font-size: 12px;
+	top: 5px;
+	padding: 0 10px;
+}
+#main .mainbox .main .chart div.title p:nth-child(1){
+	float: left;
+}
+#main .mainbox .main .chart div.title p:nth-child(1) span{
+	display: block;
+	float: left;
+	height: 9px;
+	width: 9px;
+	margin: 1px 3px;
+	border: 1px solid #000000;
+}
+#main .mainbox .main .chart div.title p:nth-child(2){
+	float: right;
+}
+#main .mainbox .main .chart div.title p:nth-child(2) span{
+	display: block;
+	float: right;
+	height: 9px;
+	width: 9px;
+	margin: 1px 3px;
+	background: url(../img/page1/page1_icon_arrow.png) no-repeat;
+	background-size:cover ;
+}
+#main .remarks{
+	height: 160px;
+	background: #F4F2F0;
+	padding: 0 20px;
+}
+#main .remarks h3{
+	font-size: 10px;
+	line-height: 26px;
+	padding-top: 12px;
+}
+#main .remarks p{
+	font-size: 8px;
+	line-height: 16px;
+}
