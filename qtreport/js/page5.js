@@ -39,11 +39,12 @@ var first={
                     fontWeight:'normal',
                     fontSize:'7px',
                     textOutline: "0px 0px contrast",
-                    lineHeight:'7px',
+                    lineHeight:'7px'
                 },
                 format:"{point.percentage:.1f}%<br>({y})"
             },
-            showInLegend: true
+            showInLegend: true,
+            animation:false
         }
     },
     series: [{
@@ -108,7 +109,8 @@ var two={
                 },
                 format:"{point.percentage:.1f}%<br>({y})"
             },
-            showInLegend: true
+            showInLegend: true,
+            animation:false
         }
     },
     series: [{
@@ -173,7 +175,8 @@ var three={
                 },
                 format:"{point.percentage:.1f}%<br>({y})"
             },
-            showInLegend: true
+            showInLegend: true,
+            animation:false
         }
     },
     series: [{
@@ -234,7 +237,8 @@ var five={
                 },
                 format:"{point.percentage:.1f}%<br>({y})"
             },
-            showInLegend: true
+            showInLegend: true,
+            animation:false
         }
     },
     series: [{
@@ -295,7 +299,8 @@ var six={
                 },
                 format:"{point.percentage:.1f}%<br>({y})"
             },
-            showInLegend: true
+            showInLegend: true,
+            animation:false
         }
     },
     series: [{
@@ -391,7 +396,8 @@ var four={
                 padding:2,
                 allowOverlap:false
             },
-            maxPointWidth:34
+            maxPointWidth:34,
+            animation:false
         }
     },
     series: [ {

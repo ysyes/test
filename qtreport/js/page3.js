@@ -43,7 +43,8 @@ var first={
                 },
                 format:"{point.percentage:.1f}%<br>({y})"
             },
-            showInLegend: true
+            showInLegend: true,
+            animation:false
         }
     },
     series: [{
@@ -104,7 +105,8 @@ var two={
                 },
                 format:"{point.percentage:.1f}%<br>({y})"
             },
-            showInLegend: true
+            showInLegend: true,
+            animation:false
         }
     },
     series: [{
@@ -167,7 +169,8 @@ var three={
                 },
                 format:"{point.percentage:.1f}%<br>({y})"
             },
-            showInLegend: true
+            showInLegend: true,
+            animation:false
         }
     },
     series: [{
@@ -231,7 +234,8 @@ var four={
                 },
                 format:"{point.percentage:.1f}%<br>({y})"
             },
-            showInLegend: true
+            showInLegend: true,
+            animation:false
         }
     },
     series: [{
@@ -294,7 +298,8 @@ var six={
                 },
                 format:"{point.percentage:.1f}%<br>({y})"
             },
-            showInLegend: true
+            showInLegend: true,
+            animation:false
         }
     },
     series: [{
@@ -390,7 +395,8 @@ var five={
                 padding:2,
                 allowOverlap:false
             },
-            maxPointWidth:34
+            maxPointWidth:34,
+            animation:false
         }
     },
     series: [ {

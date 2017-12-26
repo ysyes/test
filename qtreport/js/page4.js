@@ -43,7 +43,8 @@ var first={
                 },
                 format:"{point.percentage:.1f}%<br>({y})"
             },
-            showInLegend: true
+            showInLegend: true,
+            animation:false
         }
     },
     series: [{
@@ -121,6 +122,12 @@ var two={
         enabled:false
     },
     plotOptions: {
+        column:{
+            animation:false
+        },
+        line:{
+            animation:false
+        }
     },
     series: [{
         type: 'column',
@@ -226,6 +233,12 @@ var three={
         enabled:false
     },
     plotOptions: {
+        column:{
+            animation:false
+        },
+        line:{
+            animation:false
+        }
     },
     series: [{
         type: 'column',
@@ -314,7 +327,8 @@ var four={
                 },
                 format:"{point.percentage:.1f}%<br>({y})"
             },
-            showInLegend: true
+            showInLegend: true,
+            animation:false
         }
     },
     series: [{
@@ -414,7 +428,8 @@ var six={
                 padding:2,
                 allowOverlap:false
             },
-            maxPointWidth:34
+            maxPointWidth:34,
+            animation:false
         }
     },
     series: [ {
@@ -509,7 +524,8 @@ var five={
                 padding:2,
                 allowOverlap:false
             },
-            maxPointWidth:34
+            maxPointWidth:34,
+            animation:false
         }
     },
     series: [ {
