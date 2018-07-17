@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p{
+				margin-top: 300px;
+				border: 1px solid;
+				height: 30px;
+				width: 200px;
+				line-height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" name="" id="" value="" />
+		<p></p>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			$('input').bind('input propertychange', function() {
+			    $('p').html($(this).val());
+			});
+		</script>
+	</body>
+</html>

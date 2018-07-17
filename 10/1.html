@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript" src="hot/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript">
+			var hiddenProperty = 'hidden' in document ? 'hidden' :    
+			    'webkitHidden' in document ? 'webkitHidden' :    
+			    'mozHidden' in document ? 'mozHidden' :    
+			    null;
+			var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
+			var onVisibilityChange = function(){
+			    if (document[hiddenProperty]) {
+			        console.log('页面非激活');
+			        $("title").html("页面非激活")
+			    }else{
+			        console.log('页面激活')
+			        $("title").html("页面激活")
+			    }
+			}
+			document.addEventListener(visibilityChangeEvent, onVisibilityChange);
+		</script>
+	</body>
+</html>

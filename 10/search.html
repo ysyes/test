@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				height: 40px;
+				width: 190px;
+				margin-left: 10px;
+				position: relative;
+			}
+			div input{
+				box-sizing: border-box;
+				display: block;
+				height: 40px;
+				width: 190px;
+				outline: none;
+				appearance: none;
+			    -moz-appearance: none;
+			    -webkit-appearance: none;
+			}
+			div ul{
+				position: absolute;
+				top: 40px;
+				left: 0;
+				min-width: 190px;
+				height: 200px;
+				max-height: 200px;
+				background: white;
+				overflow-y: auto;
+				display: none;
+				z-index: 99;
+			}
+			div ul li{
+				height: 20px;
+				line-height: 20px;
+				font-size: 12px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			div ul li.search{
+				background: gray;
+			}
+			div ul li.checked,
+			div ul li:hover{
+				background: blue;
+				color: white;
+			}			
+		</style>
+	</head>
+	<body>
+		<div>
+			<input class="search_input" type="text" name="" id="" value="" />
+			<ul class="search_main">
+				
+			</ul>
+		</div>
+		<div>
+			<input class="search_input" type="text" name="" id="" value="" />
+			<ul class="search_main">
+				
+			</ul>
+		</div>
+		<div>
+			<input class="search_input" type="text" name="" id="" value="" />
+			<ul class="search_main">
+				
+			</ul>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		var searchData;
+		$.ajax({
+			type:"get",
+			url:"search.json",
+			async:true,
+			success:function (data) {
+				searchData = data.coachs;
+				var lis = '';
+				$(data.coachs).each(function () {
+					lis += '<li data-id="'+this.id+'" data-code="'+this.code+'" data-name="'+this.name+'" data-pinyin="'+this.pinyin+'">'+this.code +' '+ this.name +'</li>';
+				})
+				$("ul").html(lis);
+			}
+		});
+		$(".search_input").keyup(function () {
+			var searchUl = $(this).siblings(".search_main");
+			var searchLis = searchUl.children();
+			var text = $(this).val();
+			if (text === "") {				
+				searchLis.removeClass("search");
+			} else{
+				var lis1 = '';
+				var lis2 = '';
+				searchLis.each(function () {
+					var name = $(this).attr("data-name");
+					var pinyin = $(this).attr("data-pinyin");
+					var id = $(this).attr("data-id");
+					var code = $(this).attr("data-code");
+					if (name.indexOf(text) != -1 || pinyin.indexOf(text) != -1) {
+						lis1 += '<li class="search" data-id="'+id+'" data-code="'+code+'" data-name="'+name+'" data-pinyin="'+pinyin+'">'+code +' '+ name +'</li>';
+					} else{
+						lis2 += '<li data-id="'+id+'" data-code="'+code+'" data-name="'+name+'" data-pinyin="'+pinyin+'">'+code +' '+ name +'</li>';
+					}
+					
+				})
+				if (lis1 != "") {
+					searchUl.html(lis1 + lis2).scrollTop(0);
+				}else{
+					searchLis.removeClass("search");
+				}
+				
+			}		
+		})
+		
+		
+		$(".search_input").focus(function () {
+			ulhideFn();
+			$(this).siblings(".search_main").slideDown(100);
+		})
+		$(".search_main").on("click","li",function () {
+			$(this).addClass("checked").siblings().removeClass();
+			$(this).parent().siblings(".search_input").val($(this).html());
+			$(this).parent().slideUp(100);
+		})
+		$(".search_input").parent().click(function (event) {
+			event.stopPropagation();
+		})
+		$(document).click(function () {
+			ulhideFn();
+		})
+		//隐藏下拉框
+		function ulhideFn () {
+			$(".search_main:visible").each(function () {
+				var main = $(this).children("li.checked").html() || "";
+				$(this).siblings(".search_input").val(main);
+				$(this).slideUp(100);
+			})
+		}
+	</script>
+</html>

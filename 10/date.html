@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			//判断年月天数
+			function isLeapFn(year,month) {
+				var monthDays = [31,28,31,30,31,30,31,31,30,31,30,31];
+				var days = (year%100 == 0 ? res = (year%400 == 0 ? 29:28) : res = (year%4 == 0 ? 29:28));
+				monthDays[1] = days;
+				return monthDays[month - 1];
+			}
+			//日历写入
+			function dateFn() {
+				var year = '2018';
+				var month = '5';
+				var d = new Date(year+'.'+month+'.1');
+				var week = d.getDay() == 0 ? 7 : d.getDay();//当月开始星期;
+				var thisMonth = isLeapFn(year,month);//当月天数
+				if (month > 1) {
+					var befMonth =  isLeapFn(year,month - 1);//上月天数
+				}else{
+					var befMonth =  31;
+				}
+				//月前
+				for (var i = befMonth - week + 2; i <=  befMonth; i++) {
+					console.log('-'+i);
+				}
+				//当月
+				for (var i = 1; i <= thisMonth; i++) {
+					console.log(i);
+				}
+				//后月
+				for (var i = 1; i <= 42 - thisMonth - week + 1; i++) {
+					console.log(i);
+				}
+			}
+			dateFn();
+		</script>
+	</body>
+</html>
